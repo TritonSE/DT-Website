@@ -6,9 +6,10 @@ import './css/App.css';
 import SimpleExample from './components/SimpleExample';
 import Form from './components/FormExample';
 
+// think of this function as the main method that puts everything together for the user to see.
 function App() {
   return (
-  	 // "className" is equivalent to the "class" attribute when using html/css, view css/App.css
+    // this div contains our whole app hence the className "app"
     <div className="App">
 	 	<p> Below is a simple component: </p>
 		<SimpleExample />	
@@ -19,4 +20,5 @@ function App() {
   );
 }
 
+// need to export App in order to be able to import it in other files
 export default App;
