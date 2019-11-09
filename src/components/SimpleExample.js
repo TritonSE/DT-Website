@@ -4,6 +4,9 @@ import '../css/App.css';
 
 // must extend "Component" and it's recommended to name the class the same name as the filename
 class SimpleExample extends Component {
+	// area where functions are defined (See FormExample.js)
+	
+	
 	// render function takes care of displaying component
 	render() {
 		// component will render code inside return statement
