@@ -8,7 +8,7 @@ class SimpleExample extends Component {
 	render() {
 		// component will render code inside return statement
 		return (
-			// returns only one tag so if you want more than one make sure it's nested inside a div
+			// returns only one element so if you want more than one make sure they're nested inside a div
 			<div className="simple-container">
 				<h1> Simple Component Here </h1>
 				<p> BOTTOM TEXT OF SIMPLE COMPONENT </p>
@@ -17,4 +17,5 @@ class SimpleExample extends Component {
 	}
 }
 
+// always export to allow importing in other files
 export default SimpleExample;
