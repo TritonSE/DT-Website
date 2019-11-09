@@ -9,9 +9,9 @@ class SimpleExample extends Component {
 	
 	// render function takes care of displaying component
 	render() {
-		// component will render code inside return statement
+		// component will render JSX (react's version of html) inside return statement
 		return (
-			// returns only one element so if you want more than one make sure they're nested inside a div
+			// can only return one element so if you want more than one make sure they're nested inside a div
 			<div className="simple-container">
 				<h1> Simple Component Here </h1>
 				<p> BOTTOM TEXT OF SIMPLE COMPONENT </p>
