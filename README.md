@@ -16,7 +16,7 @@ This branch gives a demonstration on creating and using components in react. The
 5. src/css/App.css
 6. src/FormExample.css
 
-Once you have the repo on your machine, checkout the branch with the command "git checkout component-example" and run npm start to see the components in action. 
+Once you have the repo on your machine, checkout the branch with the command "git checkout component-examples" and run npm start to see the components in action. 
 
 ## Available Script
 
