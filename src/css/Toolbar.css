@@ -9,8 +9,6 @@
   padding: 25px 25px 50px 50px;
 }
   
-
-
 .About-Header{
   color: black;
   font-size: small;
@@ -36,12 +34,17 @@
 .Home-Header:hover{
   color: rgb(255, 0, 106)
 }
-  .About-Header:hover{
+.About-Header:hover{
     color:rgb(255, 0, 106)
-  }
-  .Support-Header:hover{
+}
+.Support-Header:hover{
     color:rgb(255, 0, 106)
-  }
-  .Contact-Header:hover{
+}
+.Contact-Header:hover{
     color: rgb(255, 0, 106)
-  }
+}
+
+.logonav{
+  height: 50;
+  width: 50;
+}
