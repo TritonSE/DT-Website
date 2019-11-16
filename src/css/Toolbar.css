@@ -1,21 +1,30 @@
 .bg-custom{
   background-color:white;
 }
+
 .Home-Header{
-  color: gray;
-  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-size: small;
+  font-weight: bold
+
 }
 .About-Header{
-  color: gray;
-  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-size: small;
+  font-weight: bold
+
 }
 .Support-Header{
-  color: gray;
-  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-size: small;
+  font-weight: bold
+
 }
 .Contact-Header{
-  color: gray;
-  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-size: small;
+  font-weight: bold
+
 }
 .Home-Header:hover{
   color: red

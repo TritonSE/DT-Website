@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './css/App.css';
 import Toolbar from './components/Toolbar'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 // importing our own components 
 import SimpleExample from './components/SimpleExample';
 import Form from './components/FormExample';
