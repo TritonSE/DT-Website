@@ -5,36 +5,43 @@
 .Home-Header{
   color: black;
   font-size: small;
-  font-weight: bold
-
+  font-weight: bold;
+  padding: 25px 25px 50px 50px;
 }
+  
+
+
 .About-Header{
   color: black;
   font-size: small;
-  font-weight: bold
+  font-weight: bold;
+  padding: 25px 25px 50px 50px;
 
 }
 .Support-Header{
   color: black;
   font-size: small;
-  font-weight: bold
+  font-weight: bold;
+  padding: 25px 25px 50px 50px;
 
 }
 .Contact-Header{
   color: black;
   font-size: small;
-  font-weight: bold
+  font-weight: bold;
+  padding: 25px 25px 50px 50px;
 
 }
+
 .Home-Header:hover{
-  color: red
+  color: rgb(255, 0, 106)
 }
   .About-Header:hover{
-    color:red
+    color:rgb(255, 0, 106)
   }
   .Support-Header:hover{
-    color: red 
+    color:rgb(255, 0, 106)
   }
   .Contact-Header:hover{
-    color: red
+    color: rgb(255, 0, 106)
   }

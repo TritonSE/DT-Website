@@ -6,7 +6,7 @@ import '../css/Toolbar.css'
 class Toolbar extends Component {
   render() {
   return(
-    <Navbar bg = "custom" expand="lg">
+    <Navbar bg = "custom" expand="lg" fixed = "top">
   <Navbar.Brand href="/home">Dynamics Dance Team</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
