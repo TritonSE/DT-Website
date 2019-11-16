@@ -3,13 +3,29 @@
 }
 .Home-Header{
   color: gray;
+  font-family: "Times New Roman", Times, serif;
 }
 .About-Header{
   color: gray;
+  font-family: "Times New Roman", Times, serif;
 }
 .Support-Header{
   color: gray;
+  font-family: "Times New Roman", Times, serif;
 }
 .Contact-Header{
   color: gray;
+  font-family: "Times New Roman", Times, serif;
 }
+.Home-Header:hover{
+  color: red
+}
+  .About-Header:hover{
+    color:red
+  }
+  .Support-Header:hover{
+    color: red 
+  }
+  .Contact-Header:hover{
+    color: red
+  }

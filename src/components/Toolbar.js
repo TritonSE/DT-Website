@@ -20,7 +20,7 @@ class Toolbar extends Component {
       <Nav.Link href="/Support">
         <d3 className = "Support-Header">Support</d3></Nav.Link>
       <Nav.Link href="/Contact"> 
-      <d4 className = "Support-Contact">Contact</d4>
+      <d4 className = "Contact-Header">Contact</d4>
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
