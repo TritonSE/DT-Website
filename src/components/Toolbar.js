@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import {Navbar,Nav, Container} from 'react-bootstrap';
+import {Navbar,Nav, Container,Row,Col} from 'react-bootstrap';
 import '../css/Toolbar.css'
 
 class Toolbar extends Component {
   render() {
   return(
     <Container>
-    <Navbar bg = "custom" expand="lg" fixed = "top">
+    <Row>
+    <Col sm={11}>
+    <Navbar bg = "custom" expand="lg">
     <Navbar.Brand href="#home">
     <img 
       src = {require("../images/logo1.png")}
-      style={{width:100, marginTop: 0}} 
+      style={{width:120, marginTop: 0}} 
       alt = "Could not load"
       />
     </Navbar.Brand>
@@ -31,6 +33,10 @@ class Toolbar extends Component {
     </Nav>
   </Navbar.Collapse>
 </Navbar>
+</Col>
+    <Col sm={2}> 
+    </Col>
+  </Row>
 </Container>
 );
   }

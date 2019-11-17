@@ -1,41 +1,45 @@
 .bg-custom{
-  background-color:white;
+  background-color: white;
 }
-
-.Toolbar{
-  float: left;
+.container{
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-start;
 }
 
 .Home-Header{
   color: black;
-  font-size: small;
+  font-size: 14px;
   font-weight: bold;
-  padding-right: 80px;
-  padding-bottom: 40px
+  padding-right: 40px;
+  padding-bottom: 60px
 }
   
 .About-Header{
   color: black;
-  font-size: small;
+  font-size: 14px;
   font-weight: bold;
-  padding-right: 80px;
-  padding-bottom: 40px
+  padding-right: 40px;
+  padding-bottom: 60px;
+  padding-left: 40px;
 
 }
 .Support-Header{
   color: black;
-  font-size: small;
+  font-size: 14px;
   font-weight: bold;
-  padding-right: 80px;
-  padding-bottom: 40px
+  padding-right: 40px;
+  padding-bottom: 60px;
+  padding-left:40px;
 
 }
 .Contact-Header{
   color: black;
-  font-size: small;
+  font-size: 14px;
   font-weight: bold;
-  padding-right: 170px;
-  padding-bottom: 40px
+  padding-bottom: 60px;
+  margin-left:40px;
+
 
 }
 
