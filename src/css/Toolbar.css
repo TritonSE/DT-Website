@@ -11,6 +11,7 @@
   font-size: small;
   font-weight: bold;
   padding-right: 80px;
+  padding-bottom: 40px
 }
   
 .About-Header{
@@ -18,6 +19,7 @@
   font-size: small;
   font-weight: bold;
   padding-right: 80px;
+  padding-bottom: 40px
 
 }
 .Support-Header{
@@ -25,6 +27,7 @@
   font-size: small;
   font-weight: bold;
   padding-right: 80px;
+  padding-bottom: 40px
 
 }
 .Contact-Header{
@@ -32,19 +35,20 @@
   font-size: small;
   font-weight: bold;
   padding-right: 170px;
+  padding-bottom: 40px
 
 }
 
 .Home-Header:hover{
-  color: rgb(255, 0, 106)
+  color: rgb(98, 192, 250)
 }
 .About-Header:hover{
-    color:rgb(255, 0, 106)
+    color: rgb(98, 192, 250)
 }
 .Support-Header:hover{
-    color:rgb(255, 0, 106)
+    color: rgb(98, 192, 250)
 }
 .Contact-Header:hover{
-    color: rgb(255, 0, 106)
+   color: rgb(98, 192, 250)
 }
 

@@ -10,7 +10,7 @@ class Toolbar extends Component {
     <Navbar.Brand href="#home">
     <img 
       src = {require("../images/logo1.png")}
-      style={{width:100, marginTop: 13}} 
+      style={{width:100, marginTop: 0}} 
       alt = "Could not load"
       />
     </Navbar.Brand>
