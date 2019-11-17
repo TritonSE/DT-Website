@@ -2,6 +2,10 @@
   background-color:white;
 }
 
+.Toolbar{
+  float: left;
+}
+
 .Home-Header{
   color: black;
   font-size: small;
