@@ -7,7 +7,7 @@ class Toolbar extends Component {
   return(
     <Container>
     <Row>
-    <Col sm={11}>
+    <Col lg={11}>
     <Navbar bg = "custom" expand="lg">
     <Navbar.Brand href="#home">
     <img 
@@ -34,10 +34,13 @@ class Toolbar extends Component {
   </Navbar.Collapse>
 </Navbar>
 </Col>
-    <Col sm={2}> 
+    <Col sm = "auto"> 
+    Hi Upo
     </Col>
   </Row>
 </Container>
+
+
 );
   }
 }
