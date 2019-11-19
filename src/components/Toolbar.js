@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Navbar,Nav, Container,Row,Col} from 'react-bootstrap';
+import Image from 'react-bootstrap/Image'
 import '../css/Toolbar.css'
 
 class Toolbar extends Component {
@@ -10,9 +11,9 @@ class Toolbar extends Component {
     <Col lg={11}>
     <Navbar bg = "custom" expand="lg">
     <Navbar.Brand href="#home">
-    <img 
+    <img
       src = {require("../images/logo1.png")}
-      style={{width:120, marginTop: 0}} 
+      style={{width:120, marginTop: 0}}
       alt = "Could not load"
       />
     </Navbar.Brand>
@@ -27,15 +28,30 @@ class Toolbar extends Component {
         </Nav.Link>
       <Nav.Link href="/Support">
         <h3 className = "Support-Header">Support</h3></Nav.Link>
-      <Nav.Link href="/Contact"> 
+      <Nav.Link href="/Contact">
       <h4 className = "Contact-Header">Contact</h4>
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
 </Col>
-    <Col sm = "auto"> 
-    Hi Upo
+    <Col sm = "auto">
+    <a href="www.facebook.com" >
+      <Image className="fbImage"
+      src={require("../images/fb.png")} rounded fluid/>
+      </a>
+    </Col>
+    <Col sm = "auto">
+    <a href="www.instagram.com" >
+      <Image className="igImage"
+      src={require("../images/ig.png")} rounded fluid/>
+      </a>
+    </Col>
+    <Col sm = "auto">
+    <a href="www.twitter.com" >
+      <Image className="twitterImage"
+      src={require("../images/twitter.png")} rounded fluid/>
+      </a>
     </Col>
   </Row>
 </Container>
@@ -47,6 +63,3 @@ class Toolbar extends Component {
 
 
 export default Toolbar;
-
-
-  

@@ -9,7 +9,7 @@
   padding-right: 40px;
   padding-bottom: 60px
 }
-  
+
 .About-Header{
   color: black;
   font-size: 14px;
@@ -49,4 +49,24 @@
 .Contact-Header:hover{
    color: rgb(98, 192, 250)
 }
-
+.fbImage{
+  max-height: 100%;
+  max-width: 100%;
+}
+.fbImage:hover{
+  color: rgb(98, 192, 250)
+}
+.igImage{
+  max-height: 100%;
+  max-width: 100%;
+}
+.igImage:hover{
+  color: rgb(98, 192, 250)
+}
+.twitterImage{
+  max-height: 100%;
+  max-width: 100%;
+}
+.twitterImage:hover{
+  color: rgb(98, 192, 250)
+}
