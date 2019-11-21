@@ -35,24 +35,13 @@ class Toolbar extends Component {
   </Navbar.Collapse>
 </Navbar>
 </Col>
-    <Col sm = "auto">
-    <a href="www.facebook.com" >
-      <Image className="fbImage"
-      src={require("../images/fb.png")} rounded fluid/>
-      </a>
-    </Col>
-    <Col sm = "auto">
-    <a href="www.instagram.com" >
-      <Image className="igImage"
-      src={require("../images/ig.png")} rounded fluid/>
-      </a>
-    </Col>
-    <Col sm = "auto">
-    <a href="www.twitter.com" >
-      <Image className="twitterImage"
-      src={require("../images/twitter.png")} rounded fluid/>
-      </a>
-    </Col>
+  <div class="social-menu">
+    <ul>
+    <li><a href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+  </div>
   </Row>
 </Container>
 
