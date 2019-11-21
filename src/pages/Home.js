@@ -4,22 +4,52 @@ import { Link } from 'react-router-dom';
 import '../css/App.css';
 
 class Home extends Component {
-	handleAboutRedirect(event) {
-		this.props.history.push("/about");	// redirects to about page
+	// Takes in page name and event (click) as parameters
+	handleAboutRedirect = page => e => {
+		e.preventDefault();
+		this.props.history.push("" + page);	// redirects to specified page
 	}
 
 	render() {
+		const aboutPage = "/about";
+		const supportPage = "/support";
+		const contactPage = "/contact";
 		return (
     		<div className="App">
-      		<header className="App-header">
-        			<img src={logo} className="App-logo" alt="logo" />
-					<Link className="App-link" 
-						onClick={this.handleAboutRedirect.bind(this)}
-          			rel="noopener noreferrer"
-        			>
-          			Go to About Page
-        			</Link>
-     			</header>
+				<br />
+				<br />
+				<br />
+				<h1> Dynamics Website </h1>
+				{/** About Link */}
+				<Link className="App-link" 
+					onClick={this.handleAboutRedirect(aboutPage)}
+          		rel="noopener noreferrer"
+        		>
+          		Go to About Page
+        		</Link>		
+				
+				<br />
+				<br />
+				<br />
+				{/** Support Link */}
+				<Link className="App-link" 
+					onClick={this.handleAboutRedirect(supportPage)}
+          		rel="noopener noreferrer"
+        		>
+          		Go to Support Page
+        		</Link>
+					
+				{/** Contact Link */}
+				<br />
+				<br />
+				<br />
+				<Link className="App-link" 
+					onClick={this.handleAboutRedirect(contactPage)}
+          		rel="noopener noreferrer"
+        		>
+          		Go to Contact Page
+        		</Link>
+
     		</div>
 			
 		);
