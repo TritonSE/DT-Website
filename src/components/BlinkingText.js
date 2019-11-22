@@ -17,16 +17,13 @@ class BlinkingText extends Component {
         function changeColor() {
             //reference the text in headers
             var x = document.getElementById("dynamicsTxt");
-            var y = document.getElementById("bulletTxt");
             //dynamics color is black --> turn pink with green bullet
             if (x.style.color == "black") {
               x.style.color = "#E42B6E";
-              y.style.color = "#7fffd4"
             }
             //dynamics color is pink --> turn black with pink bullet
             else{
                 x.style.color = "black";
-                y.style.color = "#E42B6E"
             }
           }
         //changeColor of "Dynamics" every 1 second
