@@ -1,13 +1,13 @@
 
   .Body-Header{
     color: black;
+    opacity: 1;
+    font: Regular 25px/27px David;
     text-align: left;
+    letter-spacing: 0;
     font-size: 15px;
     line-height: 0px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    font-weight: 1000;
-    bottom:0;
-    left:0;
-    position: absolute;
+    font-weight: bold;
+    float: right;
+    padding-top: 22%;
   }

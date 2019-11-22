@@ -14,7 +14,6 @@ function App() {
     // this div contains our whole app hence the className "app"
     <div className="App">
       <Toolbar/>
-     <BlinkingText/>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Navbar,Nav, Container,Row,Col} from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 import '../css/Toolbar.css'
+import BlinkingText from './BlinkingText.js'
 
 class Toolbar extends Component {
   render() {
@@ -15,7 +16,9 @@ class Toolbar extends Component {
       src = {require("../images/logo1.png")}
       style={{width:120, marginTop: 0}}
       alt = "Could not load"
+      className = "floatingPhoto"
       />
+      <BlinkingText/>
     </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
