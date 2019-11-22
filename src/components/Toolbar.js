@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Navbar,Nav, Container,Row,Col} from 'react-bootstrap';
+import Image from 'react-bootstrap/Image'
 import '../css/Toolbar.css'
 
 class Toolbar extends Component {
@@ -10,9 +11,9 @@ class Toolbar extends Component {
     <Col lg={11}>
     <Navbar bg = "custom" expand="lg">
     <Navbar.Brand href="#home">
-    <img 
+    <img
       src = {require("../images/logo1.png")}
-      style={{width:120, marginTop: 0}} 
+      style={{width:120, marginTop: 0}}
       alt = "Could not load"
       />
     </Navbar.Brand>
@@ -27,16 +28,20 @@ class Toolbar extends Component {
         </Nav.Link>
       <Nav.Link href="/Support">
         <h3 className = "Support-Header">Support</h3></Nav.Link>
-      <Nav.Link href="/Contact"> 
+      <Nav.Link href="/Contact">
       <h4 className = "Contact-Header">Contact</h4>
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
 </Col>
-    <Col sm = "auto"> 
-    Hi Upo
-    </Col>
+  <div class="social-menu">
+    <ul>
+    <li><a href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+  </div>
   </Row>
 </Container>
 
@@ -47,6 +52,3 @@ class Toolbar extends Component {
 
 
 export default Toolbar;
-
-
-  
