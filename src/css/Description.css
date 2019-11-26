@@ -8,6 +8,10 @@
     justify-content: flex-start;
 }
 
+.Image{
+    margin-top: 200px;
+}
+
 .Role{
     color: black;
     font-size: 30px;

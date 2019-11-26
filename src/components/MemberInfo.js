@@ -1,5 +1,6 @@
 import pic1 from "../images/samplepic.jpg";
 import pic2 from "../images/dancer.jpg";
+
 var MemberInfo = {
     "info": [
         {
