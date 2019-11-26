@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './css/App.css';
+import Members from './components/Members';
+
+
 
 // importing our own components 
 import SimpleExample from './components/SimpleExample';
@@ -11,11 +14,7 @@ function App() {
   return (
     // this div contains our whole app hence the className "app"
     <div className="App">
-	 	<p> Below is a simple component: </p>
-		<SimpleExample />	
-		
-	 	<p> Below is a slightly more developed component: </p>
-		<Form />
+      <Members/>
     </div>
   );
 }
