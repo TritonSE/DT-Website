@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './css/App.css';
 import { Route } from 'react-router-dom';
-
-// importing pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Support from './pages/Support';
@@ -22,4 +20,5 @@ class App extends Component {
   }
 }
 
+// need to export App in order to be able to import it in other files
 export default App;

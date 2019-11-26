@@ -20,3 +20,9 @@
 .App-link {
   color: #09d3ac;
 }
+
+.simple-container {
+	background-color: lightGrey;
+	width: 50%;
+	margin: auto;
+}

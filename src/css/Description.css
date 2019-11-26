@@ -1,0 +1,39 @@
+.bg-custom{
+    background-color: white;
+}
+
+.container{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.Image{
+    margin-top: 200px;
+}
+
+.Role{
+    color: black;
+    font-size: 30px;
+    font-family: Regular Whyte Inktrap;
+    text-transform: uppercase;
+    padding-left: 10%;
+    margin-top: 190px;
+    text-align: left;
+}
+
+.Role span {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #e6ffff 60%);
+}
+
+.Name{
+    color: black;
+    font-size: 25px;
+    font-family: Regular Whyte Inktrap;
+    padding-left: 10%;
+    text-align: left;
+    padding-top: 25px;
+    position: relative;
+}
+
+

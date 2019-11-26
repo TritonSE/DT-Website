@@ -1,0 +1,58 @@
+.bg-custom{
+  background-color: white;
+}
+.container{
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-start;
+}
+
+.Home-Header{
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 40px;
+  padding-bottom: 60px
+}
+  
+.About-Header{
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 40px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+
+}
+.Support-Header{
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 40px;
+  padding-bottom: 60px;
+  padding-left:40px;
+
+}
+.Contact-Header{
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 60px;
+  margin-left:40px;
+
+
+}
+
+.Home-Header:hover{
+  color: rgb(98, 192, 250)
+}
+.About-Header:hover{
+    color: rgb(98, 192, 250)
+}
+.Support-Header:hover{
+    color: rgb(98, 192, 250)
+}
+.Contact-Header:hover{
+   color: rgb(98, 192, 250)
+}
+
