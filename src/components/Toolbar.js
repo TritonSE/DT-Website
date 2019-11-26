@@ -3,6 +3,7 @@ import {Navbar,Nav, Container,Row,Col} from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 import '../css/Toolbar.css'
 import BlinkingText from './BlinkingText.js'
+import '../css/Toolbar.css'
 
 class Toolbar extends Component {
   render() {
@@ -19,6 +20,14 @@ class Toolbar extends Component {
       className = "floatingPhoto"
       />
       <BlinkingText/>
+    <Col sm={11}>
+    <Navbar bg = "custom" expand="lg">
+    <Navbar.Brand href="#home">
+    <img 
+      src = {require("../images/logo1.png")}
+      style={{width:120, marginTop: 0}} 
+      alt = "Could not load"
+      />
     </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
@@ -32,6 +41,7 @@ class Toolbar extends Component {
       <Nav.Link href="/Support">
         <h3 className = "Support-Header">Support</h3></Nav.Link>
       <Nav.Link href="/Contact">
+      <Nav.Link href="/Contact"> 
       <h4 className = "Contact-Header">Contact</h4>
       </Nav.Link>
     </Nav>
@@ -49,9 +59,16 @@ class Toolbar extends Component {
 </Container>
 
 
+    <Col sm={2}> 
+    </Col>
+  </Row>
+</Container>
 );
   }
 }
 
 
 export default Toolbar;
+
+
+  

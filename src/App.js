@@ -1,21 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './css/App.css';
-import Toolbar from './components/Toolbar'
-import BlinkingText from './components/BlinkingText'
 import 'bootstrap/dist/css/bootstrap.min.css'
-// importing our own components 
-import SimpleExample from './components/SimpleExample';
-import Form from './components/FormExample';
+import { Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Support from './pages/Support';
+import Contact from './pages/Contact';
 
-// think of this function as the main method that puts everything together for the user to see.
-function App() {
-  return (
-    // this div contains our whole app hence the className "app"
-    <div className="App">
-      <Toolbar/>
-    </div>
-  );
+class App extends Component {
+	render() {
+  		return (
+    		<div>
+				<Route path="/" exact render={(props) => <Home {...props}/>}/>
+				<Route path="/about" exact render={(props) => <About {...props}/>}/>
+				<Route path="/support" exact render={(props) => <Support {...props}/>}/>
+				<Route path="/contact" exact render={(props) => <Contact {...props}/>}/>
+   	 	</div>
+  		);
+  }
 }
 
 // need to export App in order to be able to import it in other files
