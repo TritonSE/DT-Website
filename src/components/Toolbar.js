@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {Navbar,Nav,Col,Row} from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
-import '../css/Toolbar.css'
 import BlinkingText from './BlinkingText.js'
 import SocialFollow from './SocialFollow';
 import { NavbarText } from 'react-bootstrap/Navbar';
+import '../css/Toolbar.css'
 
 class Toolbar extends Component {
   render() {
@@ -37,7 +37,7 @@ class Toolbar extends Component {
           </Nav>
         </Navbar.Collapse>
         <Navbar.Brand>
-          <SocialFollow></SocialFollow>
+          <SocialFollow />
         </Navbar.Brand>
       </Navbar>
     </div>

@@ -19,7 +19,6 @@
     background-color: #333333;
     transition: 0.5s;
     transform: translate(0,0px);
-    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
 
 .Social ul li:last-child a{
