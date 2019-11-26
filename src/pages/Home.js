@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
 import '../css/App.css';
+import Toolbar from '../components/Toolbar.js';
 
 class Home extends Component {
 	// Takes in page name and event (click) as parameters
@@ -16,6 +17,7 @@ class Home extends Component {
 		const contactPage = "/contact";
 		return (
     		<div className="App">
+				<Toolbar />
 				<br />
 				<br />
 				<br />
@@ -51,6 +53,7 @@ class Home extends Component {
         		</Link>
 
     		</div>
+
 			
 		);
 	}
