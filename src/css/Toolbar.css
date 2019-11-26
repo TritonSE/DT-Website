@@ -4,7 +4,7 @@
 
 .Home-Header{
   color: black;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   margin-right: 0px;
   margin-top: 30px;
@@ -13,7 +13,7 @@
 
 .About-Header{
   color: black;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   margin-right: 40px;
   margin-top: 30px;
@@ -22,7 +22,7 @@
 }
 .Support-Header{
   color: black;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   margin-right: 40px;
   margin-top: 30px;
@@ -31,7 +31,7 @@
 }
 .Contact-Header{
   color: black;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   margin-top: 30px;
   margin-left:30px;
