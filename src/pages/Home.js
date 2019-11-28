@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
 import '../css/App.css';
 import Toolbar from '../components/Toolbar.js';
@@ -16,13 +15,15 @@ class Home extends Component {
 		const supportPage = "/support";
 		const contactPage = "/contact";
 		return (
-    		<div className="App">
+    	
 				<Toolbar />
+				/** *
+				<div className="App">
 				<br />
 				<br />
 				<br />
 				<h1> Dynamics Website </h1>
-				{/** About Link */}
+				{/** About Link }
 				<Link className="App-link" 
 					onClick={this.handleAboutRedirect(aboutPage)}
           		rel="noopener noreferrer"
@@ -33,7 +34,7 @@ class Home extends Component {
 				<br />
 				<br />
 				<br />
-				{/** Support Link */}
+				{/** Support Link }
 				<Link className="App-link" 
 					onClick={this.handleAboutRedirect(supportPage)}
           		rel="noopener noreferrer"
@@ -41,7 +42,7 @@ class Home extends Component {
           		Go to Support Page
         		</Link>
 					
-				{/** Contact Link */}
+				{/** Contact Link }
 				<br />
 				<br />
 				<br />
@@ -52,7 +53,8 @@ class Home extends Component {
           		Go to Contact Page
         		</Link>
 
-    		</div>
+				</div>
+				*/
 
 			
 		);

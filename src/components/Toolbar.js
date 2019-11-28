@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import {Navbar,Nav,Col,Row} from 'react-bootstrap';
-import Image from 'react-bootstrap/Image'
+import {Navbar,Nav} from 'react-bootstrap';
 import BlinkingText from './BlinkingText.js'
 import SocialFollow from './SocialFollow';
-import { NavbarText } from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 import '../css/Toolbar.css'
 
 class Toolbar extends Component {
@@ -17,7 +16,7 @@ class Toolbar extends Component {
     const aboutPage = "/about";
 		const supportPage = "/support";
     const contactPage = "/contact";
-    
+    const homePage = "/home"
   return(
     <div>
       <Navbar bg = "custom" expand="lg">
@@ -35,20 +34,31 @@ class Toolbar extends Component {
           <Nav className="ml-auto">
             <Nav.Link href="/Home">
               < h1 className="Home-Header"> Home </h1>
+              <Link className="App-link" 
+					    onClick={this.handleAboutRedirect(homePage)}
+          		  rel="noopener noreferrer"
+        		  > </Link>
               </Nav.Link>
             <Nav.Link href="/About">
               <h2 className = "About-Header"> About </h2>
               <Link className="App-link" 
 					    onClick={this.handleAboutRedirect(aboutPage)}
           		  rel="noopener noreferrer"
-        		  >
-          		Go to About Page
-        		  </Link>	
+        		  > </Link>	
               </Nav.Link>
             <Nav.Link href="/Support">
               <h3 className = "Support-Header">Support</h3></Nav.Link>
+              <Link className="App-link" 
+					onClick={this.handleAboutRedirect(supportPage)}
+          		rel="noopener noreferrer"
+        		></Link>
             <Nav.Link href="/Contact">
             <h4 className = "Contact-Header">Contact</h4>
+            <Link className="App-link" 
+					onClick={this.handleAboutRedirect(contactPage)}
+          		rel="noopener noreferrer"
+        		>
+        		</Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

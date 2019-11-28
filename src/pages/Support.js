@@ -7,6 +7,7 @@ class Support extends Component {
 		return (
 			<div>
 			<Toolbar />
+			Support Page
 			</div>
 		);
 	}
