@@ -7,7 +7,17 @@ import { NavbarText } from 'react-bootstrap/Navbar';
 import '../css/Toolbar.css'
 
 class Toolbar extends Component {
+
+  handleAboutRedirect = page => e => {
+		e.preventDefault();
+		this.props.history.push("" + page);	// redirects to specified page
+	}
+
   render() {
+    const aboutPage = "/about";
+		const supportPage = "/support";
+    const contactPage = "/contact";
+    
   return(
     <div>
       <Navbar bg = "custom" expand="lg">
@@ -28,6 +38,12 @@ class Toolbar extends Component {
               </Nav.Link>
             <Nav.Link href="/About">
               <h2 className = "About-Header"> About </h2>
+              <Link className="App-link" 
+					    onClick={this.handleAboutRedirect(aboutPage)}
+          		  rel="noopener noreferrer"
+        		  >
+          		Go to About Page
+        		  </Link>	
               </Nav.Link>
             <Nav.Link href="/Support">
               <h3 className = "Support-Header">Support</h3></Nav.Link>
