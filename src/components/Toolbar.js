@@ -25,7 +25,7 @@ class Toolbar extends Component {
           <Nav className="ml-auto">
             <Nav.Link href="/Home">
               < h1 className="Home-Header"> Home </h1>
-              </Nav.Link>
+              </Nav.Link>  
             <Nav.Link href="/About">
               <h2 className = "About-Header"> About </h2>
               </Nav.Link>

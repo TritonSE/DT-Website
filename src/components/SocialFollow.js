@@ -6,10 +6,43 @@ class SocialFollow extends Component{
         return(
             <div className="Social">
               <ul>
-                <li><a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="www.mail.google.com"><i class="fas fa-envelope-open-text"></i> Subscribe</a></li>
+              <li>
+                <a href="www.facebook.com">
+                <img className="Social"
+                src = {require("../images/FACE.png")}
+                alt = "Could not load"
+                />
+                </a>
+              </li>
+                
+                <li>
+                  <a href="www.instagram.com">
+                  <img
+                  src = {require("../images/INSTA.png")}
+                  alt = "Could not load"
+                  />
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="www.twitter.com">
+                  <img
+                  src = {require("../images/TWITT.png")}
+                  alt = "Could not load"
+                  />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="www.mail.google.com">
+                      <img
+                      src = {require("../images/MAIL.png")}
+                      alt = "Could not load"
+                      />
+                  Subscribe
+                  </a> 
+                </li>
+
               </ul>
             </div>
         );

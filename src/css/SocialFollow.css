@@ -9,7 +9,7 @@
     margin: 0 11px;
 }
 
-.Social ul li a {
+.Social ul li a img {
     position: relative;
     display: inline-block;
     width: 35px;
@@ -17,18 +17,34 @@
     border-radius: 10%;
     color: #FFFFFF;
     background-color: #333333;
-    transition: 0.5s;
+    transition: 0.4s;
     transform: translate(0,0px);
 }
 
-.Social ul li:last-child a{
-    position: relative;
-    display: inline-block;
-    width: 150px;
-    border-radius: 2%;
-} 
-
-.Social ul li a:hover {
+.Social ul li a img:hover {
     color: #FFFFFF;
     background-color: #FF4081;
 }
+
+.Social ul li:last-child a img{
+    background: none;
+    width: 35px;
+    height: 35px;
+}
+
+.Social ul li:last-child{
+    background-color: #333333;
+    color: white;
+    width: 140px;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+.Social ul li:last-child:hover{
+    background-color: #FF4081;
+}
+
+
+
+
+
