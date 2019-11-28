@@ -39,7 +39,7 @@ class SocialFollow extends Component{
                       src = {require("../images/MAIL.png")}
                       alt = "Could not load"
                       />
-                  Subscribe
+                  <span>Subscribe</span>
                   </a> 
                 </li>
 
