@@ -35,7 +35,7 @@
 .Social ul li:last-child{
     background-color: #333333;
     color: white;
-    width: 130px;
+    width: 139px;
     border-radius: 3px;
     transition: 0.4s;
 }
@@ -43,8 +43,8 @@
 .Social ul li:last-child a span {
     color: white;
     vertical-align: middle;
-    font-size: 17px;
-    margin-left: 5px;
+    font: Medium 17px/13px Whyte Inktrap;
+    margin-left: 7px;
 }
 
 .Social ul li:last-child a:hover {text-decoration: none;}

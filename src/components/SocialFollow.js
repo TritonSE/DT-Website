@@ -35,8 +35,8 @@ class SocialFollow extends Component{
 
                 <li>
                   <a href="www.mail.google.com">
-                      <img
-                      src = {require("../images/MAIL.png")}
+                      <img style={{width:22, marginTop: 0}}
+                      src = {require("../images/email.svg")}
                       alt = "Could not load"
                       />
                   <span>Subscribe</span>
