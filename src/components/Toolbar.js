@@ -15,25 +15,29 @@ class Toolbar extends Component {
   render() {
     const aboutPage = "/about";
 		const supportPage = "/support";
-    const contactPage = "/contact";
-    const homePage = "/home"
+    const contactPage = "../pages/contact";
+    const homePage = "../pages/home"
   return(
     <div>
       <Navbar bg = "custom" expand="lg">
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="/Home">
       <img
         src = {require("../images/logo1.png")}
         style={{width:120, marginTop: 0}}
         alt = "Could not load"
         className = "floatingPhoto"
         />
+        <Link className="App-link" 
+					    onClick={this.handleAboutRedirect(homePage)}
+          		  rel="noopener noreferrer"
+        		  > </Link>
         <BlinkingText/>
       </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link href="/Home">
-              < h1 className="Home-Header"> Home </h1>
+              < h1 className="Home-Header">Home</h1>
               <Link className="App-link" 
 					    onClick={this.handleAboutRedirect(homePage)}
           		  rel="noopener noreferrer"
