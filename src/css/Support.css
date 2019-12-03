@@ -1,0 +1,23 @@
+.Support-Text{
+    color: black;
+    text-align: left;
+    opacity: 1;
+    font: Regular 25px/30px Whyte Inktrap;
+    letter-spacing: 0;
+    margin-left: 10%;
+    padding-top: 10%;
+    font-weight: 100px;
+    margin-inline-end: 10%;
+    white-space: pre-line;
+  }
+.Header-Text{
+    text-align: left;
+    font-family: Medium 127px/120px Whyte Inktrap;
+    font-size: 100px;
+    letter-spacing: 0;
+    color: #FF4081;
+    opacity: 1;
+    margin-right: 15%;
+    padding-top: 10%;
+    line-height: 6pc;
+}
