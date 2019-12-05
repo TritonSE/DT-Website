@@ -1,0 +1,77 @@
+.Title{
+    margin-top: 60%;
+    width: 100%;
+    text-align: right;
+    font-family: Medium Whyte Inktrap;
+    font-size: 127px;
+    letter-spacing: 0;
+    color: #FF4081;
+    opacity: 1;
+}
+
+.container{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.Content1{
+    margin-top: 35%;
+    padding-left: 10%;
+    width: 100%;
+    text-align: left;
+    font-family: Regular Whyte Inktrap;
+    font-size: 30px;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.Content2{
+    margin-top: 10%;
+    padding-left: 10%;
+    width: 100%;
+    text-align: left;
+    font-family: Regular Whyte Inktrap;
+    font-size: 20px;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.Content3{
+    margin-top: 18%;
+    padding-left: 10%;
+    width: 100%;
+    text-align: left;
+    font-family: Regular Whyte Inktrap;
+    font-size: 20px;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.Content4{
+
+    margin-top: 90%;
+    margin-left: 10%;
+    width: 100%;
+    text-align: right;
+    font-family: Regular Whyte Inktrap;
+    font-size: 30px;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.Title2{
+    margin-top: 52%;
+    padding-left: 10%;
+    width: 100%;
+    text-align: left;
+    font-family: Medium Whyte Inktrap;
+    font-size: 127px;
+    letter-spacing: 0;
+    color: #FF4081;
+    opacity: 1;
+}

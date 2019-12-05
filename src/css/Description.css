@@ -9,7 +9,8 @@
 }
 
 .Image{
-    margin-top: 200px;
+    margin-top: 14%;
+    margin-left: 57%;
 }
 
 .Role{
@@ -18,7 +19,7 @@
     font-family: Regular Whyte Inktrap;
     text-transform: uppercase;
     padding-left: 10%;
-    margin-top: 190px;
+    margin-top: 12.5%;
     text-align: left;
 }
 
@@ -32,7 +33,7 @@
     font-family: Regular Whyte Inktrap;
     padding-left: 10%;
     text-align: left;
-    padding-top: 25px;
+    padding-top: 7%;
     position: relative;
 }
 

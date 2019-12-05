@@ -21,10 +21,10 @@ class InfoItem extends Component {
     render() {
         return(
             <Row>
-               <Col lg ={6}> 
+               <Col> 
                      <img className="Image"
                         src = {this.props.pic}
-                        style= {{width: 281, height: 367, marginLeft:300}}
+                        style= {{width: 281, height: 367}}
                         alt = "Could not load"
                     />
                </Col>
