@@ -10,7 +10,8 @@ class Contact extends Component {
 			</div>
 			
 			<div className = "number"> 
-			+ 818 709 1777 dynamics@ucsd.edu LinkedIn
+			+ 818 709 1777 dynamics@ucsd.edu 
+			LinkedIn
 			</div>
 			<div className = "reach">
 				Reach Out
