@@ -1,0 +1,32 @@
+.Support-Text{
+    color: black;
+    text-align: left;
+    opacity: 1;
+    font: Regular 25vh/30vh Whyte Inktrap;
+    letter-spacing: 0;
+    -webkit-transform: translate(-50%, -40%);
+    transform: translate(-50%,-40%);
+    position: absolute;
+    top: 50%;
+    left:30%;
+    white-space: pre-line;
+    height: 50%;
+    width: 25%;
+  }
+  
+.Header-Text{
+    text-align: left;
+    font-family: Medium 127vh/120vh Whyte Inktrap;
+    font-size: 15vh;
+    letter-spacing: 0;
+    color: #FF4081;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -40%);
+    transform: translate(-50%,-40%);
+    position: absolute;
+    top: 55%;
+    left:70%;
+    line-height: 15vh; 
+    width: 40%;
+    height:30%;
+}
