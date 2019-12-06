@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
 import Toolbar from '../components/Toolbar.js';
 
 class Contact extends Component {
@@ -7,6 +6,7 @@ class Contact extends Component {
 		return (
 			<div>
 				<Toolbar />
+				Contact page 
 			</div>
 			);
 	}
