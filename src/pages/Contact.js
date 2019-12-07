@@ -8,7 +8,8 @@ class Contact extends Component {
 			<div>
 				<Toolbar />
 			</div>
-			
+			<link rel="stylesheet"
+  		href="https://fonts.googleapis.com/css?family=Lato"></link>
 			<div className = "number"> 
 			+ 818 709 1777 dynamics@ucsd.edu 
 			LinkedIn

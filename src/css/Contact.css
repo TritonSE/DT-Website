@@ -1,10 +1,14 @@
+
+
+
+
 .reach{
 padding-top: 1%;
 padding-left: 27%;
 width: 35%;
 height: 23%;
 text-align: left;
-font-family: Arial;
+font-family: 'Lato', serif;
 font-size:  10vh;
 line-height: 11vh;
 letter-spacing: 0;
@@ -18,7 +22,7 @@ padding-left: 50%;
 width: 80%;
 height: 24%;
 text-align: left;
-font-family:Arial;
+font-family:'Lato', serif;
 font-size: 6vh;
 line-height: 7vh;
 letter-spacing: 0;
