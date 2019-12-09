@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
 import Toolbar from '../components/Toolbar.js';
 import { Container, Col, Row } from 'react-bootstrap';
 import '../css/About.css';
@@ -10,6 +9,7 @@ class About extends Component {
 		return (
 			<Container>
 			<div className="div">
+			<Toolbar/>
 			<Row>
 			<Col>
 				<h1 className="Title"> Our Mission </h1>
