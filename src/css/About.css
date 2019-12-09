@@ -2,8 +2,8 @@
     margin-top: 60%;
     width: 100%;
     text-align: right;
-    font-family: Medium Whyte Inktrap;
-    font-size: 127px;
+    font-family: 'Lato', sans-serif;
+    font-size: 19.66vh;
     letter-spacing: 0;
     color: #FF4081;
     opacity: 1;
@@ -16,36 +16,36 @@
 }
 
 .Content1{
-    margin-top: 35%;
+    margin-top: 45%;
     padding-left: 10%;
-    width: 100%;
+    width: 110%;
     text-align: left;
-    font-family: Regular Whyte Inktrap;
-    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 4.63vh;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
 .Content2{
-    margin-top: 10%;
+    margin-top: 7%;
     padding-left: 10%;
-    width: 100%;
+    width: 110%;
     text-align: left;
-    font-family: Regular Whyte Inktrap;
-    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.1vh;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
 .Content3{
-    margin-top: 18%;
+    margin-top: 13%;
     padding-left: 10%;
-    width: 100%;
+    width: 110%;
     text-align: left;
-    font-family: Regular Whyte Inktrap;
-    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.1vh;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
@@ -53,24 +53,24 @@
 
 .Content4{
 
-    margin-top: 70%;
+    margin-top: 67%;
     margin-left: 10%;
     width: 100%;
     text-align: right;
-    font-family: Regular Whyte Inktrap;
-    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 4.63vh;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
 .Title2{
-    margin-top: 32%;
+    margin-top: 28%;
     padding-left: 10%;
     width: 100%;
     text-align: left;
-    font-family: Medium Whyte Inktrap;
-    font-size: 127px;
+    font-family: 'Lato', sans-serif;
+    font-size: 19.66vh;
     letter-spacing: 0;
     color: #FF4081;
     opacity: 1;

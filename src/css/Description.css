@@ -9,17 +9,17 @@
 }
 
 .Image{
-    margin-top: 14%;
+    margin-top: 10%;
     margin-left: 57%;
 }
 
 .Role{
     color: black;
-    font-size: 30px;
-    font-family: Regular Whyte Inktrap;
+    font-size: 3.86vh;
+    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     padding-left: 10%;
-    margin-top: 12.5%;
+    margin-top: 8.5%;
     text-align: left;
 }
 
@@ -29,8 +29,8 @@
 
 .Name{
     color: black;
-    font-size: 25px;
-    font-family: Regular Whyte Inktrap;
+    font-size: 3.86vh;
+    font-family: 'Lato', sans-serif;
     padding-left: 10%;
     text-align: left;
     padding-top: 7%;

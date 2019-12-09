@@ -30,6 +30,9 @@ class About extends Component {
 			</Row>
 				<Members/>
 			</div>
+			<br/>
+			<br/>
+			<br/>
 			</Container>
 		);
 	}
