@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
 import Toolbar from '../components/Toolbar.js';
 import '../css/Support.css';
 import { SegmentInline } from 'semantic-ui-react';
