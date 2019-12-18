@@ -15,11 +15,11 @@
 
 .Role{
     color: black;
-    font-size: 3.86vh;
+    font-size: 3.1vh;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     padding-left: 10%;
-    margin-top: 8.5%;
+    margin-top: 9%;
     text-align: left;
 }
 
@@ -29,7 +29,7 @@
 
 .Name{
     color: black;
-    font-size: 3.86vh;
+    font-size: 3.1vh;
     font-family: 'Lato', sans-serif;
     padding-left: 10%;
     text-align: left;

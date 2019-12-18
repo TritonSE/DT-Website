@@ -7,9 +7,10 @@ import Members from '../components/Members.js';
 class About extends Component {
 	render() {
 		return (
+			<div>
+			<Toolbar/>
 			<Container>
 			<div className="div">
-			<Toolbar/>
 			<Row>
 			<Col>
 				<h1 className="Title"> Our Mission </h1>
@@ -34,6 +35,7 @@ class About extends Component {
 			<br/>
 			<br/>
 			</Container>
+			</div>
 		);
 	}
 }
