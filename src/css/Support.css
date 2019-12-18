@@ -2,22 +2,36 @@
     color: black;
     text-align: left;
     opacity: 1;
-    font: Regular 25px/30px Whyte Inktrap;
+    font-size: 2.2vh;
+    font-family: 'Lato', serif;
     letter-spacing: 0;
-    margin-left: 10%;
-    padding-top: 10%;
-    font-weight: 100px;
-    margin-inline-end: 10%;
+    -webkit-transform: translate(-50%, -40%);
+    transform: translate(-50%,-40%);
+    position: absolute;
+    top: 55%;
+    left:30%;
     white-space: pre-line;
+    width: 30%;
+    
   }
 .Header-Text{
     text-align: left;
-    font-family: Medium 127px/120px Whyte Inktrap;
-    font-size: 100px;
+    font-family: 'Lato', serif;
+    font-size: 12.5vh;
     letter-spacing: 0;
     color: #FF4081;
     opacity: 1;
-    margin-right: 15%;
-    padding-top: 10%;
-    line-height: 6pc;
+    -webkit-transform: translate(-50%, -40%);
+    transform: translate(-50%,-40%);
+    line-height: 15vh; 
+    position: absolute;
+    top: 55%;
+    left:70%;
+    width: 30%;
+}
+
+.container{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }

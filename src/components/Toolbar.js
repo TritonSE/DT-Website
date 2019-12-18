@@ -7,7 +7,35 @@ import { NavbarText } from 'react-bootstrap/Navbar';
 import '../css/Toolbar.css'
 
 class Toolbar extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     headerColor: "black"
+  //   }
+  // }
+
+
+  // changeColor = (e) => {
+  //   this.setState({
+  //     headerColor: "#FF408"
+  //   })
+  // }
   render() {
+
+    // function changeColor() {
+    //   //reference the text in headers
+    //   var x = document.getElementById("Support-Header");
+    //   x.style.color = "#FF4081";
+    //   // //dynamics color is black --> turn pink with green bullet
+    //   // if (x.style.color == "black") {
+    //   //   x.style.color = "#E42B6E";
+    //   // }
+    //   // //dynamics color is pink --> turn black with pink bullet
+    //   // else{
+    //   //     x.style.color = "black";
+    //   // }
+    // }
+
   return(
     <div>
       <Navbar bg = "custom" expand="lg">

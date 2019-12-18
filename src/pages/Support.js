@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import Toolbar from '../components/Toolbar.js';
 import '../css/Support.css';
 import { SegmentInline } from 'semantic-ui-react';
+import { Container } from 'react-bootstrap';
 
 class Support extends Component {
 	render() {
@@ -10,14 +11,14 @@ class Support extends Component {
 		return (
 			<div>
 			<Toolbar />
-			<div style={{display: 'flex', alignItems: 'center'}}>
-			<body className="Support-Text">
+			<Container>
+			<div className="Support-Text">
 				{text}
-			</body>
-			<header className="Header-Text">
-				How To Contribute
-			</header>
 			</div>
+			<div className="Header-Text">
+				How To Contribute
+			</div>
+			</Container>
 			</div>
 		);
 	}
