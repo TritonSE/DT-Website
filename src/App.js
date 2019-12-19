@@ -11,11 +11,11 @@ class App extends Component {
 	render() {
   		return (
     		<div>
-				<Route path="/" exact render={(props) => <Home {...props}/>}/>
-				<Route path={process.env.PUBLIC_URL + '/home'} exact render={(props) => <Home {...props}/>}/>
-				<Route path={process.env.PUBLIC_URL + '/about'} exact render={(props) => <About {...props}/>}/>
-				<Route path={process.env.PUBLIC_URL + '/support'} exact render={(props) => <Support {...props}/>}/>
-				<Route path={process.env.PUBLIC_URL + '/contact'} exact render={(props) => <Contact {...props}/>}/>
+				<Route path={process.env.PUBLIC_URL + '/'} exact render={(props) => <Home {...props}/>}/>
+				<Route path={process.env.PUBLIC_URL + '/home'} render={(props) => <Home {...props}/>}/>
+				<Route path={process.env.PUBLIC_URL + '/about'} render={(props) => <About {...props}/>}/>
+				<Route path={process.env.PUBLIC_URL + '/support'} render={(props) => <Support {...props}/>}/>
+				<Route path={process.env.PUBLIC_URL + '/contact'} render={(props) => <Contact {...props}/>}/>
    	 	</div>
   		);
   }
