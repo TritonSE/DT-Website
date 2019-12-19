@@ -12,10 +12,10 @@ class App extends Component {
   		return (
     		<div>
 				<Route path="/" exact render={(props) => <Home {...props}/>}/>
-				<Route path="/home" exact render={(props) => <Home {...props}/>}/>
-				<Route path="/about" exact render={(props) => <About {...props}/>}/>
-				<Route path="/support" exact render={(props) => <Support {...props}/>}/>
-				<Route path="/contact" exact render={(props) => <Contact {...props}/>}/>
+				<Route path={process.env.PUBLIC_URL + '/home'} exact render={(props) => <Home {...props}/>}/>
+				<Route path={process.env.PUBLIC_URL + '/about'} exact render={(props) => <About {...props}/>}/>
+				<Route path={process.env.PUBLIC_URL + '/support'} exact render={(props) => <Support {...props}/>}/>
+				<Route path={process.env.PUBLIC_URL + '/contact'} exact render={(props) => <Contact {...props}/>}/>
    	 	</div>
   		);
   }
