@@ -9,7 +9,7 @@ class Toolbar extends Component {
   //function to handle page redirects using React router (see App.js)
   handleAboutRedirect = page => e => {
 		e.preventDefault();
-		this.props.history.push("" + page);	// redirects to specified page
+		this.props.history.push("" + process.env.PUBLIC_URL + page);	// redirects to specified page
 	}
 
   render() {
