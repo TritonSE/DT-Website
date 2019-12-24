@@ -7,12 +7,12 @@ class Contact extends Component {
 			<div>
 				<Toolbar />
 			<div className = "number"> 
-			<a href = "mailto:dynamicsperformanceteam@gmail.com">dynamicsperformanceteam@gmail.com</a>
-			<a href = "https://www.facebook.com/DynamicsPerformanceTeam/"> Facebook </a>
+			<a href = "mailto:dynamicsperformanceteam@gmail.com" target="blank" >dynamicsperformanceteam@gmail.com</a>
+			<a href = "https://www.facebook.com/DynamicsPerformanceTeam/" target = "blank">  Facebook </a>
 			<br></br>
-			<a href = "https://www.instagram.com/dynamicsperformanceteam/?hl=en"> Instagram </a>
+			<a href = "https://www.instagram.com/dynamicsperformanceteam/?hl=en" target = "blank"> Instagram </a>
 			<br></br>
-			<a href = "https://www.yelp.com/biz/dynamics-performance-team-san-jose"> Yelp </a>
+			<a href = "https://www.yelp.com/biz/dynamics-performance-team-san-jose" target = "blank"> Yelp </a>
 			</div>
 			<div className = "reach">
 				Reach Out
