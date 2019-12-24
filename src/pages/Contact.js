@@ -7,8 +7,7 @@ class Contact extends Component {
 			<div>
 				<Toolbar />
 			<div className = "number"> 
-			+ 818 709 1777 dynamics@ucsd.edu 
-			LinkedIn
+			<a href = "mailto:dynamicsperformanceteam@gmail.com">dynamicsperformanceteam@gmail.com</a>
 			</div>
 			<div className = "reach">
 				Reach Out
