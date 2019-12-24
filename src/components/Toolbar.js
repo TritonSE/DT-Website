@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Navbar,Nav} from 'react-bootstrap';
 import BlinkingText from './BlinkingText.js'
+import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { Link } from 'react-router-dom';
 import '../css/Toolbar.css'
@@ -22,22 +23,14 @@ class Toolbar extends Component {
     <div>
       <Navbar bg = "custom" expand="lg">
       <Navbar.Brand href="/Home">
-        {/** Image for dynamics team*/}
-      <img
-        src = {require("../images/logo1.png")}
-        style={{width:120, marginTop: 0}}
-        alt = "Could not load"
-        className = "floatingPhoto"
-        />
+        {/** Image/Text for dynamics team*/}
+        <LogoText/>
 
         {/** Links images and text to home */}
         <Link className="App-link" 
 					    onClick={this.handleAboutRedirect(homePage)}
           		  rel="noopener noreferrer"
         > </Link>
-
-      {/** Component for text next to image component*/}
-        <BlinkingText/>
 
       </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

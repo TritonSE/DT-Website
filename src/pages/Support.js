@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Toolbar from '../components/Toolbar.js';
 import '../css/Support.css';
 import { SegmentInline } from 'semantic-ui-react';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 class Support extends Component {
 	render() {
@@ -10,14 +10,14 @@ class Support extends Component {
 		return (
 			<div>
 			<Toolbar />
-			<Container>
-			<div className="Support-Text">
+			<div className="Alignment-Text">
+				<text className="Support-Text">
 				{text}
-			</div>
-			<div className="Header-Text">
+				</text>
+				<text className="Header-Text">
 				How To Contribute
+				</text>
 			</div>
-			</Container>
 			</div>
 		);
 	}

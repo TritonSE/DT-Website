@@ -1,37 +1,33 @@
 .Support-Text{
     color: black;
-    text-align: left;
     opacity: 1;
-    font-size: 2.2vh;
+    font-size: 2.5vh;
     font-family: 'Lato', serif;
     letter-spacing: 0;
     -webkit-transform: translate(-50%, -40%);
     transform: translate(-50%,-40%);
-    position: absolute;
-    top: 55%;
-    left:30%;
     white-space: pre-line;
-    width: 30%;
-    
+    width: 55%;
   }
 .Header-Text{
     text-align: left;
     font-family: 'Lato', serif;
-    font-size: 12.5vh;
+    font-size: 13.5vh;
     letter-spacing: 0;
     color: #FF4081;
     opacity: 1;
     -webkit-transform: translate(-50%, -40%);
     transform: translate(-50%,-40%);
     line-height: 15vh; 
+    width: 40%;
     position: absolute;
-    top: 55%;
-    left:70%;
-    width: 30%;
-}
+    left: 55%;
 
-.container{
+}
+.Alignment-Text{
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  display: flex;
+  position: absolute;
+  top: 55%;
+  left:35%;
 }
