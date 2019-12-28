@@ -24,7 +24,6 @@ class InfoItem extends Component {
                <Col> 
                      <img className="Image"
                         src = {this.props.pic}
-                        style= {{width: 281, height: 367}}
                         alt = "Could not load"
                     />
                </Col>
