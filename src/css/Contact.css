@@ -26,3 +26,33 @@ letter-spacing: 0;
 color: #000000;
 opacity: 1;
 }
+
+@media only screen and (max-width: 800px) {
+  .reach{
+    padding-top: 0%;
+    padding-left: 10%;
+    width: 30%;
+    height: 20%;
+    text-align: left;
+    font-family: 'Lato', serif;
+    font-size:  11.5vh;
+    line-height: 12.5vh;
+    letter-spacing: 0;
+    color: #FF4081;
+    opacity: 1;
+    }
+    
+    .number {
+    padding-top: 10%;
+    padding-left: 50%;
+    width: 80%;
+    height: 24%;
+    text-align: left;
+    font-family:'Lato', serif;
+    font-size: 6vh;
+    line-height: 7vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    }
+}

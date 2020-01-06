@@ -17,6 +17,8 @@ class Contact extends Component {
 			</div>
 			<div className = "reach">
 				Reach Out
+				</div>
+			</div>
 
 			);
 	}
