@@ -1,21 +1,21 @@
+
 import React from 'react';
-import logo from './logo.svg';
-import './css/App.css';
+//import './css/DynamicStyle.css';
 
 // importing our own components 
-import SimpleExample from './components/SimpleExample';
-import Form from './components/FormExample';
+//import SimpleExample from './components/SimpleExample';
+//import Form from './components/FormExample';
+import HomePage from './components/HomePage';
 
 // think of this function as the main method that puts everything together for the user to see.
 function App() {
   return (
     // this div contains our whole app hence the className "app"
     <div className="App">
-	 	<p> Below is a simple component: </p>
-		<SimpleExample />	
+		<HomePage/>
 		
-	 	<p> Below is a slightly more developed component: </p>
-		<Form />
+	 
+		
     </div>
   );
 }
