@@ -6,6 +6,9 @@ class Contact extends Component {
 		return (
 			<div>
 				<Toolbar />
+			<div className = "mobile"> 
+				Contact
+			</div>
 			<div className = "number"> 
 			<a href = "mailto:dynamicsperformanceteam@gmail.com" target="blank" >Email</a>
 			<br></br>
