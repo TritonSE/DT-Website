@@ -1,0 +1,42 @@
+.bg-custom{
+    background-color: white;
+}
+
+.container{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.Image{
+    margin-top: 10%;
+    margin-left: 57%;
+    width: 53%;
+    height: 56.55vh;
+}
+
+.Role{
+    color: black;
+    font-size: 3.1vh;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    padding-left: 10%;
+    margin-top: 9%;
+    text-align: left;
+}
+
+.Role span {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #e6ffff 60%);
+}
+
+.Name{
+    color: black;
+    font-size: 3.1vh;
+    font-family: 'Lato', sans-serif;
+    padding-left: 10%;
+    text-align: left;
+    padding-top: 7%;
+    position: relative;
+}
+
+
