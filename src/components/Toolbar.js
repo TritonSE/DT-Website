@@ -19,6 +19,7 @@ class Toolbar extends Component {
 		const supportPage = "/support";
     const contactPage = "../pages/contact";
     const homePage = "../pages/home"
+    const subscribeLink = "";
   return(
     <div>
       <Navbar bg = "custom" expand="lg">
@@ -70,6 +71,17 @@ class Toolbar extends Component {
             {/** Contact part of Navbar */}
             <Nav.Link href="/Contact">
             <h4 className = "Contact-Header">Contact</h4>
+             {/** Links contact in navbar to contact page */}
+            <Link className="App-link" 
+					onClick={this.handleAboutRedirect(contactPage)}
+          		rel="noopener noreferrer"
+        		>
+        		</Link>
+            </Nav.Link>
+
+            {/** Subscribe part of Navbar */}
+            <Nav.Link href="/Contact">
+            <h4 className = "Contact-Header">Subscribe</h4>
              {/** Links contact in navbar to contact page */}
             <Link className="App-link" 
 					onClick={this.handleAboutRedirect(contactPage)}
