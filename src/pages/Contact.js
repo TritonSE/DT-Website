@@ -10,13 +10,13 @@ class Contact extends Component {
 				Contact
 			</div>
 			<div className = "number"> 
-			<a href = "mailto:dynamicsperformanceteam@gmail.com" target="blank" >Email</a>
+			<a className = "hoverBlack" href = "mailto:dynamicsperformanceteam@gmail.com" target="blank" >Email</a>
 			<br></br>
-			<a href = "https://www.facebook.com/DynamicsPerformanceTeam/" target = "blank">  Facebook </a>
+			<a className = "hoverBlack" href = "https://www.facebook.com/DynamicsPerformanceTeam/" target = "blank">  Facebook </a>
 			<br></br>
-			<a href = "https://www.instagram.com/dynamicsperformanceteam/?hl=en" target = "blank"> Instagram </a>
+			<a className = "hoverBlack" href = "https://www.instagram.com/dynamicsperformanceteam/?hl=en" target = "blank"> Instagram </a>
 			<br></br>
-			<a href = "https://www.yelp.com/biz/dynamics-performance-team-san-jose" target = "blank"> Yelp </a>
+			<a className = "hoverBlack" href = "https://www.yelp.com/biz/dynamics-performance-team-san-jose" target = "blank"> Yelp </a>
 			</div>
 			<div className = "reach">
 				Reach Out
