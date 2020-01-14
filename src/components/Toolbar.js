@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Navbar,Nav} from 'react-bootstrap';
-import BlinkingText from './BlinkingText.js'
+import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { Link } from 'react-router-dom';
 import '../css/Toolbar.css'
@@ -24,8 +24,7 @@ class Toolbar extends Component {
       <Navbar bg = "custom" expand="lg">
       <Navbar.Brand href="/Home">
         {/** Image/Text for dynamics team*/}
-        <BlinkingText/>
-
+        <LogoText/>
         {/** Links images and text to home */}
         <Link className="App-link" 
 					    onClick={this.handleAboutRedirect(homePage)}
