@@ -7,6 +7,10 @@ import { Link } from 'react-router-dom';
 import '../css/Toolbar.css'
 
 var pageArray = [true, false, false, false];
+var homeClass = "activeHome";
+var aboutClass = "activeAbout";
+var supportClass = "activeSupport";
+var contactClass = "activeContact";
 
 class Toolbar extends Component {
 
@@ -41,6 +45,7 @@ class Toolbar extends Component {
 		const supportPage = "/support";
     const contactPage = "../pages/contact";
     const homePage = "../pages/home"
+
   return(
     <div>
       <Navbar bg = "custom" expand="lg">
@@ -61,7 +66,7 @@ class Toolbar extends Component {
 
             {/** Home part of Navbar */}
             <Nav.Link href="/Home">
-              < h1 className="Home-Header">Home</h1>
+              < h1 className= {stuff} >Home</h1>
               {/** Links home in navbar to home */}
               <Link className="App-link" 
 					    onClick={this.handleAboutRedirect(homePage)}
