@@ -6,13 +6,35 @@ import SocialFollow from './SocialFollow';
 import { Link } from 'react-router-dom';
 import '../css/Toolbar.css'
 
+var pageArray = [true, false, false, false];
+
 class Toolbar extends Component {
 
+  
   //function to handle page redirects using React router (see App.js)
   handleAboutRedirect = page => e => {
+    if(page === "../pages/home")
+      this.changeArray(0);
+    if(page === "/about")
+      this.changeArray(1);
+    if(page === "/support")
+      this.changeArray(2);
+    if(page === "../pages/contact")
+      this.changeArray(3);
 		e.preventDefault();
 		this.props.history.push("" + page);	// redirects to specified page
-	}
+  }
+  
+  changeArray(indexChanged){
+    for(var x = 0; x< pageArray.length; x++)
+    {
+        if(indexChanged === x)
+          pageArray[x] = true;
+        else
+          pageArray[x] = false;
+
+    }
+  }
 
   render() {
     const aboutPage = "/about";
@@ -43,7 +65,7 @@ class Toolbar extends Component {
               {/** Links home in navbar to home */}
               <Link className="App-link" 
 					    onClick={this.handleAboutRedirect(homePage)}
-          		  rel="noopener noreferrer"
+                rel="noopener noreferrer"
         		  > </Link>
               </Nav.Link>
 
