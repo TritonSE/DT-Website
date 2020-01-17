@@ -122,23 +122,26 @@ class Toolbar extends Component {
           <Nav className="ml-auto">
 
             {/** Home part of Navbar */}
-            <Nav.Link href="/Home">
+            <Nav.Link href="/Home" onClick = {(this.changeArray(homePage))}>
               < h1 className= {homeClass} >Home</h1>
-              {/** Links home in navbar to home */}
+              
+              {/** Links home in navbar to home */
+              /** 
               <Link className="App-link" 
 					    onClick={this.changeArray(homePage)}
                 rel="noopener noreferrer"
         		  > </Link>
+              */}
+              
               </Nav.Link>
 
             {/** About part of Navbar */}
-            <Nav.Link href="/About">
+            <Nav.Link href="/About" onClick = {this.changeArray(aboutPage)}>
               <h2 className = {aboutClass}> About </h2>
-              {/** Links about in navbar to about page */}
+              {/** Links about in navbar to about page 
               <Link className="App-link" 
 					    onClick={this.changeArray(aboutPage)}
-          		  rel="noopener noreferrer"
-        		  > </Link>	
+              rel="noopener noreferrer" */}
               </Nav.Link>
 
             {/** Support part of Navbar */}
@@ -148,7 +151,7 @@ class Toolbar extends Component {
             </Nav.Link>
 
             {/** Contact part of Navbar */}
-            <Nav.Link href="/Contact">
+            <Nav.Link href="/Contact" onClick = {this.changeArray(contactPage)}s>
             <h4 className = {contactClass}>Contact</h4>
              {/** Links contact in navbar to contact page */}
             </Nav.Link>
