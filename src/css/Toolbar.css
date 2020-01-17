@@ -7,7 +7,6 @@ flex-wrap: nowrap;
 justify-content: flex-start;
 }
 
-
 .Home-Header{
   color: black;
   font-size: 18px;
@@ -45,22 +44,25 @@ justify-content: flex-start;
   margin-right: 50px;
   margin-bottom: 40px;
 }
-
+.Home-Header:active{
+  color: yellow !important; 
+  transition: 0.5s !important;
+}
 .Home-Header:hover{
-  color: #FF4081;
-  transition: 0.5s;
+  color: #FF4081 !important; 
+  transition: 0.5s !important;
 }
 .About-Header:hover{
-  color: #FF4081;
-  transition: 0.5s;
+  color: #FF4081 !important;
+  transition: 0.5s !important;
 }
 .Support-Header:hover{
-  color: #FF4081;
-  transition: 0.5s;
+  color: #FF4081 !important;
+  transition: 0.5s !important;
 }
 .Contact-Header:hover{
-  color: #FF4081;
-  transition: 0.5s;
+  color: #FF4081 !important;
+  transition: 0.5s !important;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -102,12 +104,4 @@ justify-content: flex-start;
     margin-bottom: 20px;
   }
 
-  .activeContact{
-    color: #FF4081;
-    font-size: 14.4px;
-    font-weight: bold;
-    margin-right: 0px;
-    margin-top: 24px;
-    margin-bottom: 55px;
-  }
 }

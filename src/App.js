@@ -11,11 +11,11 @@ class App extends Component {
 	render() {
   		return (
     		<div>
-				<Route path="/" exact render={(props) => <Home {...props}/>}/>
-				<Route path="/home" exact render={(props) => <Home {...props}/>}/>
-				<Route path="/about" exact render={(props) => <About {...props}/>}/>
-				<Route path="/support" exact render={(props) => <Support {...props}/>}/>
-				<Route path="/contact" exact render={(props) => <Contact {...props}/>}/>
+				<Route path="/" class = "active" exact render={(props) => <Home {...props}/>}/>
+				<Route path="/home" class = "active" exact render={(props) => <Home {...props}/>}/>
+				<Route path="/about" class = "active" exact render={(props) => <About {...props}/>}/>
+				<Route path="/support" class = "active" exact render={(props) => <Support {...props}/>}/>
+				<Route path="/contact"  class = "active" exact render={(props) => <Contact {...props}/>}/>
    	 	</div>
   		);
   }

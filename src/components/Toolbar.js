@@ -24,8 +24,7 @@ class Toolbar extends Component {
 
   //function to handle page redirects using React router (see App.js)
   handleAboutRedirect = page => event => {
-    debugger;
-    this.changeArray(page);
+
 		event.preventDefault();
     this.props.history.push("" + page);	// redirects to specified page
   }
@@ -66,7 +65,7 @@ class Toolbar extends Component {
       console.log(y + " " + pageArray[y]);
     }
 
-    //this.handleAboutRedirect(page)
+    this.handleAboutRedirect(page)
 
     //this.changeClass()
   }
@@ -112,60 +111,52 @@ class Toolbar extends Component {
   return(
     <div>
       <Navbar bg = "custom" expand="lg">
-      <Navbar.Brand href="/Home">
+      <Navbar.Brand href="/Home" onClick = {this.changeArray(homePage)}>
         {/** Image/Text for dynamics team*/}
         <LogoText/>
-
-        {/** Links images and text to home */}
-        <Link className="App-link" 
-					    onClick={this.handleAboutRedirect(homePage)}
-          		  rel="noopener noreferrer"
-        > </Link>
-
       </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
 
             {/** Home part of Navbar */}
-            <Nav.Link href="/Home"  className = "Home-Header">
-              < h1 className= {homeClass} >Home</h1>
-              {/** Links home in navbar to home */}
-              <Link className="App-link" 
-					    onClick={this.handleAboutRedirect(homePage)}
-                rel="noopener noreferrer"
-        		  > </Link>
+            <Nav.Link  to="../pages/home" href = "/Home" className= "Home-Header" onClick = {this.changeArray(homePage)}
+             style={{
+              fontWeight: "bold",
+              color: "black",
+            }} activeStyle={{
+              color: "red",
+            }}
+            > 
+                  Home
               </Nav.Link>
 
             {/** About part of Navbar */}
-            <Nav.Link href="/About">
-              <h2 className = {aboutClass}> About </h2>
-              {/** Links about in navbar to about page */}
-              <Link className="App-link" 
-					    onClick={this.handleAboutRedirect(aboutPage)}
-          		  rel="noopener noreferrer"
-        		  > </Link>	
+            <Nav.Link href="/About" className = "About-Header" onClick = {this.changeArray(aboutPage)}
+            style={{
+              fontWeight: "bold",
+              color: "black"
+            }}> 
+                About 	
               </Nav.Link>
 
             {/** Support part of Navbar */}
-            <Nav.Link href="/Support">
-              <h3 className = {supportClass}>Support</h3>
-               {/** Links support in navbar to support page */}
-              <Link className="App-link" 
-					    onClick={this.handleAboutRedirect(supportPage)}
-          		rel="noopener noreferrer"
-        		> </Link>
+            <Nav.Link href="/Support" className = "Support-Header" onClick = {this.changeArray(supportPage)}
+            style={{
+              fontWeight: "bold",
+              color: "black"
+            }}>
+                Support
             </Nav.Link>
 
             {/** Contact part of Navbar */}
-            <Nav.Link href="/Contact">
-            <h4 className = {contactClass}>Contact</h4>
-             {/** Links contact in navbar to contact page */}
-            <Link className="App-link" 
-					onClick={this.handleAboutRedirect(contactPage)}
-          		rel="noopener noreferrer"
-        		>
-        		</Link>
+            <Nav.Link href="/Contact" className = "Contact-Header" onClick = {this.changeArray(contactPage)}
+            style={{
+              fontWeight: "bold",
+              color: "black"
+            }}>
+            >
+                Contact
             </Nav.Link>
 
           </Nav>
