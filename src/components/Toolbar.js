@@ -13,17 +13,19 @@ var supportClass = "activeSupport";
 var contactClass = "activeContact";
 
 class Toolbar extends Component {
-/**
+
   constructor(){
     super()
     this.handleAboutRedirect = this.handleAboutRedirect.bind(this);
     this.changeArray = this.changeArray.bind(this);
     this.changeClass = this.changeArray.bind(this);
   }
-   */
+   
 
   //function to handle page redirects using React router (see App.js)
   handleAboutRedirect = page => event => {
+    debugger;
+    this.changeArray(page);
 		event.preventDefault();
     this.props.history.push("" + page);	// redirects to specified page
   }
@@ -60,10 +62,11 @@ class Toolbar extends Component {
     }
 
     console.log(page);
-    for(var y = 0; y< pageArray.length; y++)
+    for(var y = 0; y< pageArray.length; y++){
       console.log(y + " " + pageArray[y]);
+    }
 
-      this.handleAboutRedirect(page)
+    //this.handleAboutRedirect(page)
 
     //this.changeClass()
   }
@@ -115,7 +118,7 @@ class Toolbar extends Component {
 
         {/** Links images and text to home */}
         <Link className="App-link" 
-					    onClick={this.changeArray(homePage)}
+					    onClick={this.handleAboutRedirect(homePage)}
           		  rel="noopener noreferrer"
         > </Link>
 
@@ -125,11 +128,11 @@ class Toolbar extends Component {
           <Nav className="ml-auto">
 
             {/** Home part of Navbar */}
-            <Nav.Link href="/Home">
+            <Nav.Link href="/Home"  className = "Home-Header">
               < h1 className= {homeClass} >Home</h1>
               {/** Links home in navbar to home */}
               <Link className="App-link" 
-					    onClick={this.changeArray(homePage)}
+					    onClick={this.handleAboutRedirect(homePage)}
                 rel="noopener noreferrer"
         		  > </Link>
               </Nav.Link>
@@ -139,7 +142,7 @@ class Toolbar extends Component {
               <h2 className = {aboutClass}> About </h2>
               {/** Links about in navbar to about page */}
               <Link className="App-link" 
-					    onClick={this.changeArray(aboutPage)}
+					    onClick={this.handleAboutRedirect(aboutPage)}
           		  rel="noopener noreferrer"
         		  > </Link>	
               </Nav.Link>
@@ -149,7 +152,7 @@ class Toolbar extends Component {
               <h3 className = {supportClass}>Support</h3>
                {/** Links support in navbar to support page */}
               <Link className="App-link" 
-					    onClick={this.changeArray(supportPage)}
+					    onClick={this.handleAboutRedirect(supportPage)}
           		rel="noopener noreferrer"
         		> </Link>
             </Nav.Link>
@@ -159,7 +162,7 @@ class Toolbar extends Component {
             <h4 className = {contactClass}>Contact</h4>
              {/** Links contact in navbar to contact page */}
             <Link className="App-link" 
-					onClick={this.changeArray(contactPage)}
+					onClick={this.handleAboutRedirect(contactPage)}
           		rel="noopener noreferrer"
         		>
         		</Link>
