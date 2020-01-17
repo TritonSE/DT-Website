@@ -153,14 +153,13 @@ class Toolbar extends Component {
             </NavLink>
 
             {/** Contact part of Navbar */}
-            <NavLink to = "contact" href="/Contact" className = "Contact-Header" onClick = {this.changeArray(contactPage)}
+            <NavLink to = "/contact" href="/Contact" className = "Contact-Header" onClick = {this.changeArray(contactPage)}
             style={{
               fontWeight: "bold",
               color: "black",
             }}activeStyle={{
               color: "#FF4081"
             }}>
-            >
                 Contact
             </NavLink>
 
