@@ -3,7 +3,7 @@ import {Navbar,Nav} from 'react-bootstrap';
 import BlinkingText from './BlinkingText.js'
 import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import '../css/Toolbar.css'
 
 class Toolbar extends Component {
