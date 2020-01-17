@@ -14,8 +14,12 @@ justify-content: flex-start;
   margin-right: 0px;
   margin-top: 30px;
   margin-bottom: 40px;
+  text-decoration: none !important; 
 }
 
+.active{
+  color: green;
+}
   
 .About-Header{
   color: black;
@@ -44,8 +48,8 @@ justify-content: flex-start;
   margin-right: 50px;
   margin-bottom: 40px;
 }
-.Home-Header:active{
-  color: yellow !important; 
+.Home-Header:hover{
+  color: #FF4081 !important; 
   transition: 0.5s !important;
 }
 .Home-Header:hover{
@@ -103,5 +107,6 @@ justify-content: flex-start;
     margin-right: 30px;
     margin-bottom: 20px;
   }
+  
 
 }

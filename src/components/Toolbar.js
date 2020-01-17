@@ -3,7 +3,7 @@ import {Navbar,Nav} from 'react-bootstrap';
 import BlinkingText from './BlinkingText.js'
 import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import '../css/Toolbar.css'
 
 var pageArray = [true, false, false, false];
@@ -120,44 +120,49 @@ class Toolbar extends Component {
           <Nav className="ml-auto">
 
             {/** Home part of Navbar */}
-            <Nav.Link  to="../pages/home" href = "/Home" className= "Home-Header" onClick = {this.changeArray(homePage)}
+            <NavLink  to="/" href = "/Home" exact activeClassName = "active" className= "Home-Header" onClick = {this.changeArray(homePage)}
              style={{
               fontWeight: "bold",
               color: "black",
             }} activeStyle={{
-              color: "red",
-            }}
-            > 
+              color: "#FF4081"
+            }}> 
                   Home
-              </Nav.Link>
+              </NavLink>
 
             {/** About part of Navbar */}
-            <Nav.Link href="/About" className = "About-Header" onClick = {this.changeArray(aboutPage)}
+            <NavLink to= "/about" href="/About" className = "About-Header" onClick = {this.changeArray(aboutPage)}
             style={{
               fontWeight: "bold",
               color: "black"
-            }}> 
+            }}activeStyle={{
+              color: "#FF4081"
+            }} > 
                 About 	
-              </Nav.Link>
+              </NavLink>
 
             {/** Support part of Navbar */}
-            <Nav.Link href="/Support" className = "Support-Header" onClick = {this.changeArray(supportPage)}
+            <NavLink to = "/support" href="/Support" className = "Support-Header" onClick = {this.changeArray(supportPage)}
             style={{
               fontWeight: "bold",
               color: "black"
+            }}activeStyle={{
+              color: "#FF4081"
             }}>
                 Support
-            </Nav.Link>
+            </NavLink>
 
             {/** Contact part of Navbar */}
-            <Nav.Link href="/Contact" className = "Contact-Header" onClick = {this.changeArray(contactPage)}
+            <NavLink to = "contact" href="/Contact" className = "Contact-Header" onClick = {this.changeArray(contactPage)}
             style={{
               fontWeight: "bold",
-              color: "black"
+              color: "black",
+            }}activeStyle={{
+              color: "#FF4081"
             }}>
             >
                 Contact
-            </Nav.Link>
+            </NavLink>
 
           </Nav>
         </Navbar.Collapse>
