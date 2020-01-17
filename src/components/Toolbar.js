@@ -14,32 +14,55 @@ var contactClass = "activeContact";
 
 class Toolbar extends Component {
 
-  
-  //function to handle page redirects using React router (see App.js)
-  handleAboutRedirect = page => e => {
-    console.log("Stuff");
-    if(page === "../pages/home")
-      this.changeArray(0);
-    if(page === "/about")
-      this.changeArray(1);
-    if(page === "/support")
-      this.changeArray(2);
-    if(page === "../pages/contact")
-      this.changeArray(3);
-		e.preventDefault();
-		this.props.history.push("" + page);	// redirects to specified page
+  constructor(){
+    super()
+    this.handleAboutRedirect = this.handleAboutRedirect.bind(this);
+    this.changeArray = this.changeArray.bind(this);
+    this.changeClass = this.changeArray.bind(this);
   }
   
-  changeArray(indexChanged){
-    for(var x = 0; x< pageArray.length; x++)
+  //function to handle page redirects using React router (see App.js)
+  handleAboutRedirect = page => event => {
+		event.preventDefault();
+    this.props.history.push("" + page);	// redirects to specified page
+    
+  }
+  
+  changeArray(page){
+    if(page == "../pages/home")
     {
-        if(indexChanged === x)
-          pageArray[x] = true;
-        else
-          pageArray[x] = false;
+      pageArray[0] = true;
+      pageArray[1] = false;
+      pageArray[2] = false;
+      pageArray[3] = false;
     }
+    if(page == "/about")
+    {
+      pageArray[1] = true;
+      pageArray[0] = false
+      pageArray[2] = false
+      pageArray[3] = false
+    }
+    if(page == "/support")
+    {
+      pageArray[2] = true;
+      pageArray[0] = false
+      pageArray[1] = false
+      pageArray[3] = false
+    }
+    if(page == "../pages/contact")
+    {
+      pageArray[0] = false
+      pageArray[1] = false
+      pageArray[2] = false
+      pageArray[3] = true;
+    }
+    for(var y = 0; y< pageArray.length; y++)
+      console.log(y + " " + pageArray[y]);
 
-    this.changeClass()
+      this.handleAboutRedirect(page)
+
+    //this.changeClass()
   }
 
   changeClass(){
@@ -103,7 +126,7 @@ class Toolbar extends Component {
               < h1 className= {homeClass} >Home</h1>
               {/** Links home in navbar to home */}
               <Link className="App-link" 
-					    onClick= "changeArray(1)"
+					    onClick={this.changeArray(homePage)}
                 rel="noopener noreferrer"
         		  > </Link>
               </Nav.Link>
@@ -113,30 +136,21 @@ class Toolbar extends Component {
               <h2 className = {aboutClass}> About </h2>
               {/** Links about in navbar to about page */}
               <Link className="App-link" 
-					    onClick={this.handleAboutRedirect(aboutPage)}
+					    onClick={this.changeArray(aboutPage)}
           		  rel="noopener noreferrer"
         		  > </Link>	
               </Nav.Link>
 
             {/** Support part of Navbar */}
-            <Nav.Link href="/Support">
+            <Nav.Link href="/Support" onClick={this.changeArray(supportPage)}>
               <h3 className = {supportClass}>Support</h3>
-               {/** Links support in navbar to support page */}
-              <Link className="App-link" 
-					    onClick={this.handleAboutRedirect(supportPage)}
-          		rel="noopener noreferrer"
-        		> </Link>
+               {/** Links support in navbar to support page */} 
             </Nav.Link>
 
             {/** Contact part of Navbar */}
             <Nav.Link href="/Contact">
             <h4 className = {contactClass}>Contact</h4>
              {/** Links contact in navbar to contact page */}
-            <Link className="App-link" 
-					onClick={this.handleAboutRedirect(contactPage)}
-          		rel="noopener noreferrer"
-        		>
-        		</Link>
             </Nav.Link>
 
           </Nav>
