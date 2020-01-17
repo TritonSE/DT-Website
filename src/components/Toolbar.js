@@ -13,50 +13,53 @@ var supportClass = "activeSupport";
 var contactClass = "activeContact";
 
 class Toolbar extends Component {
-
+/**
   constructor(){
     super()
     this.handleAboutRedirect = this.handleAboutRedirect.bind(this);
     this.changeArray = this.changeArray.bind(this);
     this.changeClass = this.changeArray.bind(this);
   }
-  
+   */
+
   //function to handle page redirects using React router (see App.js)
   handleAboutRedirect = page => event => {
 		event.preventDefault();
     this.props.history.push("" + page);	// redirects to specified page
-    
   }
   
   changeArray(page){
-    if(page == "../pages/home")
+    if(page === "../pages/home")
     {
       pageArray[0] = true;
       pageArray[1] = false;
       pageArray[2] = false;
       pageArray[3] = false;
     }
-    if(page == "/about")
+    if(page === "/about")
     {
       pageArray[1] = true;
-      pageArray[0] = false
-      pageArray[2] = false
-      pageArray[3] = false
+      pageArray[0] = false;
+      pageArray[2] = false;
+      pageArray[3] = false;
     }
-    if(page == "/support")
+    if(page === "/support")
     {
       pageArray[2] = true;
-      pageArray[0] = false
-      pageArray[1] = false
-      pageArray[3] = false
+      pageArray[0] = false;
+      pageArray[1] = false;
+      pageArray[3] = false;
     }
-    if(page == "../pages/contact")
+    if(page === "../pages/contact")
     {
-      pageArray[0] = false
-      pageArray[1] = false
-      pageArray[2] = false
+      pageArray[0] = false;
+      pageArray[1] = false;
+      pageArray[2] = false;
       pageArray[3] = true;
+
     }
+
+    console.log(page);
     for(var y = 0; y< pageArray.length; y++)
       console.log(y + " " + pageArray[y]);
 
@@ -112,7 +115,7 @@ class Toolbar extends Component {
 
         {/** Links images and text to home */}
         <Link className="App-link" 
-					    onClick={this.handleAboutRedirect(homePage)}
+					    onClick={this.changeArray(homePage)}
           		  rel="noopener noreferrer"
         > </Link>
 
@@ -122,38 +125,44 @@ class Toolbar extends Component {
           <Nav className="ml-auto">
 
             {/** Home part of Navbar */}
-            <Nav.Link href="/Home" onClick = {(this.changeArray(homePage))}>
+            <Nav.Link href="/Home">
               < h1 className= {homeClass} >Home</h1>
-              
-              {/** Links home in navbar to home */
-              /** 
+              {/** Links home in navbar to home */}
               <Link className="App-link" 
 					    onClick={this.changeArray(homePage)}
                 rel="noopener noreferrer"
         		  > </Link>
-              */}
-              
               </Nav.Link>
 
             {/** About part of Navbar */}
-            <Nav.Link href="/About" onClick = {this.changeArray(aboutPage)}>
+            <Nav.Link href="/About">
               <h2 className = {aboutClass}> About </h2>
-              {/** Links about in navbar to about page 
+              {/** Links about in navbar to about page */}
               <Link className="App-link" 
 					    onClick={this.changeArray(aboutPage)}
-              rel="noopener noreferrer" */}
+          		  rel="noopener noreferrer"
+        		  > </Link>	
               </Nav.Link>
 
             {/** Support part of Navbar */}
-            <Nav.Link href="/Support" onClick={this.changeArray(supportPage)}>
+            <Nav.Link href="/Support">
               <h3 className = {supportClass}>Support</h3>
-               {/** Links support in navbar to support page */} 
+               {/** Links support in navbar to support page */}
+              <Link className="App-link" 
+					    onClick={this.changeArray(supportPage)}
+          		rel="noopener noreferrer"
+        		> </Link>
             </Nav.Link>
 
             {/** Contact part of Navbar */}
-            <Nav.Link href="/Contact" onClick = {this.changeArray(contactPage)}s>
+            <Nav.Link href="/Contact">
             <h4 className = {contactClass}>Contact</h4>
              {/** Links contact in navbar to contact page */}
+            <Link className="App-link" 
+					onClick={this.changeArray(contactPage)}
+          		rel="noopener noreferrer"
+        		>
+        		</Link>
             </Nav.Link>
 
           </Nav>
