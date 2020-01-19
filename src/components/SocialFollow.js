@@ -15,10 +15,26 @@ class SocialFollow extends Component{
         return(
             <div className="Social">
               <ul>
-                <SocialIcon icon={fbIcon} link={fbLink}/>
-                <SocialIcon icon={igIcon} link={igLink}/>
-                <SocialIcon icon={mailIcon} link={mailLink}/>
-                <li><a>Subscribe</a></li>
+              <li>
+                  <a href={fbLink}>
+                    <img src={require("../images/fbIcon.png")} width="30px" height="30px"></img>
+                  </a>
+              </li>
+              <li>
+                  <a href={igLink}>
+                    <img src={require("../images/igIcon.png")} width="30px" height="30px"></img>
+                  </a>
+                </li>
+                <li>
+                  <a href={mailLink}>
+                    <img src={require("../images/mailIcon.png")} width="22px" height="22px"></img>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    Subscribe
+                  </a>
+                </li>
               </ul>
             </div>
         );
@@ -30,7 +46,7 @@ class SocialIcon extends Component {
     return(
       <li>
         <a href={this.props.link}>
-          <i src={this.props.icon}></i>
+          <img src={require(this.props.icon)}></img>
         </a>
       </li>
     );

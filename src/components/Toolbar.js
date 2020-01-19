@@ -79,17 +79,6 @@ class Toolbar extends Component {
         		</Link>
             </Nav.Link>
 
-            {/** Subscribe part of Navbar */}
-            <Nav.Link href="/Contact">
-            <h4 className = "Contact-Header">Subscribe</h4>
-             {/** Links contact in navbar to contact page */}
-            <Link className="App-link" 
-					onClick={this.handleAboutRedirect(contactPage)}
-          		rel="noopener noreferrer"
-        		>
-        		</Link>
-            </Nav.Link>
-
           </Nav>
         </Navbar.Collapse>
         <Navbar.Brand>
