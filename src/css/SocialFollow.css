@@ -31,6 +31,7 @@
     border-radius: 4px;
     font: Medium 17px/13px Whyte Inktrap;
     color: white;
+    line-height: 120%;
 } 
 
 .Social ul li a:hover{

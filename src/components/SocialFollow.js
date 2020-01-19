@@ -30,30 +30,27 @@ class SocialFollow extends Component{
                   </a>
                 </li>
                 <li>
-                  <a href="#exampleModal" data-toggle="modal">
+                <a href="#myModal" role="button" class="btn" data-toggle="modal">
                     Subscribe
                   </a>
                 </li>
               </ul>
-                    <div class="modal fade" id="Home#exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-                          <div class="modal-body">
-                              Hello this a test.
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
-                        </div>
-                        </div>
-                    </div>
+
+              <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">Modal header</h3>
+                </div>
+                <div class="modal-body">
+                  <form method="post">
+                      <button type="submit">Submit</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                  <button class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
             </div>
         );
     }
