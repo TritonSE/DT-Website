@@ -24,17 +24,19 @@
     text-align: center;
 }
 
-.Social ul li:last-child a {
+.Social ul li:last-child {
     position: relative;
     display: inline-block;
     width: 139px;
     border-radius: 4px;
     font: Medium 17px/13px Whyte Inktrap;
     color: white;
-    line-height: 120%;
+    line-height: 170%;
+    border-color: #333333;
 } 
 
 .Social ul li a:hover{
     color: #FFFFFF;
     background-color: #FF4081;
+    border-color: #FF4081;
 }
