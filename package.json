@@ -1,6 +1,6 @@
 {
   "name": "dynamics-website",
-  "homepage": "https://tritonse.github.io/dynamics-performance",
+  "homepage": "https://tritonse.github.io/dynamics-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
