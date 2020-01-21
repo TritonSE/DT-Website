@@ -4,6 +4,7 @@
     margin-right: 0px;
     display: flex;
 }
+
 .Social ul li {
     list-style: none;
     margin: 0 11px;
@@ -15,23 +16,30 @@
     width: 35px;
     height: 35px;
     border-radius: 10%;
-    color: #FFFFFF;
+    color: #FF4081;
     background-color: #333333;
     transition: 0.5s;
     transform: translate(0,0px);
+    text-decoration: none;
+    text-align: center;
 }
 
 .Social ul li:last-child a{
     position: relative;
     display: inline-block;
-    width: 150px;
-    border-radius: 2%;
+    width: 139px;
+    border-radius: 4px;
+    font: Medium 17px/13px Whyte Inktrap;
+    color: white;
+    line-height: 170%;
+    border-color: #333333;
 } 
 
-.Social ul li a:hover {
+.Social ul li a:hover{
     color: #FFFFFF;
     background-color: #FF4081;
 }
+
 @media only screen and (max-width: 1300px){
     .Social ul {
         padding-left: 8px;
@@ -63,4 +71,5 @@
         width: 120px;
         border-radius: 2%;
     }
+
 }
