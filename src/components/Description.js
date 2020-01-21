@@ -20,6 +20,25 @@ class Description extends Component {
 class InfoItem extends Component {
     render() {
         return(
+            <div>
+            {/* FOR MOBILE */}
+            <div className="mobile">
+                <Row>
+                    <Col>
+                    <h1 className="Role">
+                        <span>{this.props.role}</span>
+                    </h1> 
+                    <h2 className="Name"> {this.props.name}</h2>
+                    </Col>
+                    <Col>
+                    <img className="Image"
+                        src = {this.props.pic}
+                        alt = "Could not load"
+                    />
+                    </Col>
+                </Row>
+            </div>
+            <div className="web">
             <Row>
                <Col> 
                      <img className="Image"
@@ -32,8 +51,10 @@ class InfoItem extends Component {
                         <span>{this.props.role}</span>
                     </h1> 
                     <h2 className="Name"> {this.props.name}</h2>
-                    </Col>
-                </Row>
+                </Col>
+            </Row>
+            </div>
+            </div>
         )
     }
 }

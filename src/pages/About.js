@@ -8,6 +8,23 @@ class About extends Component {
 	render() {
 		return (
 			<div>
+			{/* FOR MOBILE */}
+			<div className="mobile">
+			<Toolbar/>
+			<Container>
+				<Col>
+					<h1 className="Title"> Our Mission </h1>
+					<h2 className="Content1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </h2>
+					<h2 className="Content2"> Aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu. </h2>
+					<h1 className="Title2"> The Lineup </h1>
+					<h2 className="Content4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h2>
+				</Col>
+				<Members/>
+				<br/>
+				<br/>
+			</Container>
+			</div>
+			<div className="web">
 			<Toolbar/>
 			<Container>
 			<div className="div">
@@ -35,6 +52,7 @@ class About extends Component {
 			<br/>
 			<br/>
 			</Container>
+			</div>
 			</div>
 		);
 	}

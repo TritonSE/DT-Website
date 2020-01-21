@@ -39,4 +39,38 @@
     position: relative;
 }
 
+.mobile{
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .Image{
+        margin-left: 0%;
+        margin-top: 20%;
+        width: 77%;
+        height: 85%;
+    }
+    .Name{
+        display: none;
+    }
+    .Role{
+        transform: rotate(-90deg);
+        font-size: 1.5vh;
+        margin-top: 100%;
+        text-align: left;
+        width: 50%;
+        margin-left: 80%;
+    }
+    .Role span {
+        background: linear-gradient(180deg,rgba(255,255,255,0) 40%, #e6ffff 40%);
+    }
+
+    .web{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+}
 
