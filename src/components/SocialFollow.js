@@ -19,22 +19,22 @@ class SocialFollow extends Component{
             <div className="Social">
               <ul>
               <li>
-                  <a href={fbLink}>
+                  <a href={fbLink} target="_blank">
                     <img src={require("../images/fbIcon.png")} width="30px" height="30px"></img>
                   </a>
               </li>
               <li>
-                  <a href={igLink}>
+                  <a href={igLink} target="_blank">
                     <img src={require("../images/igIcon.png")} width="30px" height="30px"></img>
                   </a>
                 </li>
                 <li>
-                  <a href={mailLink}>
+                  <a href={mailLink} target="_blank">
                     <img src={require("../images/mailIcon.png")} width="22px" height="22px"></img>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.mailchimp.com">Subscribe</a>
+                  <a href="https://www.mailchimp.com" target="_blank">Subscribe</a>
                 </li>
               </ul>
             </div>
