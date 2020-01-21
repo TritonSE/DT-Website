@@ -24,7 +24,7 @@
     text-align: center;
 }
 
-.Social ul li:last-child {
+.Social ul li:last-child a{
     position: relative;
     display: inline-block;
     width: 139px;
