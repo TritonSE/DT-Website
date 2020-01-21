@@ -19,6 +19,7 @@ class Toolbar extends Component {
 		const supportPage = "/support";
     const contactPage = "../pages/contact";
     const homePage = "../pages/home"
+    const subscribeLink = "";
   return(
     <div>
       <Navbar bg = "custom" expand="lg">
