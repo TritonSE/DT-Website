@@ -43,10 +43,13 @@ class HomePage extends React.Component {
 		setInterval(this.changeStyle, 1000);
 		return (
 			// can only return one element so if you want more than one make sure they're nested inside a div
+			<div>
+				<toolbar/>
 			<div className="text" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 				<p>A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}> <br/>dynamic</span> <span><br/>dancers.</span></p>
 				<img src={dancer} style={{transform: "rotate(5deg)"}} ref = {this.imageRef}/>
+			</div>
 			</div>
 		);
 	}
