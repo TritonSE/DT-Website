@@ -2,81 +2,84 @@ import React, { Component } from 'react';
 import {Navbar,Nav} from 'react-bootstrap';
 import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
-import { Link } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import '../css/Toolbar.css'
 
 
 class Toolbar extends Component {
-
-  //function to handle page redirects using React router (see App.js)
-  handleAboutRedirect = page => e => {
-		e.preventDefault();
-		this.props.history.push("" + page);	// redirects to specified page
-	}
-
+   
   render() {
-    const aboutPage = "/about";
-		const supportPage = "/support";
-    const contactPage = "../pages/contact";
-    const homePage = "../pages/home"
-    const subscribeLink = "";
   return(
     <div>
       <Navbar bg = "custom" expand="lg">
       <Navbar.Brand href="/Home">
         {/** Image/Text for dynamics team*/}
         <LogoText/>
-        {/** Links images and text to home */}
-        <Link className="App-link" 
-					    onClick={this.handleAboutRedirect(homePage)}
-          		  rel="noopener noreferrer"
-        > </Link>
-
       </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
 
             {/** Home part of Navbar */}
-            <Nav.Link href="/Home">
-              < h1 className="Home-Header">Home</h1>
-              {/** Links home in navbar to home */}
-              <Link className="App-link" 
-					    onClick={this.handleAboutRedirect(homePage)}
-          		  rel="noopener noreferrer"
-        		  > </Link>
-              </Nav.Link>
+            <NavLink  
+              to="/" 
+              href = "/Home" 
+              exact activeClassName = "active" 
+              className= "Home-Header" 
+              style={{
+                fontWeight: "bold",
+                color: "black",
+              }} 
+              activeStyle={{
+                color: "#FF4081"
+              }}> 
+                Home
+            </NavLink>
 
             {/** About part of Navbar */}
-            <Nav.Link href="/About">
-              <h2 className = "About-Header"> About </h2>
-              {/** Links about in navbar to about page */}
-              <Link className="App-link" 
-					    onClick={this.handleAboutRedirect(aboutPage)}
-          		  rel="noopener noreferrer"
-        		  > </Link>	
-              </Nav.Link>
+            <NavLink 
+              to= "/about"
+              href="/About" 
+              className = "About-Header" 
+              style={{
+                fontWeight: "bold",
+                color: "black"
+              }}
+              activeStyle={{
+                color: "#FF4081"
+              }} > 
+                About 	
+            </NavLink>
 
             {/** Support part of Navbar */}
-            <Nav.Link href="/Support">
-              <h3 className = "Support-Header">Support</h3>
-               {/** Links support in navbar to support page */}
-              <Link className="App-link" 
-					    onClick={this.handleAboutRedirect(supportPage)}
-          		rel="noopener noreferrer"
-        		> </Link>
-            </Nav.Link>
+            <NavLink 
+              to = "/support" 
+              href="/Support" 
+              className = "Support-Header" 
+              style={{
+                fontWeight: "bold",
+                color: "black"
+              }}
+              activeStyle={{
+                color: "#FF4081"
+              }}>
+                Support
+            </NavLink>
 
             {/** Contact part of Navbar */}
-            <Nav.Link href="/Contact">
-            <h4 className = "Contact-Header">Contact</h4>
-             {/** Links contact in navbar to contact page */}
-            <Link className="App-link" 
-					onClick={this.handleAboutRedirect(contactPage)}
-          		rel="noopener noreferrer"
-        		>
-        		</Link>
-            </Nav.Link>
+            <NavLink 
+              to = "/contact" 
+              href="/Contact" 
+              className = "Contact-Header" 
+              style={{
+                fontWeight: "bold",
+                color: "black",
+              }}
+              activeStyle={{
+                color: "#FF4081"
+              }}>
+                Contact
+            </NavLink>
 
           </Nav>
         </Navbar.Collapse>
