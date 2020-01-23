@@ -53,7 +53,7 @@ class SupportStates extends Component {
   handleUpdateAmount = (event) =>{
     this.setState({amount: event.target.value});
     var validator = require('validator');
-    //set error if amount is either invalid or < 0
+    //set error if amount is either invalid or <= 0
 		if(!(validator.isCurrency(event.target.value, {allow_negatives: false, digits_after_decimal: [1,2]}) && parseFloat(event.target.value) > 0)){
 				if(!this.state.displayError){
 					this.setState({displayError: true});
