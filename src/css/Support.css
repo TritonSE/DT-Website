@@ -1,33 +1,166 @@
-.Support-Text{
-    color: black;
-    opacity: 1;
-    font-size: 2.5vh;
-    font-family: 'Lato', serif;
-    letter-spacing: 0;
-    -webkit-transform: translate(-50%, -40%);
-    transform: translate(-50%,-40%);
-    white-space: pre-line;
-    width: 55%;
-  }
-.Header-Text{
-    text-align: left;
-    font-family: 'Lato', serif;
-    font-size: 13.5vh;
-    letter-spacing: 0;
-    color: #FF4081;
-    opacity: 1;
-    -webkit-transform: translate(-50%, -40%);
-    transform: translate(-50%,-40%);
-    line-height: 15vh; 
-    width: 40%;
-    position: absolute;
-    left: 55%;
 
+.Support-Text{
+  color: black;
+  opacity: 1;
+  font-size: 2.5vh;
+  font-family: 'Lato', serif;
+  letter-spacing: 0;
+  -webkit-transform: translate(-50%, -40%);
+  transform: translate(-50%,-40%);
+  white-space: pre-line;
+  width: 55%;
+}
+.Header-Text{
+  text-align: left;
+  font-family: 'Lato', serif;
+  font-size: 13.5vh;
+  letter-spacing: 0;
+  color: #FF4081;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -40%);
+  transform: translate(-50%,-40%);
+  line-height: 15vh; 
+  width: 40%;
+  /* position: absolute; */
+  /* left: 55%; */
 }
 .Alignment-Text{
   flex-direction: row;
   display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.Try{
   position: absolute;
-  top: 55%;
-  left:35%;
+  top: 50%;
+  left:33%;
+}
+.Donate-Button{
+ /* position: absolute;
+ bottom: 5%;
+ right: 45%; */
+ /* min-width: 7%;
+ min-height: 7%; */
+ /* margin-left: 20%; */
+ font-size: 2.5vh;
+ background-color: #FF4081;
+ text-align: center;
+ left:25%;
+ position: relative;
+ /* margin-left: 20%;
+ margin-bottom: 1%; */
+}
+
+.Amount-Text{
+  height: 7%;
+  max-width: 15%; 
+  bottom: 5%;
+  text-align: center;
+  font-size: 2.5vh;
+  text-anchor: middle;
+}
+.Proceed-Button{
+ font-size: 2.5vh;
+ background-color: #FF4081;
+ text-align: center;
+ margin-left: 1%;
+}
+
+.PayPal-Style{
+  width: 30%;
+  margin-left: -27%;
+}
+
+.Adjust-Style{
+  margin-left: 45%;
+  margin-top: -5%;
+}
+
+
+/* @media only screen and (max-height: 300px)
+ {
+  .Donate-Button{
+    bottom: -30%;
+   }
+ } */
+
+@media only screen and (max-width: 600px)
+ {
+  .Support-Text{
+    color: black;
+    opacity: 1;
+    font-size: 2vh;
+    font-family: 'Lato', serif;
+    letter-spacing: 0;
+    white-space: pre-line;
+    width: 60%;
+
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%,0%);
+  }
+  .Header-Text{
+    text-align: left;
+    font-family: 'Lato', serif;
+    font-size: 6vh;
+    letter-spacing: 0;
+    color: #FF4081;
+    opacity: 1;
+    line-height: 5vh; 
+    width: 60%;
+
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%,0%);
+    position: relative;
+    left: 0%;
+  }
+  .Alignment-Text{
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    top:0%;
+    left: 0%;
+    align-items: center;
+  }
+
+  .Donate-Button{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 2vh;
+    background-color: #FF4081;
+    text-align: center;
+    max-width: 30%;
+    max-height: 10%;
+    left:0%;
+
+    /* bottom: 0%;
+    right: 0%;
+    min-width: 0%;
+    min-height: 0%; */
+   }
+   .Amount-Text{
+    margin-top: 7%;
+    margin-left: 2%;
+    font-size: 2.2vh;
+    max-width: 21%; 
+  }
+
+  .Proceed-Button{
+   font-size: 2vh;
+  }
+
+  .PayPal-Style{
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 20%;
+  }
+
+  .Adjust-Style{
+    margin-left: 12%;
+    margin-top: 0%;
+  }
+ }
+.Donate-Button:hover{
+  background-color: rgb(248, 135, 201);
+  transition: 0.5s;
 }
