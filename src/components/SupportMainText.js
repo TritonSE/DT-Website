@@ -53,6 +53,8 @@ class SupportMainText extends Component {
 						</text>
 					</Row>
 					<SupportStates/>
+					<br/>
+					<br/>
 				</div>
 			);
 		}
@@ -66,7 +68,12 @@ class SupportMainText extends Component {
 					<text className="Support-Text">
 					{text}
 					</text>
-					<SupportStates/>
+					<div style={{leftMargin: "5px"}}>
+						<SupportStates/>
+					</div>
+					
+					<br/>
+					<br/>
 				</div>
 		);
 
@@ -87,6 +94,8 @@ class SupportMainText extends Component {
 					>
 						Donate 
 					</button>
+					<br/>
+					<br/>
 				</div>
 		);
 
@@ -109,6 +118,8 @@ class SupportMainText extends Component {
 					>
 						Donate 
 					</button>
+					<br/>
+					<br/>
 				</div>
 			);
 		}
