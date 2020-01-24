@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c1aa8372010b9df9ac345bd5d1574778",
+    "revision": "ce85886ad40bf33a385df7a4e75fba66",
     "url": "/dynamics-website/index.html"
   },
   {
-    "revision": "af1e56d2d65ec9a7de02",
+    "revision": "fc388fd04bc618411a73",
     "url": "/dynamics-website/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "a76e112b551801b453dc",
-    "url": "/dynamics-website/static/css/main.14a22d78.chunk.css"
+    "revision": "331f42cfe912457309a8",
+    "url": "/dynamics-website/static/css/main.90afe05c.chunk.css"
   },
   {
-    "revision": "af1e56d2d65ec9a7de02",
-    "url": "/dynamics-website/static/js/2.f36fa463.chunk.js"
+    "revision": "fc388fd04bc618411a73",
+    "url": "/dynamics-website/static/js/2.c4faccbe.chunk.js"
   },
   {
-    "revision": "a76e112b551801b453dc",
-    "url": "/dynamics-website/static/js/main.17e5efc2.chunk.js"
+    "revision": "331f42cfe912457309a8",
+    "url": "/dynamics-website/static/js/main.45dd4ce9.chunk.js"
   },
   {
     "revision": "144a39a500ca3f32b690",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9fec259f4c4d5cf845e97370a3e8fc15",
     "url": "/dynamics-website/static/media/dancer.9fec259f.jpg"
+  },
+  {
+    "revision": "ddd9ee414e8bf1ca35fefc90c6134927",
+    "url": "/dynamics-website/static/media/igIcon.ddd9ee41.png"
   },
   {
     "revision": "e8fae51aa300c89408e2a2aa33b1d878",
