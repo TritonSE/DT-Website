@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dynamics-website/static/css/main.3e4e629c.chunk.css",
+    "main.css": "/dynamics-website/static/css/main.0513cb36.chunk.css",
     "main.js": "/dynamics-website/static/js/main.1c04a90c.chunk.js",
     "main.js.map": "/dynamics-website/static/js/main.1c04a90c.chunk.js.map",
     "runtime-main.js": "/dynamics-website/static/js/runtime-main.c507a37b.js",
@@ -9,10 +9,10 @@
     "static/js/2.0d5ae762.chunk.js": "/dynamics-website/static/js/2.0d5ae762.chunk.js",
     "static/js/2.0d5ae762.chunk.js.map": "/dynamics-website/static/js/2.0d5ae762.chunk.js.map",
     "index.html": "/dynamics-website/index.html",
-    "precache-manifest.fec8f91db340f65362f28fe406dffb8d.js": "/dynamics-website/precache-manifest.fec8f91db340f65362f28fe406dffb8d.js",
+    "precache-manifest.76a470bc1f7763e149a9e04f81be5b12.js": "/dynamics-website/precache-manifest.76a470bc1f7763e149a9e04f81be5b12.js",
     "service-worker.js": "/dynamics-website/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/dynamics-website/static/css/2.b0bb7f2c.chunk.css.map",
-    "static/css/main.3e4e629c.chunk.css.map": "/dynamics-website/static/css/main.3e4e629c.chunk.css.map",
+    "static/css/main.0513cb36.chunk.css.map": "/dynamics-website/static/css/main.0513cb36.chunk.css.map",
     "static/media/dancer.jpg": "/dynamics-website/static/media/dancer.9fec259f.jpg",
     "static/media/igIcon.png": "/dynamics-website/static/media/igIcon.ddd9ee41.png",
     "static/media/logo1.png": "/dynamics-website/static/media/logo1.e8fae51a.png",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.c507a37b.js",
     "static/css/2.b0bb7f2c.chunk.css",
     "static/js/2.0d5ae762.chunk.js",
-    "static/css/main.3e4e629c.chunk.css",
+    "static/css/main.0513cb36.chunk.css",
     "static/js/main.1c04a90c.chunk.js"
   ]
 }
