@@ -4,7 +4,7 @@ import dancer from '../images/HomeDancer.jpg';
 import '../css/DynamicStyle.css';
 import Toolbar from '../components/Toolbar.js';
 // must extend "Component" and it's recommended to name the class the same name as the filename
-class HomePage extends React.Component {
+class Home extends React.Component {
 	// area where functions are defined (See FormExample.js)
 	constructor(props){
 		super(props);
@@ -12,10 +12,16 @@ class HomePage extends React.Component {
 		this.imageRef = React.createRef();
 		this.changeStyle = this.changeStyle.bind(this);
 	}
+	
+	componentWillUnmount() {
+		clearInterval(window.textTimer);
+	}
+
 	changeStyle(){
 		const x = this.myRef.current;
 		const y = this.imageRef.current;
 		var count = 0;
+
 		if(x.style.fontStyle=='italic'){
 			x.style.fontWeight= 'bold';
 			x.style.fontStyle='normal';
@@ -41,7 +47,7 @@ class HomePage extends React.Component {
 	// render function takes care of displaying component
 	render() {
 		// component will render JSX (react's version of html) inside return statement
-		setInterval(this.changeStyle, 1000);
+		window.textTimer = setInterval(this.changeStyle, 1000);
 		return (
 			// can only return one element so if you want more than one make sure they're nested inside a div
 			<div>
@@ -56,5 +62,4 @@ class HomePage extends React.Component {
 	}
 }
 
-// always export to allow importing in other files
-export default HomePage;
+export default Home

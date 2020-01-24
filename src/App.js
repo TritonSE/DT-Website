@@ -1,8 +1,7 @@
-
 import React, { Component } from 'react';
 import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Support from './pages/Support';
@@ -20,7 +19,6 @@ class App extends Component {
    	 	</div>
   		);
   }
- 
 }
 
 // need to export App in order to be able to import it in other files
