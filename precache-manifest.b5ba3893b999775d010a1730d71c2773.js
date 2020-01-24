@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "63b43e6ca7eb97c34811736c5317d775",
+    "revision": "34fa33e6c656aa96e892126511614cf1",
     "url": "/dynamics-website/index.html"
   },
   {
-    "revision": "3b1be2b96212a61da113",
+    "revision": "33b9de4a6b279042d813",
     "url": "/dynamics-website/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "3c1c73cd8fc1f0f3e845",
-    "url": "/dynamics-website/static/css/main.0513cb36.chunk.css"
+    "revision": "6ec66dac2c377139f9b4",
+    "url": "/dynamics-website/static/css/main.d455a1e6.chunk.css"
   },
   {
-    "revision": "3b1be2b96212a61da113",
-    "url": "/dynamics-website/static/js/2.0d5ae762.chunk.js"
+    "revision": "33b9de4a6b279042d813",
+    "url": "/dynamics-website/static/js/2.d2e653c8.chunk.js"
   },
   {
-    "revision": "3c1c73cd8fc1f0f3e845",
-    "url": "/dynamics-website/static/js/main.1c04a90c.chunk.js"
+    "revision": "6ec66dac2c377139f9b4",
+    "url": "/dynamics-website/static/js/main.64f491cc.chunk.js"
   },
   {
     "revision": "144a39a500ca3f32b690",
     "url": "/dynamics-website/static/js/runtime-main.c507a37b.js"
+  },
+  {
+    "revision": "7e0fcf38d16dbff78f0415916355cdc1",
+    "url": "/dynamics-website/static/media/HomeDancer.7e0fcf38.jpg"
   },
   {
     "revision": "9fec259f4c4d5cf845e97370a3e8fc15",

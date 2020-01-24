@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/dynamics-website/static/css/main.0513cb36.chunk.css",
-    "main.js": "/dynamics-website/static/js/main.1c04a90c.chunk.js",
-    "main.js.map": "/dynamics-website/static/js/main.1c04a90c.chunk.js.map",
+    "main.css": "/dynamics-website/static/css/main.d455a1e6.chunk.css",
+    "main.js": "/dynamics-website/static/js/main.64f491cc.chunk.js",
+    "main.js.map": "/dynamics-website/static/js/main.64f491cc.chunk.js.map",
     "runtime-main.js": "/dynamics-website/static/js/runtime-main.c507a37b.js",
     "runtime-main.js.map": "/dynamics-website/static/js/runtime-main.c507a37b.js.map",
     "static/css/2.b0bb7f2c.chunk.css": "/dynamics-website/static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.0d5ae762.chunk.js": "/dynamics-website/static/js/2.0d5ae762.chunk.js",
-    "static/js/2.0d5ae762.chunk.js.map": "/dynamics-website/static/js/2.0d5ae762.chunk.js.map",
+    "static/js/2.d2e653c8.chunk.js": "/dynamics-website/static/js/2.d2e653c8.chunk.js",
+    "static/js/2.d2e653c8.chunk.js.map": "/dynamics-website/static/js/2.d2e653c8.chunk.js.map",
     "index.html": "/dynamics-website/index.html",
-    "precache-manifest.76a470bc1f7763e149a9e04f81be5b12.js": "/dynamics-website/precache-manifest.76a470bc1f7763e149a9e04f81be5b12.js",
+    "precache-manifest.b5ba3893b999775d010a1730d71c2773.js": "/dynamics-website/precache-manifest.b5ba3893b999775d010a1730d71c2773.js",
     "service-worker.js": "/dynamics-website/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/dynamics-website/static/css/2.b0bb7f2c.chunk.css.map",
-    "static/css/main.0513cb36.chunk.css.map": "/dynamics-website/static/css/main.0513cb36.chunk.css.map",
+    "static/css/main.d455a1e6.chunk.css.map": "/dynamics-website/static/css/main.d455a1e6.chunk.css.map",
+    "static/media/HomeDancer.jpg": "/dynamics-website/static/media/HomeDancer.7e0fcf38.jpg",
     "static/media/dancer.jpg": "/dynamics-website/static/media/dancer.9fec259f.jpg",
     "static/media/igIcon.png": "/dynamics-website/static/media/igIcon.ddd9ee41.png",
     "static/media/logo1.png": "/dynamics-website/static/media/logo1.e8fae51a.png",
@@ -21,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.c507a37b.js",
     "static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.0d5ae762.chunk.js",
-    "static/css/main.0513cb36.chunk.css",
-    "static/js/main.1c04a90c.chunk.js"
+    "static/js/2.d2e653c8.chunk.js",
+    "static/css/main.d455a1e6.chunk.css",
+    "static/js/main.64f491cc.chunk.js"
   ]
 }
