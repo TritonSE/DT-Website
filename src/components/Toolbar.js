@@ -98,6 +98,3 @@ class Toolbar extends Component {
 }
 
 export default Toolbar;
-
-
-  
