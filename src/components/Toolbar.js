@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Navbar,Nav} from 'react-bootstrap';
+import BlinkingText from './BlinkingText.js'
 import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
@@ -15,6 +16,7 @@ class Toolbar extends Component {
       <Navbar.Brand href="/Home">
         {/** Image/Text for dynamics team*/}
         <LogoText/>
+
       </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
