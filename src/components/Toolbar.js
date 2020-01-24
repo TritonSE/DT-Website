@@ -13,7 +13,7 @@ class Toolbar extends Component {
   return(
     <div>
       <Navbar bg = "custom" expand="lg">
-      <Navbar.Brand href="/Home">
+      <Navbar.Brand to="/" href="/Home">
         {/** Image/Text for dynamics team*/}
         <LogoText/>
 
