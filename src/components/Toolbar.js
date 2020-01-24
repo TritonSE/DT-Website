@@ -16,7 +16,6 @@ class Toolbar extends Component {
       <NavLink className = "logo-text" to="/" href = "/Home" >
         {/** Image/Text for dynamics team*/}
         <LogoText/>
-
       </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
