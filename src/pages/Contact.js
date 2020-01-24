@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Toolbar from '../components/Toolbar.js';
 import '../css/Contact.css';
+
 class Contact extends Component {
 	render() {
 		return (
@@ -23,7 +24,7 @@ class Contact extends Component {
 				</div>
 			</div>
 
-			);
+			 );
 	}
 }
 
