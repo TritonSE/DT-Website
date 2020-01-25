@@ -1,15 +1,19 @@
 {
   "name": "dynamics-website",
+  "homepage": "https://tritonse.github.io/dynamics-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.2.0",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.15",
     "react-dom": "^16.11.0",
+    "react-scripts": "3.2.0",
     "react-image": "^2.2.2",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
+    "reactstrap": "^8.4.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.1"
   },
@@ -17,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
