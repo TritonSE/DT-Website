@@ -13,11 +13,10 @@ class Toolbar extends Component {
   return(
     <div>
       <Navbar bg = "custom" expand="lg">
-      <Navbar.Brand href="/Home">
+      <NavLink className = "logo-text" to="/" href = "/Home" >
         {/** Image/Text for dynamics team*/}
         <LogoText/>
-
-      </Navbar.Brand>
+      </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
