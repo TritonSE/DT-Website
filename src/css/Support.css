@@ -5,23 +5,24 @@
   font-size: 2.5vh;
   font-family: 'Lato', serif;
   letter-spacing: 0;
-  -webkit-transform: translate(-50%, -40%);
-  transform: translate(-50%,-40%);
+  /* -webkit-transform: translate(-15%, -5%);
+  transform: translate(-15%,-5%); */
   white-space: pre-line;
-  width: 55%;
+  width: 40%;
 }
 .Header-Text{
   text-align: left;
   font-family: 'Lato', serif;
-  font-size: 12.1vh;
+  font-size: 12.2vh;
   letter-spacing: 0;
+  margin-left: 3%;
+  margin-top: 1%;
   color: #FF4081;
   opacity: 1;
-  -webkit-transform: translate(-50%, -40%);
-  transform: translate(-50%,-40%);
+  /* -webkit-transform: translate(-10%, -5%);
+  transform: translate(-10%,-5%); */
   line-height: 15vh; 
   width: 40%;
-  overflow-x: hidden;
 }
 .Alignment-Text{
   flex-direction: row;
@@ -31,24 +32,30 @@
 } 
 .Try{
   position: absolute;
-  top: 47%;
-  left: 30%;
+  top: 33%;
+  left: 12%;
+  right: 5%;
 }
 .Donate-Button{
  font-size: 2.5vh;
  background-color: #FF4081;
  text-align: center;
- left:25%;
+ margin-top: 5%;
+ left:47%;
  position: relative;
+}
+
+.Proceed-Style{
+  margin-top: 7%;
+  margin-left:37%;
 }
 
 .Amount-Text{
   height: 7%;
-  max-width: 15%; 
+  max-width: 18%; 
   bottom: 5%;
   text-align: center;
   font-size: 2.5vh;
-  text-anchor: middle;
 }
 .Proceed-Button{
  font-size: 2.5vh;
@@ -56,16 +63,35 @@
  text-align: center;
  margin-left: 1%;
 }
+ .Checkout-Style{
+   display: flex;
+   flex-direction: row;
+   margin-top: 5%;
+   margin-left: 8%;
+ }
+
+ .Adjust-Style{
+  margin-left: 35%;
+ }
+
+ .PayPal-Style{
+   width: 20%;
+ }
+
+ .Chosen-Amount{
+  width: 20%;
+  text-align: center;
+  font-size: 2.5vh;
+ }
+/* .Adjust-Style{
+  margin-left: 55%;
+}
 
 .PayPal-Style{
-  width: 30%;
-  margin-left: -27%;
-}
-
-.Adjust-Style{
-  margin-left: 45%;
-  margin-top: -5%;
-}
+  width: 20%;
+  margin-left: 7%;
+  margin-top: 7%;
+} */
 
 @media only screen and (max-width: 600px)
  {
@@ -116,6 +142,10 @@
     max-height: 10%;
     left:0%;
    }
+
+   .Proceed-Style{
+    margin-left:11%;
+  }
    .Amount-Text{
     margin-top: 7%;
     margin-left: 2%;
@@ -127,7 +157,21 @@
    font-size: 2vh;
   }
 
-  .PayPal-Style{
+  .Checkout-Style{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15%;
+  }
+ 
+  .Adjust-Style{
+   margin-left: 8%;
+  }
+
+  .Chosen-Amount{
+    font-size: 1.5vh;
+  }
+
+  /* .PayPal-Style{
     width: 30%;
     margin-left: 10%;
     margin-top: 20%;
@@ -136,7 +180,7 @@
   .Adjust-Style{
     margin-left: 12%;
     margin-top: 0%;
-  }
+  } */
  }
 .Donate-Button:hover{
   background-color: rgb(248, 135, 201);

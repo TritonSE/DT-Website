@@ -70,7 +70,7 @@ class SupportStates extends Component {
     //render this layout if at Stage 1 (used for updating amount to donate)
     if(this.state.displayAmountAdjust){
       return (
-        <div style={{marginLeft: "15%"}}>
+        <div className="Proceed-Style">
           <text
             className="Amount-Text"
             style={{bottom: "3%", fontWeight: "bold"}}
@@ -86,7 +86,7 @@ class SupportStates extends Component {
             onChange={this.handleUpdateAmount}
           >
           </input>
-          <IoIosAlert style={{display: this.state.displayError ? null:'none', color:"red", width: "2.5%", maxHeight:"2.5%"}}/>
+          <IoIosAlert style={{display: this.state.displayError ? null:'none', color:"red", width: "5.5%", maxHeight:"5.5%"}}/>
           <button 
             style={{left: "53%"}} 
             className="btn btn-secondary Proceed-Button"
@@ -100,7 +100,7 @@ class SupportStates extends Component {
     //render layout if at Stage 2 (Proceeding to PayPal's Checkout process - API call)
     else{
       return (
-        <div>
+        <div className="Checkout-Style">
             <div className="PayPal-Style">
               <PaypalButton amount={this.state.amount}/>
             </div>
@@ -112,7 +112,7 @@ class SupportStates extends Component {
               {"$"}
             </text>
             <input
-              className="Amount-Text"
+              className="Chosen-Amount"
               value={this.state.amount}
               disabled={"disabled"}
               style={{backgroundColor: "lightgrey"}}
