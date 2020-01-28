@@ -81,8 +81,6 @@
     display: none;
 }
 
-
-
 @media only screen and (max-width: 600px) {
     .Title{
         text-align: left;
@@ -119,9 +117,11 @@
         margin-top: 0%;
         font-weight: bold;
     }
+ 
     .web{
         display: none;
     }
+    
     .mobile{
         display: block;
     }
