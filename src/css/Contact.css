@@ -1,7 +1,7 @@
 
 .reach{
-padding-top: 1%;
 padding-left: 30%;
+padding-top: 5%;
 width: 35%;
 height: 23%;
 text-align: left;
@@ -13,9 +13,12 @@ color: #FF4081;
 opacity: 1;
 }
 
+.out{
+  padding-left: 270%;
+}
 .number {
-padding-top: 7%;
-padding-left: 50%;
+padding-top: 1%;
+padding-left: 55%;
 width: 80%;
 height: 24%;
 text-align: left;
