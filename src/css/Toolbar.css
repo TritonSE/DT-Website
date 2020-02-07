@@ -18,12 +18,12 @@ justify-content: flex-start;
 }
   
 .About-Header{
-  color: black;
+  color: black; 
   font-size: 18px;
   font-weight: bold;
   margin-right: 40px;
   margin-top: 30px;
-  margin-left: 100px;
+  margin-left: 100px; 
   margin-bottom: 40px;
   text-decoration: none !important; 
 }
@@ -87,10 +87,10 @@ justify-content: flex-start;
     color: black;
     font-size: 14.4px;
     font-weight: bold;
-    margin-right: 30px;
-    margin-top: 24px;
-    margin-left: 80px;
-    margin-bottom: 20px;
+    margin-right: 30px !important; 
+    margin-top: 24px !important;
+    margin-left: 80px !important;
+    margin-bottom: 20px !important;
     text-decoration: none !important; 
   }
   .Support-Header{

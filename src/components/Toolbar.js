@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import {Navbar,Nav} from 'react-bootstrap';
+import {Navbar,Nav,NavDropdown} from 'react-bootstrap';
 import BlinkingText from './BlinkingText.js'
 import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
+import { LinkContainer} from 'react-router-bootstrap'
 import '../css/Toolbar.css'
 
 
@@ -37,7 +38,7 @@ class Toolbar extends Component {
                 Home
             </NavLink>
 
-            {/** About part of Navbar */}
+            {/** About part of Navbar 
             <NavLink 
               to= "/about"
               href="/About" 
@@ -51,6 +52,25 @@ class Toolbar extends Component {
               }} > 
                 About 	
             </NavLink>
+            */}
+
+            <NavDropdown title="About" id="basic-nav-dropdown" className = "About-Header">
+              <LinkContainer to = "/about" href = "/About">
+                <NavDropdown.Item> 
+                  page 1 (about)
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer  to = "/home" href = "/Home">
+                <NavDropdown.Item> 
+                  page 2 (home)
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to = "/contact" href = "/contact">
+                <NavDropdown.Item> 
+                page 3 (contact)
+                </NavDropdown.Item>
+              </LinkContainer>
+            </NavDropdown>
 
             {/** Support part of Navbar */}
             <NavLink 
