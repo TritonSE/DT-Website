@@ -77,20 +77,20 @@ justify-content: flex-start;
     font-size: 14.4px;
     font-weight: bold;
     margin-right: 0px;
-    margin-top: 24px;
-    margin-bottom: 55px;
+    margin-top: 26px;
+    margin-bottom: 40px;
     text-decoration: none !important; 
   }
   
     
   .About-Header{
-    color: black;
+    color: black !important;
     font-size: 14.4px;
     font-weight: bold;
     margin-right: 30px !important; 
-    margin-top: 24px !important;
+    margin-top: 18px !important;
     margin-left: 80px !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 50px !important;
     text-decoration: none !important; 
   }
   .Support-Header{

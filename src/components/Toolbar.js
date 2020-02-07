@@ -1,3 +1,4 @@
+import '../css/Toolbar.css'
 import React, { Component } from 'react';
 import {Navbar,Nav,NavDropdown} from 'react-bootstrap';
 import BlinkingText from './BlinkingText.js'
@@ -5,7 +6,6 @@ import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
 import { LinkContainer} from 'react-router-bootstrap'
-import '../css/Toolbar.css'
 
 
 class Toolbar extends Component {
@@ -56,8 +56,8 @@ class Toolbar extends Component {
 
             <NavDropdown title="About" id="basic-nav-dropdown" className = "About-Header">
               <LinkContainer to = "/about" href = "/About">
-                <NavDropdown.Item> 
-                  page 1 (about)
+                <NavDropdown.Item style = {{color:"blue"}}> 
+                  page 1 
                 </NavDropdown.Item>
               </LinkContainer>
               <LinkContainer  to = "/home" href = "/Home">
