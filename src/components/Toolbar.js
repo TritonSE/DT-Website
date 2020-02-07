@@ -47,7 +47,7 @@ class Toolbar extends Component {
                 color: "black"
               }}
               activeStyle={{
-                color: "#FF4081"
+                color: "rgb(15, 185, 185)"
               }} > 
                 About 	
             </NavLink>
@@ -77,7 +77,7 @@ class Toolbar extends Component {
                 color: "black",
               }}
               activeStyle={{
-                color: "#FF4081"
+                color: "rgb(15, 185, 185)"
               }}>
                 Contact
             </NavLink>
