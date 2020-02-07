@@ -55,7 +55,7 @@ class Toolbar extends Component {
             */}
 
             <NavDropdown title="About" id="basic-nav-dropdown" className = "About-Header">
-              <LinkContainer to = "/about" href = "/About">
+              <LinkContainer to = "/about" exact activeClassName = "active">
                 <NavDropdown.Item style = {{color:"blue"}}> 
                   page 1 
                 </NavDropdown.Item>
