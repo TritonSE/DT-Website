@@ -34,11 +34,23 @@ class PaypalButton extends Component {
           });
         }}
 
+        //Generic Catch-all for error messages not handled by PayPal
+        onError={(err) => {
+          alert('Sorry, an unexpected error has occurred. Please try again later.');
+        }}
+
+        //Confirmation that checkout process has terminated
+        onCancel={(data) => {
+          window.alert('Payment Cancelled.');
+        }}
+
         //Called when transaction is approved on PayPal's side
         onApprove={(data, actions) => {
+          //actions.order.capture() automatically takes care of funding failures
           return actions.order.capture().then(function(details) {
             //Pops alert on top of page after transaction is approved 
             alert('Transaction completed by ' + details.payer.name.given_name);
+
             return fetch('/paypal-transaction-complete', {
               method: 'post',
               headers: {

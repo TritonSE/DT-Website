@@ -6,7 +6,7 @@ import { Row } from 'react-bootstrap';
 class SupportMainText extends Component {
 	state= {
 		donateButtonClicked: false, //switching to true enables donation process to begin 
-		isMobile: false //true indicates to use different layout for mobile <= 600 px, false = >600 layout
+		isMobile: window.innerWidth > 600 ? false:true //true indicates to use different layout for mobile <= 600 px, false = >600 layout
 	}
 
 

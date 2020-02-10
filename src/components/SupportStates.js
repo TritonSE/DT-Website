@@ -32,17 +32,19 @@ class SupportStates extends Component {
 		if(this.state.displayAmountAdjust){
       //only proceed if no error 
 			if(this.state.displayError){
+        alert('Invalid amount. Please adjust until red error icon disappears.');
 				return;
       }
       //Edge Case: Set error if amount is empty, else proceed
 			else if(this.state.amount === ''){
+        alert('Invalid amount. Please adjust until red error icon disappears.');
 				this.setState({displayError: true});
 				return;
-			}	
+			}	 
     }
     //Switch stages (Stage 1 --> Stage 2) || (Stage 2 --> Stage 1)
 		this.setState({
-			displayAmountAdjust: !this.state.displayAmountAdjust
+      displayAmountAdjust: !this.state.displayAmountAdjust
 		});
   }
 
