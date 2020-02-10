@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 //can import your own css file here instead of App.css
 import dancer from './Dancer.jpg';
 import '../css/DynamicStyle.css';
+import '../css/Global.css';
 // must extend "Component" and it's recommended to name the class the same name as the filename
 class HomePage extends React.Component {
 	// area where functions are defined (See FormExample.js)

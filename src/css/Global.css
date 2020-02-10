@@ -40,3 +40,20 @@
     color: #FF4081;
     opacity: 1;
 }
+/*
+* HOME PAGE
+*/
+.text{
+    color: #0f0f0f;
+    font-size: calc(8vmin);
+    text-align: left;
+    font-style:normal;
+    font-family: 'Lato', serif;
+}
+.danceimg{
+    width: calc(42vmin);
+    height: calc(51vmin);
+    display: block;
+    right: calc(25vmin);
+    position: relative;
+}
