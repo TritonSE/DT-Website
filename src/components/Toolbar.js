@@ -4,7 +4,8 @@ import BlinkingText from './BlinkingText.js'
 import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
-import '../css/Toolbar.css'
+import '../css/Toolbar.css';
+import '../css/Global.css';
 
 
 class Toolbar extends Component {
@@ -26,7 +27,7 @@ class Toolbar extends Component {
               to="/" 
               href = "/Home" 
               exact activeClassName = "active" 
-              className= "Home-Header" 
+              className= "Home-Header NavBarHeader"
               style={{
                 fontWeight: "bold",
                 color: "black",
@@ -41,7 +42,7 @@ class Toolbar extends Component {
             <NavLink 
               to= "/about"
               href="/About" 
-              className = "About-Header" 
+              className = "About-Header NavBarHeader" 
               style={{
                 fontWeight: "bold",
                 color: "black"
@@ -56,7 +57,7 @@ class Toolbar extends Component {
             <NavLink 
               to = "/support" 
               href="/Support" 
-              className = "Support-Header" 
+              className = "Support-Header NavBarHeader" 
               style={{
                 fontWeight: "bold",
                 color: "black"
@@ -71,7 +72,7 @@ class Toolbar extends Component {
             <NavLink 
               to = "/contact" 
               href="/Contact" 
-              className = "Contact-Header" 
+              className = "Contact-Header NavBarHeader" 
               style={{
                 fontWeight: "bold",
                 color: "black",

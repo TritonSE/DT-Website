@@ -36,8 +36,9 @@
 } 
 
 .Social ul li a:hover{
-    color: #FFFFFF;
+    color: white;
     background-color: #FF4081;
+    transition: 0.5s;
 }
 
 @media only screen and (max-width: 1300px){
@@ -61,8 +62,7 @@
         border-radius: 10%;
         color: #FFFFFF;
         background-color: #333333;
-        transition: 0.5s;
-        transform: translate(0,0px);
+        transform: translate(0,15px);
     }
     
     .Social ul li:last-child a{
