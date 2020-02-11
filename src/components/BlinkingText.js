@@ -3,7 +3,6 @@
  */
 
 import React, { Component } from 'react';
-import { Html5Entities } from 'html-entities'; 
 import '../css/BlinkingColors.css';
 
 class BlinkingText extends Component {
@@ -11,24 +10,6 @@ class BlinkingText extends Component {
 	
 	// render function takes care of displaying component
 	render() {
-        //used to display the bullet point properly
-        const entities = new Html5Entities();
-
-        function changeColor() {
-            //reference the text in headers
-            var x = document.getElementById("dynamicsTxt");
-            //dynamics color is black --> turn pink with green bullet
-            if (x.style.color == "black") {
-              x.style.color = "#E42B6E";
-            }
-            //dynamics color is pink --> turn black with pink bullet
-            else{
-                x.style.color = "black";
-            }
-          }
-        //changeColor of "Dynamics" every 1 second
-        //setInterval(changeColor, 1000)
-
 		// component will render JSX (react's version of html) inside return statement
 		return (
             <div className="Body-Header">

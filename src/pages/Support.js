@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Toolbar from '../components/Toolbar.js';
 import '../css/Support.css';
-import { SegmentInline } from 'semantic-ui-react';
-import { Container, Row } from 'react-bootstrap';
 
 class Support extends Component {
 	render() {

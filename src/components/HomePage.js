@@ -16,23 +16,23 @@ class HomePage extends React.Component {
 		const x = this.myRef.current;
 		const y = this.imageRef.current;
 		var count = 0;
-		if(x.style.fontStyle=='italic'){
+		if(x.style.fontStyle='italic'){
 			x.style.fontWeight= 'bold';
 			x.style.fontStyle='normal';
 			y.style.transform = "rotate(0deg)";
 		}
-		else if(x.style.fontStyle=='normal'&&x.style.fontWeight=='normal'){
+		else if(x.style.fontStyle='normal'&&x.style.fontWeight=='normal'){
 			x.style.fontWeight = 'bold';
 			x.style.textDecorationLine = 'underline';
 			y.style.transform = "rotate(0deg)";
 		}
-		else if(x.style.textDecorationLine=='underline'){
+		else if(x.style.textDecorationLine='underline'){
 			x.style.fontStyle='italic';
 			x.style.fontWeight = 'normal';
 			x.style.textDecorationLine = 'initial';
 			y.style.transform = "rotate(-5deg)";
 		}
-		else if(x.style.fontWeight=='bold'){
+		else if(x.style.fontWeight='bold'){
 			x.style.fontStyle='normal';
 			x.style.fontWeight='normal';
 			y.style.transform = "rotate(5deg)";

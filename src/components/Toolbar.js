@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Navbar,Nav} from 'react-bootstrap';
-import BlinkingText from './BlinkingText.js'
 import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';

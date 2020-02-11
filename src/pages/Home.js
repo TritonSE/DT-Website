@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 //can import your own css file here instead of App.css
 import dancer from '../images/HomeDancer.jpg';
 import '../css/DynamicStyle.css';
@@ -20,25 +20,24 @@ class Home extends React.Component {
 	changeStyle(){
 		const x = this.myRef.current;
 		const y = this.imageRef.current;
-		var count = 0;
 
-		if(x.style.fontStyle=='italic'){
+		if(x.style.fontStyle==='italic'){
 			x.style.fontWeight= 'bold';
 			x.style.fontStyle='normal';
 			y.style.transform = "rotate(0deg)";
 		}
-		else if(x.style.fontStyle=='normal'&&x.style.fontWeight=='normal'){
+		else if(x.style.fontStyle==='normal'&&x.style.fontWeight==='normal'){
 			x.style.fontWeight = 'bold';
 			x.style.textDecorationLine = 'underline';
 			y.style.transform = "rotate(0deg)";
 		}
-		else if(x.style.textDecorationLine=='underline'){
+		else if(x.style.textDecorationLine==='underline'){
 			x.style.fontStyle='italic';
 			x.style.fontWeight = 'normal';
 			x.style.textDecorationLine = 'initial';
 			y.style.transform = "rotate(-5deg)";
 		}
-		else if(x.style.fontWeight=='bold'){
+		else if(x.style.fontWeight==='bold'){
 			x.style.fontStyle='normal';
 			x.style.fontWeight='normal';
 			y.style.transform = "rotate(5deg)";
@@ -55,7 +54,7 @@ class Home extends React.Component {
 			<div className="text" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 				<p>A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}> <br/>dynamic</span> <span><br/>dancers.</span></p>
-				<img className='danceimg' src={dancer} style={{transform: "rotate(5deg)"}} ref = {this.imageRef}/>
+				<img className='danceimg' src={dancer} style={{transform: "rotate(5deg)"}} ref = {this.imageRef} alt="could not load img"/>
 			</div>
 			</div>
 		);
