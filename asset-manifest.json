@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/dynamics-website/static/css/main.2ca2d1ce.chunk.css",
-    "main.js": "/dynamics-website/static/js/main.8e3e6f8a.chunk.js",
-    "main.js.map": "/dynamics-website/static/js/main.8e3e6f8a.chunk.js.map",
-    "runtime-main.js": "/dynamics-website/static/js/runtime-main.c507a37b.js",
-    "runtime-main.js.map": "/dynamics-website/static/js/runtime-main.c507a37b.js.map",
-    "static/css/2.b0bb7f2c.chunk.css": "/dynamics-website/static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.70f5146e.chunk.js": "/dynamics-website/static/js/2.70f5146e.chunk.js",
-    "static/js/2.70f5146e.chunk.js.map": "/dynamics-website/static/js/2.70f5146e.chunk.js.map",
+    "main.css": "/dynamics-website/static/css/main.32719874.chunk.css",
+    "main.js": "/dynamics-website/static/js/main.e0eba49d.chunk.js",
+    "main.js.map": "/dynamics-website/static/js/main.e0eba49d.chunk.js.map",
+    "runtime-main.js": "/dynamics-website/static/js/runtime-main.88e367fe.js",
+    "runtime-main.js.map": "/dynamics-website/static/js/runtime-main.88e367fe.js.map",
+    "static/css/2.2ec3db0d.chunk.css": "/dynamics-website/static/css/2.2ec3db0d.chunk.css",
+    "static/js/2.9452017c.chunk.js": "/dynamics-website/static/js/2.9452017c.chunk.js",
+    "static/js/2.9452017c.chunk.js.map": "/dynamics-website/static/js/2.9452017c.chunk.js.map",
     "index.html": "/dynamics-website/index.html",
-    "precache-manifest.51cb6943e894878a1312019df61965b4.js": "/dynamics-website/precache-manifest.51cb6943e894878a1312019df61965b4.js",
+    "precache-manifest.3bd89ade08b06439717272902f54ca12.js": "/dynamics-website/precache-manifest.3bd89ade08b06439717272902f54ca12.js",
     "service-worker.js": "/dynamics-website/service-worker.js",
-    "static/css/2.b0bb7f2c.chunk.css.map": "/dynamics-website/static/css/2.b0bb7f2c.chunk.css.map",
-    "static/css/main.2ca2d1ce.chunk.css.map": "/dynamics-website/static/css/main.2ca2d1ce.chunk.css.map",
+    "static/css/2.2ec3db0d.chunk.css.map": "/dynamics-website/static/css/2.2ec3db0d.chunk.css.map",
+    "static/css/main.32719874.chunk.css.map": "/dynamics-website/static/css/main.32719874.chunk.css.map",
+    "static/js/2.9452017c.chunk.js.LICENSE.txt": "/dynamics-website/static/js/2.9452017c.chunk.js.LICENSE.txt",
     "static/media/HomeDancer.jpg": "/dynamics-website/static/media/HomeDancer.7e0fcf38.jpg",
     "static/media/dancer.jpg": "/dynamics-website/static/media/dancer.9fec259f.jpg",
     "static/media/igIcon.png": "/dynamics-website/static/media/igIcon.ddd9ee41.png",
@@ -20,10 +21,10 @@
     "static/media/samplepic.jpg": "/dynamics-website/static/media/samplepic.8178c2a1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c507a37b.js",
-    "static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.70f5146e.chunk.js",
-    "static/css/main.2ca2d1ce.chunk.css",
-    "static/js/main.8e3e6f8a.chunk.js"
+    "static/js/runtime-main.88e367fe.js",
+    "static/css/2.2ec3db0d.chunk.css",
+    "static/js/2.9452017c.chunk.js",
+    "static/css/main.32719874.chunk.css",
+    "static/js/main.e0eba49d.chunk.js"
   ]
 }
