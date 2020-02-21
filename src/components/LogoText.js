@@ -8,7 +8,7 @@ class LogoText extends Component {
                 {/* Image portion of Navbar Logo */}
                <img
                 src = {require("../images/logo1.png")}
-                style={{width:120, marginTop: 0}}
+                style={{width:115, marginTop: 0, height: 120}}
                 alt = "Could not load"
                 />
                   {/* Text portion of Navbar Logo */}
