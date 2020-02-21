@@ -1,3 +1,4 @@
+
 .Social ul {
     padding-left: 10px;
     padding: 0;
@@ -24,7 +25,7 @@
     text-align: center;
 }
 
-.Social ul li:last-child a{
+.Social ul li:last-child a {
     position: relative;
     display: inline-block;
     width: 139px;
@@ -51,6 +52,7 @@
     .Social ul li {
         list-style: none;
         margin: 0 8.8px;
+        line-height: 2%;
     }
     
     .Social ul li a {
@@ -63,6 +65,17 @@
         background-color: #333333;
         transition: 0.5s;
         transform: translate(0,0px);
+        transform: scale(0.8);
+    }
+
+    .Social ul li:nth-child(2) img{
+        transform: scale(0.8);
+        transform: translateY(-5%);
+    }
+
+    .Social ul li:nth-child(3) img {
+        transform: scale(0.8);
+        transform: translateY(10%);
     }
     
     .Social ul li:last-child a{
@@ -70,6 +83,13 @@
         display: inline-block;
         width: 120px;
         border-radius: 2%;
+        line-height: 130%;
     }
+}
 
+/* MAKE ICONS DISAPPEAR */
+@media screen and (max-width:600px) {  
+    .Social ul {
+        display: none;
+    }
 }
