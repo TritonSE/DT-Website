@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
 import Toolbar from '../components/Toolbar.js';
 import '../css/Support.css';
-import { SegmentInline } from 'semantic-ui-react';
-import { Container, Row } from 'react-bootstrap';
+import SupportMainText from '../components/SupportMainText';
 
+/**
+ * Displays Support Page, including Navigation Bar. 
+ * 
+ * Problems: 
+ * 		- Switch Two Layout Resizes: Goes back to stage 1 of Donation process (resets) --> Due to re-rendering, resets displayAmountAdjust to false (Stage 1)
+ *      - PayPal CLIENT ID Encryption
+ */
 class Support extends Component {
+
 	render() {
-		var text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.\n\nAliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.";
-		return (
+			return(
 			<div>
-			<Toolbar />
-			<div className="Alignment-Text">
-				<text className="Support-Text">
-				{text}
-				</text>
-				<text className="Header-Text">
-				How To Contribute
-				</text>
+				<Toolbar />
+				<SupportMainText/>
 			</div>
-			</div>
-		);
-	}
+			);
+		}
 }
 
 export default Support
