@@ -1,0 +1,90 @@
+.Title{
+    margin-top: 30%;
+    width: 85%;
+    margin-left: 15%;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 13.5vh;
+    letter-spacing: 0;
+    color: #FF4081;
+    opacity: 1;
+}
+
+.container{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.Content1{
+    margin-top: 15%;
+    padding-left: 8%;
+    width: 85%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.1vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.Content2{
+    margin-top: 7%;
+    padding-left: 8%;
+    width: 85%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.2vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.Content3{
+    margin-top: 11%;
+    padding-left: 8%;
+    width: 85%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.2vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .Title{
+        text-align: left;
+        font-size: 7vh;
+        margin-top: 10%;
+        width: 50%;
+        margin-left: 20%;
+    }
+
+    .Content1{
+        text-align: left;
+        margin-top: 5%;
+        margin-left: 14%;
+        width: 70%;
+        font-size: 2.2vh;
+    }
+    .Content2{
+        text-align: left;
+        margin-top: 5%;
+        margin-left: 14%;
+        width: 70%;
+        font-size: 2.2vh;
+    }
+ 
+    .web{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
+}
