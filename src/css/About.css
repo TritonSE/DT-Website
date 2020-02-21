@@ -76,3 +76,53 @@
     color: #FF4081;
     opacity: 1;
 }
+
+.mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .Title{
+        text-align: left;
+        font-size: 7vh;
+        margin-top: 10%;
+        width: 50%;
+        margin-left: 20%;
+    }
+    .Title2{
+        margin-top: 25%;
+        text-align: right;
+        font-size: 7vh;
+        width: 70%;
+        margin-left: 20%;
+    }
+    .Content1{
+        text-align: left;
+        margin-top: 5%;
+        margin-left: 14%;
+        width: 70%;
+        font-size: 2.2vh;
+    }
+    .Content2{
+        text-align: left;
+        margin-top: 5%;
+        margin-left: 14%;
+        width: 70%;
+        font-size: 2.2vh;
+    }
+    .Content4{
+        text-align: right;
+        margin-left: 10%;
+        font-size: 1.8vh;
+        margin-top: 0%;
+        font-weight: bold;
+    }
+ 
+    .web{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
+}
