@@ -5,7 +5,7 @@ import '../css/About.css';
 import Mission from '../pages/Mission.js';
 import Performers from '../pages/Performers.js';
 import Join from '../pages/Join.js';
-import Directors from '../pages/Directors.js';
+import Directors from '../pages/Dropdown/Directors.js';
 
 class About extends Component {
 	render() {

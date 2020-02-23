@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
-import '../css/About.css';
-import Members from '../components/Members.js';
+import '../../css/About.css';
+import Members from '../../components/Members.js';
+import Toolbar from '../../components/Toolbar';
 
 class Directors extends Component {
     render() {
         return (
             <div>
+							<Toolbar/>
 			{/* FOR MOBILE */}
 			<div className="mobile">
 			<Container>
