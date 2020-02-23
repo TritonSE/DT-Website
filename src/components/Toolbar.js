@@ -42,17 +42,22 @@ class Toolbar extends Component {
             <NavDropdown title="About" id="basic-nav-dropdown" className = "About-Header">
               <LinkContainer to = "/Dropdown/directors" exact activeClassName = "active">
                 <NavDropdown.Item style = {{color:"blue"}}> 
-                  Directors 
+                  The Directors 
                 </NavDropdown.Item>
               </LinkContainer>
               <LinkContainer  to = "/Dropdown/join" href = "/Dropdown/join">
                 <NavDropdown.Item> 
-                  Join
+                  How to Join?
                 </NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to = "/Dropdown/performers" href = "/Dropdown/performers">
                 <NavDropdown.Item> 
-                Performers
+                The Performers
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to = "/Dropdown/mission" href = "/Dropdown/mission">
+                <NavDropdown.Item> 
+                Our Mission
                 </NavDropdown.Item>
               </LinkContainer>
             </NavDropdown>
