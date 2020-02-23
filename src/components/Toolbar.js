@@ -38,36 +38,21 @@ class Toolbar extends Component {
                 Home
             </NavLink>
 
-            {/** About part of Navbar 
-            <NavLink 
-              to= "/about"
-              href="/About" 
-              className = "About-Header" 
-              style={{
-                fontWeight: "bold",
-                color: "black"
-              }}
-              activeStyle={{
-                color: "rgb(15, 185, 185)"
-              }} > 
-                About 	
-            </NavLink>
-            */}
             <LinkContainer activeClassName = "active" to = "/Dropdown">
             <NavDropdown title="About" id="basic-nav-dropdown" className = "About-Header">
               <LinkContainer to = "/Dropdown/directors" exact activeClassName = "active">
                 <NavDropdown.Item style = {{color:"blue"}}> 
-                  page 1 
+                  Directors 
                 </NavDropdown.Item>
               </LinkContainer>
-              <LinkContainer  to = "/home" href = "/Home">
+              <LinkContainer  to = "/Dropdown/join" href = "/Dropdown/join">
                 <NavDropdown.Item> 
-                  page 2 (home)
+                  Join
                 </NavDropdown.Item>
               </LinkContainer>
-              <LinkContainer to = "/contact" href = "/contact">
+              <LinkContainer to = "/Dropdown/performers" href = "/Dropdown/performers">
                 <NavDropdown.Item> 
-                page 3 (contact)
+                Performers
                 </NavDropdown.Item>
               </LinkContainer>
             </NavDropdown>

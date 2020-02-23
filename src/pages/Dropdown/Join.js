@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
-import '../css/About.css';
+import '../../css/About.css';
+import Toolbar from '../../components/Toolbar'
 
 class Join extends React.Component{
     render() {
         return (
             <div>
             {/* FOR MOBILE */}
+			<Toolbar/>
 			<div className="mobile">
 			<Container>
 				<Col>
