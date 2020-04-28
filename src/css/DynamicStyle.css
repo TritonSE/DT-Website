@@ -19,6 +19,18 @@
     right: calc(25vmin);
     float: right;
 }
+.slide-container {
+    width: 70%;
+    margin: auto; }
+  
+  h3 {
+    text-align: center; }
+  
+  .each-slide img {
+  width: calc(35vmin);
+    height: calc(51vmin);
+  }
+  
 @media only screen and (max-width: 600px){
     .text{
         color: #0f0f0f;

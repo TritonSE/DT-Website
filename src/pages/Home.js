@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 //can import your own css file here instead of App.css
 import dancer from '../images/HomeDancer.jpg';
+import dancer2 from '../images/HomeDancer2.jpg';
+import dancer3 from '../images/HomeDancer3.jpg';
 import '../css/DynamicStyle.css';
 import Toolbar from '../components/Toolbar.js';
+import { Slide } from 'react-slideshow-image';
 // must extend "Component" and it's recommended to name the class the same name as the filename
 class HomePage extends React.Component {
 	// area where functions are defined (See FormExample.js)
@@ -41,7 +44,42 @@ class HomePage extends React.Component {
 	// render function takes care of displaying component
 	render() {
 		// component will render JSX (react's version of html) inside return statement
-		setInterval(this.changeStyle, 1000);
+		const slideImages = [
+			dancer,
+			dancer2, 
+			dancer3 
+		];
+		const properties = {
+			duration: 3000,
+			transitionDuration: 500,
+			infinite: true,
+			indicators: true,
+			arrows: true,
+			onChange: (oldIndex, newIndex) => {
+			  console.log(`slide transition from ${oldIndex} to ${newIndex}`);
+			}
+		  }
+		  const Slideshow = () => {
+			return (
+				<div className = "danceimg" >
+				<Slide {...properties}>
+        <div className="each-slide">
+		<img src = {slideImages[0]}> 
+		  </img>
+          </div>
+        <div className="each-slide">
+		<img src = {slideImages[1]}> 
+		  </img>
+          </div>
+        <div className="each-slide">
+		  <img src = {slideImages[2]}> 
+		  </img>
+          </div>
+      </Slide>
+	  </div>
+			)
+		}
+		//setInterval(this.changeStyle, 1000);
 		return (
 			// can only return one element so if you want more than one make sure they're nested inside a div
 			<div>
@@ -49,8 +87,8 @@ class HomePage extends React.Component {
 			<div className="text" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 				<p>A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}> <br/>dynamic</span> <span><br/>dancers.</span></p>
-				<img className='danceimg' src={dancer} style={{transform: "rotate(5deg)"}} ref = {this.imageRef}/>
 			</div>
+			<Slideshow ref = {this.imageRef}/>
 			</div>
 		);
 	}
