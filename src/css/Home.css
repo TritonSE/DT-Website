@@ -1,0 +1,16 @@
+
+.Left-Container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    font-style: normal;
+}
+
+.Dynamic-Text{
+    text-align: left;
+    font-size: 4vw;
+}
+
+.Static-Text{
+    font-size: 1.2vw;
+}
