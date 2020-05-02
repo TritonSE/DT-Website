@@ -13,7 +13,7 @@ class Performers extends Component {
 			<div className="mobile">
 			<Container>
 				<Col>
-					<h1 className="Title2"> The Lineup </h1>
+					<h1 className="Title2"> The HISTORY </h1>
 					<h2 className="Content4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h2>
 				</Col>
 				<Members/>
@@ -29,7 +29,7 @@ class Performers extends Component {
 					<h1 className="Content4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h1>
 				</Col>
 				<Col>
-					<h1 className="Title2"> The Lineup </h1>
+					<h1 className="Title2"> HISTORY PAGE </h1>
 				</Col>
 			</Row>
 				<Members/>

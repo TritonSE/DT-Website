@@ -38,30 +38,20 @@ class Toolbar extends Component {
                 Home
             </NavLink>
 
-            <LinkContainer activeClassName = "active" to = "/Dropdown">
-            <NavDropdown title="About" id="basic-nav-dropdown" className = "About-Header">
-              <LinkContainer to = "/Dropdown/directors" exact activeClassName = "active">
-                <NavDropdown.Item style = {{color:"blue"}}> 
-                  The Directors 
-                </NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer  to = "/Dropdown/join" href = "/Dropdown/join">
-                <NavDropdown.Item> 
-                  How to Join?
-                </NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to = "/Dropdown/performers" href = "/Dropdown/performers">
-                <NavDropdown.Item> 
-                The Performers
-                </NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to = "/Dropdown/mission" href = "/Dropdown/mission">
-                <NavDropdown.Item> 
-                Our Mission
-                </NavDropdown.Item>
-              </LinkContainer>
-            </NavDropdown>
-            </LinkContainer>
+            <NavLink 
+              to="/about"
+              href= "/About"
+              exact activeClassName = "active"
+              className= "About-Header"
+              style={{
+                fontWeight: "bold",
+                color: "black",
+              }}
+              activeStyle={{
+                color:"rgb(15, 185, 185)"
+              }}>
+                About
+              </NavLink>
 
             {/** Support part of Navbar */}
             <NavLink 
@@ -92,8 +82,32 @@ class Toolbar extends Component {
               }}>
                 Contact
             </NavLink>
-
-          </Nav>
+        
+        <LinkContainer to="/Dropdown">
+        <NavDropdown title="More" id="basic-nav-dropdown" className = "Dropdown-Header">
+          <LinkContainer to = "/Dropdown/Directors" exact activeClassName = "active">
+            <NavDropdown.Item> 
+              The Directors 
+            </NavDropdown.Item>
+          </LinkContainer>
+          <LinkContainer  to = "/Dropdown/Audition" href = "/Dropdown/Audition">
+            <NavDropdown.Item> 
+              Audition
+            </NavDropdown.Item>
+          </LinkContainer>
+          <LinkContainer to = "/Dropdown/History" href = "/Dropdown/History">
+            <NavDropdown.Item> 
+            Our History
+            </NavDropdown.Item>
+          </LinkContainer>
+          <LinkContainer to = "/Dropdown/mission" href = "/Dropdown/mission">
+            <NavDropdown.Item> 
+            Our Mission
+            </NavDropdown.Item>
+          </LinkContainer>
+        </NavDropdown>
+        </LinkContainer>
+       </Nav>
         </Navbar.Collapse>
         <Navbar.Brand>
 
