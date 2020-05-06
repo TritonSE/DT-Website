@@ -7,6 +7,7 @@ class AuditionEligibility extends Component {
             <div>
                 
                 <div>
+                <h3></h3>
                 <ul>
                     <li>12+ years old</li>
                     <li>One year of dance experience.</li>
@@ -16,6 +17,7 @@ class AuditionEligibility extends Component {
                 </div>
 
                 <div>
+                <h3></h3>
                 <ul>
                     <li>8-10 years old</li>
                     <li>One year of dance experience.</li>
@@ -25,11 +27,12 @@ class AuditionEligibility extends Component {
                 </div>
 
                 <div>
+                <h3></h3>
                 <ul>
                     <li>5-7 years old</li>
-                    <li>second item</li>
-                    <li>third item</li>
-                </ul>
+                    <li>2 hours minimum technique at one or more dance studios: one hour of ballet 
+                        or ballet combo and one hour of another genre of dance.</li>
+                 </ul>
                 </div>
             </div>
         );
