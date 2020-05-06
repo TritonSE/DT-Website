@@ -16,7 +16,6 @@ class App extends Component {
 				<Route path="/about" exact render={(props) => <About {...props}/>}/>
 				<Route path="/support" exact render={(props) => <Support {...props}/>}/>
 				<Route path="/contact" exact render={(props) => <Contact {...props}/>}/>
-				<Route path="/audition" exact render={(props)} => <Audition {...props}/>}/>
    	 	</div>
   		);
   }
