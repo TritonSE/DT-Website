@@ -69,8 +69,8 @@ class Toolbar extends Component {
 
             {/** Contact part of Navbar */}
             <NavLink 
-              to = "/contact" 
-              href="/Contact" 
+              to = "/audition" 
+              href="/Audition" 
               className = "Contact-Header" 
               style={{
                 fontWeight: "bold",
@@ -79,7 +79,7 @@ class Toolbar extends Component {
               activeStyle={{
                 color: "#FF4081"
               }}>
-                Contact
+                Audition
             </NavLink>
 
           </Nav>
