@@ -71,7 +71,7 @@ class Toolbar extends Component {
             <NavLink 
               to = "/audition" 
               href="/Audition" 
-              className = "Contact-Header" 
+              className = "Audition-Header" 
               style={{
                 fontWeight: "bold",
                 color: "black",
