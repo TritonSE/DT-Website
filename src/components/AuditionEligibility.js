@@ -5,11 +5,30 @@ class AuditionEligibility extends Component {
     render() {
         return(
             <div>
+                
+                <div>
                 <ul>
-                    <li>first tiem</li>
-                    <li>second tiem</li>
-                    <li>third tiem</li>
+                    <li>first item</li>
+                    <li>second item</li>
+                    <li>third item</li>
                 </ul>
+                </div>
+
+                <div>
+                <ul>
+                    <li>first item</li>
+                    <li>second item</li>
+                    <li>third item</li>
+                </ul>
+                </div>
+
+                <div>
+                <ul>
+                    <li>first item</li>
+                    <li>second item</li>
+                    <li>third item</li>
+                </ul>
+                </div>
             </div>
         );
     }
