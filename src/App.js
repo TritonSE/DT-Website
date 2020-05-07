@@ -5,7 +5,7 @@ import { HashRouter, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Support from './pages/Support';
-import Contact from './pages/Contact';
+// import Contact from './pages/Contact'; 
 import Audition from './pages/Audition';
 
 class App extends Component {
