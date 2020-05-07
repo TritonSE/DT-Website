@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Image from 'react-bootstrap/Image';
 import Toolbar from '../components/Toolbar.js';
-import AuditionImages from '../components/AuditionImages.js';
 import AuditionInfo from '../components/AuditionInfo.js';
 import AuditionEligibility from '../components/AuditionEligibility.js';
 import { Container, Row, Col } from 'react-bootstrap';
