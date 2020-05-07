@@ -3,6 +3,7 @@ import Toolbar from '../components/Toolbar.js';
 import AuditionInfo from '../components/AuditionInfo.js';
 import AuditionEligibility from '../components/AuditionEligibility.js';
 import { Container, Row, Col } from 'react-bootstrap';
+import '../css/Audition.css';
 
 class Audition extends Component {
     render() {
@@ -13,8 +14,8 @@ class Audition extends Component {
 
                 <Col>
                 </Col>
-                
-                <Col>
+
+                <Col className="audition-text">
                     <Container>
                         <AuditionInfo></AuditionInfo>
                     </Container>
