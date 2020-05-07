@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Support from './pages/Support';
 import Contact from './pages/Contact';
+import Audition from './pages/Audition';
 
 class App extends Component {
 	render() {
@@ -15,7 +16,7 @@ class App extends Component {
 				<Route path="/home" exact render={(props) => <Home {...props}/>}/>
 				<Route path="/about" exact render={(props) => <About {...props}/>}/>
 				<Route path="/support" exact render={(props) => <Support {...props}/>}/>
-				<Route path="/contact" exact render={(props) => <Contact {...props}/>}/>
+				<Route path="/audition" exact render={(props) => <Audition {...props}/>}/>
    	 	</div>
   		);
   }
