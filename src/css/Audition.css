@@ -7,8 +7,9 @@
 }
 
 .audition-text {
-    padding-right: 10%;
+    padding-right: 7%;
     padding-bottom: 5%;
+    padding-left: 5%;
 }
 
 .colored-bullets ul {
@@ -22,4 +23,11 @@
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1.1em; /* Also needed for space (tweak if needed) */
+}
+
+.auditionIMG{
+    height: 100%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    width: 100%;
 }
