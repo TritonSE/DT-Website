@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Image from 'react-bootstrap/Image';
 import Toolbar from '../components/Toolbar.js';
+import AuditionImages from '../components/AuditionImages.js';
 import AuditionInfo from '../components/AuditionInfo.js';
 import AuditionEligibility from '../components/AuditionEligibility.js';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -14,17 +14,16 @@ class Audition extends Component {
                 <Row>
 
                 <Col>
-                    <Image src="../images/audition/first.jpg"></Image>
-                    <Image src="../images/audition/second.jpg"></Image>
+                    <AuditionImages />
                 </Col>
 
                 <Col className="audition-text">
                     <Container>
-                        <AuditionInfo></AuditionInfo>
+                        <AuditionInfo/>
                     </Container>
 
                     <Container>
-                        <AuditionEligibility></AuditionEligibility>
+                        <AuditionEligibility/>
                     </Container>
                 </Col>
                 </Row>
