@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
-import 
+
 class AuditionImages extends Component {
     render() {
         return(
-            <div></div>
+            <div>
+                <div>
+                    <img src="../images/audition/first.jpg" alt="error loading image"></img>
+                </div>
+                <div>
+                    <img src="../images/audition/second.jpg" alt="error loading image"></img>
+                </div>
+            </div>
         );
     }
 }
+
+export default AuditionImages;
