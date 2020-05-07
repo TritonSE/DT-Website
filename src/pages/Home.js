@@ -55,11 +55,7 @@ class Home extends React.Component {
 			<div className="text" onContextMenu={(e)=> e.preventDefault()}>
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 				<p>A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}> <br/>dynamic</span> <span><br/>dancers.</span></p>
-<<<<<<< HEAD
 				<img className='danceimg' src={dancer} style={{transform: "rotate(5deg)"}} ref = {this.imageRef} alt="error loading img"/>
-=======
-				<img  className='danceimg' src={dancer} style={{transform: "rotate(5deg)"}} ref = {this.imageRef}/>
->>>>>>> b1b39c7e72d1be16fd228ed85c0f85aca8135ea1
 			</div>
 			</div>
 		);
