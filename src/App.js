@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { HashRouter, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Support from './pages/Support';
