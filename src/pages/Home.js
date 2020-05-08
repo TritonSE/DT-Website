@@ -77,7 +77,7 @@ class Home extends React.Component {
 		return(
 			<div>
 				<Toolbar/>
-				<img className="Banner" onContextMenu={(e)=> {e.preventDefault(); return false;}} src={mainBanner} style={{height: this.state.width * 0.4, width: this.state.width}}/>
+				<img onContextMenu={(e)=> {e.preventDefault(); return false;}} src={mainBanner} style={{height: this.state.width * 0.4, width: this.state.width}}/>
 				<div className="Left-Container" style={{width: this.state.width*0.5}}>
 					<p className="Dynamic-Text" >A team of<span style={{color: 'rgb(15, 185, 185)',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}> dynamic</span> <span><br/>dancers.</span></p>
 					<p className="Static-Text"> 
@@ -87,6 +87,14 @@ class Home extends React.Component {
 	
 							DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <a style={{color: 'rgb(15, 185, 185)'}} href='https://stackoverflow.com/questions/30208108/make-part-of-the-text-as-link-react-localization'>Click here</a> for more information. 
 							Dancers have the opportunity to perform in groups, trios, duets, and even solos. <a style={{color: 'rgb(15, 185, 185)'}} href='https://stackoverflow.com/questions/30208108/make-part-of-the-text-as-link-react-localization'>Click here</a> to learn more about DPT.
+					</p>
+				</div>
+				<div className="Footer">
+					<p className="Contact-Header" style={{fontSize: "2vw"}}>
+						Contact <br/> Us
+					</p>
+					<p className="Contact-Header" style={{textAlign: "left", fontSize: "1.3vw"}}>
+						+ 408 622 0249 <br/> <a style={{color: "black"}} href={`mailto:dynamicsperformanceteam@gmail.com`}>dynamicsperformanceteam@gmail.com</a>
 					</p>
 				</div>
 			</div>

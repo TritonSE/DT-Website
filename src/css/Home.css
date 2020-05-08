@@ -2,15 +2,33 @@
 .Left-Container{
     display: flex;
     flex-direction: column;
-    margin-left: 8%;
     font-style: normal;
+    margin-top: 4%;
 }
 
 .Dynamic-Text{
     text-align: left;
-    font-size: 4vw;
+    margin-left: 15%;
+    font-size: 4.9vw;
 }
 
 .Static-Text{
-    font-size: 1.2vw;
+    margin-left: 15%;
+    font-size: 1.15vw;
+    margin-right: 2%;
 }
+
+.Footer{
+    background-color: rgb(15, 185, 185);
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact-Header{
+    text-align: right;
+    flex: 1;
+    color: white;
+}
+
