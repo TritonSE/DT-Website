@@ -20,8 +20,8 @@ class Toolbar extends Component {
       </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-
+          <Nav className ="ml-auto">
+            
             {/** Home part of Navbar */}
             <NavLink  
               to="/" 
@@ -38,21 +38,19 @@ class Toolbar extends Component {
                 Home
             </NavLink>
 
-            <NavLink 
-              to="/about"
-              href= "/About"
-              exact activeClassName = "active"
-              className= "About-Header"
-              style={{
-                fontWeight: "bold",
-                color: "black",
-              }}
-              activeStyle={{
-                color:"rgb(15, 185, 185)"
-              }}>
-                About
-              </NavLink>
-
+            <NavDropdown title="More" id="basic-nav-dropdown" className = "Dropdown-Header">
+                    <LinkContainer to = "/Dropdown/Directors" exact activeClassName = "active">
+                      <NavDropdown.Item> 
+                        Board of Directors 
+                      </NavDropdown.Item>
+                    </LinkContainer>
+                    <LinkContainer to = "/Dropdown/mission" href = "/Dropdown/mission">
+                      <NavDropdown.Item> 
+                      Our Mission
+                      </NavDropdown.Item>
+                    </LinkContainer>
+              </NavDropdown>
+  
             {/** Support part of Navbar */}
             <NavLink 
               to = "/support" 
@@ -82,32 +80,23 @@ class Toolbar extends Component {
               }}>
                 Contact
             </NavLink>
-        
-        <LinkContainer to="/Dropdown">
-        <NavDropdown title="More" id="basic-nav-dropdown" className = "Dropdown-Header">
-          <LinkContainer to = "/Dropdown/Directors" exact activeClassName = "active">
-            <NavDropdown.Item> 
-              The Directors 
-            </NavDropdown.Item>
-          </LinkContainer>
-          <LinkContainer  to = "/Dropdown/Audition" href = "/Dropdown/Audition">
-            <NavDropdown.Item> 
-              Audition
-            </NavDropdown.Item>
-          </LinkContainer>
-          <LinkContainer to = "/Dropdown/History" href = "/Dropdown/History">
-            <NavDropdown.Item> 
-            Our History
-            </NavDropdown.Item>
-          </LinkContainer>
-          <LinkContainer to = "/Dropdown/mission" href = "/Dropdown/mission">
-            <NavDropdown.Item> 
-            Our Mission
-            </NavDropdown.Item>
-          </LinkContainer>
-        </NavDropdown>
-        </LinkContainer>
-       </Nav>
+
+             <NavLink 
+              to="/Auditions"
+              href= "/Auditions"
+              exact activeClassName = "active"
+              className= "Auditions-Header"
+              style={{
+                fontWeight: "bold",
+                color: "black",
+              }}
+              activeStyle={{
+                color:"rgb(15, 185, 185)"
+              }}>
+                Auditions
+              </NavLink>
+
+              </Nav>
         </Navbar.Collapse>
         <Navbar.Brand>
 
@@ -115,6 +104,7 @@ class Toolbar extends Component {
           <SocialFollow />
 
         </Navbar.Brand>
+        
       </Navbar>
     </div>
   );

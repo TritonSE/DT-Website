@@ -6,8 +6,7 @@ import Home from './pages/Home';
 import Support from './pages/Support';
 import Contact from './pages/Contact';
 import Directors from './pages/Dropdown/Directors';
-import Audition from './pages/Dropdown/Audition'
-import History from './pages/Dropdown/History'
+import Audition from './pages/Audition'
 import Mission from './pages/Dropdown/Mission'
 import About from './pages/About'
 
@@ -19,8 +18,7 @@ class App extends Component {
 				<Route path="/home" exact render={(props) => <Home {...props}/>}/>
 				<Route path = "/about" exact render = {(props) => <About {...props}/>}/>
 				<Route path="/Dropdown/Directors" exact render={(props) => <Directors {...props}/>}/>
-				<Route path="/Dropdown/Audition" exact render={(props) => <Audition {...props}/>}/>
-				<Route path="/Dropdown/History" exact render={(props) => <History {...props}/>}/>
+				<Route path="/Auditions" exact render={(props) => <Audition {...props}/>}/>
 				<Route path="/Dropdown/Mission" exact render={(props) => <Mission {...props}/>}/>
 				<Route path="/support" exact render={(props) => <Support {...props}/>}/>
 				<Route path="/contact" exact render={(props) => <Contact {...props}/>}/>

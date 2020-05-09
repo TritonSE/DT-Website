@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
-import '../../css/About.css';
-import Toolbar from '../../components/Toolbar'
+import '../css/About.css';
+import Toolbar from '../components/Toolbar'
 
 class Join extends React.Component{
     render() {
