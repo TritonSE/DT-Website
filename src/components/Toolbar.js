@@ -14,12 +14,12 @@ class Toolbar extends Component {
   return(
     <div>
       <Navbar bg = "custom" expand="lg">
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <NavLink className = "logo-text" to="/" href = "/Home" >
         {/** Image/Text for dynamics team*/}
         <LogoText/>
       </NavLink>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className ="ml-auto">
             
             {/** Home part of Navbar */}
@@ -37,8 +37,13 @@ class Toolbar extends Component {
               }}> 
                 Home
             </NavLink>
-
-            <NavDropdown title="More" id="basic-nav-dropdown" className = "Dropdown-Header">
+            
+            <NavDropdown title="About" id="collasible-nav-dropdown" className = "Dropdown-Header" activeClassName="active">
+                    <LinkContainer to = "/Dropdown/About" exact activeClassName = "active">
+                      <NavDropdown.Item> 
+                        About Us
+                      </NavDropdown.Item>
+                    </LinkContainer>
                     <LinkContainer to = "/Dropdown/Directors" exact activeClassName = "active">
                       <NavDropdown.Item> 
                         Board of Directors 

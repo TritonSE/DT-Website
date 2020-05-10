@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Toolbar from "../components/Toolbar"
+import Toolbar from "../../components/Toolbar"
 
 class About extends Component {
   render() {
