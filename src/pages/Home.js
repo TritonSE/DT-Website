@@ -5,7 +5,7 @@ import dancer2 from '../images/HomeDancer2.jpg';
 import dancer3 from '../images/HomeDancer3.jpg';
 import '../css/DynamicStyle.css';
 import Toolbar from '../components/Toolbar.js';
-import { Slide } from 'react-slideshow-image';
+import Slideshow from '../components/Slideshow.js';
 // must extend "Component" and it's recommended to name the class the same name as the filename
 class HomePage extends React.Component {
 	// area where functions are defined (See FormExample.js)
@@ -44,6 +44,7 @@ class HomePage extends React.Component {
 	// render function takes care of displaying component
 	render() {
 		// component will render JSX (react's version of html) inside return statement
+		/** 
 		const slideImages = [
 			dancer,
 			dancer2, 
@@ -79,6 +80,7 @@ class HomePage extends React.Component {
 	  </div>
 			)
 		}
+		*/
 		//setInterval(this.changeStyle, 1000);
 		return (
 			// can only return one element so if you want more than one make sure they're nested inside a div
