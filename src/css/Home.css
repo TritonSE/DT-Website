@@ -1,9 +1,18 @@
 
+.Text-Container{
+    margin-top: 4%;
+    display: flex;
+}
 .Left-Container{
     display: flex;
     flex-direction: column;
     font-style: normal;
-    margin-top: 4%;
+}
+
+.Right-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Dynamic-Text{
@@ -20,7 +29,7 @@
 
 .Footer{
     background-color: rgb(15, 185, 185);
-    margin-top: 10%;
+    margin-top: 7%;
     display: flex;
     justify-content: center;
     align-items: center;
