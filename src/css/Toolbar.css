@@ -110,6 +110,14 @@ justify-content: flex-start;
 }
 }
 
+@media (min-width: 768px){
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+}
+
+
 dropdown-item.active, .dropdown-item:active {
   color:  rgb(0, 0, 0);
   text-decoration: none;

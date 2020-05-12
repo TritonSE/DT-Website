@@ -13,7 +13,7 @@ class Toolbar extends Component {
   render() {
   return(
     <div>
-      <Navbar bg = "custom" expand="lg">
+      <Navbar bg = "custom" expand="md">
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <NavLink className = "logo-text" to="/" href = "/Home" >
         {/** Image/Text for dynamics team*/}
