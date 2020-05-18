@@ -8,7 +8,7 @@ class Join extends React.Component{
         return (
             <div>
             {/* FOR MOBILE */}
-			<Toolbar/>
+			<Toolbar bool={false}/>
 			<div className="mobile">
 			<Container>
 				<Col>

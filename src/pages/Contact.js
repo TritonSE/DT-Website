@@ -6,7 +6,7 @@ class Contact extends Component {
 	render() {
 		return (
 			<div>
-				<Toolbar />
+				<Toolbar bool={false}/>
 			<div className = "mobile"> 
 				Contact
 			</div>

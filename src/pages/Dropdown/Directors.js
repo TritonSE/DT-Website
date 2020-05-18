@@ -8,7 +8,7 @@ class Performers extends Component {
     render() {
         return (
             <div>
-				<Toolbar/>
+				<Toolbar bool= {true}></Toolbar>
 			{/* FOR MOBILE */}
 			<div className="mobile">
 			<Container>

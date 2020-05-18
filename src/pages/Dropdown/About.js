@@ -5,8 +5,7 @@ class About extends Component {
   render() {
     return(
       <div>
-         <Toolbar>
-      </Toolbar>
+         <Toolbar bool={true}></Toolbar>
       <h1 className="Title2"> About Page</h1>
       </div>
     );
