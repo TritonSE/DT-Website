@@ -4,10 +4,10 @@ import '../css/Audition.css';
 class AuditionInfo extends Component {
     render() {
         return(
-            <div>
-                <div >
+            <div className="font">
+                <div>
                     <h1 className="title audition-info">Audition</h1>
-                    <p className="font">
+                    <p>
                     Our current season is still underway—our next season’s auditions will be held in <b className="audition-info">August 2020</b>. 
                     Subscribe to our mailing list for a reminder and up to date 
                     announcements! To inquire about individual auditions, please email DPT at
