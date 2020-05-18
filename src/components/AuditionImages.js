@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Image from 'react-bootstrap/Image';
-import first from '../images/audition/first.jpg';
-import second from '../images/audition/second.jpg';
+import firstImg from '../images/audition/first.jpg';
+import secondImg from '../images/audition/second.jpg';
 import '../css/Audition.css';
 
 class AuditionImages extends Component {
@@ -9,10 +9,10 @@ class AuditionImages extends Component {
         return(
             <div>
                 <div>
-                <Image src={first} alt="Couldn't load IMG" className="auditionIMG image1"/>
+                <Image src={firstImg} alt="Couldn't load IMG" className="auditionIMG image1"/>
             </div>
             <div>
-                <Image src={second} alt="Couldn't load IMG" className="auditionIMG image2"/>
+                <Image src={secondImg} alt="Couldn't load IMG" className="auditionIMG image2"/>
             </div>
             </div>
         );
