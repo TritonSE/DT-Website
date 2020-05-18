@@ -37,8 +37,11 @@ class Toolbar extends Component {
               }}> 
                 Home
             </NavLink>
-            
-            <NavDropdown title="About" id="collasible-nav-dropdown" className = "Dropdown-Header" activeClassName="active">
+
+            <NavDropdown title="About" id="collasible-nav-dropdown" className = "Dropdown-Header" activeClassName="active" activeStyle={{
+                fontWeight: "bold",
+                color: "blue"
+              }}>
                     <LinkContainer to = "/Dropdown/About" exact activeClassName = "active">
                       <NavDropdown.Item> 
                         About Us
@@ -55,7 +58,6 @@ class Toolbar extends Component {
                       </NavDropdown.Item>
                     </LinkContainer>
               </NavDropdown>
-  
             {/** Support part of Navbar */}
             <NavLink 
               to = "/support" 
