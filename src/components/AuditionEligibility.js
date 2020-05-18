@@ -21,7 +21,7 @@ class AuditionEligibility extends Component {
                     <li>8-10 years old</li>
                     <li>One year of dance experience.</li>
                     <li>3 hours minimum technique at one or more dance studios: one hour of jazz, 
-                        one hour of ballet, and one hour of another genre of dance.em</li>
+                        one hour of ballet, and one hour of another genre of dance.</li>
                 </ul>
                 </div>
 

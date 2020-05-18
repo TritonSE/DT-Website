@@ -9,10 +9,10 @@ class AuditionImages extends Component {
         return(
             <div>
                 <div>
-                <Image src={first} alt="Couldn't load IMG" className="auditionIMG"/>
+                <Image src={first} alt="Couldn't load IMG" className="auditionIMG image1"/>
             </div>
             <div>
-                <Image src={second} alt="Couldn't load IMG" className="auditionIMG"/>
+                <Image src={second} alt="Couldn't load IMG" className="auditionIMG image2"/>
             </div>
             </div>
         );

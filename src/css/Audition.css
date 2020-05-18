@@ -50,3 +50,38 @@
 .dots{
     margin-left: 38%;
 }
+
+.image1 {
+
+}
+
+.image2 {
+
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    .title {
+        font-size: 70px;
+    }
+
+    .dot{
+        display: none;
+    }
+    .dots{
+        display: none;
+    }
+
+    .image1 {
+        display: none;
+    }
+
+
+    .web{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
+}
