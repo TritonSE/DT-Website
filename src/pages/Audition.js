@@ -17,11 +17,17 @@ class Audition extends Component {
                     <AuditionImages />
                 </Col>
 
-                <Col className="audition-text">
+                <Col className="audition-text font">
                     <Container>
                         <AuditionInfo/>
                     </Container>
-
+                    
+                    <div className="dots">
+			        <span class="dot"></span>
+			        <span class="dot"></span>
+			        <span class="dot"></span>
+			        </div>
+                    
                     <Container>
                         <AuditionEligibility/>
                     </Container>

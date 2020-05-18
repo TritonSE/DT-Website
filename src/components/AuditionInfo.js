@@ -4,9 +4,9 @@ import '../css/Audition.css';
 class AuditionInfo extends Component {
     render() {
         return(
-            <div>
+            <div className="font">
 
-                <div>
+                <div >
                     <h1 className="title audition-info">Audition</h1>
                     <p>
                     Our current season is still underway—our next season’s auditions will be held in <b className="audition-info">August 2020</b>. 
