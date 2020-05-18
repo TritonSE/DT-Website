@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
  import { Slide } from 'react-slideshow-image';
  import img1 from '../images/home/Main Page 1.jpg';
- import img2 from '../images/home/Main Page 2.jpg';
- import img3 from '../images/home/Main Page 3.jpg';
+//  import img2 from '../images/home/Main Page 2.jpg';
+ import img2L from '../images/home/Main Page 2-lefthalf.jpg';
+ import img2R from '../images/home/Main Page 2-right.jpg';
+//  import img3 from '../images/home/Main Page_3.jpg';
+ import img3L from '../images/home/row-1-col-1.jpg';
+ import img3R from '../images/home/row-2-col-1.jpg';
  import img4 from '../images/home/Main Page 4.jpg';
  import img5 from '../images/home/Main Page 5.jpg';
  import img6 from '../images/home/Main Page 6.jpg';
@@ -20,8 +24,8 @@ import React, { Component } from 'react';
  		// component will render JSX (react's version of html) inside return statement
  		const slideImages = [
             img1,
-            img2,
-            img3,
+            img2L,
+            img2R,
             img4,
             img5,
             img6,
@@ -29,6 +33,8 @@ import React, { Component } from 'react';
             img8,
             img9,
             img10,
+            img3L,
+            img3R,
             img11,
             img12,
             img13,

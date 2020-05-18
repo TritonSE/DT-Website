@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import '../css/About.css';
 
 class DirectorsImages extends Component {
 	render() {
 		return (
-            <div style={{display:"flex", flexDirection:"column", width:"28vw"}}>
-                <img src={this.props.imgTop} style={{height: "20vw", width:"14vw"}}/>
-                <img src={this.props.imgBottom} style={{height: "20vw", width:"14vw", marginLeft:"10vw", marginTop:"-3vw"}}/>
+            <div className="Director-Profile-Images-Container">
+                <img src={this.props.imgTop} className="Director-Profile-Images-Top"/>
+                <img src={this.props.imgBottom} className="Director-Profile-Images-Top Director-Profile-Images-Bottom"/>
             </div>
         );
 	}

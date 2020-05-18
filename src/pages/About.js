@@ -9,24 +9,6 @@ import danielleHS from '../images/directors/Artistic Director Headshot.jpg';
 import danielleAS from '../images/directors/Artistic Director Action shot.jpg';
 
 class About extends Component {
-	constructor(props){
-		super(props);
-		this.state = { width: 0, height: 0 };
-		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-	}
-
-	componentDidMount() {
-		this.updateWindowDimensions();
-		window.addEventListener('resize', this.updateWindowDimensions);
-	}
-	
-	updateWindowDimensions() {
-		this.setState({ width: window.innerWidth, height: window.innerHeight });
-	}
-	
-	componentWillUnmount() {
-		window.removeEventListener('resize', this.updateWindowDimensions);
-	}
 
 	render() {
 		var solomonText = `Anthony Charles T. Solomon is the Creative Director of the Dynamics Performance Team (DPT). He started dancing at the age of 4 at his local studio in San Jose. In 1998, Charles recieved the opportunity from his teacher and mentor, Joy Sinnott, to become an assistant teacher, and in 2001 became a full-fledged instructor at his studio.  He is proficient in teaching various levels of ballet, tap, jazz, lyrical, contemporary and hip hop. In 2007, he became a certified member of Dance Masters of California (DMC) Chapter 13 and Dance Masters of America (DMA). Since then, he has held the offices of Second Vice President, First Vice President, President, and past President of DMC Chapter 13. As DMC Chapter 13 President, he traveled to the DMA National Convention as a delegate. \n
@@ -46,12 +28,9 @@ class About extends Component {
 					<p style={{fontSize: "1.9vw"}}> 2019-2020 Season </p>
 					<p style={{fontSize: "5.5vw", flex:"1", marginLeft:"3%"}}> Board of Directors </p>
 				</div>
-
 				<DirectorProfile imgTop={solomonHS} imgBottom={solomonAS} title="Creative Director" name="Charles Solomon" text= {solomonText}/>
 				<br/>
-				<br/>
 				<DirectorProfile imgTop={danielleHS} imgBottom={danielleAS} title="Artistic Director" name="Danielle de Ojeda" text={danielleText}/>
-				<br/>
 				<br/>
 				<SupportingDirectors names={["Eric Misenhimer", "Diana Zuger", "Meiling Adams"]} titles={["President", "Vice President", "Secretary"]}/>
 				<SupportingDirectors names={["Malou Arquero", "Anne Marie Asis", "Danielle Zuger"]} titles={["Treasurer", "Dynamios Liaison", "Director"]}/>
