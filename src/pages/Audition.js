@@ -9,7 +9,7 @@ import '../css/Audition.css';
 class Audition extends Component {
     render() {
         return(
-            <div>
+            <div className="hideHorizontalScroll">
                 <Toolbar/>
                 <Row>
 

@@ -1,5 +1,9 @@
 .font {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.hideHorizontalScroll {
+    overflow-x: hidden;
 }
 
 .audition-info {
@@ -18,7 +22,7 @@
 
 .colored-bullets ul {
     list-style: none; /* Remove default bullets */
-  }
+}
 .colored-bullets ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #FF4081; /* Change the color */
@@ -51,8 +55,8 @@
     margin-left: 38%;
 }
 
-
 @media only screen and (max-device-width: 480px) {
+    
     .title {
         font-size: 70px;
     }
@@ -67,7 +71,6 @@
     .image1 {
         display: none;
     }
-
 
     .web{
         display: none;
