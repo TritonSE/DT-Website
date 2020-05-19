@@ -42,13 +42,7 @@ class Home extends React.Component {
 	}
 
 	changeStyle(){
-<<<<<<< HEAD
 		const x = this.dynamicText.current;
-=======
-		const x = this.myRef.current;
-		const y = this.imageRef.current;
-		//var count = 0;
->>>>>>> 55eb62d0c641d1f71f13c0cba507ee99059149ae
 
 		if(x.style.fontStyle==='italic'){
 			x.style.fontWeight= 'bold';
@@ -73,7 +67,6 @@ class Home extends React.Component {
 
 		return(
 			<div>
-<<<<<<< HEAD
 				<Toolbar/>
 				{/* <Slideshow banner={true} slideImages={[
 					require('../images/home/Facebook_Cover_2019.png'),
@@ -124,14 +117,6 @@ class Home extends React.Component {
 					</div>
 				</VizSensor>
 				<Footer/>
-=======
-				<Toolbar />
-			<div className="text" onContextMenu={(e)=> e.preventDefault()}>
-				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-				<p>A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}> <br/>dynamic</span> <span><br/>dancers.</span></p>
-				<img className='danceimg' src={dancer} style={{transform: "rotate(5deg)"}} ref = {this.imageRef} alt="error loading img"/>
-			</div>
->>>>>>> 55eb62d0c641d1f71f13c0cba507ee99059149ae
 			</div>
 		)
 	}
