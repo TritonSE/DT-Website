@@ -3,10 +3,7 @@ import Toolbar from '../components/Toolbar.js';
 import DirectorProfile from '../components/DirectorProfile.js'
 import SupportingDirectors from '../components/SupportingDirectors.js';
 import '../css/About.css';
-import solomonHS from '../images/directors/Creative Director Headshot.jpg';
-import solomonAS from '../images/directors/Creative Director Action shot.jpg';
-import danielleHS from '../images/directors/Artistic Director Headshot.jpg';
-import danielleAS from '../images/directors/Artistic Director Action shot.jpg';
+import Footer from '../components/Footer.js';
 
 class About extends Component {
 
@@ -21,20 +18,21 @@ class About extends Component {
 		Miss Dizzle dances professionally with contemporary companies DVDance and Nhan Ho Project. Other performance credits include dancing at San Jose City Hall, Disneyland, Disneyworld, the 2016 American Cancer Society Fundraiser, Saratoga Chamber of Commerce, the Classic Cool Car Show flash mob, the San Jose Center for Performing Arts, and LEVYdance, among others.\n\n
 		She has been teaching in styles such as contemporary, acro, ballet, jazz, hip hop, and lyrical for fourteen years, and is a certified Acrobatics Arts instructor. She began choreographing at age 16 with the mentorship of Charles Solomon and Sara Wardell, and continued exploring her passion in college under the mentorship of Fred Mathews. Her choreography has won first place awards at various competitions in the Bay Area. Her choreographic credits include SJSU’s Images in Dance, DVDance, Willow Glen High School Dance Team, and the Dynamics Performance Team.\n\n
 		She believes the exploration of artistry is a lifelong endeavor, and is dedicated to helping others on their artistic journey.`
+		
 		return (
 			<div>
 				<Toolbar/>
 				<div className="Title-Container">
 					<p style={{fontSize: "1.9vw"}}> 2019-2020 Season </p>
-					<p style={{fontSize: "5.5vw", flex:"1", marginLeft:"3%"}}> Board of Directors </p>
+					<p style={{fontSize: "5.5vw", color:'#FF4081', flex:"1", marginLeft:"3%"}}> Board of Directors </p>
 				</div>
-				<DirectorProfile imgTop={solomonHS} imgBottom={solomonAS} title="Creative Director" name="Charles Solomon" text= {solomonText}/>
+				<DirectorProfile imgTop={require('../images/directors/Creative Director Headshot.jpg')} imgBottom={require('../images/directors/Creative Director Action shot.jpg')} title="Creative Director" name="Charles Solomon" text= {solomonText}/>
 				<br/>
-				<DirectorProfile imgTop={danielleHS} imgBottom={danielleAS} title="Artistic Director" name="Danielle de Ojeda" text={danielleText}/>
+				<DirectorProfile imgTop={require('../images/directors/Artistic Director Headshot.jpg')} imgBottom={require('../images/directors/Artistic Director Action shot.jpg')} title="Artistic Director" name="Danielle de Ojeda" text={danielleText}/>
 				<br/>
-				<SupportingDirectors names={["Eric Misenhimer", "Diana Zuger", "Meiling Adams"]} titles={["President", "Vice President", "Secretary"]}/>
-				<SupportingDirectors names={["Malou Arquero", "Anne Marie Asis", "Danielle Zuger"]} titles={["Treasurer", "Dynamios Liaison", "Director"]}/>
-				<SupportingDirectors names={["Marybelle Mejia", "Lloyd Alaban"]} titles={["Director", "Director"]}/>
+				<SupportingDirectors names={["Eric Misenhimer", "Diana Zuger", "Meiling Adams", "Marybelle Mejia"]} titles={["President", "Vice President", "Secretary", "Director"]}/>
+				<SupportingDirectors names={["Malou Arquero", "Anne Marie Asis", "Danielle Zuger", "Lloyd Alaban"]} titles={["Treasurer", "Dynamios Liaison", "Director", "Director"]}/>
+				<Footer/>
 			</div>
 		);
 	}

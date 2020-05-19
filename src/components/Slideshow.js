@@ -22,25 +22,6 @@ import React, { Component } from 'react';
  class Slideshow extends Component {
      render() {
  		// component will render JSX (react's version of html) inside return statement
- 		const slideImages = [
-            img1,
-            img2L,
-            img2R,
-            img4,
-            img5,
-            img6,
-            img7,
-            img8,
-            img9,
-            img10,
-            img3L,
-            img3R,
-            img11,
-            img12,
-            img13,
-            img14
-         ];
-         
  		const properties = {
  			duration: 3000,
  			transitionDuration: 500,
@@ -52,9 +33,9 @@ import React, { Component } from 'react';
  			}
  		  }
  		  const Slideshow = () => {
-            var pictures = slideImages.map((item) => <div className="each-slide"> <img src = {item} alt="Loading Error"/> </div>);
+            var pictures = this.props.slideImages.map((item) => <div className={this.props.banner ? "each-slide-Banner":"each-slide"}> <img src = {item} alt="Loading Error"/> </div>);
  			return (
- 				<div className = "danceimg" >
+ 				<div className={this.props.banner ? "danceBannerimg":"danceimg"} >
                     <Slide {...properties}>
                         {pictures}
                     </Slide>

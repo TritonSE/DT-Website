@@ -33,6 +33,12 @@
     margin-top: -3vw;
 }
 
+.Supporting-Directors{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
 @media only screen and (max-width: 600px) {
     .Director-Profile{
         flex-direction: column;

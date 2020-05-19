@@ -32,7 +32,7 @@ class BlinkingText extends Component {
 		// component will render JSX (react's version of html) inside return statement
 		return (
             <div className="Body-Header">
-              <p style={{color: 'rgb(15, 185, 185)'}}id="dynamicsTxt"> Dynamics </p> 
+              <p style={{color: '#FF4081'}}id="dynamicsTxt"> Dynamics </p> 
               <p> Dance </p>
               <p> Team </p>
         </div>

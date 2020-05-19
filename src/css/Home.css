@@ -1,6 +1,6 @@
 
 .Text-Container{
-    /* margin-top: 4%; */
+    margin-top: 1%;
     display: flex;
 }
 .Left-Container{
@@ -36,8 +36,8 @@
 }
 
 .Contact-Header{
-    text-align: right;
     flex: 1;
+    text-align: right;
 }
 
 .Scroll-Button{
