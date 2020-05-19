@@ -27,19 +27,6 @@
     margin-right: 2%;
 }
 
-.Footer{
-    background-color: rgb(15, 185, 185);
-    margin-top: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Contact-Header{
-    flex: 1;
-    text-align: right;
-}
-
 .Scroll-Button{
     background-color: rgb(15, 185, 185);
     border: none;

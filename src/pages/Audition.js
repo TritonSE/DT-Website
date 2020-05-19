@@ -7,6 +7,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import '../css/Audition.css';
 
 class Audition extends Component {
+    componentDidMount() {
+		window.scrollTo(0,0);
+	}
+    
     render() {
         return(
             <div className="hideHorizontalScroll">

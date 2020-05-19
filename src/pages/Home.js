@@ -5,6 +5,7 @@ import Slideshow from '../components/Slideshow.js'
 import '../css/Home.css';
 import Toolbar from '../components/Toolbar.js';
 import Footer from '../components/Footer.js';
+import { Link } from 'react-router-dom';
 
 
 class Home extends React.Component {
@@ -20,6 +21,7 @@ class Home extends React.Component {
 	}
 
 	componentDidMount() {
+		window.scrollTo(0,0);
 		this.updateWindowDimensions();
 		window.textTimer = setInterval(this.changeStyle, 1000);
 		window.addEventListener('resize', this.updateWindowDimensions);
@@ -94,8 +96,8 @@ class Home extends React.Component {
 			
 									Dancers learn quality technique along with competitive choreography in both commercial and concert styles. Like the five points of a star, DPT has five primary goals: instill technique, performance, character, dedication and passion in all of its dancers. Dancers have the opportunity to perform in groups, trios, duets, and even solos.<br/> <br/>
 			
-									DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <a style={{color: '#FF4081'}} href='https://stackoverflow.com/questions/30208108/make-part-of-the-text-as-link-react-localization'>Click here</a> for more information. 
-									Dancers have the opportunity to perform in groups, trios, duets, and even solos. <a style={{color: '#FF4081'}} href='https://stackoverflow.com/questions/30208108/make-part-of-the-text-as-link-react-localization'>Click here</a> to learn more about DPT.
+									DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link style={{color: '#FF4081'}} to='/Audition'>Click here</Link> for more information. 
+									Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link style={{color: '#FF4081'}} to="/About">Click here</Link> to learn more about DPT.
 							</p>
 						</div>
 						<div className="Right-Container" style={{width: this.state.width*0.5}}>

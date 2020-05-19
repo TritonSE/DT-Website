@@ -6,6 +6,10 @@ import '../css/About.css';
 import Footer from '../components/Footer.js';
 
 class About extends Component {
+	
+	componentDidMount() {
+		window.scrollTo(0,0);
+	}
 
 	render() {
 		var solomonText = `Anthony Charles T. Solomon is the Creative Director of the Dynamics Performance Team (DPT). He started dancing at the age of 4 at his local studio in San Jose. In 1998, Charles recieved the opportunity from his teacher and mentor, Joy Sinnott, to become an assistant teacher, and in 2001 became a full-fledged instructor at his studio.  He is proficient in teaching various levels of ballet, tap, jazz, lyrical, contemporary and hip hop. In 2007, he became a certified member of Dance Masters of California (DMC) Chapter 13 and Dance Masters of America (DMA). Since then, he has held the offices of Second Vice President, First Vice President, President, and past President of DMC Chapter 13. As DMC Chapter 13 President, he traveled to the DMA National Convention as a delegate. \n
