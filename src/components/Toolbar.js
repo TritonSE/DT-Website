@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Navbar,Nav} from 'react-bootstrap';
-import BlinkingText from './BlinkingText.js'
 import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
@@ -69,9 +68,9 @@ class Toolbar extends Component {
 
             {/** Contact part of Navbar */}
             <NavLink 
-              to = "/contact" 
-              href="/Contact" 
-              className = "Contact-Header" 
+              to = "/audition" 
+              href="/Audition" 
+              className = "Audition-Header" 
               style={{
                 fontWeight: "bold",
                 color: "black",
@@ -79,7 +78,7 @@ class Toolbar extends Component {
               activeStyle={{
                 color: "#FF4081"
               }}>
-                Contact
+                Audition
             </NavLink>
 
           </Nav>

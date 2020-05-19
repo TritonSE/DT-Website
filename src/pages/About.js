@@ -18,7 +18,7 @@ class About extends Component {
 		Miss Dizzle dances professionally with contemporary companies DVDance and Nhan Ho Project. Other performance credits include dancing at San Jose City Hall, Disneyland, Disneyworld, the 2016 American Cancer Society Fundraiser, Saratoga Chamber of Commerce, the Classic Cool Car Show flash mob, the San Jose Center for Performing Arts, and LEVYdance, among others.\n\n
 		She has been teaching in styles such as contemporary, acro, ballet, jazz, hip hop, and lyrical for fourteen years, and is a certified Acrobatics Arts instructor. She began choreographing at age 16 with the mentorship of Charles Solomon and Sara Wardell, and continued exploring her passion in college under the mentorship of Fred Mathews. Her choreography has won first place awards at various competitions in the Bay Area. Her choreographic credits include SJSU’s Images in Dance, DVDance, Willow Glen High School Dance Team, and the Dynamics Performance Team.\n\n
 		She believes the exploration of artistry is a lifelong endeavor, and is dedicated to helping others on their artistic journey.`
-		
+
 		return (
 			<div>
 				<Toolbar/>
