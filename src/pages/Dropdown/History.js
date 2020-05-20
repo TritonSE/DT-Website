@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import '../../css/About.css';
-import Toolbar from '../../components/Toolbar'
+import Toolbar from '../../components/Toolbar';
+import Footer from '../../components/Footer.js';
+
 
 class History extends React.Component{
     render() {
@@ -39,6 +41,7 @@ class History extends React.Component{
 			<br/>
 			</Container>
 			</div>
+			<Footer/>
 			</div>
         );
     }
