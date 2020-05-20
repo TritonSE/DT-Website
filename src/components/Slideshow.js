@@ -33,11 +33,14 @@ import React, { Component } from 'react';
  			}
  		  }
  		  const Slideshow = () => {
-            var pictures = this.props.slideImages.map((item) => <div className={this.props.banner ? "each-slide-Banner":"each-slide"}> <img src = {item} alt="Loading Error"/> </div>);
+            var pictures = this.props.slideImages.map((item, i) => 
+				<div className={i == (this.props.special - 1) ? "each-slide-special":"each-slide"}> 
+					<img src = {item} alt="Loading Error"/> 
+				</div>);
  			return (
- 				<div className={this.props.banner ? "danceBannerimg":"danceimg"} >
+ 				<div className="danceimg" >
                     <Slide {...properties}>
-                        {pictures}
+						{pictures}
                     </Slide>
             </div>
  			)

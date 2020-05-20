@@ -101,7 +101,7 @@ class Home extends React.Component {
 							</p>
 						</div>
 						<div className="Right-Container" style={{width: this.state.width*0.5}}>
-							<Slideshow slideImages={[
+							<Slideshow special={10} slideImages={[
 								require('../images/home/Main Page 1.jpg'), 
 								require('../images/home/Main Page 4.jpg'),
 								require('../images/home/Main Page 5.jpg'), 
@@ -111,7 +111,7 @@ class Home extends React.Component {
 								require('../images/home/Main Page 9.jpg'), 
 								require('../images/home/Main Page 10.jpg'),
 								require('../images/home/Main Page 11.jpg'), 
-								require('../images/home/Main Page 12.jpg'),
+								require('../images/home/Main Page 12.jpg'), 
 								require('../images/home/Main Page 13.jpg'), 
 								require('../images/home/Main Page 14.jpg')
 								]}/>
