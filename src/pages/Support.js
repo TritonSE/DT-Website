@@ -3,6 +3,7 @@ import Toolbar from '../components/Toolbar.js';
 import '../css/Support.css';
 import SupportMainText from '../components/SupportMainText';
 import Footer from '../components/Footer.js';
+import { Container, Row, Col } from 'react-bootstrap';
 
 /**
  * Displays Support Page, including Navigation Bar. 
@@ -17,7 +18,9 @@ class Support extends Component {
 			return(
 			<div>
 				<Toolbar bool={false}/>
+				<Container>				
 					<SupportMainText/>
+				</Container>
 			</div>
 			);
 		}
