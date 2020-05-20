@@ -27,8 +27,8 @@ class About extends Component {
 			<div>
 				<Toolbar/>
 				<div className="Title-Container">
-					<p style={{fontSize: "1.9vw"}}> 2019-2020 Season </p>
-					<p style={{fontSize: "5.5vw", color:'#FF4081', flex:"1", marginLeft:"3%"}}> Board of Directors </p>
+					<p className="Title-Season"> 2019-2020 Season </p>
+					<p className="Title-Directors"> Board of Directors </p>
 				</div>
 				<DirectorProfile imgTop={require('../images/directors/Creative Director Headshot.jpg')} imgBottom={require('../images/directors/Creative Director Action shot.jpg')} title="Creative Director" name="Charles Solomon" text= {solomonText}/>
 				<br/>
