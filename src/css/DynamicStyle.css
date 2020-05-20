@@ -1,22 +1,30 @@
 .text {
+    color: #0f0f0f;
+    font-size: calc(8vw);
+    text-align: left;
     padding-left: 20%;
-    padding-top: calc(20vmin);
-	 margin-bottom: -250px;
+    font-family: 'Lato', serif;
+    font-style:normal;
+    padding-top: calc(15vw);
 }
 .danceimg{
-    padding-right: calc(10vmin);
-    top: calc(-45vmin);
-	margin-bottom: -250px;
-    right: calc(25vmin);
-    float: right;
+    width: calc(27vw);
+    height: calc(35vw);
+    display: block;
 }
-@media only screen and (max-width: 600px){
-    .text{
-        white-space: nowrap;
-        padding-left: calc(33.5vmin);
-        padding-top: calc(75vmin);
-    }
-    .danceimg{
-        top: calc(-100vmin);
-    }
+  
+.each-slide img {
+    width: calc(27vw);
+    height: calc(35vw);
+}
+
+.danceBannerimg{
+    width: calc(100vw);
+    height: calc(50vw);
+    display: block;
+}
+  
+.each-slide-Banner img {
+    width: calc(100vw);
+    height: calc(50vw);
 }
