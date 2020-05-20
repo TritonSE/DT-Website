@@ -1,11 +1,13 @@
 import React from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
-import '../css/About.css';
+import '../../css/About.css';
+import Toolbar from '../../components/Toolbar'
 
 class Mission extends React.Component{
     render() {
         return (
             <div>
+				<Toolbar bool={true}/>
 			{/* FOR MOBILE */}
 			<div className="mobile">
 			<Container>

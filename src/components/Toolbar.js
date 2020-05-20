@@ -1,25 +1,50 @@
 import React, { Component } from 'react';
-import {Navbar,Nav} from 'react-bootstrap';
+import {Navbar,Nav,NavDropdown} from 'react-bootstrap';
 import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
-import '../css/Toolbar.css'
-
+import { LinkContainer} from 'react-router-bootstrap'
+//import "../css/Toolbar.css"
 
 class Toolbar extends Component {
-   
-  render() {
+/** 
+  constructor(props) {
+    super(props);
+    this.state = {
+      val: false,
+    }
+  }
+  
+  setVal = (value) => {
+    this.setState({ val: value });
+  }
+  **/
+  componentDidMount() {
+    console.log(this.props.bool);
+    if(this.props.bool === true){
+      require('../css/Toolbar2.css');
+    }
+    else{
+      require('../css/Toolbar.css');
+    }
+  }
+
+  componentWillUnmount() {
+    window.location.reload(false);
+  }
+
+ render() {
   return(
     <div>
-      <Navbar bg = "custom" expand="lg">
+      <Navbar bg = "custom" expand="md">
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <NavLink className = "logo-text" to="/" href = "/Home" >
         {/** Image/Text for dynamics team*/}
         <LogoText/>
       </NavLink>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-
+      <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className ="ml-auto">
+            
             {/** Home part of Navbar */}
             <NavLink  
               to="/" 
@@ -35,22 +60,28 @@ class Toolbar extends Component {
               }}> 
                 Home
             </NavLink>
-
-            {/** About part of Navbar */}
-            <NavLink 
-              to= "/about"
-              href="/About" 
-              className = "About-Header" 
-              style={{
-                fontWeight: "bold",
-                color: "black"
-              }}
-              activeStyle={{
-                color: "#FF4081"
-              }} > 
-                About 	
-            </NavLink>
-
+            <NavDropdown title="About" id="collasible-nav-dropdown" className = "Dropdown-Header">
+                    <LinkContainer to = "/Dropdown/About" exact activeClassName = "active">
+                      <NavDropdown.Item> 
+                        About Us
+                      </NavDropdown.Item>
+                    </LinkContainer>
+                    <LinkContainer to = "/Dropdown/History" exact activeClassName = "active">
+                      <NavDropdown.Item>
+                        History
+                      </NavDropdown.Item>
+                    </LinkContainer>
+                    <LinkContainer to = "/Dropdown/Directors" exact activeClassName = "active">
+                      <NavDropdown.Item> 
+                        Board of Directors 
+                      </NavDropdown.Item>
+                    </LinkContainer>
+                    <LinkContainer to = "/Dropdown/mission" href = "/Dropdown/mission">
+                      <NavDropdown.Item> 
+                      Our Mission
+                      </NavDropdown.Item>
+                    </LinkContainer>
+              </NavDropdown>
             {/** Support part of Navbar */}
             <NavLink 
               to = "/support" 
@@ -66,22 +97,23 @@ class Toolbar extends Component {
                 Support
             </NavLink>
 
-            {/** Contact part of Navbar */}
-            <NavLink 
-              to = "/audition" 
-              href="/Audition" 
-              className = "Audition-Header" 
+          
+             <NavLink 
+              to="/Auditions"
+              href= "/Auditions"
+              exact activeClassName = "active"
+              className= "Auditions-Header"
               style={{
                 fontWeight: "bold",
                 color: "black",
               }}
               activeStyle={{
-                color: "#FF4081"
+                color: "rgb(15, 185, 185)"
               }}>
-                Audition
-            </NavLink>
+                Auditions
+              </NavLink>
 
-          </Nav>
+              </Nav>
         </Navbar.Collapse>
         <Navbar.Brand>
 
@@ -89,6 +121,7 @@ class Toolbar extends Component {
           <SocialFollow />
 
         </Navbar.Brand>
+        
       </Navbar>
     </div>
   );
@@ -96,3 +129,4 @@ class Toolbar extends Component {
 }
 
 export default Toolbar;
+

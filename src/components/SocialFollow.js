@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 //import Modal from "react-bootstrap/Modal";
 //import Button from "react-bootstrap/Button";
 import '../css/SocialFollow.css';
+import '../css/Global.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 //const fbIcon = "../images/fbIcon.png";

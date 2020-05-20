@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Toolbar from '../components/Toolbar.js';
-import DirectorProfile from '../components/DirectorProfile.js'
-import SupportingDirectors from '../components/SupportingDirectors.js';
-import '../css/About.css';
-import Footer from '../components/Footer.js';
+import Toolbar from '../../components/Toolbar.js';
+import DirectorProfile from '../../components/DirectorProfile.js'
+import SupportingDirectors from '../../components/SupportingDirectors.js';
+import '../../css/About.css';
+import Footer from '../../components/Footer.js';
 
-class About extends Component {
+class Directors extends Component {
 	
 	componentDidMount() {
 		window.scrollTo(0,0);
@@ -30,9 +30,9 @@ class About extends Component {
 					<p className="Title-Season"> 2019-2020 Season </p>
 					<p className="Title-Directors"> Board of Directors </p>
 				</div>
-				<DirectorProfile imgTop={require('../images/directors/Creative Director Headshot.jpg')} imgBottom={require('../images/directors/Creative Director Action shot.jpg')} title="Creative Director" name="Charles Solomon" text= {solomonText}/>
+				<DirectorProfile imgTop={require('../../images/directors/Creative Director Headshot.jpg')} imgBottom={require('../../images/directors/Creative Director Action shot.jpg')} title="Creative Director" name="Charles Solomon" text= {solomonText}/>
 				<br/>
-				<DirectorProfile imgTop={require('../images/directors/Artistic Director Headshot.jpg')} imgBottom={require('../images/directors/Artistic Director Action shot.jpg')} title="Artistic Director" name="Danielle de Ojeda" text={danielleText}/>
+				<DirectorProfile imgTop={require('../../images/directors/Artistic Director Headshot.jpg')} imgBottom={require('../../images/directors/Artistic Director Action shot.jpg')} title="Artistic Director" name="Danielle de Ojeda" text={danielleText}/>
 				<br/>
 				<SupportingDirectors names={["Eric Misenhimer", "Diana Zuger", "Meiling Adams", "Marybelle Mejia"]} titles={["President", "Vice President", "Secretary", "Director"]}/>
 				<SupportingDirectors names={["Malou Arquero", "Anne Marie Asis", "Danielle Zuger", "Lloyd Alaban"]} titles={["Treasurer", "Dynamios Liaison", "Director", "Director"]}/>
@@ -42,4 +42,4 @@ class About extends Component {
 	}
 }
 
-export default About
+export default Directors
