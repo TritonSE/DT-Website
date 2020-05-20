@@ -1,0 +1,59 @@
+/*
+* NAVBAR
+*/
+.NavBarHeader {
+    text-decoration: none !important;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.NavBarHeader:hover{
+    color: #FF4081 !important; 
+    transition: 0.4s !important;
+}
+@media only screen and (max-width: 1300px) {
+    .NavBarHeader{
+        font-size: 14.4px;
+    }
+}
+/*
+* ABOUT PAGE
+*/
+.Content-Panel{
+    padding-left: 8%;
+    width: 85%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.2vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+.Title-Panel{
+    font-family: 'Lato', sans-serif;
+    font-size: 13.5vh;
+    letter-spacing: 0;
+    color: #FF4081;
+    opacity: 1;
+}
+/*
+* HOME PAGE
+*/
+.text{
+    color: #0f0f0f;
+    font-size: calc(8vmin);
+    text-align: left;
+    font-style:normal;
+    font-family: 'Lato', serif;
+}
+.danceimg{
+    width: calc(42vmin);
+    height: calc(51vmin);
+    display: block;
+    right: calc(25vmin);
+    position: relative;
+}

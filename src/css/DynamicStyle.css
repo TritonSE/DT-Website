@@ -1,42 +1,22 @@
-
-
 .text {
-    color: #0f0f0f;
-    font-size: calc(8vmin);
-    text-align: left;
     padding-left: 20%;
-    font-family: 'Lato', serif;
-    font-style:normal;
     padding-top: calc(20vmin);
 	 margin-bottom: -250px;
 }
 .danceimg{
-    width: calc(42vmin);
-    height: calc(51vmin);
-    display: block;
-    position:relative;
     padding-right: calc(10vmin);
     top: calc(-45vmin);
-	 margin-bottom: -250px;
+	margin-bottom: -250px;
     right: calc(25vmin);
     float: right;
 }
 @media only screen and (max-width: 600px){
     .text{
-        color: #0f0f0f;
-        font-size: calc(8vmin);
-        font-family: 'Lato', serif;
         white-space: nowrap;
-        font-style:normal;
         padding-left: calc(33.5vmin);
         padding-top: calc(75vmin);
     }
     .danceimg{
-        width: calc(42vmin);
-        height: calc(51vmin);
-        display: block;
-        right: calc(25vmin);
-        position: relative;
         top: calc(-100vmin);
     }
 }
