@@ -58,11 +58,12 @@
     }
 
     .Title-Season{
-        font-size: 6.9vh;
+        font-size: 4.9vw;
     }
     
     .Title-Directors{
-        font-size: 8.5vh;
+        font-size: 5.5vw;
+        margin-left: 0%;
     }
     
 
