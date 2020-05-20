@@ -12,7 +12,7 @@ class Home extends React.Component {
 
 	constructor(props){
 		super(props);
-		this.state = { width: 0, height: 0, imgViz: false };
+		this.state = { width: 0, height: 0, imgViz: false, scroll:0 };
 		this.dynamicText = React.createRef();
 		this.scrollReference = React.createRef();
 
@@ -36,7 +36,7 @@ class Home extends React.Component {
 			top:this.scrollReference.current.offsetTop,
 			behavior:"smooth"
 		})
-    }
+	}
 	
 	componentWillUnmount() {
 		window.removeEventListener('resize', this.updateWindowDimensions);

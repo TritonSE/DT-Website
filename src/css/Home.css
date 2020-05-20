@@ -30,7 +30,7 @@
 .Scroll-Button{
     background-color: rgb(15, 185, 185);
     border: none;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: block;
     /* position: relative;
