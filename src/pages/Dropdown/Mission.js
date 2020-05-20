@@ -22,7 +22,6 @@ class Mission extends React.Component{
 				<br/>
 			</Container>
 			</div>
-			<Toolbar/>
 			<div className="web">
 			<Container>
 			<div className="div">

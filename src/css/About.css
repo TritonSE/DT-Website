@@ -1,5 +1,4 @@
-.title{
-    margin-top: 0%;
+.title1{
     width: 70%;
     margin-left: 15%;
     text-align: center;
@@ -9,6 +8,7 @@
     color: #FF4081;
     opacity: 1;
 }
+
 .container{
     flex-direction: row;
     flex-wrap: nowrap;
