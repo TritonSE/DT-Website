@@ -64,7 +64,19 @@
         border-radius: 10%;
         color: #FFFFFF;
         background-color: #333333;
-        transform: translate(0,15px);
+        transition: 1s;
+        transform: translate(0,0px);
+        transform: scale(0.8);
+    }
+
+    .Social ul li:nth-child(2) img{
+        transform: scale(0.8);
+        transform: translateY(-5%);
+    }
+
+    .Social ul li:nth-child(3) img {
+        transform: scale(0.8);
+        transform: translateY(10%);
     }
     
     .Social ul li:last-child a{

@@ -20,6 +20,7 @@ class Home extends React.Component {
 	changeStyle(){
 		const x = this.myRef.current;
 		const y = this.imageRef.current;
+		//var count = 0;
 
 		if(x.style.fontStyle==='italic'){
 			x.style.fontWeight= 'bold';
@@ -50,11 +51,11 @@ class Home extends React.Component {
 		return (
 			// can only return one element so if you want more than one make sure they're nested inside a div
 			<div>
-				<Toolbar bool = {false}> </Toolbar>
-			<div className="text" >
+				<Toolbar />
+			<div className="text" onContextMenu={(e)=> e.preventDefault()}>
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 				<p>A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}> <br/>dynamic</span> <span><br/>dancers.</span></p>
-				<img className='danceimg' src={dancer} style={{transform: "rotate(5deg)"}} ref = {this.imageRef} alt="could not load img"/>
+				<img className='danceimg' src={dancer} style={{transform: "rotate(5deg)"}} ref = {this.imageRef} alt="error loading img"/>
 			</div>
 			</div>
 		);
