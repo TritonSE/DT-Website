@@ -110,7 +110,7 @@ class Toolbar extends Component {
               activeStyle={{
                 color: "rgb(15, 185, 185)"
               }}>
-                Auditions
+                Audition
               </NavLink>
 
               </Nav>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Toolbar from '../components/Toolbar.js';
 import '../css/Support.css';
 import SupportMainText from '../components/SupportMainText';
+import Footer from '../components/Footer.js';
 
 /**
  * Displays Support Page, including Navigation Bar. 
@@ -16,7 +17,7 @@ class Support extends Component {
 			return(
 			<div>
 				<Toolbar bool={false}/>
-				<SupportMainText/>
+					<SupportMainText/>
 			</div>
 			);
 		}
