@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Toolbar from '../components/Toolbar.js';
 import { Container, Col, Row } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import '../css/Mission.css';
@@ -20,6 +21,7 @@ class Mission extends React.Component{
 				<br/>
 			</Container>
 			</div>
+			<Toolbar/>
 			<div className="web">
 			<Container>
 			<div className="div">
