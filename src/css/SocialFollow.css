@@ -1,3 +1,4 @@
+
 .Social ul {
     padding-left: 10px;
     padding: 0;
@@ -36,8 +37,9 @@
 } 
 
 .Social ul li a:hover{
-    color: #FFFFFF;
+    color: white;
     background-color: #FF4081;
+    transition: 0.5s;
 }
 
 @media only screen and (max-width: 1300px){
@@ -62,7 +64,7 @@
         border-radius: 10%;
         color: #FFFFFF;
         background-color: #333333;
-        transition: 0.5s;
+        transition: 1s;
         transform: translate(0,0px);
         transform: scale(0.8);
     }
@@ -87,7 +89,7 @@
 }
 
 /* MAKE ICONS DISAPPEAR */
-@media screen and (max-width:600px) {  
+@media screen and (max-width:900px) {  
     .Social ul {
         display: none;
     }

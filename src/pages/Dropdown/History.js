@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-import Toolbar from '../components/Toolbar.js';
 import { Container, Col, Row } from 'react-bootstrap';
-import '../css/History.css';
-import image1 from "../images/colleges/mmc.png";
-import image2 from "../images/colleges/sdsu.png";
-import image3 from "../images/colleges/ssu.jpg";
-import image4 from "../images/colleges/sjsu.png";
-import image5 from "../images/colleges/lmu.jpg";
-import image6 from "../images/colleges/smcc.png";
+import Toolbar from '../../components/Toolbar';
+import '../../css/History.css';
+import image1 from "../../images/colleges/mmc.png";
+import image2 from "../../images/colleges/sdsu.png";
+import image3 from "../../images/colleges/ssu.jpg";
+import image4 from "../../images/colleges/sjsu.png";
+import image5 from "../../images/colleges/lmu.jpg";
+import image6 from "../../images/colleges/smcc.png";
 
 class History extends React.Component{
     render() {
         return (
             <div>
+				<Toolbar bool={true}/>
 			{/* FOR MOBILE */}
 			<div className="mobile">
 			<Container>

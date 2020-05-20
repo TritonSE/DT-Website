@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import Toolbar from '../components/Toolbar.js';
+import Toolbar from '../../components/Toolbar';
 import { Container, Col, Row } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import '../css/Mission.css';
-import image from "../images/mission/Mission Page.jpg";
+import '../../css/Mission.css';
+import image from "../../images/mission/Mission Page.jpg";
 
 class Mission extends React.Component{
     render() {
         return (
             <div>
+				<Toolbar bool={true}/>
 			{/* FOR MOBILE */}
 			<div className="mobile">
 			<Container>

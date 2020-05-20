@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import Toolbar from '../components/Toolbar.js';
+import Toolbar from "../../components/Toolbar";
 import { Container, Col, Row } from 'react-bootstrap';
-import '../css/About.css';
-import image1 from "../images/colleges/mmc.png";
-import image2 from "../images/colleges/sdsu.png";
-import image3 from "../images/colleges/ssu.jpg";
-import image4 from "../images/colleges/sjsu.png";
-import image5 from "../images/colleges/lmu.jpg";
-import image6 from "../images/colleges/smcc.png";
-import image0 from "../images/about/About Page 1.jpg";
+import '../../css/About.css';
+import image1 from "../../images/colleges/mmc.png";
+import image2 from "../../images/colleges/sdsu.png";
+import image3 from "../../images/colleges/ssu.jpg";
+import image4 from "../../images/colleges/sjsu.png";
+import image5 from "../../images/colleges/lmu.jpg";
+import image6 from "../../images/colleges/smcc.png";
+import image0 from "../../images/about/About Page 1.jpg";
 
 class About extends Component {
-	render() {
-		return (
-			<div>
-				<Toolbar/>
-			<div className="web">
+  render() {
+    return(
+      <div>
+         <Toolbar bool={true}></Toolbar>
+         <div className="web">
 			<Container>
 			
 			<Row>
@@ -53,9 +53,10 @@ class About extends Component {
 			<br/>
 			</Container>
 			</div>
-			</div>
-		);
-	}
+      </div>
+    );
+  }
 }
 
 export default About
+
