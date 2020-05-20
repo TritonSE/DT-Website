@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Navbar,Nav,NavDropdown} from 'react-bootstrap';
-import BlinkingText from './BlinkingText.js'
 import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
@@ -65,6 +64,11 @@ class Toolbar extends Component {
                     <LinkContainer to = "/Dropdown/About" exact activeClassName = "active">
                       <NavDropdown.Item> 
                         About Us
+                      </NavDropdown.Item>
+                    </LinkContainer>
+                    <LinkContainer to = "/Dropdown/History" exact activeClassName = "active">
+                      <NavDropdown.Item>
+                        History
                       </NavDropdown.Item>
                     </LinkContainer>
                     <LinkContainer to = "/Dropdown/Directors" exact activeClassName = "active">
