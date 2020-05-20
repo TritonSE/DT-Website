@@ -77,7 +77,7 @@
 }
 
 /* MAKE ICONS DISAPPEAR */
-@media screen and (max-width:1150px) {  
+@media screen and (max-width:900px) {  
     .Social ul {
         display: none;
     }

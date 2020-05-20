@@ -93,21 +93,7 @@ class Toolbar extends Component {
                 Support
             </NavLink>
 
-            {/** Contact part of Navbar */}
-            <NavLink 
-              to = "/contact" 
-              href="/Contact" 
-              className = "Contact-Header" 
-              style={{
-                fontWeight: "bold",
-                color: "black",
-              }}
-              activeStyle={{
-                color: "rgb(15, 185, 185)"
-              }}>
-                Contact
-            </NavLink>
-
+          
              <NavLink 
               to="/Auditions"
               href= "/Auditions"
@@ -118,7 +104,7 @@ class Toolbar extends Component {
                 color: "black",
               }}
               activeStyle={{
-                color: "#FF4081"
+                color: "rgb(15, 185, 185)"
               }}>
                 Auditions
               </NavLink>
