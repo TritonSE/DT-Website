@@ -13,7 +13,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    width: 110%;
+    max-width: 100%;
 }
 
 .content1{
@@ -135,7 +135,7 @@
 .Boxed{
     margin-top: 3%;
     margin-left: -2.5%;
-    width: 93.5%;
+    width: 103%;
     height: 100%;
     background-color: white;
     border: 0.1vh solid lightgray;
@@ -146,12 +146,14 @@
 .column1{
     width: 42%;
     vertical-align: top;
+    padding-left: 6%;
 }
 
 .column2{
     padding-left: 2%;
     width: 55%;
     vertical-align: top;
+    padding-right: 6%;
 }
 
 .mobile{

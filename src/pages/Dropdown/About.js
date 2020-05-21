@@ -16,7 +16,7 @@ class About extends Component {
       <div>
          <Toolbar bool={true}></Toolbar>
          <div className="web">
-			<Container>
+		 	<Container fluid>
 			
 			<table>
 				<tr>
