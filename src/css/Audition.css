@@ -16,7 +16,6 @@
 
 .audition-text {
     padding-right: 7%;
-    padding-bottom: 5%;
     padding-left: 5%;
 }
 
@@ -34,10 +33,9 @@
 }
 
 .auditionIMG{
-    padding-top: 5%;
+    padding-top: 10%;
     height: 100%;
     padding-left: 10%;
-    padding-bottom: 5%;
     width: 100%;
 }
 
