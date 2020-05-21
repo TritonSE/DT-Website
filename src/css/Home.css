@@ -18,7 +18,7 @@
 .Dynamic-Text{
     text-align: left;
     margin-left: 15%;
-    font-size: 4.9vw;
+    font-size: 4.7vw;
 }
 
 .Static-Text{
@@ -30,7 +30,7 @@
 .Scroll-Button{
     background-color: rgb(15, 185, 185);
     border: none;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: block;
     /* position: relative;

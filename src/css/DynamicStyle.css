@@ -16,15 +16,26 @@
 .each-slide img {
     width: calc(27vw);
     height: calc(35vw);
+    object-fit: cover;
+    image-rendering: pixelated;
 }
 
-.danceBannerimg{
-    width: calc(100vw);
-    height: calc(50vw);
+.each-slide-special img{
+    width: calc(27vw);
+    height: calc(35vw);
+    object-fit: cover;
+    image-rendering: pixelated;
+    object-position: top left;
+}
+
+/* .danceBannerimg{
+    width: calc(60vw);
+    height: calc(40vw);
     display: block;
 }
   
 .each-slide-Banner img {
-    width: calc(100vw);
-    height: calc(50vw);
-}
+    width: calc(60vw);
+    height: calc(40vw);
+    object-fit: cover
+} */
