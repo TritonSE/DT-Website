@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 //can import your own css file here instead of App.css
 import dancer from './Dancer.jpg';
 import '../css/DynamicStyle.css';
+import '../css/Global.css';
 // must extend "Component" and it's recommended to name the class the same name as the filename
 class HomePage extends React.Component {
 	// area where functions are defined (See FormExample.js)
@@ -15,23 +16,23 @@ class HomePage extends React.Component {
 		const x = this.myRef.current;
 		const y = this.imageRef.current;
 		var count = 0;
-		if(x.style.fontStyle=='italic'){
+		if(x.style.fontStyle='italic'){
 			x.style.fontWeight= 'bold';
 			x.style.fontStyle='normal';
 			y.style.transform = "rotate(0deg)";
 		}
-		else if(x.style.fontStyle=='normal'&&x.style.fontWeight=='normal'){
+		else if(x.style.fontStyle='normal'&&x.style.fontWeight=='normal'){
 			x.style.fontWeight = 'bold';
 			x.style.textDecorationLine = 'underline';
 			y.style.transform = "rotate(0deg)";
 		}
-		else if(x.style.textDecorationLine=='underline'){
+		else if(x.style.textDecorationLine='underline'){
 			x.style.fontStyle='italic';
 			x.style.fontWeight = 'normal';
 			x.style.textDecorationLine = 'initial';
 			y.style.transform = "rotate(-5deg)";
 		}
-		else if(x.style.fontWeight=='bold'){
+		else if(x.style.fontWeight='bold'){
 			x.style.fontStyle='normal';
 			x.style.fontWeight='normal';
 			y.style.transform = "rotate(5deg)";

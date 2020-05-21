@@ -38,7 +38,7 @@ import React, { Component } from 'react';
 					<img src = {item} alt="Loading Error"/> 
 				</div>);
  			return (
- 				<div className="danceimg" >
+ 				<div className="danceimg" onContextMenu={(e)=> {e.preventDefault(); return false;}}>
                     <Slide {...properties}>
 						{pictures}
                     </Slide>

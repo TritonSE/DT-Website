@@ -1,10 +1,22 @@
+
 .Title-Container{
     margin-left: 10vw;
     display: flex;
     justify-content: center;
     align-items: baseline;
-    color: rgb(15, 185, 185);
     font-weight: normal;
+}
+
+.Title-Season{
+    color: rgb(15, 185, 185);
+    font-size: 1.9vw;
+}
+
+.Title-Directors{
+    font-size: 5.5vw;
+    color: #FF4081;
+    flex: 1;
+    margin-left: 3%;
 }
 
 .Director-Profile{
@@ -40,26 +52,45 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    .Title-Container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .Title-Season{
+        font-size: 4.9vw;
+    }
+    
+    .Title-Directors{
+        font-size: 5.5vw;
+        margin-left: 0%;
+    }
+    
+
     .Director-Profile{
         flex-direction: column;
         align-items: center;
-        font-size: 1.5vw;
+        font-size: 1.8vw;
     }
     .Director-Profile-Text{
-        width: 80%;
+        margin-top: 3%;
+        width: 90%;
     }
 
     .Director-Profile-Images-Container{
-        width: 40vw;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
     }
     
     .Director-Profile-Images-Top{
-        height: 28vw;
-        width: 20vw;
+        height: 60vw;
+        width: 50vw;
     }
     
     .Director-Profile-Images-Bottom{
-        margin-left: 15vw;
-        margin-top: -10vw;
+        margin-left: 0vw;
+        margin-top: 0vw;
     }
 }

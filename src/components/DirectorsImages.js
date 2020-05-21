@@ -4,8 +4,8 @@ import '../css/About.css';
 class DirectorsImages extends Component {
 	render() {
 		return (
-            <div className="Director-Profile-Images-Container">
-                <img src={this.props.imgTop} className="Director-Profile-Images-Top"/>
+            <div onContextMenu={(e)=> {e.preventDefault(); return false;}} className="Director-Profile-Images-Container">
+                <img  src={this.props.imgTop} className="Director-Profile-Images-Top"/>
                 <img src={this.props.imgBottom} className="Director-Profile-Images-Top Director-Profile-Images-Bottom"/>
             </div>
         );
