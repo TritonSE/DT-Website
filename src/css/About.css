@@ -13,6 +13,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    width: 100%;
 }
 
 .content1{
