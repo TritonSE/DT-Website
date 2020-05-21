@@ -33,7 +33,6 @@ class WaysToGive extends Component {
 		return (
 			// can only return one element so if you want more than one make sure they're nested inside a div
 			<div>
-				<Toolbar />
 			<div className="text" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 				<p><span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}>Ways to  <br/>Give</span></p>
@@ -47,7 +46,6 @@ class WaysToGive extends Component {
 			return (
 				// can only return one element so if you want more than one make sure they're nested inside a div
 				<div>
-					<Toolbar />
 				<div className="text" >
 					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 					<p><span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}>Ways to  <br/>Give</span></p>

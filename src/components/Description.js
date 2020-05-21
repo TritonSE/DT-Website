@@ -8,7 +8,7 @@ class Description extends Component {
     render() {
         return(
             <Container>
-                <div>
+                <div onContextMenu={(e)=> e.preventDefault()}>
                 {MemberInfo.info.map( (info, i) =>
                 <InfoItem pic = {info.image} role = {info.role} name = {info.name} />)}
                 </div>

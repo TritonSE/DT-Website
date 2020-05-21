@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
-import '../css/About.css';
+import '../../css/About.css';
+import Toolbar from '../../components/Toolbar'
+import Footer from '../../components/Footer';
 
 class Mission extends React.Component{
     render() {
         return (
             <div>
+				<Toolbar bool={true}/>
 			{/* FOR MOBILE */}
 			<div className="mobile">
 			<Container>
@@ -37,6 +40,7 @@ class Mission extends React.Component{
 			<br/>
 			</Container>
 			</div>
+			<Footer/>
 			</div>
         );
     }

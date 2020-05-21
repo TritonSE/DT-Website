@@ -1,0 +1,44 @@
+
+.Text-Container{
+    margin-top: 1%;
+    display: flex;
+}
+.Left-Container{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+.Right-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dynamic-Text{
+    text-align: left;
+    margin-left: 15%;
+    font-size: 4.7vw;
+}
+
+.Static-Text{
+    margin-left: 15%;
+    font-size: 1.15vw;
+    margin-right: 2%;
+}
+
+.Scroll-Button{
+    background-color: rgb(15, 185, 185);
+    border: none;
+    position: fixed;
+    bottom: 0;
+    display: block;
+    /* position: relative;
+    margin-top: -5vw;
+    z-index: 1;
+    display:block; */
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+}
+
