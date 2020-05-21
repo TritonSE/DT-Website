@@ -88,7 +88,7 @@ class SupportStates extends Component {
             onChange={this.handleUpdateAmount}
           >
           </input>
-          <IoIosAlert style={{display: this.state.displayError ? null:'none', color:"red", width: "5.5%", maxHeight:"5.5%"}}/>
+          <IoIosAlert style={{display: this.state.displayError ? null:'none', color:"red", width: "2%", maxHeight:"2%"}}/>
           <button 
             style={{left: "53%"}} 
             className="btn btn-secondary Proceed-Button"
