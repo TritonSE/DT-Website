@@ -41,21 +41,6 @@
     width: 100%;
 }
 
-.dot{
-    margin-top: 7%;
-    margin-left: 8%;
-    height: 2.7vh;
-    width: 2.7vh;
-    background-color: rgb(15, 185, 185);
-    border-radius: 50%;
-    display: inline-block;
-    align-self: center;
-}
-
-.dots{
-    margin-left: 38%;
-    padding-bottom: 5%;
-}
 
 @media only screen and (max-device-width: 480px) {
     

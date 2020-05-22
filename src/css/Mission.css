@@ -42,7 +42,7 @@
 .Image{
     margin-top: 5%;
     width: 99%;
-    height: 95%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -50,6 +50,14 @@
 
 .linked{
     text-decoration: underline;
+}
+
+.column1{
+    padding-left: 6%;
+}
+
+.column2{
+    padding-right: 6%;
 }
 
 .mobile{

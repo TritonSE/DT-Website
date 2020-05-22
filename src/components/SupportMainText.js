@@ -4,7 +4,7 @@ import SupportStates from '../components/SupportStates.js';
 import { Row } from 'react-bootstrap';
 
 class SupportMainText extends Component {
-	state= {
+	state = {
 		donateButtonClicked: false, //switching to true enables donation process to begin 
 		isMobile: window.innerWidth > 600 ? false:true //true indicates to use different layout for mobile <= 600 px, false = >600 layout
 	}

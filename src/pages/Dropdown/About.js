@@ -9,6 +9,7 @@ import image4 from "../../images/colleges/sjsu.png";
 import image5 from "../../images/colleges/lmu.jpg";
 import image6 from "../../images/colleges/smcc.png";
 import image0 from "../../images/about/About Page 1.jpg";
+import Footer from "../../components/Footer";
 
 class About extends Component {
   render() {
@@ -55,6 +56,7 @@ class About extends Component {
 			<br/>
 			</Container>
 			</div>
+      <Footer/>
       </div>
     );
   }
