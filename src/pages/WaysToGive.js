@@ -52,6 +52,7 @@ class WaysToGive extends Component {
 					<WaysToGiveText />
 					<button 
 						className="btn btn-secondary Donate-Button"
+						style = {{marginLeft:"calc(-5.5vw"}}
 						onClick={this.handleDonateButtonClicked}
 					>
 						Donate 
