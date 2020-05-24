@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Toolbar from '../../components/Toolbar.js';
 import DirectorProfile from '../../components/DirectorProfile.js'
 import SupportingDirectors from '../../components/SupportingDirectors.js';
-import '../../css/About.css';
+import '../../css/Directors.css';
 import Footer from '../../components/Footer.js';
 
 class Directors extends Component {

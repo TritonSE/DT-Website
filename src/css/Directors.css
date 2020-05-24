@@ -1,60 +1,106 @@
 
-.container{
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+.Title-Container{
+    margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-weight: normal;
+    margin-bottom: 1%;
 }
 
-.Content4{
-
-    margin-top: 50%;
-    margin-left: 30%;
-    width: 80%;
-    text-align: right;
-    font-family: 'Lato', sans-serif;
-    font-size: 3.1vh;
-    letter-spacing: 0;
-    color: #000000;
-    opacity: 1;
+.Title-Season{
+    color: rgb(15, 185, 185);
+    font-size: 1.9vw;
 }
 
-.Title2{
-    margin-top: 23%;
-    padding-left: 8%;
-    width: 50%;
-    text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 13.5vh;
-    letter-spacing: 0;
+.Title-Directors{
+    font-size: 5.5vw;
     color: #FF4081;
-    opacity: 1;
+    flex: 1;
+    margin-left: 3%;
 }
 
-.mobile{
-    display: none;
+.Director-Profile{
+    display: flex;
+    justify-content: center;
+    font-size: 1.1vw;
+}
+
+.Director-Profile-Text{
+    width: 50%;
+}
+
+.Director-Profile-Images-Container{
+    display: flex;
+    flex-direction: column;
+    width: 28vw;
+}
+
+.Director-Profile-Images-Top{
+    height: 20vw;
+    width: 14vw;
+}
+
+.Director-Profile-Images-Bottom{
+    margin-left: 10vw;
+    margin-top: -3vw;
+}
+
+.Supporting-Directors{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    font-size: 1.4vw;
 }
 
 @media only screen and (max-width: 600px) {
-    .Title2{
-        margin-top: 25%;
-        text-align: right;
-        font-size: 7vh;
-        width: 70%;
-        margin-left: 20%;
+
+    .Title-Container{
+        margin-left: 0vw;
+        flex-direction: column-reverse;
+        align-items: center;
     }
-    .Content4{
-        text-align: right;
-        margin-left: 10%;
-        font-size: 1.8vh;
-        margin-top: 0%;
-        font-weight: bold;
-    }
- 
-    .web{
-        display: none;
+
+    .Title-Season{
+        font-size: 6.9vw;
     }
     
-    .mobile{
-        display: block;
+    .Title-Directors{
+        font-size: 10.5vw;
+        margin-left: 0%;
+        text-align: center;
+    }
+    
+
+    .Director-Profile{
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.5vw;
+    }
+    .Director-Profile-Text{
+        margin-top: 3%;
+        width: 90%;
+    }
+
+    .Director-Profile-Images-Container{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .Director-Profile-Images-Top{
+        height: 60vw;
+        width: 50vw;
+    }
+    
+    .Director-Profile-Images-Bottom{
+        margin-left: 0vw;
+        margin-top: 0vw;
+    }
+
+    .Supporting-Directors{
+        justify-content: left;
+        font-size: 2.7vw;
+        margin-left: 3%;
     }
 }
