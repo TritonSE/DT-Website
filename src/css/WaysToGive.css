@@ -1,0 +1,120 @@
+
+
+.text {
+    color: #0f0f0f;
+    font-size: calc(10vmin);
+    text-align: left;
+    padding-left: 10%;
+    font-family: 'Lato', serif;
+    font-style:normal;
+    padding-top: calc(2vmin);
+    top: calc(-10vmin);
+     margin-bottom: -250px;
+     
+}
+
+.bodytxt {
+    width: calc(57.5vw);
+    height: calc(65vh);
+    color: #0f0f0f;
+    position: relative;
+    top: calc(-27.5vmin);
+    font-size: calc(2vmin);
+    padding-right: 10%;
+    text-align: left;
+    float:right;
+    font-family: 'Lato', serif;
+    font-style:normal;
+}
+
+.current {
+    color: #0f0f0f;
+    position: relative;
+    right: calc(-5vmin);
+    padding-top: calc(20vmin); 
+    font-size: calc(2vmin);
+    font-family: 'Lato', serif;
+    font-style: normal; 
+    text-decoration: underline;
+}
+.danceimg{
+    width: calc(42vmin);
+    height: calc(51vmin);
+    display: block;
+    position:relative;
+    padding-right: calc(10vmin);
+    top: calc(-45vmin);
+	 margin-bottom: -250px;
+    right: calc(25vmin);
+    float: right;
+}
+
+.amazon {
+    color: #0f0f0f;
+    /**right: calc(-87.5vmin);*/
+    /**position: relative; */
+    font-size: calc(2vmin);
+    font-family: 'Lato', serif;
+    font-style: normal; 
+    text-decoration: underline;
+    margin-top: 7.5%;
+    /**margin-left: 32.5%;*/
+    float: bottom;
+}
+
+.smile {
+    width: calc(30vmin);
+    height: calc(30vmin);
+    display: block; 
+    /**position: relative;*/
+    padding-top: calc(1vmin);
+    top: calc(-15vmin);
+    float: bottom;
+    right: 30%;
+    margin-left: calc(7.5vmin);
+}
+
+.currentfund {
+    width: calc(40vmin);
+    height: calc(71min);
+    display: block;
+    position: relative;
+    right: calc(5vmin);
+    padding-top: calc(1vmin);
+    top: calc(-45vmin);
+}
+
+.instructions {
+    width: calc(30vmin);
+    height: calc(30vmin);
+    display: block;
+    /**position: relative;*/
+    right: calc(25vmin);
+    padding-top: calc(1vmin);
+    /**top: calc(-7.5vmin);*/
+    /**top: calc(-55vmin);*/
+    float: bottom;
+    margin-top: calc(-30vh);
+    margin-left: calc(49vmin);
+}
+
+
+@media only screen and (max-width: 600px){
+    .text{
+        color: #0f0f0f;
+        font-size: calc(8vmin);
+        font-family: 'Lato', serif;
+        white-space: nowrap;
+        font-style:normal;
+        padding-left: calc(33.5vmin);
+        padding-top: calc(75vmin);
+    }
+    .danceimg{
+        width: calc(42vmin);
+        height: calc(51vmin);
+        display: block;
+        right: calc(25vmin);
+        position: relative;
+        top: calc(-100vmin);
+    }
+}
