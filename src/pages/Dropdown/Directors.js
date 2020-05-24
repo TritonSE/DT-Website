@@ -6,9 +6,30 @@ import '../../css/About.css';
 import Footer from '../../components/Footer.js';
 
 class Directors extends Component {
-	
+
+	constructor(props){
+		super(props);
+		this.state = { isMobile: false};
+
+		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+	}
 	componentDidMount() {
 		window.scrollTo(0,0);
+		this.updateWindowDimensions();
+		window.addEventListener('resize', this.updateWindowDimensions);
+	}
+	
+	updateWindowDimensions() {
+		if (window.innerWidth > 600 && this.state.isMobile){
+			this.setState({ isMobile: false });
+		}
+		else if(window.innerWidth <= 600 && !this.state.isMobile){
+			this.setState({ isMobile: true });
+		}
+	}
+	
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.updateWindowDimensions);
 	}
 
 	render() {
@@ -23,22 +44,47 @@ class Directors extends Component {
 		She has been teaching in styles such as contemporary, acro, ballet, jazz, hip hop, and lyrical for fourteen years, and is a certified Acrobatics Arts instructor. She began choreographing at age 16 with the mentorship of Charles Solomon and Sara Wardell, and continued exploring her passion in college under the mentorship of Fred Mathews. Her choreography has won first place awards at various competitions in the Bay Area. Her choreographic credits include SJSU’s Images in Dance, DVDance, Willow Glen High School Dance Team, and the Dynamics Performance Team.\n\n
 		She believes the exploration of artistry is a lifelong endeavor, and is dedicated to helping others on their artistic journey.`
 
-		return (
-			<div>
-				<Toolbar/>
-				<div className="Title-Container">
-					<p className="Title-Season"> 2019-2020 Season </p>
-					<p className="Title-Directors"> Board of Directors </p>
+		if(this.state.isMobile){
+			return (
+				<div>
+					<Toolbar/>
+					<div className="Title-Container">
+						<h1 className="Title-Season"> 2019-20 Season </h1>
+						<h1 className="Title-Directors"> Board of <br/> Directors </h1>
+					</div>
+					<DirectorProfile imgTop={require('../../images/directors/Creative Director Headshot.jpg')} imgBottom={require('../../images/directors/Creative Director Action shot.jpg')} title="Creative Director" name="Charles Solomon" text= {solomonText}/>
+					<br/>
+					<DirectorProfile imgTop={require('../../images/directors/Artistic Director Headshot.jpg')} imgBottom={require('../../images/directors/Artistic Director Action shot.jpg')} title="Artistic Director" name="Danielle de Ojeda" text={danielleText}/>
+					<SupportingDirectors names={["Eric Misenhimer"]} titles={["President"]}/>
+					<SupportingDirectors names={["Diana Zuger"]} titles={["Vice President"]}/>
+					<SupportingDirectors names={["Meiling Adams"]} titles={["Secretary"]}/>
+					<SupportingDirectors names={["Marybelle Mejia"]} titles={["Director"]}/>
+					<SupportingDirectors names={["Malou Arquero"]} titles={["Treasurer"]}/>
+					<SupportingDirectors names={["Anne Marie Asis"]} titles={["Dynamios Liaison"]}/>
+					<SupportingDirectors names={["Danielle Zuger"]} titles={["Director"]}/>
+					<SupportingDirectors names={["Lloyd Alaban"]} titles={["Director"]}/>
+					<Footer/>
 				</div>
-				<DirectorProfile imgTop={require('../../images/directors/Creative Director Headshot.jpg')} imgBottom={require('../../images/directors/Creative Director Action shot.jpg')} title="Creative Director" name="Charles Solomon" text= {solomonText}/>
-				<br/>
-				<DirectorProfile imgTop={require('../../images/directors/Artistic Director Headshot.jpg')} imgBottom={require('../../images/directors/Artistic Director Action shot.jpg')} title="Artistic Director" name="Danielle de Ojeda" text={danielleText}/>
-				<br/>
-				<SupportingDirectors names={["Eric Misenhimer", "Diana Zuger", "Meiling Adams", "Marybelle Mejia"]} titles={["President", "Vice President", "Secretary", "Director"]}/>
-				<SupportingDirectors names={["Malou Arquero", "Anne Marie Asis", "Danielle Zuger", "Lloyd Alaban"]} titles={["Treasurer", "Dynamios Liaison", "Director", "Director"]}/>
-				<Footer/>
-			</div>
-		);
+			);
+		}
+		else{
+			return (
+				<div>
+					<Toolbar/>
+					<div className="Title-Container">
+						<h1 className="Title-Season"> 2019-20 Season </h1>
+						<h1 className="Title-Directors"> Board of Directors </h1>
+					</div>
+					<DirectorProfile imgTop={require('../../images/directors/Creative Director Headshot.jpg')} imgBottom={require('../../images/directors/Creative Director Action shot.jpg')} title="Creative Director" name="Charles Solomon" text= {solomonText}/>
+					<br/>
+					<DirectorProfile imgTop={require('../../images/directors/Artistic Director Headshot.jpg')} imgBottom={require('../../images/directors/Artistic Director Action shot.jpg')} title="Artistic Director" name="Danielle de Ojeda" text={danielleText}/>
+					<br/>
+					<SupportingDirectors names={["Eric Misenhimer", "Diana Zuger", "Meiling Adams", "Marybelle Mejia"]} titles={["President", "Vice President", "Secretary", "Director"]}/>
+					<SupportingDirectors names={["Malou Arquero", "Anne Marie Asis", "Danielle Zuger", "Lloyd Alaban"]} titles={["Treasurer", "Dynamios Liaison", "Director", "Director"]}/>
+					<Footer/>
+				</div>
+			);
+		}
 	}
 }
 
