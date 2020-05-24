@@ -1,10 +1,10 @@
 .Title{
-    margin-top: 30%;
-    width: 85%;
+    margin-top: 5%;
+    width: 70%;
     margin-left: 15%;
     text-align: right;
     font-family: 'Lato', sans-serif;
-    font-size: 13.5vh;
+    font-size: 10.5vh;
     letter-spacing: 0;
     color: #FF4081;
     opacity: 1;
@@ -17,39 +17,47 @@
 }
 
 .Content1{
-    margin-top: 15%;
-    padding-left: 8%;
+    margin-top: 5%;
     width: 85%;
-    text-align: left;
+    text-align: right;
     font-family: 'Lato', sans-serif;
-    font-size: 3.1vh;
+    font-size: 2.3vh;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
 .Content2{
-    margin-top: 7%;
-    padding-left: 8%;
+    margin-top: 5%;
+    padding-left: 10%;
     width: 85%;
-    text-align: left;
+    text-align: right;
     font-family: 'Lato', sans-serif;
-    font-size: 2.2vh;
+    font-size: 2.3vh;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.Content3{
-    margin-top: 11%;
-    padding-left: 8%;
-    width: 85%;
-    text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 2.2vh;
-    letter-spacing: 0;
-    color: #000000;
-    opacity: 1;
+.Image{
+    margin-top: 5%;
+    width: 99%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linked{
+    text-decoration: underline;
+}
+
+.column1{
+    padding-left: 6%;
+}
+
+.column2{
+    padding-right: 6%;
 }
 
 .mobile{

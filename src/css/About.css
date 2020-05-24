@@ -1,3 +1,210 @@
+.title1{
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 10.5vh;
+    letter-spacing: 0;
+    color: #FF4081;
+    opacity: 1;
+}
+
+.container{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    max-width: 100%;
+}
+
+.content1{
+    margin-top: 5%;
+    width: 100%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.9vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.content2{
+    margin-top: 5%;
+    width: 100%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.3vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.Content3{
+    margin-top: 5%;
+    width: 100%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.3vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.Content4{
+
+    margin-top: 5%;
+    width: 100%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.3vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.content7{
+    margin-top: 2%;
+    width: 100%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.3vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.content8{
+
+    margin-top: 2%;
+    width: 100%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.3vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.Image0{
+    margin-top: 2%;
+    width: 98%;
+    height: auto;
+}
+
+.Image1{
+    width: 18%;
+    height: 18%;
+}
+
+.Image2{
+    width: 20%;
+    height: 20%;
+}
+
+.Image3{
+    width: 18%;
+    height: 18%;
+}
+
+.Image4{
+    padding-left: 2%;
+    width: 14%;
+    height: 14%;
+}
+
+.Image5{
+    width: 19%;
+    height: 19%;
+}
+
+.Image6{
+    width: 10%;
+    height: 10%;
+}
+
+.Companies{
+    margin-top: 3%;
+    margin-left: 1%;
+    width: 85%;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.3vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.Boxed{
+    margin-top: 3%;
+    margin-left: -2.5%;
+    width: 103%;
+    height: 100%;
+    background-color: white;
+    border: 0.1vh solid lightgray;
+    padding: 1.2vh;
+
+}
+
+.column1{
+    width: 42%;
+    vertical-align: top;
+    padding-left: 6%;
+}
+
+.column2{
+    padding-left: 2%;
+    width: 55%;
+    vertical-align: top;
+    padding-right: 6%;
+}
+
+.mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .Title{
+        text-align: left;
+        font-size: 7vh;
+        margin-top: 10%;
+        width: 50%;
+        margin-left: 20%;
+    }
+    .Title2{
+        margin-top: 25%;
+        text-align: right;
+        font-size: 7vh;
+        width: 70%;
+        margin-left: 20%;
+    }
+    .Content1{
+        text-align: left;
+        margin-top: 5%;
+        margin-left: 14%;
+        width: 70%;
+        font-size: 2.2vh;
+    }
+    .Content2{
+        text-align: left;
+        margin-top: 5%;
+        margin-left: 14%;
+        width: 70%;
+        font-size: 2.2vh;
+    }
+    .Content4{
+        text-align: right;
+        margin-left: 10%;
+        font-size: 1.8vh;
+        margin-top: 0%;
+        font-weight: bold;
+    }
+ 
+    .web{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
+}
 
 .Title-Container{
     margin-left: 10vw;
