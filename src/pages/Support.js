@@ -4,6 +4,7 @@ import '../css/Support.css';
 import SupportMainText from '../components/SupportMainText';
 import Footer from '../components/Footer.js';
 import { Container, Row, Col } from 'react-bootstrap';
+import WaysToGive from './WaysToGive.js'
 
 /**
  * Displays Support Page, including Navigation Bar. 
@@ -17,10 +18,8 @@ class Support extends Component {
 	render() {
 			return(
 			<div>
-				<Toolbar bool={false}/>
-				<Container>				
-					<SupportMainText/>
-				</Container>
+				<Toolbar bool={false}/>			
+					<WaysToGive/>
 			</div>
 			);
 		}
