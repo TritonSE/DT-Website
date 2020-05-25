@@ -53,7 +53,6 @@ class Directors extends Component {
 						<h1 className="Title-Directors"> Board of <br/> Directors </h1>
 					</div>
 					<DirectorProfile imgTop={require('../../images/directors/Creative Director Headshot.jpg')} imgBottom={require('../../images/directors/Creative Director Action shot.jpg')} title="Creative Director" name="Charles Solomon" text= {solomonText}/>
-					<br/>
 					<DirectorProfile imgTop={require('../../images/directors/Artistic Director Headshot.jpg')} imgBottom={require('../../images/directors/Artistic Director Action shot.jpg')} title="Artistic Director" name="Danielle de Ojeda" text={danielleText}/>
 					<SupportingDirectors names={["Eric Misenhimer"]} titles={["President"]}/>
 					<SupportingDirectors names={["Diana Zuger"]} titles={["Vice President"]}/>

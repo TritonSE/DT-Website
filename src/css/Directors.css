@@ -1,4 +1,3 @@
-
 .Title-Container{
     margin-left: 10vw;
     display: flex;
@@ -71,11 +70,11 @@
         text-align: center;
     }
     
-
     .Director-Profile{
         flex-direction: column;
         align-items: center;
         font-size: 2.5vw;
+        margin-top: 1%;
     }
     .Director-Profile-Text{
         margin-top: 3%;
