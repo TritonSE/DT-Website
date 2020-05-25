@@ -1,5 +1,5 @@
 
-
+/**
 .text {
     color: #0f0f0f;
     font-size: calc(10vmin);
@@ -12,6 +12,7 @@
      margin-bottom: -250px;
      
 }
+*/
 
 .bodytxt {
     width: calc(57.5vw);
@@ -37,6 +38,7 @@
     font-style: normal; 
     text-decoration: underline;
 }
+/**
 .danceimg{
     width: calc(42vmin);
     height: calc(51vmin);
@@ -48,6 +50,7 @@
     right: calc(25vmin);
     float: right;
 }
+*/
 
 .amazon {
     color: #0f0f0f;
@@ -100,6 +103,7 @@
 
 
 @media only screen and (max-width: 600px){
+    /**
     .text{
         color: #0f0f0f;
         font-size: calc(8vmin);
@@ -109,6 +113,8 @@
         padding-left: calc(33.5vmin);
         padding-top: calc(75vmin);
     }
+    */
+    /**
     .danceimg{
         width: calc(42vmin);
         height: calc(51vmin);
@@ -117,4 +123,5 @@
         position: relative;
         top: calc(-100vmin);
     }
+    */
 }
