@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Slide } from 'react-slideshow-image';
 
- import '../css/DynamicStyle.css';
+ import '../css/Slideshow.css';
  class Slideshow extends Component {
      render() {
  		// component will render JSX (react's version of html) inside return statement
  		const properties = {
  			duration: 3000,
  			transitionDuration: 500,
- 			infinite: true,
- 			indicators: true,
+			infinite: true,
+			indicators: this.props.indicators,
  			arrows: true,
  			onChange: (oldIndex, newIndex) => {
  			  console.log(`slide transition from ${oldIndex} to ${newIndex}`);
