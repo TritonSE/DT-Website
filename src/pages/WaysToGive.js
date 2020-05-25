@@ -6,6 +6,7 @@ import CurrentFund from '../images/waytogive/Kendra Scott Fundraiser 1.png';
 import Instructions from '../images/waytogive/amazon smile instructions.jpg';
 import ModalImage from 'react-modal-image';
 import '../css/Support.css';
+import '../css/WaysToGive.css';
 import SupportStates from '../components/SupportStates.js';
 
 class WaysToGive extends Component {
@@ -33,7 +34,7 @@ class WaysToGive extends Component {
 		return (
 			// can only return one element so if you want more than one make sure they're nested inside a div
 			<div>
-			<div className="text" >
+			<div className="textWays" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 				<p><span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}>Ways to  <br/>Give</span></p>
                 <WaysToGiveText />
@@ -46,7 +47,7 @@ class WaysToGive extends Component {
 			return (
 				// can only return one element so if you want more than one make sure they're nested inside a div
 				<div>
-				<div className="text" >
+				<div className="textWays" >
 					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 					<p><span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}>Ways to  <br/>Give</span></p>
 					<WaysToGiveText />

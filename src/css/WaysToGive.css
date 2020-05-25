@@ -13,6 +13,18 @@
      
 }
 */
+.textWays {
+    color: #0f0f0f;
+    font-size: calc(10vmin);
+    text-align: left;
+    padding-left: 10%;
+    font-family: 'Lato', serif;
+    font-style:normal;
+    padding-top: calc(2vmin);
+    top: calc(-10vmin);
+     margin-bottom: -250px;
+     
+}
 
 .bodytxt {
     width: calc(57.5vw);
