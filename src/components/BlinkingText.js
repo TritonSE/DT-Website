@@ -35,7 +35,7 @@ class BlinkingText extends Component {
 		return (
             <div className="Body-Header">
               <p style={{color: '#FF4081'}}id="dynamicsTxt"> Dynamics </p> 
-              <p> Dance </p>
+              <p> Performance </p>
               <p> Team </p>
         </div>
         );
