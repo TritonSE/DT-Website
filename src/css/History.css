@@ -143,3 +143,263 @@
 .mobile{
     display: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .Title{
+        font-size: 5vh;
+        width: 70%;
+        color: #FF4081;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    }
+
+    .content3{
+        margin-left: 7%;
+        margin-top: 5%;
+        width: 86%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .content4{
+        margin-left: 7%;
+        margin-top: 3%;
+        width: 86%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .content5{
+        margin-left: 7%;
+        margin-top: 3%;
+        width: 86%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .content6{
+        margin-left: 7%;
+        margin-top: 3%;
+        width: 86%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+
+    .content7{
+        text-align: left;
+        margin-left: 0%;
+        font-size: 1.8vh;
+        margin-top: 0%;
+    }
+    .content8{
+        text-align: left;
+        margin-left: 0%;
+        font-size: 1.8vh;
+        margin-top: 0%;
+    }
+
+    .Colleges{
+        margin-top: 3%;
+        margin-left: 0%;
+        width: 85%;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+
+    .companies{
+        margin-top: 3%;
+        margin-left: 0%;
+        width: 85%;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .Boxed{
+        margin-left: 2%;
+        margin-top: 5%;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border: 0.1vh solid lightgray;
+        padding: 1.2vh;
+    
+    }
+ 
+    .web{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .content3{
+        margin-top: 5%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .content4{
+    
+        margin-top: 3%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .content5{
+    
+        margin-top: 3%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .content6{
+    
+        margin-top: 3%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .content7{
+        margin-top: 2%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .content8{
+    
+        margin-top: 2%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .Image1{
+        width: 18%;
+        height: 18%;
+    }
+    
+    .Image2{
+        width: 20%;
+        height: 20%;
+    }
+    
+    .Image3{
+        width: 18%;
+        height: 18%;
+    }
+    
+    .Image4{
+        padding-left: 2%;
+        width: 14%;
+        height: 14%;
+    }
+    
+    .Image5{
+        width: 19%;
+        height: 19%;
+    }
+    
+    .Image6{
+        width: 10%;
+        height: 10%;
+    }
+    
+    .Companies{
+        margin-top: 3%;
+        margin-left: 1%;
+        width: 85%;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8vh;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .title2{
+        margin-top: 5%;
+        margin-left: 0%;
+        width: 95%;
+        text-align: right;
+        font-family: 'Lato', sans-serif;
+        font-size: 6vh;
+        letter-spacing: 0;
+        color: #FF4081;
+        opacity: 1;
+    }
+    
+    .boxed{
+        margin-top: 3%;
+        margin-left: 46.5%;
+        width: 51%;
+        height: 58%;
+        background-color: white;
+        border: 0.1vh solid lightgray;
+        padding: 1.2vh;
+    }
+    
+    .column1{
+        padding-left: 6%;
+    }
+    
+    .column2{
+        padding-right: 6%;
+    }
+    
+    .mobile{
+        display: none;
+    }
+}
