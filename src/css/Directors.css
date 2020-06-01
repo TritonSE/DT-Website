@@ -73,7 +73,7 @@
     .Director-Profile{
         flex-direction: column;
         align-items: center;
-        font-size: 2.5vw;
+        font-size: 2.7vw;
         margin-top: 1%;
     }
     .Director-Profile-Text{
@@ -82,14 +82,14 @@
     }
 
     .Director-Profile-Images-Container{
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: row;
     }
     
     .Director-Profile-Images-Top{
         height: 60vw;
-        width: 50vw;
+        width: 50%;
     }
     
     .Director-Profile-Images-Bottom{
