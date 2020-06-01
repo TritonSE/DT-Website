@@ -142,6 +142,7 @@
 
 .mobile{
     display: none;
+<<<<<<< HEAD
 }
 
 @media only screen and (max-width: 600px) {
@@ -402,4 +403,6 @@
     .mobile{
         display: none;
     }
+=======
+>>>>>>> 819e057d57aeb904035f31aeb4e57767c7f51e61
 }
