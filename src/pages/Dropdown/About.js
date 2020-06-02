@@ -16,7 +16,6 @@ class About extends Component {
     return(
       <div>
          <Toolbar bool={true}></Toolbar>
-<<<<<<< HEAD
 
 		 <div className="Mobile">
 			<Container>
@@ -52,9 +51,6 @@ class About extends Component {
 		 </div>
 
          <div className="Web">
-=======
-         <div className="web">
->>>>>>> 819e057d57aeb904035f31aeb4e57767c7f51e61
 		 	<Container fluid>
 			
 			<table>
@@ -70,11 +66,7 @@ class About extends Component {
 				<img className="Image0" src={image0} alt="could not load"/>
 				<Container>
 				<div className="Boxed">
-<<<<<<< HEAD
 				<h4 className="Content7"> Dancers have gone on to dance at such colleges as: </h4>
-=======
-				<h4 className="content7"> Dancers have gone on to dance at such colleges as: </h4>
->>>>>>> 819e057d57aeb904035f31aeb4e57767c7f51e61
 				<img className="Image1" src={image1} alt="could not load"/>
 				<img className="Image2" src={image2} alt="could not load"/>
 				<img className="Image3" src={image3} alt="could not load"/>
@@ -82,13 +74,8 @@ class About extends Component {
 				<img className="Image5" src={image5} alt="could not load"/>
 				<img className="Image6" src={image6} alt="could not load"/>
 
-<<<<<<< HEAD
 				<h5 className="Content8"> Dancers have gone on to dance in such companies as: </h5>
 				<ul className="companies">
-=======
-				<h5 className="content8"> Dancers have gone on to dance in such companies as: </h5>
-				<ul className="Companies">
->>>>>>> 819e057d57aeb904035f31aeb4e57767c7f51e61
 					<li> University Dance Theatre – SJSU </li>
 					<li> DVDance </li>
 					<li> Nhan Ho Dance Project </li>

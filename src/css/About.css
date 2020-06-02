@@ -61,11 +61,7 @@
     opacity: 1;
 }
 
-<<<<<<< HEAD
 .Content7{
-=======
-.content7{
->>>>>>> 819e057d57aeb904035f31aeb4e57767c7f51e61
     margin-top: 2%;
     width: 100%;
     text-align: left;
@@ -76,11 +72,7 @@
     opacity: 1;
 }
 
-<<<<<<< HEAD
 .Content8{
-=======
-.content8{
->>>>>>> 819e057d57aeb904035f31aeb4e57767c7f51e61
 
     margin-top: 2%;
     width: 100%;
@@ -129,11 +121,7 @@
     height: 10%;
 }
 
-<<<<<<< HEAD
 .companies{
-=======
-.Companies{
->>>>>>> 819e057d57aeb904035f31aeb4e57767c7f51e61
     margin-top: 3%;
     margin-left: 1%;
     width: 85%;
@@ -168,16 +156,11 @@
     padding-right: 6%;
 }
 
-<<<<<<< HEAD
 .Mobile{
-=======
-.mobile{
->>>>>>> 819e057d57aeb904035f31aeb4e57767c7f51e61
     display: none;
 }
 
 @media only screen and (max-width: 600px) {
-<<<<<<< HEAD
     .title1{
         text-align: center;
         font-size: 6vh;
@@ -186,15 +169,6 @@
         font-family: 'Lato', sans-serif;
     }
 
-=======
-    .Title{
-        text-align: left;
-        font-size: 7vh;
-        margin-top: 10%;
-        width: 50%;
-        margin-left: 20%;
-    }
->>>>>>> 819e057d57aeb904035f31aeb4e57767c7f51e61
     .Title2{
         margin-top: 25%;
         text-align: right;
@@ -202,7 +176,6 @@
         width: 70%;
         margin-left: 20%;
     }
-<<<<<<< HEAD
 
     .content1{
         text-align: left;
@@ -319,35 +292,6 @@
     }
     
     .Mobile{
-=======
-    .Content1{
-        text-align: left;
-        margin-top: 5%;
-        margin-left: 14%;
-        width: 70%;
-        font-size: 2.2vh;
-    }
-    .Content2{
-        text-align: left;
-        margin-top: 5%;
-        margin-left: 14%;
-        width: 70%;
-        font-size: 2.2vh;
-    }
-    .Content4{
-        text-align: right;
-        margin-left: 10%;
-        font-size: 1.8vh;
-        margin-top: 0%;
-        font-weight: bold;
-    }
- 
-    .web{
-        display: none;
-    }
-    
-    .mobile{
->>>>>>> 819e057d57aeb904035f31aeb4e57767c7f51e61
         display: block;
     }
 }
@@ -447,7 +391,6 @@
         margin-top: 0vw;
     }
 }
-<<<<<<< HEAD
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .title1{
@@ -610,5 +553,3 @@
         display: none;
     }
 }
-=======
->>>>>>> 819e057d57aeb904035f31aeb4e57767c7f51e61

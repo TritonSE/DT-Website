@@ -142,7 +142,6 @@
 
 .mobile{
     display: none;
-<<<<<<< HEAD
 }
 
 @media only screen and (max-width: 600px) {
@@ -208,6 +207,7 @@
         font-size: 1.8vh;
         margin-top: 0%;
     }
+    
     .content8{
         text-align: left;
         margin-left: 0%;
@@ -403,6 +403,4 @@
     .mobile{
         display: none;
     }
-=======
->>>>>>> 819e057d57aeb904035f31aeb4e57767c7f51e61
 }
