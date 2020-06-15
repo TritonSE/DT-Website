@@ -8,6 +8,7 @@ import image3 from "../../images/colleges/ssu.jpg";
 import image4 from "../../images/colleges/sjsu.png";
 import image5 from "../../images/colleges/lmu.jpg";
 import image6 from "../../images/colleges/smcc.png";
+import image0 from "../../images/history/Dynamics Year 1.jpg";
 import Footer from '../../components/Footer.js';
 
 class History extends React.Component{
@@ -19,6 +20,7 @@ class History extends React.Component{
 			<div className="mobile">
 			<Container>
 					<h1 className="Title"> Our History </h1>
+					<img className="Image0" src={image0} alt="could not load"/>
 
 					<h1 className="content3"> The Dynamics Performance Team (DPT) was founded in 2005 by Creative Director Charles Solomon with a sponsorship from longtime mentor Joy Sinnott. With Miss Joy’s help, DPT held their first program, Showtime, that spring and has continued to grow over the now 16 seasons since its formation. In 2007, company member Sara Wardell joined Mr. Charles as Co-Director and in 2012 headed the incorporation of DPT as a non-profit organization. </h1>
 					<h2 className="content4"> The team began with a vision to bring passionate dancers together to advance their dance education, inspire creativity, and to share their love of performance with the community while also providing dancers the opportunity to compete. What began as a passion project has now grown into a pre-professional competition team, attracting dancers from around the San Jose area who want to train and compete in versatile genres of dance such as jazz, contemporary, lyrical, hip hop, and ballet. </h2>
@@ -56,6 +58,7 @@ class History extends React.Component{
             <Row>
 			<Col className="column1">
 				<h1 className="title2"> Our History </h1>
+				<img className="Image0" src={image0} alt="could not load"/>
 			</Col>
 			<Col xs={7} className="column2">
 				<h1 className="content3"> The Dynamics Performance Team (DPT) was founded in 2005 by Creative Director Charles Solomon with a sponsorship from longtime mentor Joy Sinnott. With Miss Joy’s help, DPT held their first program, Showtime, that spring and has continued to grow over the now 16 seasons since its formation. In 2007, company member Sara Wardell joined Mr. Charles as Co-Director and in 2012 headed the incorporation of DPT as a non-profit organization. </h1>
@@ -82,8 +85,6 @@ class History extends React.Component{
 				</ul>
 			</div>
 			</div>
-			<br/>
-			<br/>
 			<br/>
 			</Container>
 			</div>

@@ -21,29 +21,29 @@
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.9vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
 .content2{
-    margin-top: 5%;
+    margin-top: 3%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
 .Content3{
-    margin-top: 5%;
+    margin-top: 3%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
@@ -51,11 +51,11 @@
 
 .Content4{
 
-    margin-top: 5%;
+    margin-top: 3%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
@@ -66,7 +66,7 @@
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
@@ -78,13 +78,13 @@
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.Image0{
+.Dancers-Image{
     margin-top: 2%;
     width: 98%;
     height: auto;
@@ -126,7 +126,7 @@
     margin-left: 1%;
     width: 85%;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
@@ -163,7 +163,7 @@
 @media only screen and (max-width: 600px) {
     .title1{
         text-align: center;
-        font-size: 6vh;
+        font-size: 5vh;
         width: 70%;
         color: #FF4081;
         font-family: 'Lato', sans-serif;
@@ -182,43 +182,43 @@
         margin-top: 5%;
         margin-left: 7%;
         width: 86%;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
     }
     .content2{
         text-align: left;
         margin-top: 5%;
         margin-left: 7%;
         width: 86%;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
     }
     .Content3{
         text-align: left;
         margin-left: 7%;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         margin-top: 5%;
         width: 86%;
     }
     .Content4{
         text-align: left;
         margin-left: 7%;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         margin-top: 5%;
         width: 86%;
     }
     .Content7{
         text-align: left;
         margin-left: 0%;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         margin-top: 0%;
     }
     .Content8{
         text-align: left;
         margin-left: 0%;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         margin-top: 0%;
     }
 
-    .Image0{
+    .Dancers-Image{
         margin-top: 2%;
         width: 100%;
         height: auto;
@@ -260,7 +260,7 @@
         margin-left: 0%;
         width: 85%;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -271,7 +271,7 @@
         margin-left: 0%;
         width: 85%;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -416,7 +416,7 @@
         width: 100%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -427,7 +427,7 @@
         width: 100%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -438,7 +438,7 @@
         width: 100%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -450,7 +450,7 @@
         width: 100%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -461,7 +461,7 @@
         width: 100%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -472,13 +472,13 @@
         width: 100%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
     }
     
-    .Image0{
+    .Dancers-Image{
         margin-top: 2%;
         width: 100%;
         height: auto;
@@ -520,7 +520,7 @@
         margin-left: 1%;
         width: 85%;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;

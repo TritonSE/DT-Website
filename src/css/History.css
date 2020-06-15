@@ -3,7 +3,7 @@
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
@@ -15,7 +15,7 @@
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
@@ -27,7 +27,7 @@
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
@@ -39,7 +39,7 @@
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
@@ -50,22 +50,27 @@
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
 .content8{
-
     margin-top: 2%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
+}
+
+.Image0{
+    margin-top: 10%;
+    width: 90%;
+    height: auto;
 }
 
 .Image1{
@@ -104,7 +109,7 @@
     margin-left: 1%;
     width: 85%;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
@@ -123,7 +128,7 @@
 }
 
 .boxed{
-    margin-top: 3%;
+    margin-top: 1%;
     margin-left: 43.5%;
     width: 51%;
     height: 58%;
@@ -159,7 +164,7 @@
         width: 86%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -167,11 +172,11 @@
     
     .content4{
         margin-left: 7%;
-        margin-top: 3%;
+        margin-top: 5%;
         width: 86%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -179,11 +184,11 @@
     
     .content5{
         margin-left: 7%;
-        margin-top: 3%;
+        margin-top: 5%;
         width: 86%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -191,11 +196,11 @@
     
     .content6{
         margin-left: 7%;
-        margin-top: 3%;
+        margin-top: 5%;
         width: 86%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -204,14 +209,14 @@
     .content7{
         text-align: left;
         margin-left: 0%;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         margin-top: 0%;
     }
     
     .content8{
         text-align: left;
         margin-left: 0%;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         margin-top: 0%;
     }
 
@@ -220,7 +225,7 @@
         margin-left: 0%;
         width: 85%;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -231,7 +236,7 @@
         margin-left: 0%;
         width: 85%;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 4.2vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -246,6 +251,12 @@
         border: 0.1vh solid lightgray;
         padding: 1.2vh;
     
+    }
+
+    .Image0{
+        margin-top: 2%;
+        width: 100%;
+        height: auto;
     }
  
     .web{
@@ -263,7 +274,7 @@
         width: 100%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -275,7 +286,7 @@
         width: 100%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -287,7 +298,7 @@
         width: 100%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -299,7 +310,7 @@
         width: 100%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -310,7 +321,7 @@
         width: 100%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -322,10 +333,16 @@
         width: 100%;
         text-align: left;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
+    }
+
+    .Image0{
+        margin-top: 8%;
+        width: 100%;
+        height: auto;
     }
     
     .Image1{
@@ -364,7 +381,7 @@
         margin-left: 1%;
         width: 85%;
         font-family: 'Lato', sans-serif;
-        font-size: 1.8vh;
+        font-size: 2.5vw;
         letter-spacing: 0;
         color: #000000;
         opacity: 1;
@@ -376,7 +393,7 @@
         width: 95%;
         text-align: right;
         font-family: 'Lato', sans-serif;
-        font-size: 6vh;
+        font-size: 5vh;
         letter-spacing: 0;
         color: #FF4081;
         opacity: 1;

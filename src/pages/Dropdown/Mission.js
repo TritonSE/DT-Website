@@ -20,7 +20,6 @@ class Mission extends React.Component{
 					<h2 className="content2"> To donate to our non-profit, please 
 					<Link to="/support" className="linked"> click here! </Link>
 					</h2>
-			<br/>
 			</Container>
 			</div>
 			<div className="Web">
@@ -39,8 +38,6 @@ class Mission extends React.Component{
 				</Col>
 				</Row>
 			</div>
-			<br/>
-			<br/>
 			<br/>
 			</Container>
 			</div>
