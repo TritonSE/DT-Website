@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4cf9446670c82d2ca511cab174db5cb0",
+    "revision": "5c6dd2866f8df1cf261609491eabf7be",
     "url": "/dynamics-website/index.html"
   },
   {
-    "revision": "9e749b5d1c6137fdcecf",
+    "revision": "08252fd5e8e07c5bd741",
     "url": "/dynamics-website/static/css/2.b7696511.chunk.css"
   },
   {
-    "revision": "769048af135515dd888c",
-    "url": "/dynamics-website/static/css/main.0d79fd40.chunk.css"
+    "revision": "6b3a6fc8f395645c7e68",
+    "url": "/dynamics-website/static/css/main.25725eb4.chunk.css"
   },
   {
-    "revision": "9e749b5d1c6137fdcecf",
-    "url": "/dynamics-website/static/js/2.5ed067e2.chunk.js"
+    "revision": "08252fd5e8e07c5bd741",
+    "url": "/dynamics-website/static/js/2.c42d2b14.chunk.js"
   },
   {
     "revision": "6cffb81bac446b31e442766962b079fa",
-    "url": "/dynamics-website/static/js/2.5ed067e2.chunk.js.LICENSE.txt"
+    "url": "/dynamics-website/static/js/2.c42d2b14.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "769048af135515dd888c",
-    "url": "/dynamics-website/static/js/main.371a7937.chunk.js"
+    "revision": "6b3a6fc8f395645c7e68",
+    "url": "/dynamics-website/static/js/main.2af7b6f7.chunk.js"
   },
   {
     "revision": "fd513f155b71e7ecf195",
