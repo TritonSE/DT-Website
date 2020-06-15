@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import DirectorImages from '../components/DirectorsImages.js'
-import '../css/About.css';
+import '../css/Directors.css';
 
 class DirectorProfile extends Component {
 	render() {
