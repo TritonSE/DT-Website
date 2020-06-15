@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Slide } from 'react-slideshow-image';
 
- import '../css/DynamicStyle.css';
+ import '../css/Slideshow.css';
  class Slideshow extends Component {
      render() {
  		// component will render JSX (react's version of html) inside return statement

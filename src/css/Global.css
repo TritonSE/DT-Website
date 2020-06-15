@@ -1,7 +1,7 @@
 /*
 * NAVBAR
 */
-.NavBarHeader {
+/* .NavBarHeader {
     text-decoration: none !important;
     color: black;
     font-size: 18px;
@@ -19,11 +19,11 @@
     .NavBarHeader{
         font-size: 14.4px;
     }
-}
+} */
 /*
 * ABOUT PAGE
 */
-.Content-Panel{
+/* .Content-Panel{
     padding-left: 8%;
     width: 85%;
     text-align: left;
@@ -39,7 +39,7 @@
     letter-spacing: 0;
     color: #FF4081;
     opacity: 1;
-}
+} */
 /*
 * HOME PAGE
 */
