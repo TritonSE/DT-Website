@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/About.css';
+import '../css/Directors.css';
 
 class DirectorsImages extends Component {
 	render() {
