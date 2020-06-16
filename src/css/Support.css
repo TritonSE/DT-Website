@@ -61,6 +61,14 @@
   text-align: center;
   font-size: 2.5vh;
 }
+.Amount-Text1{
+  height: 7%;
+  max-width: 18%; 
+  bottom: 5%;
+  text-align: center;
+  font-size: 2.5vh;
+}
+
 .Proceed-Button{
  font-size: 2.5vh;
  background-color: #FF4081;
@@ -91,6 +99,13 @@
   text-align: center;
   font-size: 2.5vh;
   position: relative;
+ }
+
+ .alert {
+  color: #FF0000;
+  width: 6%;
+  margin-top: 3.5%;
+  margin-left: -1%;
  }
 /* .Adjust-Style{
   margin-left: 55%;
@@ -142,43 +157,75 @@
 
   .Donate-Button{
     position: relative;
+    /**
     margin-top: 30px;
     margin-bottom: 10px;
+    */
     font-size: 2vh;
     background-color: #FF4081;
     text-align: center;
     max-width: 30%;
     max-height: 10%;
     left:0%;
+    margin-top: calc(200vmin);
+    margin-left: calc(37.5vmin);
    }
 
    .Proceed-Style{
-    margin-left:11%;
+    margin-top: calc(150vmin);
+    margin-left: calc(30vmin);
   }
    .Amount-Text{
-    margin-top: 7%;
-    margin-left: 2%;
     font-size: 2.2vh;
     max-width: 21%; 
+    margin-top: calc(52.5vmin);
+    margin-left: -10%;
+  }
+
+  .Amount-Text1{
+    font-size: 2.2vh;
+    max-width: 21%; 
+    margin-top: calc(52.5vmin);
+    margin-left: -10%;
+    position: relative;
+    left: -15%;
   }
 
   .Proceed-Button{
    font-size: 2vh;
+   margin-top: calc(3.5vmin);
+    margin-left: calc(5vmin);
   }
 
   .Checkout-Style{
     flex-direction: column;
     justify-content: center;
-    margin-top: 15%;
+    font-size: 2.2vh;
+    margin-top: calc(200vmin);
+    margin-left: 5%;
   }
  
   .Adjust-Style{
-   margin-left: 8%;
+    margin-left: calc(47.5vmin);
+    margin-top: calc(-12.5vmin);
+    width: 20%;
+    height: 20%;
   }
 
   .Chosen-Amount{
-    font-size: 1.5vh;
+    font-size: 2.2vh;
+    text-align: center;
+    position: relative;
+    width: calc(12.5vmin);
   }
+
+  .alert {
+    color: #FF0000;
+    width: 100%;
+    margin-top: 12.5%;
+    margin-left: -42.5%;
+    margin-right: -42.5%;
+   }
 
   /* .PayPal-Style{
     width: 30%;
