@@ -6,6 +6,7 @@ import '../css/Home.css';
 import Toolbar from '../components/Toolbar.js';
 import Footer from '../components/Footer.js';
 import { Link } from 'react-router-dom';
+import NoRightClickImg from '../components/NoRightClickImg';
 
 
 class Home extends React.Component {
@@ -70,12 +71,10 @@ class Home extends React.Component {
 		return(
 			<div>
 				<Toolbar/>
-				{/* <Slideshow banner={true} slideImages={[
-					require('../images/home/Facebook_Cover_2019.png'),
-					require('../images/home/Main Page 2.jpg'),
-					require('../images/home/Main Page 3.jpg')
-				]}/> */}
-				<img onContextMenu={(e)=> {e.preventDefault(); return false;}} src={mainBanner} style={{height: this.state.width * 0.4, width: this.state.width}}/>
+
+				<div style={{height: this.state.width * 0.4, width: this.state.width}} >
+					<NoRightClickImg imgClassName="banner-img" src={mainBanner} />
+				</div>
 				<div style={{display:this.state.imgViz ? "none":"flex", justifyContent:"center"}}>
 					<button className="Scroll-Button" onClick={this.scrollToSlideShow}>
 						<i class="fas fa-angle-double-down fa-2x"/>

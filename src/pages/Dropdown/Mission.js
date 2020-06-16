@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import '../../css/Mission.css';
 import image from "../../images/mission/Mission Page.jpg";
 import Footer from '../../components/Footer';
+import NoRightClickImg from '../../components/NoRightClickImg';
 
 class Mission extends React.Component{
     render() {
@@ -35,7 +36,7 @@ class Mission extends React.Component{
 				</h2>
 				</Col>
 				<Col xs={7} className="column2">
-				<img className="Image" src={image} alt="could not load"/>
+					<NoRightClickImg imgClassName="Image" src={image} alt="could not load"/>
 				</Col>
 				</Row>
 			</div>

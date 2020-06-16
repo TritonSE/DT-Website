@@ -10,6 +10,7 @@ import image5 from "../../images/colleges/lmu.jpg";
 import image6 from "../../images/colleges/smcc.png";
 import image0 from "../../images/about/About Page 1.jpg";
 import Footer from "../../components/Footer";
+import NoRightClickImg from '../../components/NoRightClickImg';
 
 class About extends Component {
   render() {
@@ -29,7 +30,7 @@ class About extends Component {
 				<h4 className="Content4"> DPT is a non-profit organization in San Jose not associated with any single dance studio. We audition our dancers from the Bay Area, and every dancer is given an equal opportunity regardless of the studio they attend. We hold open auditions and cast our team based solely on the dancer’s age and skill level. </h4>
 			</td>
 			<td className="column2">
-				<img className="Image0" src={image0} alt="could not load"/>
+				<NoRightClickImg imgClassName="Image0" src={image0} alt="could not load"/>
 				<Container>
 				<div className="Boxed">
 				<h4 className="content7"> Dancers have gone on to dance at such colleges as: </h4>
