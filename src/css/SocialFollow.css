@@ -43,13 +43,12 @@
 
 @media only screen and (max-width: 1300px){
     .Social {
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .Social ul {
         padding-left: 8px;
         padding: 0;
-        margin-bottom: 35px;
         display: flex;
     }
     .Social ul li {
