@@ -113,9 +113,7 @@ class Home extends React.Component {
 			return(
 				<div style={{position:"relative"}}>
 					<Toolbar/>
-					<div style={{height: this.state.width * 0.4, width: "100%"}} >
-						<NoRightClickImg imgClassName="banner-img" src={mainBanner} />
-					</div>
+					<NoRightClickImg style={{height: this.state.width * 0.4, width: "100%"}} imgClassName="banner-img" src={mainBanner} />
 
 					<div style={{display:this.state.imgViz ? "none":"flex", justifyContent:"center"}}>
 						<button className="Scroll-Button" onClick={this.scrollToSlideShow}>
