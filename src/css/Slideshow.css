@@ -16,16 +16,8 @@
 .each-slide img {
     width: calc(27vw);
     height: calc(35vw);
-    object-fit: cover;
+    object-fit: contain;
     image-rendering: pixelated;
-}
-
-.each-slide-special img{
-    width: calc(27vw);
-    height: calc(35vw);
-    object-fit: cover;
-    image-rendering: pixelated;
-    object-position: top left;
 }
 
 @media only screen and (max-width: 600px) {
@@ -38,10 +30,5 @@
         width: calc(47vw);
         height: calc(65vw);
         object-fit: cover;
-    }
-    
-    .each-slide-special img{
-        width: calc(47vw);
-        height: calc(65vw);
     }
 }
