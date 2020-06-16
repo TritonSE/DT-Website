@@ -28,14 +28,20 @@
     object-position: top left;
 }
 
-/* .danceBannerimg{
-    width: calc(60vw);
-    height: calc(40vw);
-    display: block;
+@media only screen and (max-width: 600px) {
+    .danceimg{
+        width: calc(47vw);
+        height: calc(65vw);
+    }
+      
+    .each-slide img {
+        width: calc(47vw);
+        height: calc(65vw);
+        object-fit: cover;
+    }
+    
+    .each-slide-special img{
+        width: calc(47vw);
+        height: calc(65vw);
+    }
 }
-  
-.each-slide-Banner img {
-    width: calc(60vw);
-    height: calc(40vw);
-    object-fit: cover
-} */
