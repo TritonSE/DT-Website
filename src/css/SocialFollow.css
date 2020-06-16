@@ -57,27 +57,29 @@
         line-height: 2%;
     }
 
-    .instagram-icon {
+    .instagram-iconImg {
         margin-top: 1px;
     }
     
-    .mail-icon {
+    .mail-iconImg {
         margin-top: 15%;
     }
 
-    .facebook {
-        margin-top: -1px;
+    .facebook-iconImg {
+        margin-top: -10%;
+        height: 35px;
+        width: 35px;
     }
-    .youtube {
+    .youtube-iconImg {
         margin-top: 5%;
     }
 
-    .yelp {
-        height: 25px;
+    .yelp-iconImg {
         margin-top: 15%;
+        height: 25px;
         width: 25x;
     }
-    
+
     .Social ul li a {
         position: relative;
         display: inline-block;

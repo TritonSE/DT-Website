@@ -16,29 +16,29 @@ class SocialFollow extends Component{
 
               <li>
                   <a href={fbLink} title="Youtube" target="_blank" rel="noopener noreferrer">
-                    <img className="youtube" src={require("../images/youtubeIcon.png")} width="30px" height="30px" alt="error loading img"></img>
+                    <img className="youtube-iconImg" src={require("../images/youtubeIcon.png")} width="30px" height="30px" alt="error loading img"></img>
                   </a>
               </li>
 
               <li>
                   <a href={fbLink} title="Yelp" target="_blank" rel="noopener noreferrer">
-                    <img className="yelp" src={require("../images/yelpIcon.png")} width="30px" height="30px" alt="error loading img"></img>
+                    <img className="yelp-iconImg" src={require("../images/yelpIcon.png")} width="30px" height="30px" alt="error loading img"></img>
                   </a>
               </li>
 
               <li>
                   <a href={fbLink} title="Facebook" target="_blank" rel="noopener noreferrer">
-                    <img className="facebook" src={require("../images/fbIcon.png")} width="30px" height="30px" alt="error loading img"></img>
+                    <img className="facebook-iconImg" src={require("../images/fbIcon.png")} width="30px" height="30px" alt="error loading img"></img>
                   </a>
               </li>
               <li>
                   <a href={igLink} title="Instagram" target="_blank" rel="noopener noreferrer">
-                    <img className="instagram-icon" src={require("../images/igIcon.png")} width="30px" height="30px" alt="error loading img"></img>
+                    <img className="instagram-iconImg" src={require("../images/igIcon.png")} width="30px" height="30px" alt="error loading img"></img>
                   </a>
                 </li>
                 <li>
                   <a href={mailLink} title="Email Us" target="_blank" rel="noopener noreferrer">
-                    <img className="mail-icon" src={require("../images/mailIcon.png")} width="22px" height="22px" alt="error loading img"></img>
+                    <img className="mail-iconImg" src={require("../images/mailIcon.png")} width="22px" height="22px" alt="error loading img"></img>
                   </a>
                 </li>
                 <li>
