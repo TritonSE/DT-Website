@@ -17,7 +17,7 @@ import { Slide } from 'react-slideshow-image';
  		  }
  		  const Slideshow = () => {
             var pictures = this.props.slideImages.map((item, i) => 
-				<div className={i == (this.props.special - 1) ? "each-slide-special":"each-slide"}> 
+				<div className="each-slide"> 
 					<img src = {item} alt="Loading Error"/> 
 				</div>);
  			return (
