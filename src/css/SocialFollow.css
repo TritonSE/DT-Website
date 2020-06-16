@@ -45,6 +45,7 @@
     .Social {
         margin-top: 10px;
     }
+
     .Social ul {
         padding-left: 8px;
         padding: 0;
@@ -109,12 +110,5 @@
         width: 120px;
         border-radius: 2%;
         line-height: 150%;
-    }
-}
-
-/* MAKE ICONS DISAPPEAR */
-@media screen and (max-width:900px) {  
-    .Social ul {
-        display: none;
     }
 }

@@ -75,7 +75,7 @@ class Home extends React.Component {
 					require('../images/home/Main Page 2.jpg'),
 					require('../images/home/Main Page 3.jpg')
 				]}/> */}
-				<img onContextMenu={(e)=> {e.preventDefault(); return false;}} src={mainBanner} style={{height: this.state.width * 0.4, width: this.state.width}}/>
+				<img onContextMenu={(e)=> {e.preventDefault(); return false;}} src={mainBanner} style={{height: this.state.width * 0.4, width: "100%"}}/>
 				<div style={{display:this.state.imgViz ? "none":"flex", justifyContent:"center"}}>
 					<button className="Scroll-Button" onClick={this.scrollToSlideShow}>
 						<i class="fas fa-angle-double-down fa-2x"/>
