@@ -1,5 +1,5 @@
 
-.title1{
+.About-Title{
     width: 70%;
     margin-left: 15%;
     text-align: center;
@@ -17,7 +17,7 @@
     max-width: 100%;
 }
 
-.content1{
+.About-Paragraph1{
     margin-top: 5%;
     width: 100%;
     text-align: left;
@@ -28,7 +28,7 @@
     opacity: 1;
 }
 
-.content2{
+.About-Paragraph2{
     margin-top: 3%;
     width: 100%;
     text-align: left;
@@ -39,7 +39,7 @@
     opacity: 1;
 }
 
-.Content3{
+.About-Paragraph3{
     margin-top: 3%;
     width: 100%;
     text-align: left;
@@ -50,7 +50,7 @@
     opacity: 1;
 }
 
-.Content4{
+.About-Paragraph4{
 
     margin-top: 3%;
     width: 100%;
@@ -62,7 +62,7 @@
     opacity: 1;
 }
 
-.Content7{
+.Colleges-List{
     margin-top: 2%;
     width: 100%;
     text-align: left;
@@ -73,7 +73,7 @@
     opacity: 1;
 }
 
-.Content8{
+.Companies-List{
 
     margin-top: 2%;
     width: 100%;
@@ -85,39 +85,39 @@
     opacity: 1;
 }
 
-.Dancers-Image{
+.dancers-Image{
     margin-top: 2%;
     width: 98%;
     height: auto;
 }
 
-.Image1{
+.MMC-Logo{
     width: 18%;
     height: 18%;
 }
 
-.Image2{
+.SDSU-Logo{
     width: 20%;
     height: 20%;
 }
 
-.Image3{
+.SSU-Logo{
     width: 18%;
     height: 18%;
 }
 
-.Image4{
+.SJSU-Logo{
     padding-left: 2%;
     width: 14%;
     height: 14%;
 }
 
-.Image5{
+.LMU-Logo{
     width: 19%;
     height: 19%;
 }
 
-.Image6{
+.SMCC-Logo{
     width: 10%;
     height: 10%;
 }
@@ -162,7 +162,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .title1{
+    .About-Title{
         text-align: center;
         font-size: 5vh;
         width: 70%;
@@ -170,49 +170,41 @@
         font-family: 'Lato', sans-serif;
     }
 
-    .Title2{
-        margin-top: 25%;
-        text-align: right;
-        font-size: 7vh;
-        width: 70%;
-        margin-left: 20%;
-    }
-
-    .content1{
+    .About-Paragraph1{
         text-align: left;
         margin-top: 5%;
         margin-left: 7%;
         width: 86%;
         font-size: 4.2vw;
     }
-    .content2{
+    .About-Paragraph2{
         text-align: left;
         margin-top: 5%;
         margin-left: 7%;
         width: 86%;
         font-size: 4.2vw;
     }
-    .Content3{
+    .About-Paragraph3{
         text-align: left;
         margin-left: 7%;
         font-size: 4.2vw;
         margin-top: 5%;
         width: 86%;
     }
-    .Content4{
+    .About-Paragraph4{
         text-align: left;
         margin-left: 7%;
         font-size: 4.2vw;
         margin-top: 5%;
         width: 86%;
     }
-    .Content7{
+    .Colleges-List{
         text-align: left;
         margin-left: 0%;
         font-size: 4.2vw;
         margin-top: 0%;
     }
-    .Content8{
+    .Companies-List{
         text-align: left;
         margin-left: 0%;
         font-size: 4.2vw;
@@ -225,36 +217,7 @@
         height: auto;
     }
     
-    .Image1{
-        width: 18%;
-        height: 18%;
-    }
     
-    .Image2{
-        width: 20%;
-        height: 20%;
-    }
-    
-    .Image3{
-        width: 18%;
-        height: 18%;
-    }
-    
-    .Image4{
-        padding-left: 2%;
-        width: 14%;
-        height: 14%;
-    }
-    
-    .Image5{
-        width: 19%;
-        height: 19%;
-    }
-    
-    .Image6{
-        width: 10%;
-        height: 10%;
-    }
     
     .Colleges{
         margin-top: 3%;
@@ -394,12 +357,12 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .title1{
+    .About-Title{
         width: 100%;
         margin-left: 0%;
         text-align: center;
         font-family: 'Lato', sans-serif;
-        font-size: 5vh;
+        font-size: 6vh;
         letter-spacing: 0;
         color: #FF4081;
         opacity: 1;
@@ -412,7 +375,7 @@
         max-width: 100%;
     }
     
-    .content1{
+    .About-Paragraph1{
         margin-top: 5%;
         width: 100%;
         text-align: left;
@@ -423,7 +386,7 @@
         opacity: 1;
     }
     
-    .content2{
+    .About-Paragraph2{
         margin-top: 5%;
         width: 100%;
         text-align: left;
@@ -434,7 +397,7 @@
         opacity: 1;
     }
     
-    .Content3{
+    .About-Paragraph3{
         margin-top: 5%;
         width: 100%;
         text-align: left;
@@ -445,7 +408,7 @@
         opacity: 1;
     }
     
-    .Content4{
+    .About-Paragraph4{
     
         margin-top: 5%;
         width: 100%;
@@ -457,7 +420,7 @@
         opacity: 1;
     }
     
-    .Content7{
+    .Colleges-List{
         margin-top: 2%;
         width: 100%;
         text-align: left;
@@ -468,7 +431,7 @@
         opacity: 1;
     }
     
-    .Content8{
+    .Companies-List{
         margin-top: 2%;
         width: 100%;
         text-align: left;
@@ -485,33 +448,33 @@
         height: auto;
     }
     
-    .Image1{
+    .MMC-Logo{
         width: 18%;
         height: 18%;
     }
     
-    .Image2{
+    .SDSU-Logo{
         width: 20%;
         height: 20%;
     }
     
-    .Image3{
+    .SSU-Logo{
         width: 18%;
         height: 18%;
     }
     
-    .Image4{
+    .SJSU-Logo{
         padding-left: 2%;
         width: 14%;
         height: 14%;
     }
     
-    .Image5{
+    .LMU-Logo{
         width: 19%;
         height: 19%;
     }
     
-    .Image6{
+    .SMCC-Logo{
         width: 10%;
         height: 10%;
     }
@@ -529,7 +492,7 @@
     
     .Boxed{
         margin-top: 3%;
-        margin-left: -2.5%;
+        margin-left: -4%;
         width: 106%;
         height: 100%;
         background-color: white;
