@@ -9,6 +9,8 @@ import Audition from './pages/Audition'
 import Mission from './pages/Dropdown/Mission'
 import About from './pages/Dropdown/About'
 import History from './pages/Dropdown/History'
+import Gallery from './pages/Gallery'
+
 
 class App extends Component {
 	render() {
@@ -22,6 +24,7 @@ class App extends Component {
 				<Route path="/Dropdown/Mission" exact render={(props) => <Mission {...props}/>}/>
 				<Route path="/Dropdown/History" exact render={(props) => <History { ... props}/>}/> 
 				<Route path="/support" exact render={(props) => <Support {...props}/>}/>
+				<Route path="/Gallery" exact render={(props) => <Gallery {...props}/>}/>
    	 	</div>
   		);
   }

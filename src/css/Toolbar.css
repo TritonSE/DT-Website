@@ -35,6 +35,15 @@ justify-content: flex-start;
   text-decoration: none !important; 
 }
 
+.Gallery-Header{
+  color: black;
+  font-size: 115%;
+  width: 125px;
+  height: 50px;
+  font-weight: bold;
+  text-decoration: none !important; 
+}
+
 
 .Dropdown-Header {
   font-weight: bold;
@@ -63,6 +72,11 @@ justify-content: flex-start;
 }
 .Contact-Header:hover{
   color: rgb(15, 185, 185) !important;
+  transition: 0.5s !important;
+}
+
+.Gallery-Header:hover{
+  color: #FF4081 !important;
   transition: 0.5s !important;
 }
 

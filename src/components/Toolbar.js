@@ -113,6 +113,20 @@ class Toolbar extends Component {
                 Audition
               </NavLink>
 
+              <NavLink
+                to="/Gallery"
+                href="/Gallery"
+                exact activeClassName = "active"
+                className= "Gallery-Header"
+                style={{
+                  fontWeight: "bold",
+                  color: "black",
+                }}
+                activeStyle={{
+                  color: "#FF4081"
+                }}>
+                 Gallery
+              </NavLink>
               </Nav>
         </Navbar.Collapse>
         <Navbar.Brand>
