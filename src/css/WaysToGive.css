@@ -15,7 +15,7 @@
 */
 .textWays {
     color: #0f0f0f;
-    font-size: calc(10vmin);
+    font-size: calc(10.5vh);
     text-align: left;
     padding-left: 10%;
     font-family: 'Lato', serif;
@@ -32,7 +32,7 @@
     color: #0f0f0f;
     position: relative;
     top: calc(-27.5vmin);
-    font-size: calc(2vmin);
+    font-size: calc(1.15vw);
     padding-right: 10%;
     text-align: left;
     float:right;
@@ -126,6 +126,17 @@
         padding-top: calc(75vmin);
     }
     */
+    .textWays{
+        color: #0f0f0f;
+        font-size: calc(5vh);
+        font-family: 'Lato', serif;
+        white-space: nowrap;
+        font-style:normal;
+        /*padding-left: calc(33.5vmin);*/
+        text-align: center;
+        /*padding-top: calc(75vmin);*/
+        margin-left: calc(-9.5vw);
+    }
     /**
     .danceimg{
         width: calc(42vmin);
@@ -136,4 +147,71 @@
         top: calc(-100vmin);
     }
     */
+    
+    .bodytxt {
+        width: calc(97.5vw);
+        /*height: calc(70vh);*/
+        align-items: center;
+        color: #0f0f0f;
+        position: relative;
+        text-overflow: ellipsis;
+        overflow: scroll;
+        white-space: pre-line;
+        border-left: 1em solid transparent;
+        border-right: 1em solid transparent;
+        word-wrap: break-word;
+        font-size: calc(4.2vw);
+        margin-top: calc(12.5vh);
+        left: calc(5vw);
+        height: calc(110vh);
+        /*top: calc(-27.5vmin);
+        margin-left: calc(-10vw);
+        font-size: calc(5vmin);
+        /*padding-right: 10%;
+        text-align: left;
+        float:bottom;
+        font-family: 'Lato', serif;
+        font-style:normal;
+        */
+    }
+
+    .amazon {
+        color: #0f0f0f;
+        /**right: calc(-87.5vmin);*/
+        /**position: relative; */
+        font-size: calc(5vmin);
+        font-family: 'Lato', serif;
+        font-style: normal; 
+        text-decoration: underline;
+        text-align: center;
+        margin-top: calc(5vmin);
+        margin-left: calc(20vw);
+        /**margin-left: 32.5%;*/
+    }
+    
+    .smile {
+        width: calc(60vmin);
+        height: calc(60vmin);
+        display: block; 
+        position: absolute;
+        /**position: relative;*/
+        padding-top: calc(1vmin);
+        margin-top: calc(300vmin);
+        margin-right: calc(-8.5vmin);
+        float: none;
+        /**float: bottom;*/
+    }
+
+    .instructions {
+        width: calc(60vmin);
+        height: calc(60vmin);
+        display: block;
+        position: absolute;
+        /**position: relative;*/
+        margin-top: calc(75vmin);
+        margin-right: calc(-3.5vmin);
+        padding-top: calc(1vmin);
+        /**top: calc(-7.5vmin);*/
+        /**top: calc(-55vmin);*/
+    }
 }
