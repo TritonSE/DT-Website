@@ -35,13 +35,15 @@ class Footer extends Component {
                                 Contact <br/> Us
                             </span>
                         </h1>
-                        <h1 className="Contact-Header" style={{textAlign: "left", fontSize: "3.6vw"}}>
+                        <h1 className="Contact-Header" style={{textAlign: "left", fontSize: "3.4vw", flex:"1"}}>
                             <span style={{color:"black"}}>
-                                + 408 622 0249 <br/> <a style={{color: "black"}} href={`mailto:dynamicsperformanceteam@gmail.com`}>dynamicsperformanceteam@gmail.com</a>
+                                <a style={{color: "black"}} href={`tel:4086220249`}>+ 408 622 0249  </a><br/> <a style={{color: "black"}} href={`mailto:dynamicsperformanceteam@gmail.com`}>dynamicsperformanceteam@gmail.com</a>
                             </span>
                         </h1>
                     </div>
-                    <SocialIcons/>
+                    <div style={{marginTop:"5%"}}>
+                     <SocialIcons/>
+                    </div>
                 </div>
             );
         } else {

@@ -74,7 +74,6 @@ class Home extends React.Component {
 	}
 	
 	render() {
-
 		if(this.state.isMobile){
 			return(
 				<div style={{position:"relative"}}>

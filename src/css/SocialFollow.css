@@ -43,48 +43,57 @@
 
 @media only screen and (max-width: 1300px){
     .Social {
-        margin-top: 10px;
+        margin-top: -5px;
     }
+
     .Social ul {
         padding-left: 8px;
         padding: 0;
-        margin-bottom: 35px;
-        display: flex;
+        
     }
     .Social ul li {
         list-style: none;
-        margin: 0 8.8px;
+        margin: 0 5.8px;
         line-height: 2%;
     }
 
     .instagram-iconImg {
-        margin-top: 1px;
+        /* margin-top: 1px; */
+        height: 5vh;
+        width: 5vh;
     }
     
     .mail-iconImg {
-        margin-top: 15%;
+        /* margin-top: 15%; */
+        /* height: 4vh;
+        width: 5vh; */
+        margin:1vh;
     }
 
     .facebook-iconImg {
-        margin-top: -10%;
-        height: 35px;
-        width: 35px;
+        margin-top: -23%;
+        height: 5vh;
+        width: 5vh;
     }
     .youtube-iconImg {
-        margin-top: 5%;
+        /* margin-top: 5%; */
+        height: 5vh;
+        width: 5vh;
     }
 
     .yelp-iconImg {
-        margin-top: 15%;
-        height: 25px;
-        width: 25x;
+        /* margin-top: 15%; */
+        height: 5vh;
+        width: 5vh;
     }
 
     .Social ul li a {
         position: relative;
-        display: inline-block;
-        width: 33px;
-        height: 33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 127%;
+        height: 135%;
         border-radius: 10%;
         color: #FFFFFF;
         background-color:#333333;
@@ -111,10 +120,3 @@
         line-height: 150%;
     }
 }
-
-/* MAKE ICONS DISAPPEAR */
-/* @media screen and (max-width:900px) {  
-    .Social ul{
-        display: none;
-    }
-} */

@@ -42,7 +42,7 @@ class SocialFollow extends Component{
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.mailchimp.com" title ="Subscribe to our Newsletter!" target="_blank" rel="noopener noreferrer" alt="error loading img">Subscribe</a>
+                  <a href="https://www.mailchimp.com" title ="Subscribe to our Newsletter!" target="_blank" rel="noopener noreferrer" style={{display:"flex",justifyContent: "center"}} alt="error loading img">Subscribe</a>
                 </li>
               </ul>
             </div>
