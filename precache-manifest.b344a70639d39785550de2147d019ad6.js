@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ff15a0005c2b61f08cc818fa16ceead",
+    "revision": "ecf12c24be95ad4afe2089a6b74f42cd",
     "url": "/dynamics-website/index.html"
   },
   {
-    "revision": "0a2e9f52aaca42b20d47",
+    "revision": "8da023129ed5b58670cf",
     "url": "/dynamics-website/static/css/2.b7696511.chunk.css"
   },
   {
-    "revision": "d22741ddb2df763a86df",
-    "url": "/dynamics-website/static/css/main.b2c90249.chunk.css"
+    "revision": "169ff1f261834dbe70ce",
+    "url": "/dynamics-website/static/css/main.41d78225.chunk.css"
   },
   {
-    "revision": "0a2e9f52aaca42b20d47",
-    "url": "/dynamics-website/static/js/2.4e902584.chunk.js"
+    "revision": "8da023129ed5b58670cf",
+    "url": "/dynamics-website/static/js/2.bb454bd1.chunk.js"
   },
   {
     "revision": "6cffb81bac446b31e442766962b079fa",
-    "url": "/dynamics-website/static/js/2.4e902584.chunk.js.LICENSE.txt"
+    "url": "/dynamics-website/static/js/2.bb454bd1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d22741ddb2df763a86df",
-    "url": "/dynamics-website/static/js/main.622ae3df.chunk.js"
+    "revision": "169ff1f261834dbe70ce",
+    "url": "/dynamics-website/static/js/main.c95c7bbe.chunk.js"
   },
   {
     "revision": "fd513f155b71e7ecf195",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e28bb666a0b51c21919c8d26f56fb49b",
     "url": "/dynamics-website/static/media/Creative Director Headshot.e28bb666.jpg"
+  },
+  {
+    "revision": "964f884462e499ecfa397d154aa4bdda",
+    "url": "/dynamics-website/static/media/Dynamics Year 1.964f8844.jpg"
   },
   {
     "revision": "f1f6cacb86100c724cdcb942e72c98de",
