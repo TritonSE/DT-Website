@@ -61,7 +61,7 @@ class Directors extends Component {
 					<SupportingDirectors names={["Malou Arquero"]} titles={["Treasurer"]}/>
 					<SupportingDirectors names={["Anne Marie Asis"]} titles={["Dynamios Liaison"]}/>
 					<SupportingDirectors names={["Danielle Zuger"]} titles={["Director"]}/>
-					<SupportingDirectors names={["Lloyd Alaban"]} titles={["Director"]}/>
+					<SupportingDirectors names={["Lloyd Alaban"]} titles={["Grant Writer"]}/>
 					<Footer/>
 				</div>
 			);
@@ -79,7 +79,7 @@ class Directors extends Component {
 					<DirectorProfile imgTop={require('../../images/directors/Artistic Director Headshot.jpg')} imgBottom={require('../../images/directors/Artistic Director Action shot.jpg')} title="Artistic Director" name="Danielle de Ojeda" text={danielleText}/>
 					<br/>
 					<SupportingDirectors names={["Eric Misenhimer", "Diana Zuger", "Meiling Adams", "Marybelle Mejia"]} titles={["President", "Vice President", "Secretary", "Director"]}/>
-					<SupportingDirectors names={["Malou Arquero", "Anne Marie Asis", "Danielle Zuger", "Lloyd Alaban"]} titles={["Treasurer", "Dynamios Liaison", "Director", "Director"]}/>
+					<SupportingDirectors names={["Malou Arquero", "Anne Marie Asis", "Danielle Zuger", "Lloyd Alaban"]} titles={["Treasurer", "Dynamios Liaison", "Director", "Grant Writer"]}/>
 					<Footer/>
 				</div>
 			);
