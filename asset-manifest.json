@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/dynamics-website/static/css/main.b2c90249.chunk.css",
-    "main.js": "/dynamics-website/static/js/main.622ae3df.chunk.js",
-    "main.js.map": "/dynamics-website/static/js/main.622ae3df.chunk.js.map",
+    "main.css": "/dynamics-website/static/css/main.8044d5a5.chunk.css",
+    "main.js": "/dynamics-website/static/js/main.c47407b1.chunk.js",
+    "main.js.map": "/dynamics-website/static/js/main.c47407b1.chunk.js.map",
     "runtime-main.js": "/dynamics-website/static/js/runtime-main.88e367fe.js",
     "runtime-main.js.map": "/dynamics-website/static/js/runtime-main.88e367fe.js.map",
     "static/css/2.b7696511.chunk.css": "/dynamics-website/static/css/2.b7696511.chunk.css",
-    "static/js/2.4e902584.chunk.js": "/dynamics-website/static/js/2.4e902584.chunk.js",
-    "static/js/2.4e902584.chunk.js.map": "/dynamics-website/static/js/2.4e902584.chunk.js.map",
+    "static/js/2.01e3679f.chunk.js": "/dynamics-website/static/js/2.01e3679f.chunk.js",
+    "static/js/2.01e3679f.chunk.js.map": "/dynamics-website/static/js/2.01e3679f.chunk.js.map",
     "index.html": "/dynamics-website/index.html",
-    "precache-manifest.9d325bd03f350de46e83ea87fe3b4157.js": "/dynamics-website/precache-manifest.9d325bd03f350de46e83ea87fe3b4157.js",
+    "precache-manifest.23b19aaf04d7c70836aa3c6313e35e71.js": "/dynamics-website/precache-manifest.23b19aaf04d7c70836aa3c6313e35e71.js",
     "service-worker.js": "/dynamics-website/service-worker.js",
     "static/css/2.b7696511.chunk.css.map": "/dynamics-website/static/css/2.b7696511.chunk.css.map",
-    "static/css/main.b2c90249.chunk.css.map": "/dynamics-website/static/css/main.b2c90249.chunk.css.map",
-    "static/js/2.4e902584.chunk.js.LICENSE.txt": "/dynamics-website/static/js/2.4e902584.chunk.js.LICENSE.txt",
+    "static/css/main.8044d5a5.chunk.css.map": "/dynamics-website/static/css/main.8044d5a5.chunk.css.map",
+    "static/js/2.01e3679f.chunk.js.LICENSE.txt": "/dynamics-website/static/js/2.01e3679f.chunk.js.LICENSE.txt",
     "static/media/About Page 1.jpg": "/dynamics-website/static/media/About Page 1.aa478e94.jpg",
     "static/media/Artistic Director Action shot.jpg": "/dynamics-website/static/media/Artistic Director Action shot.57f74635.jpg",
     "static/media/Artistic Director Headshot.jpg": "/dynamics-website/static/media/Artistic Director Headshot.2e2ee0e1.jpg",
@@ -48,8 +48,8 @@
   "entrypoints": [
     "static/js/runtime-main.88e367fe.js",
     "static/css/2.b7696511.chunk.css",
-    "static/js/2.4e902584.chunk.js",
-    "static/css/main.b2c90249.chunk.css",
-    "static/js/main.622ae3df.chunk.js"
+    "static/js/2.01e3679f.chunk.js",
+    "static/css/main.8044d5a5.chunk.css",
+    "static/js/main.c47407b1.chunk.js"
   ]
 }
