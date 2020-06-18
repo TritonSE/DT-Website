@@ -7,8 +7,6 @@ import Toolbar from '../components/Toolbar.js';
 import Footer from '../components/Footer.js';
 import { Link } from 'react-router-dom';
 
-import SocialIcons from '../components/SocialFollow.js';
-
 
 class Home extends React.Component {
 
