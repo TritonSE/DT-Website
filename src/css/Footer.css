@@ -1,7 +1,5 @@
 .Footer{
     background-color: rgb(15, 185, 185);
-    /* position: sticky;
-    bottom: 0; */
     margin-top: 5%;
     display: flex;
     justify-content: center;
@@ -13,4 +11,16 @@
     flex: 1;
     text-align: right;
     margin-left: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+    .Footer{
+        padding: 3.5%;
+        flex-direction: column;
+    }
+
+    .Contact-Header{
+        flex: none;
+        margin-left: 7%;
+    }
 }

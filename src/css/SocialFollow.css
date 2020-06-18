@@ -113,8 +113,8 @@
 }
 
 /* MAKE ICONS DISAPPEAR */
-@media screen and (max-width:900px) {  
-    .Social ul {
+/* @media screen and (max-width:900px) {  
+    .Social ul{
         display: none;
     }
-}
+} */
