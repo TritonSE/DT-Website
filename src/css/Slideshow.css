@@ -1,0 +1,34 @@
+.text {
+    color: #0f0f0f;
+    font-size: calc(8vw);
+    text-align: left;
+    padding-left: 20%;
+    font-family: 'Lato', serif;
+    font-style:normal;
+    padding-top: calc(15vw);
+}
+.danceimg{
+    width: calc(27vw);
+    height: calc(35vw);
+    display: block;
+}
+  
+.each-slide img {
+    width: calc(27vw);
+    height: calc(35vw);
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+@media only screen and (max-width: 600px) {
+    .danceimg{
+        width: calc(47vw);
+        height: calc(65vw);
+    }
+      
+    .each-slide img {
+        width: calc(47vw);
+        height: calc(65vw);
+        object-fit: cover;
+    }
+}

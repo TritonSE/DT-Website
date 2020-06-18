@@ -74,7 +74,11 @@ class SupportStates extends Component {
       return (
         <div className="Proceed-Style">
           <text
+<<<<<<< HEAD
             className="Amount-Text1"
+=======
+            className="Amount-Text"
+>>>>>>> master
             style={{bottom: "3%", fontWeight: "bold", marginLeft: "-5%"}}
           >
             {"Amount: $"}
@@ -88,7 +92,11 @@ class SupportStates extends Component {
             onChange={this.handleUpdateAmount}
           >
           </input>
+<<<<<<< HEAD
           <IoIosAlert className="alert" style={{display: this.state.displayError ? null:'none'}}/>
+=======
+          <IoIosAlert style={{display: this.state.displayError ? null:'none', color:"red", width: "2%", maxHeight:"2%", marginTop: "2%", marginLeft:"1%"}}/>
+>>>>>>> master
           <button 
             style={{left: "53%"}} 
             className="btn btn-secondary Proceed-Button"

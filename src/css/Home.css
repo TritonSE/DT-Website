@@ -42,3 +42,28 @@
     border-radius: 50%;
 }
 
+@media only screen and (max-width: 600px) {
+    .Dynamic-Text{
+        margin-left: 0%;
+        font-size: 7.2vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Right-Container{
+        padding-bottom: 5%;
+    }
+
+    .Left-Container{
+        display: flex;
+        align-items: center;
+    }
+
+    .Static-Text{
+        margin-left: 0%;
+        margin-right: 0%;
+        font-size: 2.3vw;
+        width: 90%;
+    }
+}
+

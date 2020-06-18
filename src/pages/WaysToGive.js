@@ -20,6 +20,7 @@ class WaysToGive extends Component {
 	}
 
 
+
 	handleDonateButtonClicked = () =>{
 		this.setState({
 			donateButtonClicked: true

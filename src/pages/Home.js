@@ -12,7 +12,7 @@ class Home extends React.Component {
 
 	constructor(props){
 		super(props);
-		this.state = { width: 0, height: 0, imgViz: false, scroll:0 };
+		this.state = { width: 0, height: 0, imgViz: false, scroll:0, isMobile:false};
 		this.dynamicText = React.createRef();
 		this.scrollReference = React.createRef();
 
@@ -28,6 +28,12 @@ class Home extends React.Component {
 	}
 	
 	updateWindowDimensions() {
+		if (window.innerWidth > 600 && this.state.isMobile){
+			this.setState({ isMobile: false });
+		}
+		else if(window.innerWidth <= 600 && !this.state.isMobile){
+			this.setState({ isMobile: true });
+		}
 		this.setState({ width: window.innerWidth, height: window.innerHeight });
 	}
 
@@ -67,60 +73,92 @@ class Home extends React.Component {
 	
 	render() {
 
-		return(
-			<div>
-				<Toolbar/>
-				{/* <Slideshow banner={true} slideImages={[
-					require('../images/home/Facebook_Cover_2019.png'),
-					require('../images/home/Main Page 2.jpg'),
-					require('../images/home/Main Page 3.jpg')
-				]}/> */}
-				<img onContextMenu={(e)=> {e.preventDefault(); return false;}} src={mainBanner} style={{height: this.state.width * 0.4, width: this.state.width}}/>
-				<div style={{display:this.state.imgViz ? "none":"flex", justifyContent:"center"}}>
-					<button className="Scroll-Button" onClick={this.scrollToSlideShow}>
-						<i class="fas fa-angle-double-down fa-2x"/>
-					</button>
-				</div>
-				<VizSensor
-					partialVisibility
-					minTopValue="35"
-					onChange={(isVisible) => {
-					this.setState({imgViz: isVisible})
-					}}
-				>
-					<div className="Text-Container" ref={this.scrollReference}>
-						<div className="Left-Container" style={{width: this.state.width*0.5}}>
-							<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.dynamicText}> dynamic</span> <span><br/>dancers.</span></p>
-							<p className="Static-Text"> 
-									The Dynamics Performance Team (DPT) is an award winning non-profit dance company training the next generation of versatile artists in San Jose and the surrounding Bay Area. Established in 2005, DPT performs and competes in jazz, contemporary, lyrical, tap, and hip hop, among others. <br/> <br/>
-			
-									Dancers learn quality technique along with competitive choreography in both commercial and concert styles. Like the five points of a star, DPT has five primary goals: instill technique, performance, character, dedication and passion in all of its dancers. Dancers have the opportunity to perform in groups, trios, duets, and even solos.<br/> <br/>
-			
-									DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link style={{color: '#FF4081'}} to='/Auditions'>Click here</Link> for more information. 
-									Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link style={{color: '#FF4081'}} to="/Dropdown/About">Click here</Link> to learn more about DPT.
-							</p>
-						</div>
-						<div className="Right-Container" style={{width: this.state.width*0.5}}>
-							<Slideshow special={10} slideImages={[
-								require('../images/home/Main Page 1.jpg'), 
-								require('../images/home/Main Page 4.jpg'),
-								require('../images/home/Main Page 5.jpg'), 
-								require('../images/home/Main Page 6.jpg'),
-								require('../images/home/Main Page 7.jpg'), 
-								require('../images/home/Main Page 8.jpg'),
-								require('../images/home/Main Page 9.jpg'), 
-								require('../images/home/Main Page 10.jpg'),
-								require('../images/home/Main Page 11.jpg'), 
-								require('../images/home/Main Page 12.jpg'), 
-								require('../images/home/Main Page 13.jpg'), 
-								require('../images/home/Main Page 14.jpg')
-								]}/>
-						</div>	
+		if(this.state.isMobile){
+			return(
+				<div style={{position:"relative"}}>
+					<Toolbar/>
+					<img onContextMenu={(e)=> {e.preventDefault(); return false;}} src={mainBanner} style={{height: this.state.width * 0.45, width: "100%"}}/>
+					<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', marginLeft:"5px", marginRight:"5px"}}id='dynamics' ref={this.dynamicText}> dynamic </span> dancers.</p>
+					<div className="Right-Container">
+						<Slideshow indicators={false} slideImages={[
+							require('../images/home/Main Page 1.jpg'), 
+							require('../images/home/Main Page 4.jpg'),
+							require('../images/home/Main Page 5.jpg'), 
+							require('../images/home/Main Page 6.jpg'),
+							require('../images/home/Main Page 7.jpg'), 
+							require('../images/home/Main Page 8.jpg'),
+							require('../images/home/Main Page 9.jpg'), 
+							require('../images/home/Main Page 10.jpg'),
+							require('../images/home/Main Page 11.jpg'), 
+							require('../images/home/Main Page 12.jpg'), 
+							require('../images/home/Main Page 13.jpg'), 
+							require('../images/home/Main Page 14.jpg')
+							]}/>
+					</div>	
+					<div className="Left-Container">
+						<p className="Static-Text"> 
+								The Dynamics Performance Team (DPT) is an award winning non-profit dance company training the next generation of versatile artists in San Jose and the surrounding Bay Area. Established in 2005, DPT performs and competes in jazz, contemporary, lyrical, tap, and hip hop, among others. <br/> <br/>
+		
+								Dancers learn quality technique along with competitive choreography in both commercial and concert styles. Like the five points of a star, DPT has five primary goals: instill technique, performance, character, dedication and passion in all of its dancers. Dancers have the opportunity to perform in groups, trios, duets, and even solos.<br/> <br/>
+		
+								DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link style={{color: '#FF4081'}} to='/Auditions'>Click here</Link> for more information. 
+								Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link style={{color: '#FF4081'}} to="/Dropdown/About">Click here</Link> to learn more about DPT.
+						</p>
 					</div>
-				</VizSensor>
-				<Footer/>
-			</div>
-		)
+					<Footer/>
+				</div>
+			)
+		} else{
+			return(
+				<div style={{position:"relative"}}>
+					<Toolbar/>
+					<img onContextMenu={(e)=> {e.preventDefault(); return false;}} src={mainBanner} style={{height: this.state.width * 0.4, width: "100%"}}/>
+					<div style={{display:this.state.imgViz ? "none":"flex", justifyContent:"center"}}>
+						<button className="Scroll-Button" onClick={this.scrollToSlideShow}>
+							<i class="fas fa-angle-double-down fa-2x"/>
+						</button>
+					</div>
+					<VizSensor
+						partialVisibility
+						minTopValue="35"
+						onChange={(isVisible) => {
+						this.setState({imgViz: isVisible})
+						}}
+					>
+						<div className="Text-Container" ref={this.scrollReference}>
+							<div className="Left-Container" style={{width: this.state.width*0.5}}>
+								<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.dynamicText}> dynamic</span> <span><br/>dancers.</span></p>
+								<p className="Static-Text"> 
+										The Dynamics Performance Team (DPT) is an award winning non-profit dance company training the next generation of versatile artists in San Jose and the surrounding Bay Area. Established in 2005, DPT performs and competes in jazz, contemporary, lyrical, tap, and hip hop, among others. <br/> <br/>
+				
+										Dancers learn quality technique along with competitive choreography in both commercial and concert styles. Like the five points of a star, DPT has five primary goals: instill technique, performance, character, dedication and passion in all of its dancers. Dancers have the opportunity to perform in groups, trios, duets, and even solos.<br/> <br/>
+				
+										DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link style={{color: '#FF4081'}} to='/Auditions'>Click here</Link> for more information. 
+										Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link style={{color: '#FF4081'}} to="/Dropdown/About">Click here</Link> to learn more about DPT.
+								</p>
+							</div>
+							<div className="Right-Container" style={{width: this.state.width*0.5}}>
+								<Slideshow special={10} indicators={true} slideImages={[
+									require('../images/home/Main Page 1.jpg'), 
+									require('../images/home/Main Page 4.jpg'),
+									require('../images/home/Main Page 5.jpg'), 
+									require('../images/home/Main Page 6.jpg'),
+									require('../images/home/Main Page 7.jpg'), 
+									require('../images/home/Main Page 8.jpg'),
+									require('../images/home/Main Page 9.jpg'), 
+									require('../images/home/Main Page 10.jpg'),
+									require('../images/home/Main Page 11.jpg'), 
+									require('../images/home/Main Page 12.jpg'), 
+									require('../images/home/Main Page 13.jpg'), 
+									require('../images/home/Main Page 14.jpg')
+									]}/>
+							</div>	
+						</div>
+					</VizSensor>
+					<Footer/>
+				</div>
+			)
+		}
 	}
 }
 
