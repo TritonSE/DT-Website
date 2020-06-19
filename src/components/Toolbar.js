@@ -28,7 +28,7 @@ class Toolbar extends Component {
   }
 
   updateDisplayIcons() {
-    let hideIcons = window.innerWidth <= 900;
+    let hideIcons = window.innerWidth <= 1150;
 
     // only update icon display when necessary
     if (hideIcons != this.state.hideIcons) {
