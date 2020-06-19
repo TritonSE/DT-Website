@@ -78,7 +78,7 @@ class Home extends React.Component {
 			return(
 				<div style={{position:"relative"}}>
 					<Toolbar/>
-					<img onContextMenu={(e)=> {e.preventDefault(); return false;}} src={mainBanner} style={{height: this.state.width * 0.45, width: "100%"}}/>
+					<NoRightClickImg src={mainBanner} style={{height: this.state.width * 0.45, width: "100%"}}/>
 					<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', marginLeft:"5px", marginRight:"5px"}}id='dynamics' ref={this.dynamicText}> dynamic </span> dancers.</p>
 					<div className="Right-Container">
 						<Slideshow indicators={false} slideImages={[
