@@ -1,100 +1,105 @@
-.content3{
+.History-Paragraph1{
     margin-top: 5%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.content4{
+.History-Paragraph2{
 
     margin-top: 3%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.content5{
+.History-Paragraph3{
 
     margin-top: 3%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.content6{
+.History-Paragraph4{
 
     margin-top: 3%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.content7{
+.Colleges-List{
     margin-top: 2%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.content8{
-
+.Companies-List{
     margin-top: 2%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.Image1{
+.Dancers-image{
+    margin-top: 10%;
+    width: 90%;
+    height: auto;
+}
+
+.MMC-Logo{
     width: 18%;
     height: 18%;
 }
 
-.Image2{
+.SDSU-Logo{
     width: 20%;
     height: 20%;
 }
 
-.Image3{
+.SSU-Logo{
     width: 18%;
     height: 18%;
 }
 
-.Image4{
+.SJSU-Logo{
     padding-left: 2%;
     width: 14%;
     height: 14%;
 }
 
-.Image5{
+.LMU-Logo{
     width: 19%;
     height: 19%;
 }
 
-.Image6{
+.SMCC-Logo{
     width: 10%;
     height: 10%;
 }
@@ -104,13 +109,13 @@
     margin-left: 1%;
     width: 85%;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.title2{
+.History-Title{
     margin-top: 5%;
     margin-left: 0%;
     width: 85%;
@@ -123,7 +128,7 @@
 }
 
 .boxed{
-    margin-top: 3%;
+    margin-top: 1%;
     margin-left: 43.5%;
     width: 51%;
     height: 58%;
@@ -142,4 +147,277 @@
 
 .mobile{
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .history-title{
+        font-size: 5vh;
+        width: 100%;
+        color: #FF4081;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    }
+
+    .History-Paragraph1{
+        margin-left: 7%;
+        margin-top: 5%;
+        width: 86%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 4.2vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .History-Paragraph2{
+        margin-left: 7%;
+        margin-top: 5%;
+        width: 86%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 4.2vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .History-Paragraph3{
+        margin-left: 7%;
+        margin-top: 5%;
+        width: 86%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 4.2vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .History-Paragraph4{
+        margin-left: 7%;
+        margin-top: 5%;
+        width: 86%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 4.2vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+
+    .Colleges-List{
+        text-align: left;
+        margin-left: 0%;
+        font-size: 4.2vw;
+        margin-top: 0%;
+    }
+    
+    .Companies-List{
+        text-align: left;
+        margin-left: 0%;
+        font-size: 4.2vw;
+        margin-top: 0%;
+    }
+
+    .Colleges{
+        margin-top: 3%;
+        margin-left: 0%;
+        width: 85%;
+        font-family: 'Lato', sans-serif;
+        font-size: 4.2vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+
+    .companies{
+        margin-top: 3%;
+        margin-left: 0%;
+        width: 85%;
+        font-family: 'Lato', sans-serif;
+        font-size: 4.2vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .Boxed{
+        margin-left: 2%;
+        margin-top: 5%;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border: 0.1vh solid lightgray;
+        padding: 1.2vh;
+    
+    }
+
+    .dancers-image{
+        margin-top: 2%;
+        width: 100%;
+        height: auto;
+    }
+ 
+    .web{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .History-Paragraph1{
+        margin-top: 5%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .History-Paragraph2{
+    
+        margin-top: 3%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .History-Paragraph3{
+    
+        margin-top: 3%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .History-Paragraph4{
+    
+        margin-top: 3%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .Colleges-List{
+        margin-top: 2%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .Companies-List{
+    
+        margin-top: 2%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+
+    .Dancers-image{
+        margin-top: 8%;
+        width: 100%;
+        height: auto;
+    }
+    
+    .MMC-Logo{
+        width: 18%;
+        height: 18%;
+    }
+    
+    .SDSU-Logo{
+        width: 20%;
+        height: 20%;
+    }
+    
+    .SSU-Logo{
+        width: 18%;
+        height: 18%;
+    }
+    
+    .SJSU-Logo{
+        padding-left: 2%;
+        width: 14%;
+        height: 14%;
+    }
+    
+    .LMU-Logo{
+        width: 19%;
+        height: 19%;
+    }
+    
+    .SMCC-Logo{
+        width: 10%;
+        height: 10%;
+    }
+    
+    .Companies{
+        margin-top: 3%;
+        margin-left: 1%;
+        width: 85%;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .History-Title{
+        margin-top: 5%;
+        margin-left: 0%;
+        width: 95%;
+        text-align: right;
+        font-family: 'Lato', sans-serif;
+        font-size: 6vh;
+        letter-spacing: 0;
+        color: #FF4081;
+        opacity: 1;
+    }
+    
+    .boxed{
+        margin-top: 2%;
+        margin-left: 46.5%;
+        width: 51%;
+        height: 58%;
+        background-color: white;
+        border: 0.1vh solid lightgray;
+        padding: 1.2vh;
+    }
+    
+    .column1{
+        padding-left: 6%;
+    }
+    
+    .column2{
+        padding-right: 6%;
+    }
+    
+    .mobile{
+        display: none;
+    }
 }
