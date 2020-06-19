@@ -1,24 +1,20 @@
+/* WEB DESIGNS */
 .font {
     font-family: Arial;
 }
-
 .hideHorizontalScroll {
     overflow-x: hidden;
 }
-
 .audition-info {
     color: #FF4081;
 }
-
 .title {
     font-size: 110px;
 }
-
 .audition-text {
     padding-right: 7%;
     padding-left: 5%;
 }
-
 .colored-bullets ul {
     list-style: none; /* Remove default bullets */
 }
@@ -31,46 +27,58 @@
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1.1em; /* Also needed for space (tweak if needed) */
 }
-
-.auditionIMG{
+.auditionIMG {
     padding-top: 10%;
     height: 100%;
     padding-left: 10%;
     width: 100%;
 }
+.mobile {
+    display: none;
+}
+@media only screen and (min-width: 801px) {
+    .mobile{
+        display: none;
+    }
+}
 
-
-@media only screen and (max-device-width: 480px) {
-    
+/* MOBILE DESIGNS*/
+@media only screen and (max-width: 800px) {
+    .mobile{
+        display: inline-block;
+    }
     .title {
         font-size: 70px;
         text-align: center;
     }
-
+    .colored-bullets ul li::before {
+        color: rgb(15, 185, 185); /* Change the color */
+    }
     .dot{
         display: none;
     }
     .dots{
         display: none;
     }
-
+    .audition-info {
+        margin-bottom: -20px;
+    }
     .image2 {
-        padding-right: 10%;
+        margin-left: -2em;
+        width: 105%;
     }
 
     .image1 {
-        display: none;
+        width: 105%;
+        margin-left: -2em;
+        padding-bottom: 8%;
     }
 
     .web{
         display: none;
     }
-    
-    .mobile{
-        display: block;
+    .font {
+        padding-right: 5%;
+        padding-left: 5%
     }
-
-    .column {
-        width: 100%;
-      }
 }
