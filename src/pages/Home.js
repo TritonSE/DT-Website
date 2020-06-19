@@ -6,6 +6,7 @@ import '../css/Home.css';
 import Toolbar from '../components/Toolbar.js';
 import Footer from '../components/Footer.js';
 import { Link } from 'react-router-dom';
+import NoRightClickImg from '../components/NoRightClickImg';
 
 
 class Home extends React.Component {
@@ -76,7 +77,7 @@ class Home extends React.Component {
 			return(
 				<div style={{position:"relative"}}>
 					<Toolbar/>
-					<img onContextMenu={(e)=> {e.preventDefault(); return false;}} src={mainBanner} style={{height: this.state.width * 0.45, width: "100%"}}/>
+					<NoRightClickImg src={mainBanner} style={{height: this.state.width * 0.45, width: "100%"}}/>
 					<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', marginLeft:"5px", marginRight:"5px"}}id='dynamics' ref={this.dynamicText}> dynamic </span> dancers.</p>
 					<div className="Right-Container">
 						<Slideshow indicators={false} slideImages={[
@@ -111,7 +112,8 @@ class Home extends React.Component {
 			return(
 				<div style={{position:"relative"}}>
 					<Toolbar/>
-					<img onContextMenu={(e)=> {e.preventDefault(); return false;}} src={mainBanner} style={{height: this.state.width * 0.4, width: "100%"}}/>
+					<NoRightClickImg style={{height: this.state.width * 0.4, width: "100%"}} imgClassName="banner-img" src={mainBanner} />
+
 					<div style={{display:this.state.imgViz ? "none":"flex", justifyContent:"center"}}>
 						<button className="Scroll-Button" onClick={this.scrollToSlideShow}>
 							<i class="fas fa-angle-double-down fa-2x"/>

@@ -1,5 +1,5 @@
 
-.title1{
+.About-Title{
     width: 70%;
     margin-left: 15%;
     text-align: center;
@@ -17,117 +17,117 @@
     max-width: 100%;
 }
 
-.content1{
+.About-Paragraph1{
     margin-top: 5%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.9vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.content2{
-    margin-top: 5%;
+.About-Paragraph2{
+    margin-top: 3%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.Content3{
-    margin-top: 5%;
+.About-Paragraph3{
+    margin-top: 3%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.Content4{
+.About-Paragraph4{
 
-    margin-top: 5%;
+    margin-top: 3%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.content7{
+.Colleges-List{
     margin-top: 2%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.content8{
+.Companies-List{
 
     margin-top: 2%;
     width: 100%;
     text-align: left;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 
-.Image0{
+.dancers-Image{
     margin-top: 2%;
     width: 98%;
     height: auto;
 }
 
-.Image1{
+.MMC-Logo{
     width: 18%;
     height: 18%;
 }
 
-.Image2{
+.SDSU-Logo{
     width: 20%;
     height: 20%;
 }
 
-.Image3{
+.SSU-Logo{
     width: 18%;
     height: 18%;
 }
 
-.Image4{
+.SJSU-Logo{
     padding-left: 2%;
     width: 14%;
     height: 14%;
 }
 
-.Image5{
+.LMU-Logo{
     width: 19%;
     height: 19%;
 }
 
-.Image6{
+.SMCC-Logo{
     width: 10%;
     height: 10%;
 }
 
-.Companies{
+.companies{
     margin-top: 3%;
     margin-left: 1%;
     width: 85%;
     font-family: 'Lato', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.15vw;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
@@ -157,52 +157,363 @@
     padding-right: 6%;
 }
 
-.mobile{
+.Mobile{
     display: none;
 }
 
 @media only screen and (max-width: 600px) {
-    .Title{
-        text-align: left;
-        font-size: 7vh;
-        margin-top: 10%;
-        width: 50%;
-        margin-left: 20%;
-    }
-    .Title2{
-        margin-top: 25%;
-        text-align: right;
-        font-size: 7vh;
+    .About-Title{
+        text-align: center;
+        font-size: 5vh;
         width: 70%;
-        margin-left: 20%;
+        color: #FF4081;
+        font-family: 'Lato', sans-serif;
     }
-    .Content1{
+
+    .About-Paragraph1{
         text-align: left;
         margin-top: 5%;
-        margin-left: 14%;
-        width: 70%;
-        font-size: 2.2vh;
+        margin-left: 7%;
+        width: 86%;
+        font-size: 4.2vw;
     }
-    .Content2{
+    .About-Paragraph2{
         text-align: left;
         margin-top: 5%;
-        margin-left: 14%;
-        width: 70%;
-        font-size: 2.2vh;
+        margin-left: 7%;
+        width: 86%;
+        font-size: 4.2vw;
     }
-    .Content4{
-        text-align: right;
-        margin-left: 10%;
-        font-size: 1.8vh;
+    .About-Paragraph3{
+        text-align: left;
+        margin-left: 7%;
+        font-size: 4.2vw;
+        margin-top: 5%;
+        width: 86%;
+    }
+    .About-Paragraph4{
+        text-align: left;
+        margin-left: 7%;
+        font-size: 4.2vw;
+        margin-top: 5%;
+        width: 86%;
+    }
+    .Colleges-List{
+        text-align: left;
+        margin-left: 0%;
+        font-size: 4.2vw;
         margin-top: 0%;
-        font-weight: bold;
+    }
+    .Companies-List{
+        text-align: left;
+        margin-left: 0%;
+        font-size: 4.2vw;
+        margin-top: 0%;
+    }
+
+    .Dancers-Image{
+        margin-top: 2%;
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    
+    .Colleges{
+        margin-top: 3%;
+        margin-left: 0%;
+        width: 85%;
+        font-family: 'Lato', sans-serif;
+        font-size: 4.2vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+
+    .companies{
+        margin-top: 3%;
+        margin-left: 0%;
+        width: 85%;
+        font-family: 'Lato', sans-serif;
+        font-size: 4.2vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .Boxed{
+        margin-top: 5%;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border: 0.1vh solid lightgray;
+        padding: 1.2vh;
+    
     }
  
-    .web{
+    .Web{
         display: none;
     }
     
-    .mobile{
+    .Mobile{
         display: block;
+    }
+}
+
+.Title-Container{
+    margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-weight: normal;
+}
+
+.Title-Season{
+    color: rgb(15, 185, 185);
+    font-size: 1.9vw;
+}
+
+.Title-Directors{
+    font-size: 5.5vw;
+    color: #FF4081;
+    flex: 1;
+    margin-left: 3%;
+}
+
+.Director-Profile{
+    display: flex;
+    justify-content: center;
+    font-size: 1.1vw;
+}
+
+.Director-Profile-Text{
+    width: 50%;
+}
+
+.Director-Profile-Images-Container{
+    display: flex;
+    flex-direction: column;
+    width: 28vw;
+}
+
+.Director-Profile-Images-Top{
+    height: 20vw;
+    width: 14vw;
+}
+
+.Director-Profile-Images-Bottom{
+    margin-left: 10vw;
+    margin-top: -3vw;
+}
+
+.Supporting-Directors{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .Title-Container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .Title-Season{
+        font-size: 4.9vw;
+    }
+    
+    .Title-Directors{
+        font-size: 5.5vw;
+        margin-left: 0%;
+    }
+    
+
+    .Director-Profile{
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.8vw;
+    }
+    .Director-Profile-Text{
+        margin-top: 3%;
+        width: 90%;
+    }
+
+    .Director-Profile-Images-Container{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .Director-Profile-Images-Top{
+        height: 60vw;
+        width: 50vw;
+    }
+    
+    .Director-Profile-Images-Bottom{
+        margin-left: 0vw;
+        margin-top: 0vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .About-Title{
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 6vh;
+        letter-spacing: 0;
+        color: #FF4081;
+        opacity: 1;
+    }
+    
+    .container{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+    
+    .About-Paragraph1{
+        margin-top: 5%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .About-Paragraph2{
+        margin-top: 5%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .About-Paragraph3{
+        margin-top: 5%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .About-Paragraph4{
+    
+        margin-top: 5%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .Colleges-List{
+        margin-top: 2%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .Companies-List{
+        margin-top: 2%;
+        width: 100%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .Dancers-Image{
+        margin-top: 2%;
+        width: 100%;
+        height: auto;
+    }
+    
+    .MMC-Logo{
+        width: 18%;
+        height: 18%;
+    }
+    
+    .SDSU-Logo{
+        width: 20%;
+        height: 20%;
+    }
+    
+    .SSU-Logo{
+        width: 18%;
+        height: 18%;
+    }
+    
+    .SJSU-Logo{
+        padding-left: 2%;
+        width: 14%;
+        height: 14%;
+    }
+    
+    .LMU-Logo{
+        width: 19%;
+        height: 19%;
+    }
+    
+    .SMCC-Logo{
+        width: 10%;
+        height: 10%;
+    }
+    
+    .companies{
+        margin-top: 3%;
+        margin-left: 1%;
+        width: 85%;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    }
+    
+    .Boxed{
+        margin-top: 3%;
+        margin-left: -4%;
+        width: 106%;
+        height: 100%;
+        background-color: white;
+        border: 0.1vh solid lightgray;
+        padding: 1.2vh;
+    
+    }
+    
+    .column1{
+        width: 42%;
+        vertical-align: top;
+        padding-left: 6%;
+    }
+    
+    .column2{
+        padding-left: 5%;
+        width: 55%;
+        vertical-align: top;
+    }
+    
+    .Mobile{
+        display: none;
     }
 }
