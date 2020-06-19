@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import '../../css/Mission.css';
 import image from "../../images/mission/Mission Page.jpg";
 import Footer from '../../components/Footer';
+import NoRightClickImg from '../../components/NoRightClickImg';
 
 class Mission extends React.Component{
     render() {
@@ -15,7 +16,7 @@ class Mission extends React.Component{
 			<div className="Mobile">
 			<Container>
 					<h1 className="Mission-Title"> Our Mission </h1>
-					<img className="Dancers-Image" src={image} alt="could not load"/>
+					<NoRightClickImg imgClassName="Dancers-Image" src={image} alt="could not load"/>
 					<h1 className="Mission-Paragraph"> The specific purpose of this organization is to inspire, educate, and promote passion, dedication, and performance within the art of dance.  All funds, whether income or principal, and whether acquired by gift or contribution or otherwise, shall be devoted to said purposes. </h1>
 					<h2 className="Support-link"> To donate to our non-profit, please 
 					<Link to="/support" className="linked"> click here! </Link>
@@ -34,7 +35,7 @@ class Mission extends React.Component{
 				</h2>
 				</Col>
 				<Col xs={7} className="column2">
-				<img className="Dancers-Image" src={image} alt="could not load"/>
+					<NoRightClickImg imgClassName="Dancers-Image" src={image} alt="could not load"/>
 				</Col>
 				</Row>
 			</div>
