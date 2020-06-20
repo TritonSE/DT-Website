@@ -81,6 +81,11 @@ class Toolbar extends Component {
                       Our Mission
                       </NavDropdown.Item>
                     </LinkContainer>
+                    <LinkContainer to = "/Dropdown/Gallery" exact activeClassName = "active">
+                      <NavDropdown.Item> 
+                        Gallery 
+                      </NavDropdown.Item>
+                    </LinkContainer>
               </NavDropdown>
             {/** Support part of Navbar */}
             <NavLink 
