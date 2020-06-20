@@ -138,11 +138,14 @@
         /* margin-top: 15%; */
         /* height: 4vh;
         width: 5vh; */
-        margin:1vh;
+        /* margin:1vh; */
+        margin-top: 1%;
+        height: 4.5vh;
+        width: 5vh;
     }
 
     .facebook-iconImg {
-        margin-top: -23%;
+        margin-top: -13%;
         height: 5vh;
         width: 5vh;
     }
@@ -163,7 +166,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 127%;
+        width: 135%;
         height: 135%;
         border-radius: 10%;
         color: #FFFFFF;
