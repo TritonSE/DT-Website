@@ -163,11 +163,11 @@
         font-size: calc(4.2vw);
         margin-top: calc(12.5vh);
         left: calc(5vw);
-        height: calc(110vh);
+        height: calc(185vmin);
         /*top: calc(-27.5vmin);
         margin-left: calc(-10vw);
         font-size: calc(5vmin);
-        /*padding-right: 10%;
+        padding-right: 10%;
         text-align: left;
         float:bottom;
         font-family: 'Lato', serif;
@@ -177,16 +177,13 @@
 
     .amazon {
         color: #0f0f0f;
-        /**right: calc(-87.5vmin);*/
-        /**position: relative; */
+        /*right: calc(-87.5vmin);*/
         font-size: calc(5vmin);
         font-family: 'Lato', serif;
         font-style: normal; 
         text-decoration: underline;
         text-align: center;
-        margin-top: calc(5vmin);
-        margin-left: calc(20vw);
-        /**margin-left: 32.5%;*/
+        /*margin-left: 32.5%;*/
     }
     
     .smile {
@@ -194,12 +191,12 @@
         height: calc(60vmin);
         display: block; 
         position: absolute;
-        /**position: relative;*/
+        /*position: relative;*/
         padding-top: calc(1vmin);
         margin-top: calc(300vmin);
         margin-right: calc(-8.5vmin);
         float: none;
-        /**float: bottom;*/
+        /*float: bottom;*/
     }
 
     .instructions {

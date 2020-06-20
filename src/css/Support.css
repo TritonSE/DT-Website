@@ -198,16 +198,13 @@
   }
 
   .Checkout-Style{
-    flex-direction: column;
-    justify-content: center;
     font-size: 2.2vh;
     margin-top: calc(200vmin);
     margin-left: 5%;
   }
  
   .Adjust-Style{
-    margin-left: calc(47.5vmin);
-    margin-top: calc(-12.5vmin);
+    margin-left: calc(50vmin);
     width: 20%;
     height: 20%;
   }
@@ -221,10 +218,9 @@
 
   .alert {
     color: #FF0000;
-    width: 100%;
+    width: calc(15vmin);
+    height: calc(15vmin);
     margin-top: 12.5%;
-    margin-left: -42.5%;
-    margin-right: -42.5%;
    }
 
   /* .PayPal-Style{

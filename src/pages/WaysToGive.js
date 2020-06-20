@@ -61,7 +61,7 @@ class WaysToGive extends Component {
 						className="btn btn-secondary Donate-Button"
 						//style = {{marginLeft:"calc(-5.5vw"}}
 						onClick={this.handleDonateButtonClicked}
-					>
+				>
 						Donate 
 				</button>
 				<div className="amazon">
