@@ -7,6 +7,7 @@ import Instructions from '../images/waytogive/amazon smile instructions.jpg';
 import ModalImage from 'react-modal-image';
 import '../css/Support.css';
 import '../css/WaysToGive.css';
+import '../css/Global.css';
 import SupportStates from '../components/SupportStates.js';
 
 class WaysToGive extends Component {

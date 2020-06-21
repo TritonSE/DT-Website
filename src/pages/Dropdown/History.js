@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import Toolbar from '../../components/Toolbar';
 import '../../css/History.css';
+import '../../css/Global.css';
 import image1 from "../../images/colleges/mmc.png";
 import image2 from "../../images/colleges/sdsu.png";
 import image3 from "../../images/colleges/ssu.jpg";

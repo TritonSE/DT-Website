@@ -3,6 +3,7 @@ import Toolbar from '../../components/Toolbar';
 import { Container, Col, Row } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import '../../css/Mission.css';
+import '../../css/Global.css';
 import image from "../../images/mission/Mission Page.jpg";
 import Footer from '../../components/Footer';
 import NoRightClickImg from '../../components/NoRightClickImg';
