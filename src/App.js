@@ -10,10 +10,12 @@ import Mission from './pages/Dropdown/Mission'
 import About from './pages/Dropdown/About'
 import History from './pages/Dropdown/History'
 import Gallery from './pages/Dropdown/Gallery'
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 class App extends Component {
 	render() {
   		return (
+			<SimpleReactLightbox>
     		<div>
 				<Route path="/" exact render={(props) => <Home {...props}/>}/>
 				<Route path="/home" exact render={(props) => <Home {...props}/>}/>
@@ -25,6 +27,8 @@ class App extends Component {
 				<Route path="/support" exact render={(props) => <Support {...props}/>}/>
 				<Route path="/Dropdown/Gallery" exact render={(props) => <Gallery { ... props}/>}/> 
    	 	</div>
+			</SimpleReactLightbox>
+
   		);
   }
 }
