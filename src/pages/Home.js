@@ -7,6 +7,7 @@ import Toolbar from '../components/Toolbar.js';
 import Footer from '../components/Footer.js';
 import { Link } from 'react-router-dom';
 import NoRightClickImg from '../components/NoRightClickImg';
+import {AnimatePresence, motion} from 'framer-motion';
 
 
 class Home extends React.Component {
@@ -111,7 +112,7 @@ class Home extends React.Component {
 			)
 		} else{
 			return(
-				<div style={{position:"relative"}}>
+				<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} style={{position:"relative"}}>
 					<Toolbar/>
 					<NoRightClickImg style={{height: this.state.width * 0.4, width: "100%"}} imgClassName="banner-img" src={mainBanner} />
 
@@ -158,7 +159,7 @@ class Home extends React.Component {
 						</div>
 					</VizSensor>
 					<Footer/>
-				</div>
+				</motion.div>
 			)
 		}
 	}

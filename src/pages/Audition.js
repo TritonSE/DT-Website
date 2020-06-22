@@ -7,6 +7,7 @@ import AuditionEligibility from '../components/AuditionEligibility.js';
 import Footer from '../components/Footer';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../css/Audition.css';
+import {AnimatePresence, motion} from 'framer-motion';
 
 class Audition extends Component {
     componentDidMount() {

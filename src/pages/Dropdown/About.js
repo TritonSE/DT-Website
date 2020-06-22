@@ -11,11 +11,12 @@ import image6 from "../../images/colleges/smcc.png";
 import image from "../../images/about/About Page 1.jpg";
 import Footer from "../../components/Footer";
 import NoRightClickImg from '../../components/NoRightClickImg';
+import {AnimatePresence, motion} from 'framer-motion';
 
 class About extends Component {
   render() {
     return(
-      <div>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
          <Toolbar bool={true}></Toolbar>
 
 		 <div className="Mobile">
@@ -91,7 +92,7 @@ class About extends Component {
 			</Container>
 			</div>
       <Footer/>
-      </div>
+      </motion.div>
     );
   }
 }
