@@ -5,6 +5,7 @@ import Amazon from '../images/waytogive/amazon smile.jpg';
 import CurrentFund from '../images/waytogive/Kendra Scott Fundraiser 1.png';
 import Instructions from '../images/waytogive/amazon smile instructions.jpg';
 import ModalImage from 'react-modal-image';
+import Footer from '../components/Footer.js';
 
 class WaysToGiveText extends Component {
     constructor(props){
@@ -63,8 +64,6 @@ To learn more about our individual or corporate giving programs and benefits,
 					small = {Instructions}
 					medium = {Instructions}
 				/>
-
-                 
             </div>
         );
         }

@@ -64,9 +64,11 @@
 .Amount-Text1{
   height: 7%;
   max-width: 18%; 
-  bottom: 5%;
   text-align: center;
   font-size: 2.5vh;
+  bottom: 3%;
+  font-weight: bold;
+  margin-left: -5%;
 }
 
 .Proceed-Button{
@@ -116,6 +118,71 @@
   margin-left: 7%;
   margin-top: 7%;
 } */
+
+@media only screen and (max-width: 1024px) and (max-height: 1366px){
+  .Donate-Button{
+    font-size: 2vh;
+    background-color: #FF4081;
+    text-align: center;
+    /**margin-top: 5%;*/
+    position: relative;
+    right: calc(-10vmin);
+   }
+   .Amount-Text{
+    max-width: 18%; 
+    bottom: 5%;
+    text-align: center;
+    font-size: 2vmin;
+    margin-top: 5%;
+  }
+  .Amount-Text1{
+    max-width: 18%; 
+    bottom: 5%;
+    text-align: center;
+    font-size: 2vmin;
+    margin-top: 5%;
+    margin-left: -10%;
+    bottom: 3%;
+    font-weight: bold;
+  }
+  .Proceed-Button{
+    font-size: 1.5vmin;
+    background-color: #FF4081;
+    text-align: center;
+    margin-left: 1%;
+   }
+   .alert {
+    color: #FF0000;
+    width: 10%;
+    margin-top: 4.5%;
+    margin-left: -3%;
+    height: 6%;
+   }
+   .Checkout-Style{
+    display: flex;
+    flex-direction: row;
+    /**
+    margin-top: 5%;
+    margin-left: 8%;
+    */
+  }
+  .Adjust-Style{
+    margin-left: 50%;
+    margin-top: -7.5%;
+   }
+  
+   .PayPal-Style{
+     width: 20%;
+     margin-left: -20%;
+   }
+  
+   .Chosen-Amount{
+    width: 20%;
+    text-align: center;
+    font-size: 2.5vh;
+    position: relative;
+   }
+}
 
 @media only screen and (max-width: 600px)
  {
@@ -179,7 +246,6 @@
     font-size: 2.2vh;
     max-width: 21%; 
     margin-top: calc(52.5vmin);
-    margin-left: -10%;
   }
 
   .Amount-Text1{
@@ -188,7 +254,9 @@
     margin-top: calc(52.5vmin);
     margin-left: -10%;
     position: relative;
-    left: -15%;
+    bottom: 3%;
+    font-weight: bold;
+    margin-left: -20%;
   }
 
   .Proceed-Button{

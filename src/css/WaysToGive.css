@@ -15,7 +15,7 @@
 */
 .textWays {
     color: #0f0f0f;
-    font-size: calc(10.5vh);
+    font-size: calc(5.5vw);
     text-align: left;
     padding-left: 10%;
     font-family: 'Lato', serif;
@@ -113,6 +113,57 @@
     margin-left: calc(49vmin);
 }
 
+.support-footer {
+    width: 100%;
+    position: absolute; 
+    top: calc(115vh);
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 1366px){
+    .bodytxt {
+        width: calc(57.5vw);
+        height: calc(65vh);
+        color: #0f0f0f;
+        position: relative;
+        font-size: calc(1.5vh);
+        padding-right: 10%;
+        text-align: left;
+        float:right;
+        font-family: 'Lato', serif;
+        font-style:normal;
+        margin-top: calc(4.5vh);
+    }
+    .smile {
+        width: calc(20vmin);
+        height: calc(20vmin);
+        display: block; 
+        /**position: relative;*/
+        padding-top: calc(1vmin);
+        margin-top: calc(1vmin);
+        float: bottom;
+        right: 30%;
+        margin-left: calc(7.5vmin);
+    }
+    
+    
+    .instructions {
+        width: calc(20vmin);
+        height: calc(20vmin);
+        display: block;
+        /**position: relative;*/
+        padding-top: calc(1vmin);
+        /**top: calc(-7.5vmin);*/
+        /**top: calc(-55vmin);*/
+        margin-top: calc(-20vmin);
+        margin-left: calc(32.5vmin);
+    }
+    
+    .support-footer {
+        width: 100%;
+        position: absolute; 
+        top: calc(87.5vh);
+    }
+}
 
 @media only screen and (max-width: 600px){
     /**
@@ -136,6 +187,7 @@
         text-align: center;
         /*padding-top: calc(75vmin);*/
         margin-left: calc(-9.5vw);
+        overflow-x:hidden;
     }
     /**
     .danceimg{
@@ -155,15 +207,17 @@
         color: #0f0f0f;
         position: relative;
         text-overflow: ellipsis;
-        overflow: scroll;
+        /*overflow: scroll;*/
         white-space: pre-line;
         border-left: 1em solid transparent;
         border-right: 1em solid transparent;
         word-wrap: break-word;
         font-size: calc(4.2vw);
         margin-top: calc(12.5vh);
-        left: calc(5vw);
+        text-align: center;
+        left: calc(3vw);
         height: calc(185vmin);
+        /*overflow-x:hidden;*/
         /*top: calc(-27.5vmin);
         margin-left: calc(-10vw);
         font-size: calc(5vmin);
@@ -210,5 +264,11 @@
         padding-top: calc(1vmin);
         /**top: calc(-7.5vmin);*/
         /**top: calc(-55vmin);*/
+    }
+
+    .support-footer {
+        width: 100%;
+        position: absolute; 
+        top: calc(425vmin);
     }
 }

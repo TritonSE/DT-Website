@@ -75,7 +75,6 @@ class SupportStates extends Component {
         <div className="Proceed-Style">
           <text
             className="Amount-Text1"
-            style={{bottom: "3%", fontWeight: "bold", marginLeft: "-5%"}}
           >
             {"Amount: $"}
           </text>
