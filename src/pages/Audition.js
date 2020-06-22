@@ -16,7 +16,7 @@ class Audition extends Component {
     render() {
         return(
             <div className="hideHorizontalScroll">
-                <Toolbar bool = {false}/>
+                <Toolbar/>
                 <Row>
 
                 <Col>

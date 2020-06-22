@@ -15,7 +15,7 @@ class About extends Component {
   render() {
     return(
       <div>
-         <Toolbar bool={true}></Toolbar>
+         <Toolbar/>
          <div className="web">
 		 	<Container fluid>
 			

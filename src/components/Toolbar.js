@@ -4,33 +4,10 @@ import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
 import { LinkContainer} from 'react-router-bootstrap';
-//import "../css/Toolbar.css"
-
+import "../css/Toolbar.css"
 class Toolbar extends Component {
-/** 
-  constructor(props) {
-    super(props);
-    this.state = {
-      val: false,
-    }
-  }
-  
-  setVal = (value) => {
-    this.setState({ val: value });
-  }
-  **/
-  componentDidMount() {
-    console.log(this.props.bool);
-    if(this.props.bool === true){
-      require('../css/Toolbar2.css');
-    }
-    else{
-      require('../css/Toolbar.css');
-    }
-  }
-
-  componentWillUnmount() {
-    window.location.reload(false);
+  handlePaypal() {
+    window.open("https://www.paypal.me/dynamicsperformance", "_blank");
   }
 
  render() {
@@ -60,7 +37,7 @@ class Toolbar extends Component {
               }}> 
                 Home
             </NavLink>
-            <NavDropdown title="About" id="collasible-nav-dropdown" className = "Dropdown-Header">
+            <NavDropdown title="About" id="collapsible-nav-dropdown" className = "Dropdown-Header">
                     <LinkContainer to = "/Dropdown/About" exact activeClassName = "active">
                       <NavDropdown.Item> 
                         About Us
@@ -82,23 +59,8 @@ class Toolbar extends Component {
                       </NavDropdown.Item>
                     </LinkContainer>
               </NavDropdown>
-            {/** Support part of Navbar */}
-            <NavLink 
-              to = "/support" 
-              href="/Support" 
-              className = "Support-Header" 
-              style={{
-                fontWeight: "bold",
-                color: "black"
-              }}
-              activeStyle={{
-                color: "#FF4081"
-              }}>
-                Support
-            </NavLink>
 
-          
-             <NavLink 
+               <NavLink 
               to="/Auditions"
               href= "/Auditions"
               exact activeClassName = "active"
@@ -108,10 +70,21 @@ class Toolbar extends Component {
                 color: "black",
               }}
               activeStyle={{
-                color: "rgb(15, 185, 185)"
+                color: "#FF4081"
               }}>
                 Audition
               </NavLink>
+
+              <NavDropdown title="Support"
+            id="collapsible-nav-dropdown" className = "Support-Header">
+                <LinkContainer to="/Support">
+                  <NavDropdown.Item>
+                    Support Us
+                  </NavDropdown.Item>
+                </LinkContainer>
+                <NavDropdown.Item onClick={this.handlePaypal} eventKey={3.2}>Paypal
+                </NavDropdown.Item>
+            </NavDropdown>
 
               <NavLink
                 to="/Gallery"

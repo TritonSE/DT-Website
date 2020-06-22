@@ -10,7 +10,7 @@ class Mission extends React.Component{
     render() {
         return (
             <div>
-				<Toolbar bool={true}/>
+				<Toolbar/>
 			{/* FOR MOBILE */}
 			<div className="mobile">
 			<Container>
