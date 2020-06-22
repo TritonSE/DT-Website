@@ -4,6 +4,32 @@ import ImageMasonry from 'react-image-masonry' ;
 import { SRLWrapper } from 'simple-react-lightbox';
 
 class GalleryImages extends React.Component {
+
+    constructor(props){
+		super(props);
+        this.state = { isMobile: false};
+        
+		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+	}
+	componentDidMount() {
+		window.scrollTo(0,0);
+		this.updateWindowDimensions();
+		window.addEventListener('resize', this.updateWindowDimensions);
+	}
+	
+	updateWindowDimensions() {
+		if (window.innerWidth > 600 && this.state.isMobile){
+			this.setState({ isMobile: false });
+		}
+		else if(window.innerWidth <= 600 && !this.state.isMobile){
+			this.setState({ isMobile: true });
+		}
+	}
+	
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+    
     render() {
 
         const options = {
@@ -78,10 +104,10 @@ class GalleryImages extends React.Component {
             require('../images/gallery/winter fun 2010 044.JPG'),
             require('../images/gallery/winter fun 2010 046.JPG'), 
           ]
-
+          
         return(
             <ImageMasonry
-              numCols={4}
+              numCols={this.state.isMobile ? 2:4}
               scrollable={true}
               containerWidth={"100vw"}>
                 {images.map((image, i) => {
