@@ -4,6 +4,7 @@ import '../css/Support.css';
 import SupportMainText from '../components/SupportMainText';
 import Footer from '../components/Footer.js';
 import { Container, Row, Col } from 'react-bootstrap';
+import {AnimatePresence, motion} from 'framer-motion';
 import WaysToGive from './WaysToGive.js'
 
 /**
@@ -17,10 +18,10 @@ class Support extends Component {
 
 	render() {
 			return(
-			<div>
+			<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
 				<Toolbar bool={false}/>			
 					<WaysToGive/>
-			</div>
+			</motion.div>
 			);
 		}
 }

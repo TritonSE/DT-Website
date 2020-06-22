@@ -6,11 +6,12 @@ import '../../css/Mission.css';
 import image from "../../images/mission/Mission Page.jpg";
 import Footer from '../../components/Footer';
 import NoRightClickImg from '../../components/NoRightClickImg';
+import {AnimatePresence, motion} from 'framer-motion';
 
 class Mission extends React.Component{
     render() {
         return (
-            <div>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
 				<Toolbar bool={true}/>
 			{/* FOR MOBILE */}
 			<div className="Mobile">
@@ -43,7 +44,7 @@ class Mission extends React.Component{
 			</Container>
 			</div>
 			<Footer/>
-			</div>
+			</motion.div>
         );
     }
 }

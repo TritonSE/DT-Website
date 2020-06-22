@@ -4,6 +4,7 @@ import DirectorProfile from '../../components/DirectorProfile.js'
 import SupportingDirectors from '../../components/SupportingDirectors.js';
 import '../../css/Directors.css';
 import Footer from '../../components/Footer.js';
+import {AnimatePresence, motion} from 'framer-motion';
 
 class Directors extends Component {
 
@@ -68,7 +69,7 @@ class Directors extends Component {
 		}
 		else{
 			return (
-				<div>
+				<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
 					<Toolbar/>
 					<div className="Title-Container">
 						<h1 className="Title-Season"> 2019-20 Season </h1>
@@ -81,7 +82,7 @@ class Directors extends Component {
 					<SupportingDirectors names={["Eric Misenhimer", "Diana Zuger", "Meiling Adams", "Marybelle Mejia"]} titles={["President", "Vice President", "Secretary", "Director"]}/>
 					<SupportingDirectors names={["Malou Arquero", "Anne Marie Asis", "Danielle Zuger", "Lloyd Alaban"]} titles={["Treasurer", "Dynamios Liaison", "Director", "Grant Writer"]}/>
 					<Footer/>
-				</div>
+				</motion.div>
 			);
 		}
 	}

@@ -16,7 +16,7 @@ class Audition extends Component {
     
     render() {
         return(
-            <div className="hideHorizontalScroll">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="hideHorizontalScroll">
                 <Toolbar bool = {false}/>
                 <Row>
 
@@ -37,7 +37,7 @@ class Audition extends Component {
                 </Col>
                 </Row>
                 <Footer/>
-            </div>
+            </motion.div>
         );
     }
 }
