@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Toolbar from "../../components/Toolbar";
 import GalleryImages from "../../components/GalleryImages.js";
+import Footer from '../../components/Footer.js';
 
 class Gallery extends Component {
   render() {
@@ -14,6 +15,7 @@ class Gallery extends Component {
              </h1>
             <GalleryImages/>
          </div>
+         <Footer/>
       </div>
     );
   }
