@@ -1,3 +1,6 @@
+// https://github.com/christikaes/react-image-masonry
+// https://www.npmjs.com/package/simple-react-lightbox
+
 import React from 'react';
 import '../css/GalleryImages.css';
 import ImageMasonry from 'react-image-masonry' ;
@@ -104,10 +107,28 @@ class GalleryImages extends React.Component {
             require('../images/gallery/winter fun 2010 044.JPG'),
             require('../images/gallery/winter fun 2010 046.JPG'), 
           ]
-          
-        return(
+        
+        if(this.state.isMobile){
+          return(
             <ImageMasonry
-              numCols={this.state.isMobile ? 2:4}
+              numCols={2}
+              scrollable={true}
+              containerWidth={"100vw"}>
+                {images.map((image, i) => {
+                  return(
+                    <div
+                        key={i}
+                        className="tile"
+                        >
+                        <img src={image} alt={image} className="image-hover-opacity"/>
+                 </div>
+                )})}
+            </ImageMasonry>
+        );
+        } else {
+          return(
+            <ImageMasonry
+              numCols={4}
               scrollable={true}
               containerWidth={"100vw"}>
                 {images.map((image, i) => {
@@ -123,6 +144,8 @@ class GalleryImages extends React.Component {
                 )})}
             </ImageMasonry>
         );
+
+        }
     }
 }
 
