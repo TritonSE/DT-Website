@@ -15,7 +15,6 @@ import SimpleReactLightbox from 'simple-react-lightbox'
 class App extends Component {
 	render() {
   		return (
-			<SimpleReactLightbox>
     		<div>
 				<Route path="/" exact render={(props) => <Home {...props}/>}/>
 				<Route path="/home" exact render={(props) => <Home {...props}/>}/>
@@ -25,9 +24,8 @@ class App extends Component {
 				<Route path="/Dropdown/Mission" exact render={(props) => <Mission {...props}/>}/>
 				<Route path="/Dropdown/History" exact render={(props) => <History { ... props}/>}/> 
 				<Route path="/support" exact render={(props) => <Support {...props}/>}/>
-				<Route path="/Dropdown/Gallery" exact render={(props) => <Gallery { ... props}/>}/> 
+				<Route path="/Dropdown/Gallery" exact render={(props) => 	<SimpleReactLightbox> <Gallery { ... props}/> </SimpleReactLightbox>}/> 
    	 	</div>
-			</SimpleReactLightbox>
 
   		);
   }
