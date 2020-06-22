@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import '../css/Directors.css';
+import NoRightClickImg from '../components/NoRightClickImg';
 
 class DirectorsImages extends Component {
 	render() {
 		return (
-            <div onContextMenu={(e)=> {e.preventDefault(); return false;}} className="Director-Profile-Images-Container">
-                <img  src={this.props.imgTop} className="Director-Profile-Images-Top"/>
-                <img src={this.props.imgBottom} className="Director-Profile-Images-Top Director-Profile-Images-Bottom"/>
+            <div className="Director-Profile-Images-Container">
+                <NoRightClickImg  src={this.props.imgTop} imgClassName="Director-Profile-Images-Top"/>
+                <NoRightClickImg src={this.props.imgBottom} imgClassName="Director-Profile-Images-Top Director-Profile-Images-Bottom"/>
             </div>
         );
 	}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Slide } from 'react-slideshow-image';
-
+import NoRightClickImg from '../components/NoRightClickImg';
  import '../css/Slideshow.css';
  class Slideshow extends Component {
      render() {
@@ -18,10 +18,10 @@ import { Slide } from 'react-slideshow-image';
  		  const Slideshow = () => {
             var pictures = this.props.slideImages.map((item, i) => 
 				<div className="each-slide"> 
-					<img src = {item} alt="Loading Error"/> 
+					<NoRightClickImg src = {item} alt="Loading Error"/> 
 				</div>);
  			return (
- 				<div className="danceimg" onContextMenu={(e)=> {e.preventDefault(); return false;}}>
+ 				<div className="danceimg">
                     <Slide {...properties}>
 						{pictures}
                     </Slide>
