@@ -18,10 +18,10 @@ class Mission extends React.Component{
 			<Container>
 					<h1 className="Mission-Title"> Our Mission </h1>
 					<NoRightClickImg imgClassName="Dancers-Image" src={image} alt="could not load"/>
-					<h1 className="Mission-Paragraph"> The specific purpose of this organization is to inspire, educate, and promote passion, dedication, and performance within the art of dance.  All funds, whether income or principal, and whether acquired by gift or contribution or otherwise, shall be devoted to said purposes. </h1>
-					<h2 className="Support-link"> To donate to our non-profit, please 
+					<h2 className="Mission-Paragraph"> The specific purpose of this organization is to inspire, educate, and promote passion, dedication, and performance within the art of dance.  All funds, whether income or principal, and whether acquired by gift or contribution or otherwise, shall be devoted to said purposes. </h2>
+					<h3 className="Support-link"> To donate to our non-profit, please 
 					<Link to="/support" className="linked"> click here! </Link>
-					</h2>
+					</h3>
 			</Container>
 			</div>
 			<div className="Web">
@@ -30,10 +30,10 @@ class Mission extends React.Component{
 				<Row>
 				<Col className="column1">
 					<h1 className="Mission-Title"> Our Mission </h1>
-					<h1 className="Mission-Paragraph"> The specific purpose of this organization is to inspire, educate, and promote passion, dedication, and performance within the art of dance.  All funds, whether income or principal, and whether acquired by gift or contribution or otherwise, shall be devoted to said purposes. </h1>
-				<h2 className="Support-Link"> To donate to our non-profit, please 
+					<h2 className="Mission-Paragraph"> The specific purpose of this organization is to inspire, educate, and promote passion, dedication, and performance within the art of dance.  All funds, whether income or principal, and whether acquired by gift or contribution or otherwise, shall be devoted to said purposes. </h2>
+				<h3 className="Support-Link"> To donate to our non-profit, please 
 				<Link to="/support" className="linked"> click here! </Link>
-				</h2>
+				</h3>
 				</Col>
 				<Col xs={7} className="column2">
 					<NoRightClickImg imgClassName="Dancers-Image" src={image} alt="could not load"/>

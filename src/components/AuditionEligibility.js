@@ -6,7 +6,7 @@ class AuditionEligibility extends Component {
         return(
             <div className="colored-bullets font">
                 <div>
-                <h6>DPT Senior Team eligibility:</h6>
+                <h2>DPT Senior Team eligibility:</h2>
                 <ul>
                     <li>12+ years old</li>
                     <li>One year of dance experience.</li>
@@ -16,7 +16,7 @@ class AuditionEligibility extends Component {
                 </div>
 
                 <div>
-                <h6>Dynamos Junior Team eligibility:</h6>
+                <h2>Dynamos Junior Team eligibility:</h2>
                 <ul>
                     <li>8-10 years old</li>
                     <li>One year of dance experience.</li>
@@ -26,7 +26,7 @@ class AuditionEligibility extends Component {
                 </div>
 
                 <div>
-                <h6>Dynamites Mini Team eligibility:</h6>
+                <h2>Dynamites Mini Team eligibility:</h2>
                 <ul>
                     <li>5-7 years old</li>
                     <li>2 hours minimum technique at one or more dance studios: one hour of ballet 

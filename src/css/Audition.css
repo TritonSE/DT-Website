@@ -1,5 +1,5 @@
 .font {
-    font-family: Arial;
+    font-family: 'Lato', sans-serif;
 }
 
 .hideHorizontalScroll {
@@ -8,10 +8,6 @@
 
 .audition-info {
     color: #FF4081;
-}
-
-.title {
-    font-size: 110px;
 }
 
 .audition-text {
@@ -26,7 +22,7 @@
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #FF4081; /* Change the color */
     font-weight: bold; /* If you want it to be bold */
-    font-size: 28px;
+    font-size: 1.15vw;
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1.1em; /* Also needed for space (tweak if needed) */

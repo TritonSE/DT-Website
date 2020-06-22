@@ -37,7 +37,7 @@ class WaysToGive extends Component {
 			<div>
 			<div className="textWays" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-				<p><span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}>Ways to  <br/>Give</span></p>
+				<h1><span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}>Ways to  <br/>Give</span></h1>
                 <WaysToGiveText />
 				<SupportStates />
 			</div>
@@ -50,7 +50,7 @@ class WaysToGive extends Component {
 				<div>
 				<div className="textWays" >
 					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-					<p><span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}>Ways to  <br/>Give</span></p>
+					<h1><span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}>Ways to  <br/>Give</span></h1>
 					<WaysToGiveText />
 					<button 
 						className="btn btn-secondary Donate-Button"

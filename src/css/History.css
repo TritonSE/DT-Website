@@ -2,10 +2,7 @@
     margin-top: 5%;
     width: 100%;
     text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
     letter-spacing: 0;
-    color: #000000;
     opacity: 1;
 }
 
@@ -14,10 +11,7 @@
     margin-top: 3%;
     width: 100%;
     text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
     letter-spacing: 0;
-    color: #000000;
     opacity: 1;
 }
 
@@ -26,10 +20,7 @@
     margin-top: 3%;
     width: 100%;
     text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
     letter-spacing: 0;
-    color: #000000;
     opacity: 1;
 }
 
@@ -38,10 +29,7 @@
     margin-top: 3%;
     width: 100%;
     text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
     letter-spacing: 0;
-    color: #000000;
     opacity: 1;
 }
 
@@ -49,10 +37,7 @@
     margin-top: 2%;
     width: 100%;
     text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
     letter-spacing: 0;
-    color: #000000;
     opacity: 1;
 }
 
@@ -60,10 +45,7 @@
     margin-top: 2%;
     width: 100%;
     text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
     letter-spacing: 0;
-    color: #000000;
     opacity: 1;
 }
 
@@ -120,10 +102,7 @@
     margin-left: 0%;
     width: 85%;
     text-align: right;
-    font-family: 'Lato', sans-serif;
-    font-size: 10.5vh;
     letter-spacing: 0;
-    color: #FF4081;
     opacity: 1;
 }
 
@@ -151,10 +130,7 @@
 
 @media only screen and (max-width: 600px) {
     .history-title{
-        font-size: 5vh;
         width: 100%;
-        color: #FF4081;
-        font-family: 'Lato', sans-serif;
         text-align: center;
     }
 
@@ -163,10 +139,7 @@
         margin-top: 5%;
         width: 86%;
         text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 4.2vw;
         letter-spacing: 0;
-        color: #000000;
         opacity: 1;
     }
     
@@ -175,10 +148,7 @@
         margin-top: 5%;
         width: 86%;
         text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 4.2vw;
         letter-spacing: 0;
-        color: #000000;
         opacity: 1;
     }
     
@@ -187,10 +157,7 @@
         margin-top: 5%;
         width: 86%;
         text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 4.2vw;
         letter-spacing: 0;
-        color: #000000;
         opacity: 1;
     }
     
@@ -199,24 +166,19 @@
         margin-top: 5%;
         width: 86%;
         text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 4.2vw;
         letter-spacing: 0;
-        color: #000000;
         opacity: 1;
     }
 
     .Colleges-List{
         text-align: left;
         margin-left: 0%;
-        font-size: 4.2vw;
         margin-top: 0%;
     }
     
     .Companies-List{
         text-align: left;
         margin-left: 0%;
-        font-size: 4.2vw;
         margin-top: 0%;
     }
 
