@@ -129,8 +129,8 @@ class GalleryImages extends React.Component {
           return(
             <ImageMasonry
               numCols={4}
-              scrollable={true}
-              containerWidth={"100vw"}>
+              scrollable={false}
+              containerWidth={"90vw"}>
                 {images.map((image, i) => {
                   return(
                   <SRLWrapper options={options}>
