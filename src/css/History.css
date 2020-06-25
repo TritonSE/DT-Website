@@ -2,10 +2,7 @@
     margin-top: 5%;
     width: 100%;
     text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
     letter-spacing: 0;
-    color: #000000;
     opacity: 1;
 }
 
@@ -14,10 +11,7 @@
     margin-top: 3%;
     width: 100%;
     text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
     letter-spacing: 0;
-    color: #000000;
     opacity: 1;
 }
 
@@ -26,10 +20,7 @@
     margin-top: 3%;
     width: 100%;
     text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
     letter-spacing: 0;
-    color: #000000;
     opacity: 1;
 }
 
@@ -38,10 +29,7 @@
     margin-top: 3%;
     width: 100%;
     text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
     letter-spacing: 0;
-    color: #000000;
     opacity: 1;
 }
 
@@ -49,10 +37,7 @@
     margin-top: 2%;
     width: 100%;
     text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
     letter-spacing: 0;
-    color: #000000;
     opacity: 1;
 }
 
@@ -60,10 +45,7 @@
     margin-top: 2%;
     width: 100%;
     text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
     letter-spacing: 0;
-    color: #000000;
     opacity: 1;
 }
 
@@ -118,12 +100,9 @@
 .History-Title{
     margin-top: 5%;
     margin-left: 0%;
-    width: 85%;
+    width: 90%;
     text-align: right;
-    font-family: 'Lato', sans-serif;
-    font-size: 10.5vh;
     letter-spacing: 0;
-    color: #FF4081;
     opacity: 1;
 }
 
@@ -145,16 +124,26 @@
     padding-right: 6%;
 }
 
+.boxed ul {
+    list-style: none; /* Remove default bullets */
+}
+.boxed ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #FF4081; /* Change the color */
+    
+    font-size: 1.5vw;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1.1em; /* Also needed for space (tweak if needed) */
+}
+
 .mobile{
     display: none;
 }
 
 @media only screen and (max-width: 600px) {
     .history-title{
-        font-size: 5vh;
         width: 100%;
-        color: #FF4081;
-        font-family: 'Lato', sans-serif;
         text-align: center;
     }
 
@@ -163,10 +152,7 @@
         margin-top: 5%;
         width: 86%;
         text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 4.2vw;
         letter-spacing: 0;
-        color: #000000;
         opacity: 1;
     }
     
@@ -175,10 +161,7 @@
         margin-top: 5%;
         width: 86%;
         text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 4.2vw;
         letter-spacing: 0;
-        color: #000000;
         opacity: 1;
     }
     
@@ -187,10 +170,7 @@
         margin-top: 5%;
         width: 86%;
         text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 4.2vw;
         letter-spacing: 0;
-        color: #000000;
         opacity: 1;
     }
     
@@ -199,24 +179,19 @@
         margin-top: 5%;
         width: 86%;
         text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 4.2vw;
         letter-spacing: 0;
-        color: #000000;
         opacity: 1;
     }
 
     .Colleges-List{
         text-align: left;
         margin-left: 0%;
-        font-size: 4.2vw;
         margin-top: 0%;
     }
     
     .Companies-List{
         text-align: left;
         margin-left: 0%;
-        font-size: 4.2vw;
         margin-top: 0%;
     }
 
@@ -253,6 +228,20 @@
     
     }
 
+    .Boxed ul {
+        list-style: none; /* Remove default bullets */
+    }
+    .Boxed ul li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #FF4081; /* Change the color */
+        
+        font-size: 4.5vw;
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1.1em; /* Also needed for space (tweak if needed) */
+    }
+    
+
     .dancers-image{
         margin-top: 2%;
         width: 100%;
@@ -268,156 +257,3 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .History-Paragraph1{
-        margin-top: 5%;
-        width: 100%;
-        text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .History-Paragraph2{
-    
-        margin-top: 3%;
-        width: 100%;
-        text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .History-Paragraph3{
-    
-        margin-top: 3%;
-        width: 100%;
-        text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .History-Paragraph4{
-    
-        margin-top: 3%;
-        width: 100%;
-        text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .Colleges-List{
-        margin-top: 2%;
-        width: 100%;
-        text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .Companies-List{
-    
-        margin-top: 2%;
-        width: 100%;
-        text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-
-    .Dancers-image{
-        margin-top: 8%;
-        width: 100%;
-        height: auto;
-    }
-    
-    .MMC-Logo{
-        width: 18%;
-        height: 18%;
-    }
-    
-    .SDSU-Logo{
-        width: 20%;
-        height: 20%;
-    }
-    
-    .SSU-Logo{
-        width: 18%;
-        height: 18%;
-    }
-    
-    .SJSU-Logo{
-        padding-left: 2%;
-        width: 14%;
-        height: 14%;
-    }
-    
-    .LMU-Logo{
-        width: 19%;
-        height: 19%;
-    }
-    
-    .SMCC-Logo{
-        width: 10%;
-        height: 10%;
-    }
-    
-    .Companies{
-        margin-top: 3%;
-        margin-left: 1%;
-        width: 85%;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .History-Title{
-        margin-top: 5%;
-        margin-left: 0%;
-        width: 95%;
-        text-align: right;
-        font-family: 'Lato', sans-serif;
-        font-size: 6vh;
-        letter-spacing: 0;
-        color: #FF4081;
-        opacity: 1;
-    }
-    
-    .boxed{
-        margin-top: 2%;
-        margin-left: 46.5%;
-        width: 51%;
-        height: 58%;
-        background-color: white;
-        border: 0.1vh solid lightgray;
-        padding: 1.2vh;
-    }
-    
-    .column1{
-        padding-left: 6%;
-    }
-    
-    .column2{
-        padding-right: 6%;
-    }
-    
-    .mobile{
-        display: none;
-    }
-}

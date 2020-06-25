@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Toolbar from '../components/Toolbar.js';
 import '../css/Support.css';
+import '../css/Global.css';
 import SupportMainText from '../components/SupportMainText';
 import Footer from '../components/Footer.js';
 import { Container, Row, Col } from 'react-bootstrap';
