@@ -126,7 +126,7 @@
     text-align: center;
     /**margin-top: 5%;*/
     position: relative;
-    right: calc(-10vmin);
+    right: calc(-5.5%);
    }
    .Amount-Text{
     max-width: 18%; 
@@ -167,19 +167,18 @@
     */
   }
   .Adjust-Style{
-    margin-left: 50%;
-    margin-top: -7.5%;
+    margin-left: 45%;
+    margin-top: calc(-2vmin);
    }
   
    .PayPal-Style{
      width: 20%;
-     margin-left: -20%;
    }
   
    .Chosen-Amount{
     width: 20%;
     text-align: center;
-    font-size: 2.5vh;
+    font-size: 2vmin;
     position: relative;
    }
 }

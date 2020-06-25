@@ -116,7 +116,7 @@
 .support-footer {
     width: 100%;
     position: absolute; 
-    top: calc(115vh);
+    top: calc(52.5em);
 }
 
 @media only screen and (max-width: 1024px) and (max-height: 1366px){
@@ -201,6 +201,7 @@
     */
     
     .bodytxt {
+        padding-top: 5vmin;
         width: calc(97.5vw);
         /*height: calc(70vh);*/
         align-items: center;
