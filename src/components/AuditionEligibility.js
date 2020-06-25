@@ -6,7 +6,7 @@ class AuditionEligibility extends Component {
         return(
             <div className="colored-bullets font">
                 <div>
-                <h2>DPT Senior Team eligibility:</h2>
+                <h3>DPT Senior Team eligibility:</h3>
                 <ul>
                     <li>12+ years old</li>
                     <li>One year of dance experience.</li>

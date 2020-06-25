@@ -1,7 +1,7 @@
 
 .About-Title{
-    width: 70%;
-    margin-left: 15%;
+    width: 100%;
+    margin-left: 0%;
     text-align: center;
     letter-spacing: 0;
     opacity: 1;
@@ -136,6 +136,19 @@
     padding-right: 6%;
 }
 
+.Boxed ul {
+    list-style: none; /* Remove default bullets */
+}
+.Boxed ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #FF4081; /* Change the color */
+    
+    font-size: 1.5vw;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1.1em; /* Also needed for space (tweak if needed) */
+}
+
 .Mobile{
     display: none;
 }
@@ -143,7 +156,7 @@
 @media only screen and (max-width: 600px) {
     .About-Title{
         text-align: center;
-        width: 70%;
+        width: 100%;
     }
 
     .About-Paragraph1{
@@ -218,6 +231,20 @@
         padding: 1.2vh;
     
     }
+
+    .Boxed ul {
+        list-style: none; /* Remove default bullets */
+    }
+
+    .Boxed ul li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #FF4081; /* Change the color */
+        
+        font-size: 4.5vw;
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1.1em; /* Also needed for space (tweak if needed) */
+    }
  
     .Web{
         display: none;
@@ -228,260 +255,3 @@
     }
 }
 
-.Title-Container{
-    margin-left: 10vw;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    font-weight: normal;
-}
-
-.Title-Season{
-    color: rgb(15, 185, 185);
-    font-size: 1.9vw;
-}
-
-.Title-Directors{
-    font-size: 5.5vw;
-    color: #FF4081;
-    flex: 1;
-    margin-left: 3%;
-}
-
-.Director-Profile{
-    display: flex;
-    justify-content: center;
-    font-size: 1.1vw;
-}
-
-.Director-Profile-Text{
-    width: 50%;
-}
-
-.Director-Profile-Images-Container{
-    display: flex;
-    flex-direction: column;
-    width: 28vw;
-}
-
-.Director-Profile-Images-Top{
-    height: 20vw;
-    width: 14vw;
-}
-
-.Director-Profile-Images-Bottom{
-    margin-left: 10vw;
-    margin-top: -3vw;
-}
-
-.Supporting-Directors{
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-}
-
-@media only screen and (max-width: 600px) {
-
-    .Title-Container{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .Title-Season{
-        font-size: 4.9vw;
-    }
-    
-    .Title-Directors{
-        font-size: 5.5vw;
-        margin-left: 0%;
-    }
-    
-
-    .Director-Profile{
-        flex-direction: column;
-        align-items: center;
-        font-size: 1.8vw;
-    }
-    .Director-Profile-Text{
-        margin-top: 3%;
-        width: 90%;
-    }
-
-    .Director-Profile-Images-Container{
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .Director-Profile-Images-Top{
-        height: 60vw;
-        width: 50vw;
-    }
-    
-    .Director-Profile-Images-Bottom{
-        margin-left: 0vw;
-        margin-top: 0vw;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .About-Title{
-        width: 100%;
-        margin-left: 0%;
-        text-align: center;
-        font-family: 'Lato', sans-serif;
-        font-size: 6vh;
-        letter-spacing: 0;
-        color: #FF4081;
-        opacity: 1;
-    }
-    
-    .container{
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        max-width: 100%;
-    }
-    
-    .About-Paragraph1{
-        margin-top: 5%;
-        width: 100%;
-        text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .About-Paragraph2{
-        margin-top: 5%;
-        width: 100%;
-        text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .About-Paragraph3{
-        margin-top: 5%;
-        width: 100%;
-        text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .About-Paragraph4{
-    
-        margin-top: 5%;
-        width: 100%;
-        text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .Colleges-List{
-        margin-top: 2%;
-        width: 100%;
-        text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .Companies-List{
-        margin-top: 2%;
-        width: 100%;
-        text-align: left;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .Dancers-Image{
-        margin-top: 2%;
-        width: 100%;
-        height: auto;
-    }
-    
-    .MMC-Logo{
-        width: 18%;
-        height: 18%;
-    }
-    
-    .SDSU-Logo{
-        width: 20%;
-        height: 20%;
-    }
-    
-    .SSU-Logo{
-        width: 18%;
-        height: 18%;
-    }
-    
-    .SJSU-Logo{
-        padding-left: 2%;
-        width: 14%;
-        height: 14%;
-    }
-    
-    .LMU-Logo{
-        width: 19%;
-        height: 19%;
-    }
-    
-    .SMCC-Logo{
-        width: 10%;
-        height: 10%;
-    }
-    
-    .companies{
-        margin-top: 3%;
-        margin-left: 1%;
-        width: 85%;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .Boxed{
-        margin-top: 3%;
-        margin-left: -4%;
-        width: 106%;
-        height: 100%;
-        background-color: white;
-        border: 0.1vh solid lightgray;
-        padding: 1.2vh;
-    
-    }
-    
-    .column1{
-        width: 42%;
-        vertical-align: top;
-        padding-left: 6%;
-    }
-    
-    .column2{
-        padding-left: 5%;
-        width: 55%;
-        vertical-align: top;
-    }
-    
-    .Mobile{
-        display: none;
-    }
-}

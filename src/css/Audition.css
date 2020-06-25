@@ -21,8 +21,8 @@
 .colored-bullets ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #FF4081; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    font-size: 1.15vw;
+    
+    font-size: 1.5vw;
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1.1em; /* Also needed for space (tweak if needed) */
@@ -39,7 +39,6 @@
 @media only screen and (max-device-width: 480px) {
     
     .title {
-        font-size: 70px;
         text-align: center;
     }
 
@@ -68,5 +67,15 @@
 
     .column {
         width: 100%;
-      }
+    }
+
+    .colored-bullets ul li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #FF4081; /* Change the color */
+        
+        font-size: 4.5vw;
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1.1em; /* Also needed for space (tweak if needed) */
+    }
 }

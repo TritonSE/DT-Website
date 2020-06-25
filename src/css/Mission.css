@@ -39,10 +39,6 @@
     margin-right: auto;
 }
 
-.linked{
-    text-decoration: underline;
-}
-
 .column1{
     padding-left: 6%;
 }
@@ -83,10 +79,6 @@
         margin-right: auto;
     }
 
-    .linked{
-        text-decoration: underline;
-    }
- 
     .Web{
         display: none;
     }
@@ -96,71 +88,3 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .Mission-Title{
-        margin-top: 5%;
-        margin-left: 15%;
-        width: 90%;
-        margin-left: 0%;
-        text-align: right;
-        font-family: 'Lato', sans-serif;
-        font-size: 6vh;
-        letter-spacing: 0;
-        color: #FF4081;
-        opacity: 1;
-    }
-    
-    .container{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-    }
-    
-    .Mission-Paragraph{
-        margin-top: 5%;
-        width: 90%;
-        text-align: right;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .Support-Link{
-        margin-top: 5%;
-        padding-left: 10%;
-        width: 90%;
-        text-align: right;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        letter-spacing: 0;
-        color: #000000;
-        opacity: 1;
-    }
-    
-    .Dancers-Image{
-        margin-top: 5%;
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .linked{
-        text-decoration: underline;
-    }
-    
-    .column1{
-        padding-left: 6%;
-    }
-    
-    .column2{
-        padding-right: 5%;
-    }
-    
-    .Mobile{
-        display: none;
-    }
-}

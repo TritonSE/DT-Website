@@ -1,12 +1,13 @@
 // paragraph component for auditions page
 import React, { Component } from 'react';
 import '../css/Audition.css';
+import '../css/Global.css';
 class AuditionInfo extends Component {
     render() {
         return(
             <div className="font">
                 <div>
-                    <h1 className="title audition-info">Audition</h1>
+                    <h1 className="title">Audition</h1>
                     <p>
                     Our current season is still underway—our next season’s auditions will be held in <b className="audition-info">August 2020</b>. 
                     Subscribe to our mailing list for a reminder and up to date 
