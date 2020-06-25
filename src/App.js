@@ -19,7 +19,7 @@ class App extends Component {
 				<Route path = "/About/AboutUs" exact render = {(props) => <About {...props}/>}/>
 				<Route path="/About/Directors" exact render={(props) => <Directors {...props}/>}/>
 				<Route path="/Audition" exact render={(props) => <Audition {...props}/>}/>
-				<Route path="/About/Mission" exact render={(props) => <Mission {...props}/>}/>
+				<Route path="/About/OurMission" exact render={(props) => <Mission {...props}/>}/>
 				<Route path="/About/History" exact render={(props) => <History { ... props}/>}/> 
 				<Route path="/Support" exact render={(props) => <Support {...props}/>}/>
    	 	</div>
