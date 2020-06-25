@@ -76,7 +76,7 @@ class Toolbar extends Component {
                         Board of Directors 
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/About/Mission" href = "/Dropdown/Mission">
+                    <LinkContainer to = "/About/OurMission" href = "/Dropdown/Mission">
                       <NavDropdown.Item> 
                       Our Mission
                       </NavDropdown.Item>
