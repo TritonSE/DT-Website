@@ -28,7 +28,8 @@
 @media only screen and (max-width: 1150px) {
     .Footer{
         padding: 2.5%;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
+        justify-content: center;
     }
 
     .Contact-Text{
@@ -42,8 +43,23 @@
 
     .Social-Icon-Formatting{
         margin-top: 2%;
+        margin-left: 3%;
     }
 }
+
+/* @media only screen and (max-width: 800px) {
+    .Footer{
+        justify-content: center;
+    }
+
+    .Contact-Info-Text{
+        font-size: 1.5vw;
+    }
+
+    .Social-Icon-Formatting{
+        margin-left: 2vw;
+    }
+} */
 /* Renders a sticky footer (almost) strictly for mobile */
 @media only screen and (max-width: 700px) {
     .Footer{
@@ -60,5 +76,9 @@
     
     .Contact-Info-Text{
         font-size: 3.4vw;
+    }
+
+    .Social-Icon-Formatting{
+        margin-left: 0;
     }
 }
