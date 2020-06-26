@@ -10,7 +10,7 @@ justify-content: flex-start;
 
 .Home-Header{
   color: black;
-  font-size: 105%;
+  font-size: 110%;
   font-weight: bold;
   width: 110px;
   height: 50px;
@@ -20,7 +20,7 @@ justify-content: flex-start;
   
 .Auditions-Header{
   color: black; 
-  font-size: 105%;
+  font-size: 110%;
   font-weight: bold;
   width: 125px;
   height: 50px;
@@ -28,16 +28,18 @@ justify-content: flex-start;
 }
 .Support-Header{
   color: black;
-  font-size: 105%;
+  font-size: 110%;
   width: 125px;
   height: 50px;
   font-weight: bold;
+  padding-left: 0px;
+  padding-right: 0px;
   text-decoration: none !important; 
 }
 
 .Gallery-Header{
   color: black;
-  font-size: 105%;
+  font-size: 110%;
   width: 125px;
   height: 50px;
   font-weight: bold;
@@ -47,7 +49,7 @@ justify-content: flex-start;
 
 .Dropdown-Header {
   font-weight: bold;
-  font-size: 105%;
+  font-size: 110%;
   width: 125px;
   height: 50px;
   text-decoration: none !important; 
@@ -100,9 +102,8 @@ justify-content: flex-start;
 }
 
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active {
-  color: rgba(29, 153, 202, 0.7) !important;
-}
+
+
 
 .dropdown-menu {
   padding: 0rem 0;

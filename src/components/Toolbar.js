@@ -82,7 +82,12 @@ class Toolbar extends Component {
                     Support Us
                   </NavDropdown.Item>
                 </LinkContainer>
-                <NavDropdown.Item onClick={this.handlePaypal} eventKey={3.2}>Paypal
+                <NavDropdown.Item onClick={this.handlePaypal} eventKey={3.2}
+                style={{
+                backgroundColor: "white",
+                color: "black" 
+                }}>
+                Paypal
                 </NavDropdown.Item>
             </NavDropdown>
 
