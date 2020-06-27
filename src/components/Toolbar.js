@@ -61,22 +61,22 @@ class Toolbar extends Component {
                 Home
             </NavLink>
             <NavDropdown title="About" id="collasible-nav-dropdown" className = "Dropdown-Header">
-                    <LinkContainer to = "/Dropdown/About" exact activeClassName = "active">
+                    <LinkContainer to = "/About/AboutUs" exact activeClassName = "active">
                       <NavDropdown.Item> 
                         About Us
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/History" exact activeClassName = "active">
+                    <LinkContainer to = "/About/History" exact activeClassName = "active">
                       <NavDropdown.Item>
                         History
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/Directors" exact activeClassName = "active">
+                    <LinkContainer to = "/About/Directors" exact activeClassName = "active">
                       <NavDropdown.Item> 
                         Board of Directors 
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/mission" href = "/Dropdown/mission">
+                    <LinkContainer to = "/About/OurMission" href = "/Dropdown/Mission">
                       <NavDropdown.Item> 
                       Our Mission
                       </NavDropdown.Item>
@@ -84,7 +84,7 @@ class Toolbar extends Component {
               </NavDropdown>
             {/** Support part of Navbar */}
             <NavLink 
-              to = "/support" 
+              to = "/Support" 
               href="/Support" 
               className = "Support-Header" 
               style={{
@@ -99,8 +99,8 @@ class Toolbar extends Component {
 
           
              <NavLink 
-              to="/Auditions"
-              href= "/Auditions"
+              to="/Audition"
+              href= "/Audition"
               exact activeClassName = "active"
               className= "Auditions-Header"
               style={{

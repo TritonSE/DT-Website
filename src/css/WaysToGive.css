@@ -18,7 +18,6 @@
     font-size: calc(5.5vw);
     text-align: left;
     padding-left: 10%;
-    font-family: 'Lato', serif;
     font-style:normal;
     padding-top: calc(2vmin);
     top: calc(-10vmin);
@@ -36,7 +35,6 @@
     padding-right: 10%;
     text-align: left;
     float:right;
-    font-family: 'Lato', serif;
     font-style:normal;
 }
 

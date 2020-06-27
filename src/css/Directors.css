@@ -13,8 +13,6 @@
 }
 
 .Title-Directors{
-    font-size: 5.5vw;
-    color: #FF4081;
     flex: 1;
     margin-left: 3%;
 }
@@ -89,7 +87,7 @@
     
     .Director-Profile-Images-Top{
         height: 60vw;
-        width: 50%;
+        width: 50vw;
     }
     
     .Director-Profile-Images-Bottom{
