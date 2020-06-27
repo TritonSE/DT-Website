@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.daf2e1d0.chunk.css",
-    "main.js": "/static/js/main.f6b5e65d.chunk.js",
-    "main.js.map": "/static/js/main.f6b5e65d.chunk.js.map",
+    "main.css": "/static/css/main.5915c749.chunk.css",
+    "main.js": "/static/js/main.988e1507.chunk.js",
+    "main.js.map": "/static/js/main.988e1507.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bb6eba76.js",
     "runtime-main.js.map": "/static/js/runtime-main.bb6eba76.js.map",
     "static/css/2.b7696511.chunk.css": "/static/css/2.b7696511.chunk.css",
-    "static/js/2.3a906ada.chunk.js": "/static/js/2.3a906ada.chunk.js",
-    "static/js/2.3a906ada.chunk.js.map": "/static/js/2.3a906ada.chunk.js.map",
+    "static/js/2.d36c3e23.chunk.js": "/static/js/2.d36c3e23.chunk.js",
+    "static/js/2.d36c3e23.chunk.js.map": "/static/js/2.d36c3e23.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e4eeeb527cd246f453356420291d73f4.js": "/precache-manifest.e4eeeb527cd246f453356420291d73f4.js",
+    "precache-manifest.6374c78c035043d80323e5328c0f595f.js": "/precache-manifest.6374c78c035043d80323e5328c0f595f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.b7696511.chunk.css.map": "/static/css/2.b7696511.chunk.css.map",
-    "static/css/main.daf2e1d0.chunk.css.map": "/static/css/main.daf2e1d0.chunk.css.map",
-    "static/js/2.3a906ada.chunk.js.LICENSE.txt": "/static/js/2.3a906ada.chunk.js.LICENSE.txt",
+    "static/css/main.5915c749.chunk.css.map": "/static/css/main.5915c749.chunk.css.map",
+    "static/js/2.d36c3e23.chunk.js.LICENSE.txt": "/static/js/2.d36c3e23.chunk.js.LICENSE.txt",
     "static/media/About Page 1.jpg": "/static/media/About Page 1.aa478e94.jpg",
     "static/media/Artistic Director Action shot.jpg": "/static/media/Artistic Director Action shot.57f74635.jpg",
     "static/media/Artistic Director Headshot.jpg": "/static/media/Artistic Director Headshot.2e2ee0e1.jpg",
@@ -44,13 +44,14 @@
     "static/media/logo1.png": "/static/media/logo1.e8fae51a.png",
     "static/media/second.jpg": "/static/media/second.148ae62d.jpg",
     "static/media/sjsu.png": "/static/media/sjsu.680e6bc9.png",
-    "static/media/ssu.jpg": "/static/media/ssu.fdb66487.jpg"
+    "static/media/ssu.jpg": "/static/media/ssu.fdb66487.jpg",
+    "static/media/yelpIcon.png": "/static/media/yelpIcon.0f5cfb6a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bb6eba76.js",
     "static/css/2.b7696511.chunk.css",
-    "static/js/2.3a906ada.chunk.js",
-    "static/css/main.daf2e1d0.chunk.css",
-    "static/js/main.f6b5e65d.chunk.js"
+    "static/js/2.d36c3e23.chunk.js",
+    "static/css/main.5915c749.chunk.css",
+    "static/js/main.988e1507.chunk.js"
   ]
 }
