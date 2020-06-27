@@ -5,10 +5,12 @@ import React from 'react';
 import '../css/GalleryImages.css';
 import ImageMasonry from 'react-image-masonry' ;
 import { SRLWrapper } from 'simple-react-lightbox';
+import Image from "react-image-enlarger";
+import ModalImage from "react-modal-image";
 
 class GalleryImages extends React.Component {
 
-    constructor(props){
+  constructor(props){
 		super(props);
         this.state = { isMobile: false};
         
@@ -31,8 +33,8 @@ class GalleryImages extends React.Component {
 	
 	componentWillUnmount() {
 		window.removeEventListener('resize', this.updateWindowDimensions);
-    }
-    
+  }
+
     render() {
 
         const options = {
@@ -105,9 +107,25 @@ class GalleryImages extends React.Component {
             require('../images/gallery/_e_30i8ei_7_c9aUd018svc1g7e5l7uqn3ez_85hdm3.jpg'),
             require('../images/gallery/j_5f9Ud018svc1uzj8u43d0l3c_tht9un.jpg'),
             require('../images/gallery/winter fun 2010 044.JPG'),
-            require('../images/gallery/winter fun 2010 046.JPG'), 
+            // require('../images/gallery/winter fun 2010 046.JPG'), 
           ]
-        
+
+          function SingleSource({ src }) {
+            const [zoomed, setZoomed] = React.useState(false);
+           
+            return (
+              <div>
+                <Image
+                  overlayColor="black"
+                  zoomed={zoomed}
+                  src={src}
+                  onClick={() => setZoomed(true)}
+                  onRequestClose={() => setZoomed(false)}
+                />
+              </div>
+            );
+          }
+          
         if(this.state.isMobile){
           return(
             <ImageMasonry
@@ -120,7 +138,13 @@ class GalleryImages extends React.Component {
                         key={i}
                         className="tile"
                         >
-                        <img src={image} alt={image} className="image-hover-opacity"/>
+                        {/* <img src={image} alt={image} className="image-hover-opacity"/> */}
+                        <SingleSource key={image} src={image}/>
+                        {/* <ModalImage
+                          small={image}
+                          large={image}
+                          alt="Hello World!"
+                        /> */}
                  </div>
                 )})}
             </ImageMasonry>
@@ -133,14 +157,22 @@ class GalleryImages extends React.Component {
               containerWidth={"100vw"}>
                 {images.map((image, i) => {
                   return(
-                  <SRLWrapper options={options}>
                     <div
                         key={i}
                         className="tile"
                         >
-                        <img src={image} alt={image} className="image-hover-opacity"/>
-                 </div>
-                </SRLWrapper> 
+                        {/* <img src={image} alt={image} className="image-hover-opacity"/> */}
+                        <SingleSource key={image} src={image}/>
+                        {/* <ModalImage
+                          small={image}
+                          style={{maxWidth:"100px"}}
+                         
+                          // medium={image}
+                          large={image}
+                          hideDownload={true}
+                          hideZoom={true}
+                        /> */}
+                    </div>
                 )})}
             </ImageMasonry>
         );
