@@ -13,9 +13,11 @@
 .Contact-Text{
     font-size: 2.3vw;
     text-align: right;
+    color: black;
 }
 
 .Contact-Info-Text{
+    color: black;
     font-size: 1.5vw;
     text-align: left;
     margin-left: 3%;
