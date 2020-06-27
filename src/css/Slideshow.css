@@ -29,6 +29,6 @@
     .each-slide img {
         width: calc(47vw);
         height: calc(65vw);
-        object-fit: cover;
+        /* object-fit: cover; */
     }
 }
