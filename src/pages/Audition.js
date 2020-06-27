@@ -32,7 +32,7 @@ class Audition extends Component {
 
             <Col className="audition-text font">
               <Container>
-                <h1 className="title audition-info">Audition</h1>
+                <h1 className="title">Audition</h1>
                 <AuditionInfo />
               </Container>
 
