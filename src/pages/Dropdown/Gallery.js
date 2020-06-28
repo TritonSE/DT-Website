@@ -2,20 +2,19 @@ import React, { Component } from 'react';
 import Toolbar from "../../components/Toolbar";
 import GalleryImages from "../../components/GalleryImages.js";
 import Footer from '../../components/Footer.js';
+import '../../css/Gallery.css';
 
 class Gallery extends Component {
   render() {
 
     return(
       <div>
-         <Toolbar />
-         <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
-             <h1 style={{color: '#FF4081'}}>
-                 Dynamic Gallery
-             </h1>
-            <GalleryImages/>
-         </div>
-         <Footer/>
+        <Toolbar />
+        <h1 className="Title-Header">
+            Dynamic Gallery
+        </h1>
+        <GalleryImages/>
+        <Footer/>
       </div>
     );
   }
