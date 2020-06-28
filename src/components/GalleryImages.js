@@ -117,23 +117,19 @@ class GalleryImages extends React.Component {
               <div>
                 <Image
                   overlayColor="black"
-                  // onContextMenu={(e)=>  {e.preventDefault(); return false;}}
                   zoomed={zoomed}
                   src={src}
                   onClick={() => setZoomed(true)}
                   onRequestClose={() => setZoomed(false)}
-                >
-              
-                </Image>
+                />
               </div>
             );
           }
           
-        if(this.state.isMobile){
           return(
             <div onContextMenu={(e)=>  {e.preventDefault(); return false;}}>
               <ImageMasonry
-                numCols={2}
+                numCols={this.state.isMobile ? 2:4}
                 scrollable={true}
                 containerWidth={"100vw"}>
                   {images.map((image, i) => {
@@ -154,37 +150,7 @@ class GalleryImages extends React.Component {
               </ImageMasonry>
             </div>
         );
-        } else {
-          return(
-            <div onContextMenu={(e)=>  {e.preventDefault(); return false;}}>
-              <ImageMasonry
-                numCols={4}
-                scrollable={true}
-                containerWidth={"100vw"}>
-                  {images.map((image, i) => {
-                    return(
-                      <div
-                          key={i}
-                          className="tile"
-                          >
-                          {/* <img src={image} alt={image} className="image-hover-opacity"/> */}
-                          <SingleSource key={image} src={image}/>
-                          {/* <ModalImage
-                            small={image}
-                            style={{maxWidth:"100px"}}
-                          
-                            // medium={image}
-                            large={image}
-                            hideDownload={true}
-                            hideZoom={true}
-                          /> */}
-                      </div>
-                  )})}
-              </ImageMasonry>
-            </div>
-        );
 
-        }
     }
 }
 
