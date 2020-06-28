@@ -117,64 +117,71 @@ class GalleryImages extends React.Component {
               <div>
                 <Image
                   overlayColor="black"
+                  // onContextMenu={(e)=>  {e.preventDefault(); return false;}}
                   zoomed={zoomed}
                   src={src}
                   onClick={() => setZoomed(true)}
                   onRequestClose={() => setZoomed(false)}
-                />
+                >
+              
+                </Image>
               </div>
             );
           }
           
         if(this.state.isMobile){
           return(
-            <ImageMasonry
-              numCols={2}
-              scrollable={true}
-              containerWidth={"100vw"}>
-                {images.map((image, i) => {
-                  return(
-                    <div
-                        key={i}
-                        className="tile"
-                        >
-                        {/* <img src={image} alt={image} className="image-hover-opacity"/> */}
-                        <SingleSource key={image} src={image}/>
-                        {/* <ModalImage
-                          small={image}
-                          large={image}
-                          alt="Hello World!"
-                        /> */}
-                 </div>
-                )})}
-            </ImageMasonry>
+            <div onContextMenu={(e)=>  {e.preventDefault(); return false;}}>
+              <ImageMasonry
+                numCols={2}
+                scrollable={true}
+                containerWidth={"100vw"}>
+                  {images.map((image, i) => {
+                    return(
+                      <div
+                          key={i}
+                          className="tile"
+                          >
+                          {/* <img src={image} alt={image} className="image-hover-opacity"/> */}
+                          <SingleSource key={image} src={image}/>
+                          {/* <ModalImage
+                            small={image}
+                            large={image}
+                            alt="Hello World!"
+                          /> */}
+                  </div>
+                  )})}
+              </ImageMasonry>
+            </div>
         );
         } else {
           return(
-            <ImageMasonry
-              numCols={4}
-              scrollable={true}
-              containerWidth={"100vw"}>
-                {images.map((image, i) => {
-                  return(
-                    <div
-                        key={i}
-                        className="tile"
-                        >
-                        {/* <img src={image} alt={image} className="image-hover-opacity"/> */}
-                        <SingleSource key={image} src={image}/>
-                        {/* <ModalImage
-                          small={image}
-                          style={{maxWidth:"100px"}}
-                         
-                          // medium={image}
-                          large={image}
-                          hideDownload={true}
-                          hideZoom={true}
-                        /> */}
-                    </div>
-                )})}
-            </ImageMasonry>
+            <div onContextMenu={(e)=>  {e.preventDefault(); return false;}}>
+              <ImageMasonry
+                numCols={4}
+                scrollable={true}
+                containerWidth={"100vw"}>
+                  {images.map((image, i) => {
+                    return(
+                      <div
+                          key={i}
+                          className="tile"
+                          >
+                          {/* <img src={image} alt={image} className="image-hover-opacity"/> */}
+                          <SingleSource key={image} src={image}/>
+                          {/* <ModalImage
+                            small={image}
+                            style={{maxWidth:"100px"}}
+                          
+                            // medium={image}
+                            large={image}
+                            hideDownload={true}
+                            hideZoom={true}
+                          /> */}
+                      </div>
+                  )})}
+              </ImageMasonry>
+            </div>
         );
 
         }
