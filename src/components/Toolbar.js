@@ -66,31 +66,37 @@ class Toolbar extends Component {
               {/* this is the part you edit if you would like the "home" text to be different */}
                 Home
             </NavLink>
-            <NavDropdown title="About" id="collapsible-nav-dropdown" className = "Dropdown-Header">
-                    <LinkContainer to = "/Dropdown/About" exact activeClassName = "active">
+
+            {/* This controls the About dropdown*/}
+            <NavDropdown title="About" id="collapsible-nav-dropdown" className = "About-Dropdown">
+                    <LinkContainer to = "/Dropdown/About">
                       <NavDropdown.Item> 
                         {/* this is the part you edit if you would like the "About Us" text to be different (in the dropdown)*/}
                         About Us
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/History" exact activeClassName = "active">
+                    <LinkContainer to = "/Dropdown/History">
                       <NavDropdown.Item>
+                        {/* this is the part you edit if you would like the "Histroy" text to be different (in the dropdown)*/}
                         History
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/Directors" exact activeClassName = "active">
-                      <NavDropdown.Item> 
+                    <LinkContainer to = "/Dropdown/Directors">
+                      <NavDropdown.Item>
+                        {/* this is the part you edit if you would like the "Board of Direcotrs" text to be different (in the dropdown)*/} 
                         Board of Directors 
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/mission" href = "/Dropdown/mission">
-                      <NavDropdown.Item> 
+                    <LinkContainer to = "/Dropdown/mission">
+                      <NavDropdown.Item>
+                      {/* this is the part you edit if you would like the "Our Mission" text to be different (in the dropdown)*/}
                       Our Mission
                       </NavDropdown.Item>
                     </LinkContainer>
               </NavDropdown>
 
-               <NavLink 
+              {/* This controls the Audition part of the NavBar*/} 
+              <NavLink 
               to="/Auditions"
               href= "/Auditions"
               exact activeClassName = "active"
@@ -102,13 +108,15 @@ class Toolbar extends Component {
               activeStyle={{
                 color: activeRed
               }}>
+              {/* this is the part you edit if you would like the "Audition" text to be different */}
                 Audition
               </NavLink>
 
-              <NavDropdown title="Support"
-            id="collapsible-nav-dropdown" className = "Support-Header">
+              {/** This controls the Support dropdown for the navbar*/}
+              <NavDropdown title="Support" id="collapsible-nav-dropdown" className = "Support-Dropdown">
                 <LinkContainer to="/Support">
                   <NavDropdown.Item>
+                    {/* this is the part you edit if you would like the "Support Us" text to be different (in the dropdown)*/}
                     Support Us
                   </NavDropdown.Item>
                 </LinkContainer>
@@ -117,10 +125,12 @@ class Toolbar extends Component {
                 backgroundColor: "white",
                 color: defaultColor 
                 }}>
+                {/* this is the part you edit if you would like the "PayPal" text to be different (in the dropdown)*/}
                 Paypal
                 </NavDropdown.Item>
             </NavDropdown>
-
+              
+              {/** This controls the gallery portion of the NavBar */}
               <NavLink
                 to="/Gallery"
                 href="/Gallery"
@@ -133,13 +143,14 @@ class Toolbar extends Component {
                 activeStyle={{
                   color: activeRed
                 }}>
+                  {/* this is the part you edit if you would like the "Gallery" text to be different*/}
                  Gallery
               </NavLink>
               </Nav>
         </Navbar.Collapse>
         <Navbar.Brand>
 
-          {/** Social Media button component*/}
+          {/** This is the social media icons*/}
           <SocialFollow />
 
         </Navbar.Brand>
