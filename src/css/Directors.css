@@ -83,11 +83,12 @@
         width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
     
     .Director-Profile-Images-Top{
-        height: 60vw;
-        width: 50vw;
+        height: 50vw;
+        width: 40vw;
     }
     
     .Director-Profile-Images-Bottom{
