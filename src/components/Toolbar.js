@@ -63,11 +63,13 @@ class Toolbar extends Component {
               activeStyle={{
                 color: activeRed
               }}> 
+              {/* this is the part you edit if you would like the "home" text to be different */}
                 Home
             </NavLink>
             <NavDropdown title="About" id="collapsible-nav-dropdown" className = "Dropdown-Header">
                     <LinkContainer to = "/Dropdown/About" exact activeClassName = "active">
                       <NavDropdown.Item> 
+                        {/* this is the part you edit if you would like the "About Us" text to be different (in the dropdown)*/}
                         About Us
                       </NavDropdown.Item>
                     </LinkContainer>
