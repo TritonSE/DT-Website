@@ -12,7 +12,7 @@ justify-content: flex-start;
   color: black;
   font-size: 110%;
   font-weight: bold;
-  width: 110px;
+  width: 125px;
   height: 50px;
   text-decoration: none !important; 
   
@@ -29,11 +29,11 @@ justify-content: flex-start;
 .Support-Header{
   color: black;
   font-size: 110%;
-  width: 125px;
-  height: 50px;
+  width: 125px !important;
+  height: 50px !important;
   font-weight: bold;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
   text-decoration: none !important; 
 }
 
@@ -52,15 +52,11 @@ justify-content: flex-start;
   font-size: 110%;
   width: 125px;
   height: 50px;
+  padding-left: 0px !important;
   text-decoration: none !important; 
   color: black !important;
 }
 
-
-.Home-Header:hover{
-  color: #FF4081 !important; 
-  transition: 0.5s !important;
-}
 .Home-Header:hover{
   color: #FF4081 !important; 
   transition: 0.5s !important;
@@ -112,7 +108,7 @@ justify-content: flex-start;
 
 .nav-link {
   display: block;
-  padding: 0rem 0rem;
+  padding: 0px 0px;
 }
 
 dropdown-item.active, .dropdown-item:active {
@@ -127,18 +123,16 @@ dropdown-item.active, .dropdown-item:active {
     margin: 0rem 0 0;
   }
 
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0rem;
-    padding-left: 0rem;
+
+@media only screen and (min-width: 768px){
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
 }
 }
 
-@media (min-width: 768px){
-.navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0rem;
-    padding-left: 0rem;
-}}
+
+
 
 @media only screen and (max-width: 768px){
   .Home-Header{

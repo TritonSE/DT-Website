@@ -1,3 +1,4 @@
+//Necessary Imports *DO NOT EDIT*
 import React, { Component } from 'react';
 import {Navbar,Nav,NavDropdown} from 'react-bootstrap';
 import LogoText from './LogoText.js'
@@ -5,9 +6,35 @@ import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
 import { LinkContainer} from 'react-router-bootstrap';
 import "../css/Toolbar.css"
+
+//Necessary Variables. *CAN EDIT* 
+
+/*this controls the URL that the support links to. Currently, it is Paypal */ 
+const url = "https://www.paypal.me/dynamicsperformance"
+
+/*This controls the default color the navbar text is*/
+const defaultColor = "black"
+
+/* These controls the color that the navbar links take when a user is actively on that page*/
+const activeRed = "#FF4081"
+
+/**
+ * This controls if the font in the navbar is bold or not. 
+ */
+const fontWeight = "bold"
+
+
+/**
+ * This is the Navigation Bar. It controls the NavBar you see at the top of the page. 
+ */
 class Toolbar extends Component {
+ 
+  
+ /**
+  * This function handles linking to the PayPal page in the NavBar.
+  */
   handlePaypal() {
-    window.open("https://www.paypal.me/dynamicsperformance", "_blank");
+    window.open(url, "_blank");
   }
 
  render() {
@@ -15,25 +42,26 @@ class Toolbar extends Component {
     <div>
       <Navbar bg = "custom" expand="md">
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+      {/** This controls the logo shown in the top left of the website*/}
       <NavLink className = "logo-text" to="/" href = "/Home" >
-        {/** Image/Text for dynamics team*/}
         <LogoText/>
       </NavLink>
       <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className ="ml-auto">
             
-            {/** Home part of Navbar */}
+            {/** This controls the "home" part of Navbar */}
             <NavLink  
               to="/" 
               href = "/Home" 
               exact activeClassName = "active" 
               className= "Home-Header" 
               style={{
-                fontWeight: "bold",
-                color: "black",
+                fontWeight: fontWeight,
+                color: defaultColor,
               }} 
               activeStyle={{
-                color: "#FF4081"
+                color: activeRed
               }}> 
                 Home
             </NavLink>
@@ -66,11 +94,11 @@ class Toolbar extends Component {
               exact activeClassName = "active"
               className= "Auditions-Header"
               style={{
-                fontWeight: "bold",
-                color: "black",
+                fontWeight: fontWeight,
+                color: defaultColor,
               }}
               activeStyle={{
-                color: "#FF4081"
+                color: activeRed
               }}>
                 Audition
               </NavLink>
@@ -85,7 +113,7 @@ class Toolbar extends Component {
                 <NavDropdown.Item onClick={this.handlePaypal} eventKey={3.2}
                 style={{
                 backgroundColor: "white",
-                color: "black" 
+                color: defaultColor 
                 }}>
                 Paypal
                 </NavDropdown.Item>
@@ -97,11 +125,11 @@ class Toolbar extends Component {
                 exact activeClassName = "active"
                 className= "Gallery-Header"
                 style={{
-                  fontWeight: "bold",
-                  color: "black",
+                  fontWeight: fontWeight,
+                  color: defaultColor,
                 }}
                 activeStyle={{
-                  color: "#FF4081"
+                  color: activeRed
                 }}>
                  Gallery
               </NavLink>
