@@ -8,6 +8,10 @@ const igLink = "https://www.instagram.com/dynamicsperformanceteam/?hl=en";
 
 const mailLink = "mailto:dynamicsperformanceteam@gmail.com?subject=Hi, Dynamics Performance Team!";
 
+const youtubeLink = "https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g";
+
+const yelpLink = "https://www.yelp.com/biz/dynamics-performance-team-san-jose";
+
 class SocialFollow extends Component{
     render(){
         return(
@@ -15,13 +19,13 @@ class SocialFollow extends Component{
               <ul>
 
               <li>
-                  <a href={fbLink} title="Youtube" target="_blank" rel="noopener noreferrer">
+                  <a href={youtubeLink} title="Youtube" target="_blank" rel="noopener noreferrer">
                     <img className="youtube-iconImg" src={require("../images/youtubeIcon.png")} width="30px" height="30px" alt="error loading img"></img>
                   </a>
               </li>
 
               <li>
-                  <a href={fbLink} title="Yelp" target="_blank" rel="noopener noreferrer">
+                  <a href={yelpLink} title="Yelp" target="_blank" rel="noopener noreferrer">
                     <img className="yelp-iconImg" src={require("../images/yelpIcon.png")} width="30px" height="30px" alt="error loading img"></img>
                   </a>
               </li>
