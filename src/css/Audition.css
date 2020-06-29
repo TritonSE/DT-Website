@@ -2,9 +2,6 @@
 .font {
   font-family: Arial;
 }
-.hideHorizontalScroll {
-  overflow-x: hidden;
-}
 .audition-info {
   color: #ff4081;
 }
@@ -29,7 +26,6 @@
 }
 .auditionIMG {
   padding-top: 10%;
-  height: 100%;
   padding-left: 10%;
   width: 100%;
 }
@@ -45,7 +41,7 @@
 /* MOBILE DESIGNS*/
 @media only screen and (max-width: 600px) {
   .mobile {
-    display: inline-block;
+    display: block;
   }
   .title {
     font-size: 5em;
@@ -64,13 +60,11 @@
     margin-bottom: -20px;
   }
   .image2 {
-    margin-left: -8%;
-    width: 110%;
+    margin: auto;
   }
 
   .image1 {
-    width: 110%;
-    margin-left: -8%;
+    margin: auto;
     padding-bottom: 8%;
   }
 
@@ -78,7 +72,12 @@
     display: none;
   }
   .font {
-    padding-right: 5%;
+    padding-right: 2%;
     padding-left: 5%;
   }
+  .auditionIMG {
+    padding-left: 0px;
+    max-width: 90%;
+  }
+
 }
