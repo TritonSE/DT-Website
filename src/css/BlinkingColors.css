@@ -12,17 +12,3 @@
     text-decoration: none !important;
   }
 
-  @media only screen and (max-width: 1300px){
-    .Body-Header{
-      color: black;
-      opacity: 1;
-      font: Regular 20px/21.6px David;
-      text-align: left;
-      letter-spacing: 0;
-      font-size: 12px;
-      line-height: 0px;
-      font-weight: bold;
-      padding-top: 25%;
-      text-decoration: none !important;
-    }
-  }
