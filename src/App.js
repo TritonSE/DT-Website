@@ -10,9 +10,38 @@ import Mission from './pages/Dropdown/Mission'
 import About from './pages/Dropdown/About'
 import History from './pages/Dropdown/History'
 import Gallery from './pages/Gallery'
-
+import {isTablet, isMobileOnly, isBrowser} from 'react-device-detect';
+import swal from 'sweetalert';
 
 class App extends Component {
+
+	componentDidMount(){
+		//visited resets to true every time a new session is started (user leaves domain)
+		let visited = sessionStorage["alreadyVisited"];
+		if(visited){
+			return;
+		}
+		if(isTablet){
+			swal({
+				title: "Viewing Experience",
+				text: "Turn tablet horizontally (landscape) for best user experience",
+				button: {
+					text: "Got it"
+				}
+			  });
+		}
+		else if(isMobileOnly){
+			swal({
+				title: "Viewing Experience",
+				text: "Turn phone vertically (portrait) for best user experience",
+				button: {
+					text: "Got it"
+				}
+			  });
+		}
+		sessionStorage["alreadyVisited"] = true;
+	}
+
 	render() {
   		return (
     		<div>
