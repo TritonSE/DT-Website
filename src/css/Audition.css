@@ -1,76 +1,84 @@
+/* WEB DESIGNS */
 .font {
-    font-family: Arial;
+  font-family: Arial;
 }
-
 .hideHorizontalScroll {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
-
 .audition-info {
-    color: #FF4081;
+  color: #ff4081;
 }
-
 .title {
-    font-size: 110px;
+  padding-top: 7%;
 }
-
 .audition-text {
-    padding-right: 7%;
-    padding-left: 5%;
+  padding-right: 7%;
+  padding-left: 5%;
 }
-
 .colored-bullets ul {
-    list-style: none; /* Remove default bullets */
+  list-style: none; /* Remove default bullets */
 }
 .colored-bullets ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #FF4081; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    font-size: 28px;
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1.1em; /* Also needed for space (tweak if needed) */
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ff4081; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  font-size: 1.5em;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1.1em; /* Also needed for space (tweak if needed) */
+}
+.auditionIMG {
+  padding-top: 10%;
+  height: 100%;
+  padding-left: 10%;
+  width: 100%;
+}
+.mobile {
+  display: none;
+}
+@media only screen and (min-width: 601px) {
+  .mobile {
+    display: none;
+  }
 }
 
-.auditionIMG{
-    padding-top: 10%;
-    height: 100%;
-    padding-left: 10%;
-    width: 100%;
-}
+/* MOBILE DESIGNS*/
+@media only screen and (max-width: 600px) {
+  .mobile {
+    display: inline-block;
+  }
+  .title {
+    font-size: 5em;
+    text-align: center;
+  }
+  .colored-bullets ul li::before {
+    color: rgb(15, 185, 185); /* Change the color */
+  }
+  .dot {
+    display: none;
+  }
+  .dots {
+    display: none;
+  }
+  .audition-info {
+    margin-bottom: -20px;
+  }
+  .image2 {
+    margin-left: -8%;
+    width: 110%;
+  }
 
+  .image1 {
+    width: 110%;
+    margin-left: -8%;
+    padding-bottom: 8%;
+  }
 
-@media only screen and (max-device-width: 480px) {
-    
-    .title {
-        font-size: 70px;
-        text-align: center;
-    }
-
-    .dot{
-        display: none;
-    }
-    .dots{
-        display: none;
-    }
-
-    .image2 {
-        padding-right: 10%;
-    }
-
-    .image1 {
-        display: none;
-    }
-
-    .web{
-        display: none;
-    }
-    
-    .mobile{
-        display: block;
-    }
-
-    .column {
-        width: 100%;
-      }
+  .web {
+    display: none;
+  }
+  .font {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
 }

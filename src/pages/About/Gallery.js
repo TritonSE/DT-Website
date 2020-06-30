@@ -38,9 +38,11 @@ class Gallery extends Component {
            <TabPane eventKey="photos" title="Photos">
              <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
              <div className="text-modal-container"> 
-               <h1 className="gallery-title"> Photo Gallery </h1>
+               <h1 className="tab-title"> Photo Gallery </h1>
              </div> 
             <GalleryImages/>
+            <Footer />
+
             </div>
             </TabPane>
          
@@ -52,27 +54,32 @@ class Gallery extends Component {
               <h1 className="tab-title"> Video Gallery </h1>
               <img className="DPT-logo" src={require("../../images/logo1.png")}></img>
               <br />
-              <p style={{marginTop: "-4%"}}> For more videos, click <a target="_blank" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to visit our Youtube channel! </p>
+              <p style={{marginTop: "-4%"}}> For more videos, click <a target="_blank" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to subscribe to our Youtube channel! </p>
            </div> 
           <iframe className="youtube-iframe" src="https://www.youtube.com/embed/+lastest?list=PLCyEpHAXCjJMDXWsfMdWfD1NHh3zoYa1m" frameborder="0" allowFullScreen></iframe>
           </div>
+          <Footer />
           </div>
           : 
-          <div> 
+          <div className="no-scroll"> 
             <div style={{display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center"}}> 
               <img className="DPT-logo" src={require("../../images/logo1.png")}></img>
-              <h1 className="gallery-title"> Video Gallery </h1>
+              <h1 className="tab-title"> Video Gallery </h1>
             </div>
             <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>  
             <iframe className="youtube-iframe" src="https://www.youtube.com/embed/+lastest?list=PLCyEpHAXCjJMDXWsfMdWfD1NHh3zoYa1m" frameborder="0" allowFullScreen></iframe>
-            <p className="subscribe-text"> For more videos, click <a target="_blank" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to visit our Youtube channel! </p>
+            <p className="subscribe-text"> For more videos, click <a target="_blank" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to subscribe to our Youtube channel! </p>
+            </div>  
+            <div className="bottom">
+            <Footer />
             </div>
+
 
           </div>
           }
          </TabPane>
          </Tabs>
-         <Footer/>
+
       </div>
     );
   }

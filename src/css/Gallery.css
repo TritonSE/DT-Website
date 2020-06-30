@@ -30,6 +30,7 @@
 .tab-title {
     margin-top: 30px;
     color: #FF4081;
+    font-size: 4vw;
 }
 
 .DPT-logo {
@@ -97,6 +98,19 @@
     .subscribe-text {
         margin-top: 5%;
         padding-left: 7%;
+    }
+
+    .tab-title {
+       font-size: 5vh;
+    }
+
+    .bottom {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    .no-scroll {
     }
 
 }

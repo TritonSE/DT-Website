@@ -7,25 +7,32 @@ import { LinkContainer} from 'react-router-bootstrap';
 //import "../css/Toolbar.css"
 
 class Toolbar extends Component {
-/** 
   constructor(props) {
     super(props);
     this.state = {
-      val: false,
+      hideIcons: false,
     }
   }
   
-  setVal = (value) => {
-    this.setState({ val: value });
-  }
-  **/
   componentDidMount() {
-    console.log(this.props.bool);
-    if(this.props.bool === true){
+   if(this.props.bool === true){
       require('../css/Toolbar2.css');
     }
     else{
       require('../css/Toolbar.css');
+    }
+
+    // determine whether social icons should be hidden
+    window.addEventListener('resize', this.updateDisplayIcons.bind(this));
+    this.updateDisplayIcons()
+  }
+
+  updateDisplayIcons() {
+    let hideIcons = window.innerWidth <= 1150;
+
+    // only update icon display when necessary
+    if (hideIcons != this.state.hideIcons) {
+      this.setState({hideIcons: hideIcons});
     }
   }
 
@@ -61,27 +68,27 @@ class Toolbar extends Component {
                 Home
             </NavLink>
             <NavDropdown title="About" id="collasible-nav-dropdown" className = "Dropdown-Header">
-                    <LinkContainer to = "/Dropdown/About" exact activeClassName = "active">
+                    <LinkContainer to = "/About/AboutUs" exact activeClassName = "active">
                       <NavDropdown.Item> 
                         About Us
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/History" exact activeClassName = "active">
+                    <LinkContainer to = "/About/History" exact activeClassName = "active">
                       <NavDropdown.Item>
                         History
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/Directors" exact activeClassName = "active">
+                    <LinkContainer to = "/About/Directors" exact activeClassName = "active">
                       <NavDropdown.Item> 
                         Board of Directors 
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/mission" href = "/Dropdown/mission">
+                    <LinkContainer to = "/About/OurMission" href = "/Dropdown/Mission">
                       <NavDropdown.Item> 
                       Our Mission
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/Gallery" exact activeClassName = "active">
+                    <LinkContainer to = "/Gallery" exact activeClassName = "active">
                       <NavDropdown.Item> 
                         Gallery 
                       </NavDropdown.Item>
@@ -89,7 +96,7 @@ class Toolbar extends Component {
               </NavDropdown>
             {/** Support part of Navbar */}
             <NavLink 
-              to = "/support" 
+              to = "/Support" 
               href="/Support" 
               className = "Support-Header" 
               style={{
@@ -104,8 +111,8 @@ class Toolbar extends Component {
 
           
              <NavLink 
-              to="/Auditions"
-              href= "/Auditions"
+              to="/Audition"
+              href= "/Audition"
               exact activeClassName = "active"
               className= "Auditions-Header"
               style={{
@@ -122,8 +129,8 @@ class Toolbar extends Component {
         </Navbar.Collapse>
         <Navbar.Brand>
 
-          {/** Social Media button component*/}
-          <SocialFollow />
+          {/** Social Media button component, only display if not in mobile*/}
+          {this.state.hideIcons ? null : <SocialFollow />}
 
         </Navbar.Brand>
         
