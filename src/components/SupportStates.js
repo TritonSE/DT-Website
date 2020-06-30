@@ -120,8 +120,7 @@ class SupportStates extends Component {
             >
             </input>
             <button 
-              className="btn btn-secondary Proceed-Button"
-              style={{marginTop: "7%"}}
+              className="btn btn-secondary Adjust-Button"
               onClick={this.handleAmountChange}
             >
               {"Adjust"}
