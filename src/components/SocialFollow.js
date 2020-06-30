@@ -12,6 +12,10 @@ const mailLink = "mailto:dynamicsperformanceteam@gmail.com?subject=Hi, Dynamics 
 
 const mailChimpLink = "https://yahoo.us10.list-manage.com/subscribe/post?u=ef82b25683d865ac2ef14450e&amp;id=bfdc7f3462";
 
+const youtubeLink = "https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g";
+
+const yelpLink = "https://www.yelp.com/biz/dynamics-performance-team-san-jose";
+
 const CustomForm = ({ status, message, onValidated }) => {
   let email, name;
   const submit = () =>
