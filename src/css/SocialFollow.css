@@ -1,4 +1,3 @@
-
 .Social ul {
     padding-left: 10px;
     padding: 0;
@@ -33,7 +32,7 @@
     font: Medium 17px/13px Whyte Inktrap;
     color: white;
     line-height: 170%;
-    border-color: #333333;
+    border-color: blue;
 } 
 
 .Social ul li a:hover{
@@ -117,28 +116,137 @@
     color: #333333 ;
 }
 
-@media only screen and (max-width: 1300px){
+ @media only screen and (max-width: 1300px){
+    .Social {
+        margin-top: -5px;
+    }
+
     .Social ul {
         padding-left: 8px;
         padding: 0;
-        margin-right: 0px;
-        margin-bottom: 35px;
         display: flex;
     }
     .Social ul li {
         list-style: none;
-        margin: 0 8.8px;
+        margin: 0 5px;
         line-height: 2%;
     }
+
+    .instagram-iconImg {
+        margin-top: 1px;
+    }
     
+    .mail-iconImg {
+        margin-top: 15%;
+    }
+
+    .facebook-iconImg {
+        margin-top: -10%;
+        height: 35px;
+        width: 35px;
+    }
+    .youtube-iconImg {
+        margin-top: 5%;
+    }
+
+    .yelp-iconImg {
+        margin-top: 15%;
+        height: 25px;
+        width: 25x;
+    }
+
     .Social ul li a {
         position: relative;
         display: inline-block;
-        width: 28px;
-        height: 28px;
+        width: 35px;
+        height: 35px;
         border-radius: 10%;
         color: #FFFFFF;
-        background-color: #333333;
+        background-color:#333333;
+        transition: 1s;
+        transform: translate(0,0px);
+        transform: scale(0.8);
+    }
+
+    .Social ul li:nth-child(2) img{
+        transform: scale(0.8);
+        transform: translateY(-5%);
+    }
+
+    .Social ul li:nth-child(3) img {
+        transform: scale(0.8);
+        transform: translateY(10%);
+    }
+    
+    .Social ul li:last-child a{
+        position: relative;
+        display: inline-block;
+        width: 139px;
+        border-radius: 2%;
+        line-height: 150%;
+        font-size: 20px;
+    }
+} 
+
+@media only screen and (max-width: 1150px){
+    .Social {
+        margin-top: -5px;
+    }
+
+    .Social ul {
+        padding-left: 8px;
+        padding: 0;
+        
+    }
+    .Social ul li {
+        list-style: none;
+        margin: 0.60vh;
+        line-height: 2%;
+    }
+
+    .instagram-iconImg {
+        /* margin-top: 1px; */
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+    
+    .mail-iconImg {
+        /* margin-top: 15%; */
+        /* height: 4vh;
+        width: 5vh; */
+        /* margin:1vh; */
+        margin-top: 1%;
+        height: 4vw;
+        width: 4.5vw;
+    }
+
+    .facebook-iconImg {
+        margin-top: -13%;
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+    .youtube-iconImg {
+        /* margin-top: 5%; */
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+
+    .yelp-iconImg {
+        /* margin-top: 15%; */
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+
+    .Social ul li a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 10%;
+        color: #FFFFFF;
+        background-color:#333333;
         transition: 1s;
         transform: translate(0,0px);
         transform: scale(0.8);
@@ -159,13 +267,63 @@
         display: inline-block;
         width: 120px;
         border-radius: 2%;
-        line-height: 130%;
+        line-height: 150%;
     }
 }
 
-/* MAKE ICONS DISAPPEAR */
-@media screen and (max-width:900px) {  
-    .Social ul {
-        display: none;
+@media only screen and (max-width: 900px){
+
+    .Social ul li {
+        margin: 0.5vw;
+    }
+
+    .Social ul li a {
+        width: 115%;
+        height: 115%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .instagram-iconImg {
+        /* margin-top: 1px; */
+        height: 5vh;
+        width: 5vh;
+    }
+    
+    .mail-iconImg {
+        /* margin-top: 15%; */
+        /* height: 4vh;
+        width: 5vh; */
+        /* margin:1vh; */
+        margin-top: 1%;
+        height: 4vh;
+        width: 5vh;
+    }
+
+    .facebook-iconImg {
+        margin-top: -13%;
+        height: 5vh;
+        width: 5vh;
+    }
+    .youtube-iconImg {
+        /* margin-top: 5%; */
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .yelp-iconImg {
+        /* margin-top: 15%; */
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .Social ul li {
+        margin: 1.2vw;
+    }
+
+    .Social ul li a {
+        width: 135%;
+        height: 135%;
     }
 }

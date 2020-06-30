@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import VizSensor from 'react-visibility-sensor';
 import mainBanner from '../images/home/Facebook_Cover_2019.png';
-import Slideshow from '../components/Slideshow.js'
+import Slideshow from '../components/Slideshow.js';
 import '../css/Home.css';
 import '../css/Global.css';
 import Toolbar from '../components/Toolbar.js';
@@ -74,7 +74,6 @@ class Home extends React.Component {
 	}
 	
 	render() {
-
 		if(this.state.isMobile){
 			return(
 				<div style={{position:"relative"}}>

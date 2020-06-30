@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
-//import Modal from "react-bootstrap/Modal";
-//import Button from "react-bootstrap/Button";
 import '../css/SocialFollow.css';
-import '../css/Global.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Modal from 'react-modal';
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 
-//const fbIcon = "../images/fbIcon.png";
 const fbLink = "https://www.facebook.com/DynamicsPerformanceTeam/";
 
-//const igIcon = "../images/igIcon.png";
 const igLink = "https://www.instagram.com/dynamicsperformanceteam/?hl=en";
 
-//const mailIcon = "../images/mailIcon.png";
 const mailLink = "mailto:dynamicsperformanceteam@gmail.com?subject=Hi, Dynamics Performance Team!";
 
 const mailChimpLink = "https://yahoo.us10.list-manage.com/subscribe/post?u=ef82b25683d865ac2ef14450e&amp;id=bfdc7f3462";
@@ -95,19 +89,32 @@ class SocialFollow extends Component{
         return(
             <div className="Social">
               <ul>
+
               <li>
-                  <a href={fbLink} target="_blank" rel="noopener noreferrer">
-                    <img src={require("../images/fbIcon.png")} width="30px" height="30px" alt="error loading img"></img>
+                  <a href={youtubeLink} title="Youtube" target="_blank" rel="noopener noreferrer">
+                    <img className="youtube-iconImg" src={require("../images/youtubeIcon.png")} width="30px" height="30px" alt="error loading img"></img>
+                  </a>
+              </li>
+
+              <li>
+                  <a href={yelpLink} title="Yelp" target="_blank" rel="noopener noreferrer">
+                    <img className="yelp-iconImg" src={require("../images/yelpIcon.png")} width="30px" height="30px" alt="error loading img"></img>
+                  </a>
+              </li>
+
+              <li>
+                  <a href={fbLink} title="Facebook" target="_blank" rel="noopener noreferrer">
+                    <img className="facebook-iconImg" src={require("../images/fbIcon.png")} width="30px" height="30px" alt="error loading img"></img>
                   </a>
               </li>
               <li>
-                  <a href={igLink} target="_blank" rel="noopener noreferrer">
-                    <img src={require("../images/igIcon.png")} width="30px" height="30px" alt="error loading img"></img>
+                  <a href={igLink} title="Instagram" target="_blank" rel="noopener noreferrer">
+                    <img className="instagram-iconImg" src={require("../images/igIcon.png")} width="30px" height="30px" alt="error loading img"></img>
                   </a>
                 </li>
                 <li>
-                  <a href={mailLink} target="_blank" rel="noopener noreferrer">
-                    <img src={require("../images/mailIcon.png")} width="22px" height="22px" alt="error loading img"></img>
+                  <a href={mailLink} title="Email Us" target="_blank" rel="noopener noreferrer">
+                    <img className="mail-iconImg" src={require("../images/mailIcon.png")} width="22px" height="22px" alt="error loading img"></img>
                   </a>
                 </li>
                 <li>
