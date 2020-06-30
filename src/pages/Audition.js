@@ -22,6 +22,7 @@ class Audition extends Component {
 
   render() {
     return (
+      <div>
       <div className="hideHorizontalScroll">
         <div className="web">
           <Toolbar bool={false} />
@@ -75,6 +76,7 @@ class Audition extends Component {
           </Row>
           <Footer />
         </div>
+      </div>
       </div>
     );
   }
