@@ -81,20 +81,7 @@ class Home extends React.Component {
 					<NoRightClickImg src={mainBanner} style={{height: this.state.width * 0.45, width: "100%"}}/>
 					<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', marginLeft:"5px", marginRight:"5px"}}id='dynamics' ref={this.dynamicText}> dynamic </span> dancers.</p>
 					<div className="Right-Container">
-						<Slideshow indicators={false} slideImages={[
-							require('../images/home/Main Page 1.jpg'), 
-							require('../images/home/Main Page 4.jpg'),
-							require('../images/home/Main Page 5.jpg'), 
-							require('../images/home/Main Page 6.jpg'),
-							require('../images/home/Main Page 7.jpg'), 
-							require('../images/home/Main Page 8.jpg'),
-							require('../images/home/Main Page 9.jpg'), 
-							require('../images/home/Main Page 10.jpg'),
-							require('../images/home/Main Page 11.jpg'), 
-							require('../images/home/Main Page 12.jpg'), 
-							require('../images/home/Main Page 13.jpg'), 
-							require('../images/home/Main Page 14.jpg')
-							]}/>
+						<Slideshow indicators={false}/>
 					</div>	
 					<div className="Left-Container">
 						<p className="Static-Text"> 
@@ -140,20 +127,7 @@ class Home extends React.Component {
 								</p>
 							</div>
 							<div className="Right-Container" style={{width: this.state.width*0.5}}>
-								<Slideshow special={10} indicators={true} slideImages={[
-									require('../images/home/Main Page 1.jpg'), 
-									require('../images/home/Main Page 4.jpg'),
-									require('../images/home/Main Page 5.jpg'), 
-									require('../images/home/Main Page 6.jpg'),
-									require('../images/home/Main Page 7.jpg'), 
-									require('../images/home/Main Page 8.jpg'),
-									require('../images/home/Main Page 9.jpg'), 
-									require('../images/home/Main Page 10.jpg'),
-									require('../images/home/Main Page 11.jpg'), 
-									require('../images/home/Main Page 12.jpg'), 
-									require('../images/home/Main Page 13.jpg'), 
-									require('../images/home/Main Page 14.jpg')
-									]}/>
+								<Slideshow indicators={true}/>
 							</div>	
 						</div>
 					</VizSensor>

@@ -23,6 +23,7 @@ class NoRightClickImg extends React.Component {
             );
           }
 
+        //by default image will be enlargeable on click - feature will be disabled if "false" is passed in 
         const isEnlargableImage = (this.props.disableEnlarging == undefined) ? true:!this.props.disableEnlarging;
 
         return (
