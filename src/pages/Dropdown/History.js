@@ -23,6 +23,7 @@ class History extends React.Component{
 			<Container>
 					<h1 className="history-title"> Our History </h1>
 					<NoRightClickImg imgClassName="dancers-image" src={image0} alt="could not load"/>
+					<p className="Photo-Description">DPT's first group photo circa 2005</p>
 
 					<p className="History-Paragraph1"> The Dynamics Performance Team (DPT) was founded in 2005 by Creative Director Charles Solomon with a sponsorship from longtime mentor Joy Sinnott. With Miss Joy’s help, DPT held their first program, Showtime, that spring and has continued to grow over the now 16 seasons since its formation. In 2007, company member Sara Wardell joined Mr. Charles as Co-Director and in 2012 headed the incorporation of DPT as a non-profit organization. </p>
 					<p className="History-Paragraph2"> The team began with a vision to bring passionate dancers together to advance their dance education, inspire creativity, and to share their love of performance with the community while also providing dancers the opportunity to compete. What began as a passion project has now grown into a pre-professional competition team, attracting dancers from around the San Jose area who want to train and compete in versatile genres of dance such as jazz, contemporary, lyrical, hip hop, and ballet. </p>
@@ -61,6 +62,7 @@ class History extends React.Component{
 			<Col className="column1">
 				<h1 className="History-Title"> Our History </h1>
 				<NoRightClickImg imgClassName="Dancers-image" src={image0} alt="could not load"/>
+				<p className="Photo-Description">DPT's first group photo circa 2005</p>
 			</Col>
 			<Col xs={7} className="column2">
 				<p className="History-Paragraph1"> The Dynamics Performance Team (DPT) was founded in 2005 by Creative Director Charles Solomon with a sponsorship from longtime mentor Joy Sinnott. With Miss Joy’s help, DPT held their first program, Showtime, that spring and has continued to grow over the now 16 seasons since its formation. In 2007, company member Sara Wardell joined Mr. Charles as Co-Director and in 2012 headed the incorporation of DPT as a non-profit organization. </p>
