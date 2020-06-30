@@ -19,7 +19,7 @@ import NoRightClickImg from '../components/NoRightClickImg';
  		  const Slideshow = () => {
             var pictures = this.props.slideImages.map((item, i) => 
 				<div className="each-slide"> 
-					<NoRightClickImg src = {item} alt="Loading Error" disableEnlarging={false}/> 
+					<NoRightClickImg src = {item} alt="Loading Error" disableEnlarging={true}/> 
 				</div>);
  			return (
  				<div className="danceimg">

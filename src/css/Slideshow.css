@@ -8,13 +8,13 @@
     padding-top: calc(15vw);
 }
 .danceimg{
-    width: calc(27vw);
+    width: calc(37vw);
     height: calc(35vw);
     display: block;
 }
   
 .each-slide img {
-    width: calc(27vw);
+    width: calc(37vw);
     height: calc(35vw);
     object-fit: contain;
     image-rendering: pixelated;
@@ -22,12 +22,12 @@
 
 @media only screen and (max-width: 600px) {
     .danceimg{
-        width: calc(47vw);
+        width: calc(67vw);
         height: calc(65vw);
     }
       
     .each-slide img {
-        width: calc(47vw);
+        width: calc(67vw);
         height: calc(65vw);
         /* object-fit: cover; */
     }
