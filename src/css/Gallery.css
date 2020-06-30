@@ -45,9 +45,22 @@
     border-style: none;
 }
 
+.subscribe-text {
+    font-size: 3vh;
+    margin-top: -8%;
+}
+
 @media only screen and (max-width: 1100px) {
     .youtube-iframe {
         height: 400px;
+    }
+
+    .subscribe-text {
+        font-size: 23px;
+    }
+
+    .tab-title {
+        font-size: 5vw;
     }
 }
 
@@ -64,12 +77,20 @@
         height: 40vw;
     }
 
+    .tab-title {
+        margin-left: -2%;
+        margin-top: 40px;
+    }
+
     .tabholder {
         font-size: 15px;
     }
 
     .subscribe-text {
         margin-top: 3%;
+        font-size: 22px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
@@ -97,20 +118,23 @@
 
     .subscribe-text {
         margin-top: 5%;
-        padding-left: 7%;
+        font-size: 4.2vw;
     }
 
     .tab-title {
        font-size: 5vh;
+       margin-left: 0px;
+       margin-top: 30px;
+       margin-bottom: 20px;
     }
 
-    .bottom {
+    .bottom-absolute {
         bottom: 0;
         position: absolute;
         width: 100%;
     }
 
-    .no-scroll {
+    .tabholder {
+        font-size: 25px;
     }
-
 }
