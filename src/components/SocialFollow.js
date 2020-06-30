@@ -123,7 +123,7 @@ class SocialFollow extends Component{
                 </li>
                 <li>
                   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-                  <a onClick={this.handleOpenModal}>Subscribe</a>
+                  <a onClick={this.handleOpenModal} style={{display:"flex",justifyContent: "center"}}  title ="Subscribe to our Newsletter!" target="_blank" rel="noopener noreferrer">Subscribe</a>
                     <Modal className="subscribe-modal" isOpen={this.state.showModal} contentLabel="Subscribe to our Newsletter" id='myModal' >
                        <h2>Subscribe to our Newsletter</h2>
                        <MailchimpSubscribe
