@@ -19,8 +19,9 @@ justify-content: flex-start;
   color: black; 
   font-size: 110%;
   font-weight: bold;
-  width: 125px;
+  width: 100px;
   height: 50px;
+  text-align: center;
   text-decoration: none !important; 
 }
 /* This controls what happens when someone hovers over the "Home" part of the navbar */
@@ -35,8 +36,9 @@ justify-content: flex-start;
   color: black; 
   font-size: 110%;
   font-weight: bold;
-  width: 125px;
+  width: 100px;
   height: 50px;
+  text-align: center;
   text-decoration: none !important; 
 }
 /* This controls what happens when someone hovers over the "Auditions" part of the navbar */
@@ -50,9 +52,10 @@ justify-content: flex-start;
 .Gallery-Header{
   color: black;
   font-size: 110%;
-  width: 125px;
+  width: 100px;
   height: 50px;
   font-weight: bold;
+  text-align: center;
   text-decoration: none !important; 
 }
 /* This controls what happens when someone hovers over the "Auditions" part of the navbar */
@@ -72,18 +75,20 @@ justify-content: flex-start;
 /* This controls the "Support" part of the navbar */
 .Support-Dropdown{
   font-size: 110%;
-  width: 125px;
+  width: 100px;
   height: 50px;
   font-weight: bold;
+  text-align: center;
   text-decoration: none !important; 
 }
 /* This controls the "About" part of the dropdown */
 .About-Dropdown {
   font-weight: bold;
   font-size: 110%;
-  width: 125px;
+  width: 100px;
   height: 50px;
   padding-left: 0px !important;
+  text-align: center;
   text-decoration: none !important; 
 }
 /* This controls what happens when someone hovers over the dropdown */
@@ -108,6 +113,10 @@ dropdown-item.active, .dropdown-item:active {
   background-color: rgba(29, 153, 202, 0.7) !important; /*this is the color the box becomes when someone visits the page*/
 }
 
+.navbar-brand {
+  padding-top: 0px !important;
+}
+
 /* THIS HANDLES SCREEN RESIZING. DO NOT TOUCH */
 
 @media only screen and (max-width: 1150px) {
@@ -117,16 +126,40 @@ dropdown-item.active, .dropdown-item:active {
   }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
   .Home-Header{
     margin-left: 0px !important;
+    text-align: left;
+  }
+
+  .About-Dropdown {
+    text-align: left;
+  }
+
+  .Support-Dropdown{
+    text-align: left;
+  }
+
+  .Auditions-Header {
+    text-align: left;
+  }
+
+  .Gallery-Header {
+    text-align: left;
   }
 }
 
 @media only screen and (max-width: 850px){
   .Home-Header{
-  margin-left: 10px;
+  margin-left: 20px;
 }}
 }
+
+@media only screen and (max-width: 760px) {
+  .social_media {
+    display: none !important;
+  }
+}
+
 
 @import "../../node_modules/bootstrap/dist/css/bootstrap.css"

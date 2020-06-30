@@ -151,7 +151,9 @@ class Toolbar extends Component {
         <Navbar.Brand>
 
           {/** This is the social media icons*/}
+          <div className = "social_media"> 
           <SocialFollow />
+          </div>
 
         </Navbar.Brand>
         

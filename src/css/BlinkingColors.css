@@ -5,10 +5,31 @@
     font: Regular 25px/27px David;
     text-align: left;
     letter-spacing: 0;
-    font-size: 15px;
-    line-height: 0px;
+    font-size: 15%;
+    line-height: 4px;
     font-weight: bold;
-    padding-top: 22%;
+    padding-top: 15%;
     text-decoration: none !important;
   }
+
+  @media (min-width: 600px) and (max-width: 1250px) {
+    .Body-Header{
+      color: black;
+      opacity: 1;
+      font: Regular 25px/27px David;
+      text-align: left;
+      letter-spacing: 0;
+      line-height: 4px;
+      font-weight: bold;
+      padding-top: 35px;
+      text-decoration: none !important;
+    }
+
+    p {
+      font-size: 15px;
+      margin-bottom: 2.2vh;
+    }
+  }
+
+
 
