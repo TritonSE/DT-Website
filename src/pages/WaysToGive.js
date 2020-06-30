@@ -7,7 +7,6 @@ import Instructions from '../images/waytogive/amazon smile instructions.jpg';
 import ModalImage from 'react-modal-image';
 import '../css/Support.css';
 import '../css/WaysToGive.css';
-import '../css/Global.css';
 import SupportStates from '../components/SupportStates.js';
 import Footer from '../components/Footer.js';
 
@@ -57,7 +56,7 @@ class WaysToGive extends Component {
 			<div>
 			<div className="textWays" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-				<p><span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}>Ways to Give</span></p>
+				<h1>Ways to Give</h1>
                 <WaysToGiveText />
 				<button 
 						className="btn btn-secondary Donate-Button"
@@ -92,7 +91,7 @@ class WaysToGive extends Component {
 			<div>
 			<div className="textWays" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-				<p><span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}>Ways to Give</span></p>
+				<h1>Ways to Give</h1>
                 <WaysToGiveText />
 				<SupportStates />
 				<div className="amazon">
@@ -122,7 +121,7 @@ class WaysToGive extends Component {
 			<div>
 			<div className="textWays" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-				<p><span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}>Ways to<br/>Give</span></p>
+				<h1>Ways to<br/>Give</h1>
                 <WaysToGiveText />
 				<SupportStates />
 			</div>
@@ -138,8 +137,7 @@ class WaysToGive extends Component {
 				<div>
 				<div className="textWays" >
 					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-					<p><span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}>Ways to<br/>Give</span></p>
-					<WaysToGiveText />
+					<h1>Ways to<br/>Give</h1>
 					<button 
 						className="btn btn-secondary Donate-Button"
 						style = {{marginLeft:"calc(-5.5vw"}}
@@ -147,6 +145,7 @@ class WaysToGive extends Component {
 					>
 						Donate 
 				</button>
+					<WaysToGiveText />
 				</div>
 				<div className="support-footer">
 					<Footer />

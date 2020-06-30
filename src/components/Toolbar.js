@@ -7,25 +7,32 @@ import { LinkContainer} from 'react-router-bootstrap';
 //import "../css/Toolbar.css"
 
 class Toolbar extends Component {
-/** 
   constructor(props) {
     super(props);
     this.state = {
-      val: false,
+      hideIcons: false,
     }
   }
   
-  setVal = (value) => {
-    this.setState({ val: value });
-  }
-  **/
   componentDidMount() {
-    console.log(this.props.bool);
-    if(this.props.bool === true){
+   if(this.props.bool === true){
       require('../css/Toolbar2.css');
     }
     else{
       require('../css/Toolbar.css');
+    }
+
+    // determine whether social icons should be hidden
+    window.addEventListener('resize', this.updateDisplayIcons.bind(this));
+    this.updateDisplayIcons()
+  }
+
+  updateDisplayIcons() {
+    let hideIcons = window.innerWidth <= 1150;
+
+    // only update icon display when necessary
+    if (hideIcons != this.state.hideIcons) {
+      this.setState({hideIcons: hideIcons});
     }
   }
 
@@ -117,8 +124,8 @@ class Toolbar extends Component {
         </Navbar.Collapse>
         <Navbar.Brand>
 
-          {/** Social Media button component*/}
-          <SocialFollow />
+          {/** Social Media button component, only display if not in mobile*/}
+          {this.state.hideIcons ? null : <SocialFollow />}
 
         </Navbar.Brand>
         
