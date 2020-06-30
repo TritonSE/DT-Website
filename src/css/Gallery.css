@@ -2,6 +2,10 @@
     font-size: 25px;
 }
 
+.tabholder > a {
+    color: rgb(15, 185, 185);
+}
+
 .gallery-title {
     color: #FF4081;
     margin-top: 5%;
