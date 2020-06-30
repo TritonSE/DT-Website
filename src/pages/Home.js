@@ -101,7 +101,6 @@ class Home extends React.Component {
 				<div style={{position:"relative"}}>
 					<Toolbar/>
 					<NoRightClickImg style={{height: this.state.width * 0.4, width: "100%"}} imgClassName="banner-img" src={mainBanner} />
-
 					<div style={{display:this.state.imgViz ? "none":"flex", justifyContent:"center"}}>
 						<button className="Scroll-Button" onClick={this.scrollToSlideShow}>
 							<i class="fas fa-angle-double-down fa-2x"/>
@@ -116,7 +115,17 @@ class Home extends React.Component {
 					>
 						<div className="Text-Container" ref={this.scrollReference}>
 							<div className="Left-Container" style={{width: this.state.width*0.5}}>
-								<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.dynamicText}> dynamic</span> <span><br/>dancers.</span></p>
+								<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.dynamicText} className="Flight-Animation"> 
+										<span>d</span>
+										<span>y</span>
+										<span>n</span>
+										<span>a</span>
+										<span>m</span>
+										<span>i</span>
+										<span>c</span>
+									</span> 
+									<span><br/>dancers.</span>
+								</p>
 								<p className="Static-Text"> 
 										The Dynamics Performance Team (DPT) is an award winning non-profit dance company training the next generation of versatile artists in San Jose and the surrounding Bay Area. Established in 2005, DPT performs and competes in jazz, contemporary, lyrical, tap, and hip hop, among others. <br/> <br/>
 				

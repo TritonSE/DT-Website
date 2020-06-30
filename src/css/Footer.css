@@ -10,6 +10,15 @@
     overflow-x: hidden;
 }
 
+.Highlight{
+    color: black;
+}
+
+.Highlight:hover{
+    color: #FF4081;
+    text-decoration: none;
+}
+
 .Contact-Text{
     font-size: 2.3vw;
     text-align: right;

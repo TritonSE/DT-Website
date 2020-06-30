@@ -39,6 +39,15 @@
     color: white;
     background-color: #FF4081;
     transition: 0.5s;
+    
+    position: relative;
+    animation: move-text 1.75s forwards;
+}
+
+@keyframes move-text {
+    0% { bottom: -0.2em; opacity: 1; }
+    50% { bottom: 0.2em; }
+    100% { bottom: 0; opacity: 1; }
 }
 
  @media only screen and (max-width: 1300px){

@@ -3,6 +3,20 @@
     width: 100%;
     height: 100%;
 }
+
+.Flight-Animation > span:hover{
+    color: rgb(15, 185, 185);
+    position: relative;
+
+    animation: move-text 1.75s forwards;
+}
+
+@keyframes move-text {
+    0% { bottom: -0.2em; opacity: 1; }
+    50% { bottom: 0.2em; }
+    100% { bottom: 0; opacity: 1; }
+}
+
 .Text-Container{
     margin-top: 1%;
     display: flex;

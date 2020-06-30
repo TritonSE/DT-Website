@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Fade} from 'react-slideshow-image';
 import NoRightClickImg from '../components/NoRightClickImg';
- import '../css/Slideshow.css';
+import '../css/Slideshow.css';
+
  class Slideshow extends Component {
      render() {
 
@@ -33,10 +34,12 @@ import NoRightClickImg from '../components/NoRightClickImg';
  			// }
  		  }
  		  const Slideshow = () => {
-            var pictures = slideImages.map((item, i) => 
+			var pictures = slideImages.map((item, i) => 
+			<div className="each-fade">
 				<div className="each-slide"> 
 					<NoRightClickImg src = {item} alt="Loading Error" disableEnlarging={true}/> 
-				</div>);
+				</div>
+			</div>);
  			return (
  				<div className="danceimg">
                     <Fade {...properties}>

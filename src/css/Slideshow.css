@@ -20,6 +20,7 @@
     image-rendering: pixelated;
 }
 
+
 @media only screen and (max-width: 600px) {
     .danceimg{
         width: calc(67vw);
@@ -29,6 +30,5 @@
     .each-slide img {
         width: calc(67vw);
         height: calc(65vw);
-        /* object-fit: cover; */
     }
 }
