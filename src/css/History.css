@@ -33,6 +33,13 @@
     opacity: 1;
 }
 
+.Photo-Description {
+    font-style: italic;
+    margin-top: 1%;
+    text-align: center;
+    width: 90%;
+}
+
 .Colleges-List{
     margin-top: 2%;
     width: 100%;
@@ -181,6 +188,13 @@
         text-align: left;
         letter-spacing: 0;
         opacity: 1;
+    }
+
+    .Photo-Description {
+        font-style: italic;
+        margin-top: 1%;
+        text-align: center;
+        width: 100%;
     }
 
     .Colleges-List{
