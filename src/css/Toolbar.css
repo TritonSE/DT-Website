@@ -113,6 +113,7 @@ dropdown-item.active, .dropdown-item:active {
   background-color: rgba(29, 153, 202, 0.7) !important; /*this is the color the box becomes when someone visits the page*/
 }
 
+/* This controls the pdding on the social media icons. DO NOT TOUCH */
 .navbar-brand {
   padding-top: 0px !important;
 }
