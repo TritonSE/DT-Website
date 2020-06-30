@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Slide } from 'react-slideshow-image';
+import { Fade} from 'react-slideshow-image';
 import NoRightClickImg from '../components/NoRightClickImg';
  import '../css/Slideshow.css';
  class Slideshow extends Component {
@@ -7,24 +7,25 @@ import NoRightClickImg from '../components/NoRightClickImg';
  		// component will render JSX (react's version of html) inside return statement
  		const properties = {
  			duration: 3000,
- 			transitionDuration: 500,
+			transitionDuration: 500,
 			infinite: true,
+			pauseOnHover: true,
 			indicators: this.props.indicators,
  			arrows: true,
- 			onChange: (oldIndex, newIndex) => {
- 			  console.log(`slide transition from ${oldIndex} to ${newIndex}`);
- 			}
+ 			// onChange: (oldIndex, newIndex) => {
+ 			//   console.log(`slide transition from ${oldIndex} to ${newIndex}`);
+ 			// }
  		  }
  		  const Slideshow = () => {
             var pictures = this.props.slideImages.map((item, i) => 
 				<div className="each-slide"> 
-					<NoRightClickImg src = {item} alt="Loading Error"/> 
+					<NoRightClickImg src = {item} alt="Loading Error" disableEnlarging={false}/> 
 				</div>);
  			return (
  				<div className="danceimg">
-                    <Slide {...properties}>
+                    <Fade {...properties}>
 						{pictures}
-                    </Slide>
+                    </Fade>
             </div>
  			)
          }

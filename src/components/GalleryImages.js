@@ -4,9 +4,7 @@
 import React from 'react';
 import '../css/GalleryImages.css';
 import ImageMasonry from 'react-image-masonry' ;
-import { SRLWrapper } from 'simple-react-lightbox';
-import Image from "react-image-enlarger";
-import ModalImage from "react-modal-image";
+import NoRightClickImg from '../components/NoRightClickImg.js';
 
 class GalleryImages extends React.Component {
 
@@ -110,24 +108,8 @@ class GalleryImages extends React.Component {
             // require('../images/gallery/winter fun 2010 046.JPG'), 
           ]
 
-          function SingleSource({ src }) {
-            const [zoomed, setZoomed] = React.useState(false);
-           
-            return (
-              <div>
-                <Image
-                  overlayColor="black"
-                  zoomed={zoomed}
-                  src={src}
-                  onClick={() => setZoomed(true)}
-                  onRequestClose={() => setZoomed(false)}
-                />
-              </div>
-            );
-          }
-          
           return(
-            <div onContextMenu={(e)=>  {e.preventDefault(); return false;}}>
+            <div>
               <ImageMasonry
                 numCols={this.state.isMobile ? 2:4}
                 containerWidth={"90vw"}>
@@ -138,7 +120,8 @@ class GalleryImages extends React.Component {
                           className="tile"
                           >
                           {/* <img src={image} alt={image} className="image-hover-opacity"/> */}
-                          <SingleSource key={image} src={image}/>
+                          {/* <SingleSource key={image} src={image}/> */}
+                          <NoRightClickImg src={image}/>
                           {/* <ModalImage
                             small={image}
                             large={image}
