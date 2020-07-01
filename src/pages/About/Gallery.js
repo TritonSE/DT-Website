@@ -52,6 +52,21 @@ class Gallery extends Component {
             </div>
             </TabPane>
          
+           <TabPane eventKey="videos" title="Videos">
+              <div>
+                <div style={{alignItems: "center", justifyContent: "center"}}>
+                  <div className="gallery-text-container"> 
+                    <h1 className="tab-title"> Video Gallery </h1>
+                    <img className="DPT-logo" src={require("../../images/logo1.png")}></img>
+                    <br />
+                    <p className="subscribe-text"> For more videos, click <a style={{color: '#FF4081'}} target="_blank" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to subscribe to our Youtube channel! </p>
+                  </div> 
+                </div>
+
+                <iframe className="youtube-iframe" src="https://www.youtube.com/embed/+lastest?list=PLCyEpHAXCjJMDXWsfMdWfD1NHh3zoYa1m" frameborder="0" allowFullScreen></iframe>
+                <Footer />
+              </div>
+          </TabPane>
          </Tabs>
       </div>
     );
