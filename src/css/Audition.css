@@ -2,8 +2,8 @@
 .font {
   font-family: Arial;
 }
-.hideHorizontalScroll {
-  overflow-x: hidden;
+.row {
+  width: 100%;
 }
 .audition-info {
   color: #ff4081;
