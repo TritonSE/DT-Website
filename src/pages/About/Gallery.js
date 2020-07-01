@@ -42,49 +42,6 @@ class Gallery extends Component {
     return(
       <div>
          <Toolbar />
-         <Tabs className="tabholder" fill defaultActiveKey="photos">
-           <TabPane className="tab1" eventKey="photos" title="Photos">
-             <div style={{width: "100%", height: "100%",marginTop:"30px"}}>
-             <div className="text-modal-container"> 
-               <h1 className="tab-title"> Photo Gallery </h1>
-             </div> 
-            </div>
-            </TabPane>
-         
-           <TabPane eventKey="videos" title="Videos">
-            {/*Render first div if window is desktop size, render second div if tablet or mobile*/}
-            {
-            this.state.isDesktop ? 
-              <div>
-                <div style={{alignItems: "center", justifyContent: "center"}}>
-                  <div className="gallery-text-container"> 
-                    <h1 className="tab-title"> Video Gallery </h1>
-                    <img className="DPT-logo" src={require("../../images/logo1.png")}></img>
-                    <br />
-                    <p className="subscribe-text"> For more videos, click <a style={{color: '#FF4081'}} target="_blank" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to subscribe to our Youtube channel! </p>
-                  </div> 
-                </div>
-
-                <iframe className="youtube-iframe" src="https://www.youtube.com/embed/+lastest?list=PLCyEpHAXCjJMDXWsfMdWfD1NHh3zoYa1m" frameborder="0" allowFullScreen></iframe>
-                <Footer />
-              </div>
-            : 
-              <div> 
-                <div style={{display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center"}}> 
-                  <img className="DPT-logo" src={require("../../images/logo1.png")}></img>
-                  <h1 className="tab-title"> Video Gallery </h1>
-                </div>
-
-                <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>  
-                  <iframe className="youtube-iframe" src="https://www.youtube.com/embed/+lastest?list=PLCyEpHAXCjJMDXWsfMdWfD1NHh3zoYa1m" frameborder="0" allowFullScreen></iframe>
-                  <p className="subscribe-text"> For more videos, click <a style={{color: '#FF4081'}} target="_blank" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to subscribe to our Youtube channel! </p>
-                </div>  
-
-                {(window.innerWidth <= 600 && window.innerHeight < 900) ? <div className="bottom-absolute"> <Footer/> </div> : <Footer />}
-              </div>
-          }
-          </TabPane>
-         </Tabs>
             <GalleryImages/>
       </div>
     );
