@@ -112,7 +112,7 @@ class GalleryImages extends React.Component {
 
           function SingleSource({ src }) {
             const [zoomed, setZoomed] = React.useState(false);
-           
+            alert("hey");
             return (
               <div>
                 <Image
