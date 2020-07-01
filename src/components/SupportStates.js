@@ -9,6 +9,7 @@ import React, { Component } from 'react';
 import '../css/Support.css';
 import PaypalButton from '../components/PaypalButton.js'
 import { IoIosAlert } from "react-icons/io";
+import swal from 'sweetalert';
 
 /**
  * Helper component to SupportMain.js. Used to go through 
@@ -32,12 +33,26 @@ class SupportStates extends Component {
 		if(this.state.displayAmountAdjust){
       //only proceed if no error 
 			if(this.state.displayError){
-        alert('Invalid amount. Please adjust until red error icon disappears.');
+        swal({
+          title: "Invalid Amount",
+          text: "Please adjust amount until the red error icon disappears.",
+          icon: "warning",
+          button: {
+            text: "Got it"
+          }
+        });
 				return;
       }
       //Edge Case: Set error if amount is empty, else proceed
 			else if(this.state.amount === ''){
-        alert('Invalid amount. Please adjust until red error icon disappears.');
+        swal({
+          title: "Invalid Amount",
+          text: "Please adjust amount until the red error icon disappears.",
+          icon: "warning",
+          button: {
+            text: "Got it"
+          }
+        });
 				this.setState({displayError: true});
 				return;
 			}	 

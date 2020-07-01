@@ -1,0 +1,145 @@
+.tabholder {
+    font-size: 25px;
+}
+
+.tabholder > a {
+    color: rgb(15, 185, 185);
+}
+
+.gallery-title {
+    color: #FF4081;
+    margin-top: 5%;
+}
+
+.text-modal-container {
+    display: flex;
+}
+
+.youtube-iframe {
+    margin: auto;
+    height: 30vw;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.gallery-text-container {
+    float: left;
+    margin-left: 7%;
+    margin-right: 3%;
+    text-align: center;
+    width: 35vw;
+    height: 400px;
+}
+
+.tab-title {
+    margin-top: 30px;
+    color: #FF4081;
+    font-size: 4vw;
+}
+
+.DPT-logo {
+    margin-top: -40px;
+    height: 300px;
+    width: 300px;
+} 
+
+.modal-button {
+    border-radius: 5px;
+    color: #FF4081;
+    border-style: none;
+}
+
+.subscribe-text {
+    font-size: 3vh;
+    margin-top: -8%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .youtube-iframe {
+        height: 400px;
+    }
+
+    .subscribe-text {
+        font-size: 23px;
+    }
+
+    .tab-title {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .DPT-logo {
+        margin-top: 5%;
+        width: 15%;
+        height: 15%;
+    }
+
+    .youtube-iframe {
+        margin-top: 0px;
+        width: 70%;
+        height: 40vw;
+    }
+
+    .tab-title {
+        margin-left: -2%;
+        margin-top: 40px;
+    }
+
+    .tabholder {
+        font-size: 15px;
+    }
+
+    .subscribe-text {
+        margin-top: 3%;
+        font-size: 22px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .text-modal-container {
+        display: inline;
+    }
+
+    .youtube-iframe {
+        width: 100%;
+
+    }
+
+    .DPT-logo {
+        margin-top: 5%;
+        width: 12%;
+        height: 12%;
+    }
+
+    .youtube-iframe {
+        margin-top: 0px;
+        width: 70%;
+        height: 40vw;
+    }
+
+    .subscribe-text {
+        margin-top: 5%;
+        font-size: 4.2vw;
+    }
+
+    .tab-title {
+       font-size: 5vh;
+       margin-left: 0px;
+       margin-top: 30px;
+       margin-bottom: 20px;
+    }
+
+    .bottom-absolute {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    .tabholder {
+        font-size: 25px;
+    }
+}

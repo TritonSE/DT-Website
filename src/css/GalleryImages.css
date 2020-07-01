@@ -1,0 +1,9 @@
+.image-hover-opacity:hover {
+    opacity: 0.65;
+    cursor: pointer;
+}
+
+.image-hover-opacity{
+    /* opacity: 0.65; */
+    cursor: pointer;
+}
