@@ -5,7 +5,7 @@
 .row {
   width: 100%;
 }
-.audition-info {
+.Audition-info {
   color: #ff4081;
 }
 .title {
@@ -47,10 +47,7 @@
   .mobile {
     display: inline-block;
   }
-  .title {
-    font-size: 5em;
-    text-align: center;
-  }
+  
   .colored-bullets ul li::before {
     color: rgb(15, 185, 185); /* Change the color */
   }
@@ -62,6 +59,7 @@
   }
   .audition-info {
     margin-bottom: -20px;
+    text-align: center;
   }
   .image2 {
     margin-left: -8%;

@@ -9,7 +9,7 @@ class AuditionInfo extends Component {
         <div>
           <p>
             Our current season is still underway—our next season’s auditions
-            will be held in <b className="audition-info">August 2020</b>.
+            will be held in <b className="Audition-info">August 2020</b>.
             Subscribe to our mailing list for a reminder and up to date
             announcements! To inquire about individual auditions, please email
             DPT at dynamicsperformanceteam@gmail.com or call at 408-622-0249.

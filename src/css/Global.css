@@ -1,8 +1,15 @@
 h1 {
     font-size: 6.2vw;
     font-family: 'Lato', sans-serif;
-    color: #FF4081;
 
+}
+
+.Pink {
+    color: #FF4081;
+}
+
+.Teal {
+    color: rgb(15, 185, 185);
 }
 
 h2 {
@@ -43,7 +50,14 @@ ul li {
     h1 {
         font-size: 5vh;
         font-family: 'Lato', sans-serif;
+    }
+
+    .Pink {
         color: #FF4081;
+    }
+    
+    .Teal {
+        color: rgb(15, 185, 185);
     }
 
     h2 {

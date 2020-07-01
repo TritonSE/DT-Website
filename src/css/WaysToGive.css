@@ -25,10 +25,8 @@
 }
 
 .textWays h1 {
-    color: '#FF4081';
     font-style: normal;
     font-weight: normal;
-    font-size: 6.2vw;
     margin-bottom: 5vmin;
 }
 
@@ -127,10 +125,8 @@
 
 @media only screen and (max-width: 1024px) and (min-height: 1023px){
     .textWays h1 {
-        color: '#FF4081';
         font-style: normal;
         font-weight: normal;
-        font-size: 5vmin;
         margin-bottom: 5vmin;
     }
     .bodytxt {
@@ -299,10 +295,8 @@
     }
 
     .textWays h1 {
-        color: '#FF4081';
         font-style: normal;
         font-weight: normal;
-        font-size: 5vh;
         margin-bottom: 1.5vh;
     }
 }

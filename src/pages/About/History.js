@@ -21,7 +21,7 @@ class History extends React.Component{
 			{/* FOR MOBILE */}
 			<div className="mobile">
 			<Container>
-					<h1 className="history-title"> Our History </h1>
+					<h1 className="history-title Teal"> Our History </h1>
 					<NoRightClickImg imgClassName="dancers-image" src={image0} alt="could not load"/>
 					<p className="Photo-Description">DPT's first group photo circa 2005</p>
 
@@ -60,7 +60,7 @@ class History extends React.Component{
 			<div className="div">
             <Row>
 			<Col className="column1">
-				<h1 className="History-Title"> Our History </h1>
+				<h1 className="History-Title Teal"> Our History </h1>
 				<NoRightClickImg imgClassName="Dancers-image" src={image0} alt="could not load"/>
 				<p className="Photo-Description">DPT's first group photo circa 2005</p>
 			</Col>
