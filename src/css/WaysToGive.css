@@ -1,4 +1,3 @@
-
 /**
 .text {
     color: #0f0f0f;
@@ -15,9 +14,9 @@
 */
 .textWays {
     color: #0f0f0f;
-    font-size: calc(10vmin);
     text-align: left;
     padding-left: 10%;
+    font-family: 'Lato', serif;
     font-style:normal;
     padding-top: calc(2vmin);
     top: calc(-10vmin);
@@ -25,16 +24,25 @@
      
 }
 
+.textWays h1 {
+    color: '#FF4081';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6.2vw;
+    margin-bottom: 5vmin;
+}
+
 .bodytxt {
     width: calc(57.5vw);
     height: calc(65vh);
     color: #0f0f0f;
     position: relative;
-    top: calc(-27.5vmin);
-    font-size: calc(2vmin);
+    top: calc(-15.5vw);
+    font-size: calc(1.15vw);
     padding-right: 10%;
     text-align: left;
     float:right;
+    font-family: 'Lato', serif;
     font-style:normal;
 }
 
@@ -76,15 +84,15 @@
 }
 
 .smile {
-    width: calc(30vmin);
-    height: calc(30vmin);
+    width: calc(17vmax);
+    height: calc(17vmax);
     display: block; 
     /**position: relative;*/
     padding-top: calc(1vmin);
-    top: calc(-15vmin);
+    top: calc(-8vmax);
     float: bottom;
     right: 30%;
-    margin-left: calc(7.5vmin);
+    margin-left: calc(4vmax);
 }
 
 .currentfund {
@@ -98,19 +106,89 @@
 }
 
 .instructions {
-    width: calc(30vmin);
-    height: calc(30vmin);
+    width: calc(17vmax);
+    height: calc(17vmax);
     display: block;
     /**position: relative;*/
-    right: calc(25vmin);
+    right: calc(13.33vmax);
     padding-top: calc(1vmin);
     /**top: calc(-7.5vmin);*/
     /**top: calc(-55vmin);*/
     float: bottom;
-    margin-top: calc(-30vh);
-    margin-left: calc(49vmin);
+    margin-top: calc(-17vmax);
+    margin-left: calc(26vmax);
 }
 
+.support-footer {
+    width: 100%;
+    position: absolute; 
+    top: calc(52.5em);
+}
+
+@media only screen and (max-width: 1024px) and (min-height: 1023px){
+    .textWays h1 {
+        color: '#FF4081';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 5vmin;
+        margin-bottom: 5vmin;
+    }
+    .bodytxt {
+        width: calc(57.5vw);
+        height: calc(65vh);
+        color: #0f0f0f;
+        position: relative;
+        font-size: calc(1.5vh);
+        padding-right: 10%;
+        text-align: left;
+        float:right;
+        font-family: 'Lato', serif;
+        font-style:normal;
+        /*margin-top: calc(4.5vh);*/
+    }
+    .smile {
+        width: calc(20vmin);
+        height: calc(20vmin);
+        display: block; 
+        /**position: relative;*/
+        padding-top: calc(1vmin);
+        margin-top: calc(1vmin);
+        float: bottom;
+        right: 30%;
+        margin-left: calc(7.5vmin);
+    }
+    
+    
+    .instructions {
+        width: calc(20vmin);
+        height: calc(20vmin);
+        display: block;
+        /**position: relative;*/
+        padding-top: calc(1vmin);
+        /**top: calc(-7.5vmin);*/
+        /**top: calc(-55vmin);*/
+        margin-top: calc(-20vmin);
+        margin-left: calc(32.5vmin);
+    }
+    
+    .support-footer {
+        width: 100%;
+        position: absolute; 
+        top: calc(60vh);
+    }
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 1023px) {
+    .support-footer {
+        width: 100%;
+        position: absolute; 
+        top: calc(45em);
+    }
+
+    .bodytxt {
+        top: calc(-17.5vw);
+    }
+}
 
 @media only screen and (max-width: 600px){
     /**
@@ -124,6 +202,18 @@
         padding-top: calc(75vmin);
     }
     */
+    .textWays{
+        color: #0f0f0f;
+        font-size: calc(5vh);
+        font-family: 'Lato', serif;
+        white-space: nowrap;
+        font-style:normal;
+        /*padding-left: calc(33.5vmin);*/
+        text-align: center;
+        /*padding-top: calc(75vmin);*/
+        margin-left: calc(-9.5vw);
+        overflow-x:hidden;
+    }
     /**
     .danceimg{
         width: calc(42vmin);
@@ -134,4 +224,85 @@
         top: calc(-100vmin);
     }
     */
+    
+    .bodytxt {
+        padding-top: 5vmin;
+        width: calc(97.5vw);
+        /*height: calc(70vh);*/
+        align-items: center;
+        color: #0f0f0f;
+        position: relative;
+        text-overflow: ellipsis;
+        /*overflow: scroll;*/
+        white-space: pre-line;
+        border-left: 1em solid transparent;
+        border-right: 1em solid transparent;
+        word-wrap: break-word;
+        font-size: calc(4.2vw);
+        margin-top: calc(12.5vh);
+        text-align: center;
+        left: calc(3vw);
+        height: calc(185vmin);
+        /*overflow-x:hidden;*/
+        /*top: calc(-27.5vmin);
+        margin-left: calc(-10vw);
+        font-size: calc(5vmin);
+        padding-right: 10%;
+        text-align: left;
+        float:bottom;
+        font-family: 'Lato', serif;
+        font-style:normal;
+        */
+    }
+
+    .amazon {
+        color: #0f0f0f;
+        /*right: calc(-87.5vmin);*/
+        font-size: calc(5vmin);
+        font-family: 'Lato', serif;
+        font-style: normal; 
+        text-decoration: underline;
+        text-align: center;
+        /*margin-left: 32.5%;*/
+    }
+    
+    .smile {
+        width: calc(60vmin);
+        height: calc(60vmin);
+        display: block; 
+        position: absolute;
+        /*position: relative;*/
+        padding-top: calc(1vmin);
+        margin-top: calc(300vmin);
+        margin-right: calc(-8.5vmin);
+        float: none;
+        /*float: bottom;*/
+    }
+
+    .instructions {
+        width: calc(60vmin);
+        height: calc(60vmin);
+        display: block;
+        position: absolute;
+        /**position: relative;*/
+        margin-top: calc(75vmin);
+        margin-right: calc(-3.5vmin);
+        padding-top: calc(1vmin);
+        /**top: calc(-7.5vmin);*/
+        /**top: calc(-55vmin);*/
+    }
+
+    .support-footer {
+        width: 100%;
+        position: absolute; 
+        top: calc(425vmin);
+    }
+
+    .textWays h1 {
+        color: '#FF4081';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 5vh;
+        margin-bottom: 1.5vh;
+    }
 }
