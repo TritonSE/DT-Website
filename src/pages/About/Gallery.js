@@ -42,7 +42,6 @@ class Gallery extends Component {
                <h1 className="tab-title"> Photo Gallery </h1>
              </div> 
             <GalleryImages/>
-            <Footer />
             </div>
             </TabPane>
          
