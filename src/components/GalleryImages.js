@@ -130,7 +130,8 @@ class GalleryImages extends React.Component {
             <div onContextMenu={(e)=>  {e.preventDefault(); return false;}}>
               <ImageMasonry
                 numCols={this.state.isMobile ? 2:4}
-                containerWidth={"95%"}>
+                containerWidth={"95%"}
+                containerHeight={"100%"}>
                   {images.map((image, i) => {
                     return(
                       <div
