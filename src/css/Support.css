@@ -303,18 +303,25 @@
     max-width: 30%;
     max-height: 10%;
     left:0%;
+    /*
     margin-top: calc(200vmin);
-    margin-left: calc(37.5vmin);
+    margin-left: calc(37.5vmin);*/
    }
 
    .Proceed-Style{
-    margin-top: calc(150vmin);
-    margin-left: calc(30vmin);
+    /*margin-top: calc(150vmin);
+    margin-left: calc(30vmin);*/
+    margin-right: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
   }
    .Amount-Text{
     font-size: 2.2vh;
     max-width: 21%; 
+    /*
     margin-top: calc(52.5vmin);
+    */
   }
 
   .Amount-Text1{
@@ -336,17 +343,19 @@
 
   .Adjust-Button{
     font-size: 2vh;
-     margin-left: calc(5vmin);
+    margin-top: -12.5%;
+    margin-left: 10%;
    }
 
   .Checkout-Style{
     font-size: 2.2vh;
-    margin-top: calc(200vmin);
-    margin-left: 5%;
+    /*margin-top: calc(200vmin);*/
+    margin-left: -25%;
+    margin-top: 5%;
   }
  
   .Adjust-Style{
-    margin-left: calc(50vmin);
+    margin-left: 75%;
     width: 20%;
     height: 20%;
   }
@@ -360,16 +369,15 @@
 
   .alert {
     color: #FF0000;
-    width: calc(15vmin);
-    height: calc(15vmin);
-    margin-top: 12.5%;
+    width: calc(16.5vmin);
+    height: calc(16.5vmin);
+    margin-top: 5%;
    }
 
-  /* .PayPal-Style{
-    width: 30%;
-    margin-left: 10%;
-    margin-top: 20%;
+  .PayPal-Style{
+    margin-right: 10%;
   }
+  /*
   .Adjust-Style{
     margin-left: 12%;
     margin-top: 0%;

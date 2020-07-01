@@ -65,9 +65,7 @@ class WaysToGive extends Component {
 				>
 						Donate 
 				</button>
-				<div className="amazon">
-					<p>Amazon Smile Donations</p>
-				</div>
+					<p className="amazon">Amazon Smile Donations</p>
 				<ModalImage
 					className = "smile"
 					style = {{marginTop: '-50%'}}
@@ -80,9 +78,7 @@ class WaysToGive extends Component {
 					medium = {Instructions}
 				/>
 			</div>
-			<div className="support-footer">
-					<Footer />
-				</div>
+			<Footer />
 			</div>
 		);
 		}
@@ -109,9 +105,7 @@ class WaysToGive extends Component {
 					medium = {Instructions}
 				/>
 			</div>
-			<div className="support-footer">
-					<Footer />
-				</div>
+			<Footer />
 			</div>
 		);
 		}

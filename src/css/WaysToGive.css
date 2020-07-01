@@ -213,6 +213,10 @@
         /*padding-top: calc(75vmin);*/
         margin-left: calc(-9.5vw);
         overflow-x:hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     /**
     .danceimg{
@@ -231,7 +235,7 @@
         /*height: calc(70vh);*/
         align-items: center;
         color: #0f0f0f;
-        position: relative;
+        /*position: relative;*/
         text-overflow: ellipsis;
         /*overflow: scroll;*/
         white-space: pre-line;
@@ -239,10 +243,14 @@
         border-right: 1em solid transparent;
         word-wrap: break-word;
         font-size: calc(4.2vw);
-        margin-top: calc(12.5vh);
+        /*margin-top: calc(7.5vh);*/
+        margin-top: 0px;
         text-align: center;
-        left: calc(3vw);
-        height: calc(185vmin);
+        /*left: calc(3vw);*/
+        float: none;
+        padding-right: 0px;
+        height: auto;
+        position: static;
         /*overflow-x:hidden;*/
         /*top: calc(-27.5vmin);
         margin-left: calc(-10vw);
@@ -262,34 +270,44 @@
         font-family: 'Lato', serif;
         font-style: normal; 
         text-decoration: underline;
-        text-align: center;
+        /*text-align: center;*/
         /*margin-left: 32.5%;*/
     }
     
     .smile {
         width: calc(60vmin);
         height: calc(60vmin);
-        display: block; 
-        position: absolute;
+        display: flex;
+        /*position: absolute;*/
         /*position: relative;*/
-        padding-top: calc(1vmin);
+        /*padding-top: calc(1vmin);
         margin-top: calc(300vmin);
         margin-right: calc(-8.5vmin);
         float: none;
         /*float: bottom;*/
+        top: 0px;
+        float: none;
+        right: 0px;
+        margin-left: 0px;
     }
 
     .instructions {
         width: calc(60vmin);
         height: calc(60vmin);
-        display: block;
-        position: absolute;
+        display: flex;
+        /*position: absolute;*/
         /**position: relative;*/
-        margin-top: calc(75vmin);
+        /*margin-top: calc(75vmin);
         margin-right: calc(-3.5vmin);
-        padding-top: calc(1vmin);
+        padding-top: calc(1vmin);*/
         /**top: calc(-7.5vmin);*/
         /**top: calc(-55vmin);*/
+        right: 0px;
+        float: none;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-top: 5%;
+        margin-bottom: 35vh;
     }
 
     .support-footer {
@@ -303,6 +321,18 @@
         font-style: normal;
         font-weight: normal;
         font-size: 5vh;
-        margin-bottom: 1.5vh;
+        margin-bottom: 0vh;
+    }
+
+    .amazon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .picture-spacing {
+        width: 100%;
+        height: 35vh;
     }
 }
