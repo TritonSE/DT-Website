@@ -5,7 +5,6 @@
 .yes {
     background-color: yellow;
     min-width: 100%;
-    min-height: 600px;
 }
 
 .tabholder > a {

@@ -42,6 +42,7 @@ class Gallery extends Component {
     return(
       <div>
          <Toolbar />
+            <GalleryImages/>
          <Tabs className="tabholder" fill defaultActiveKey="photos">
            <TabPane className="tab1" eventKey="photos" title="Photos">
              <div style={{width: "100%", height: "100%",marginTop:"30px"}}>
@@ -85,7 +86,6 @@ class Gallery extends Component {
           }
           </TabPane>
          </Tabs>
-            <GalleryImages/>
       </div>
     );
   }
