@@ -19,11 +19,13 @@ class Gallery extends Component {
     this.updateWindowDimensions();
     console.log(window.innerHeight, window.innerWidth);
     window.addEventListener('resize', this.updateWindowDimensions);
-    let visited = sessionStorage["first"];
+    let visited = sessionStorage["check"];
     if(visited) {
-      window.location.reload();
-      sessionStorage["first"]= true;
+      return;
     }
+    window.location.reload();
+      sessionStorage["check"]= true;
+    
 	}
 	
 	updateWindowDimensions() {
