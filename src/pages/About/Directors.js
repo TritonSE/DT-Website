@@ -15,7 +15,7 @@ class Directors extends Component {
 		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 	}
 	componentDidMount() {
-		window.scrollTo(0,0);
+		// window.scrollTo(0,0);
 		this.updateWindowDimensions();
 		window.addEventListener('resize', this.updateWindowDimensions);
 	}

@@ -17,7 +17,7 @@ import secondImg from "../images/audition/second.jpg";
 
 class Audition extends Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }
 
   render() {

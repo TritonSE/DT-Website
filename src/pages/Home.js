@@ -23,7 +23,7 @@ class Home extends React.Component {
 	}
 
 	componentDidMount() {
-		window.scrollTo(0,0);
+		// window.scrollTo(0,0);
 		this.updateWindowDimensions();
 		window.textTimer = setInterval(this.changeStyle, 1000);
 		window.addEventListener('resize', this.updateWindowDimensions);
@@ -106,6 +106,9 @@ class Home extends React.Component {
 							<i class="fas fa-angle-double-down fa-2x"/>
 						</button>
 					</div>
+					{/* <h1 className="Flight-Animation">
+						Amrit
+					</h1> */}
 					<VizSensor
 						partialVisibility
 						minTopValue="35"
@@ -115,14 +118,8 @@ class Home extends React.Component {
 					>
 						<div className="Text-Container" ref={this.scrollReference}>
 							<div className="Left-Container" style={{width: this.state.width*0.5}}>
-								<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.dynamicText} className="Flight-Animation"> 
-										<span>d</span>
-										<span>y</span>
-										<span>n</span>
-										<span>a</span>
-										<span>m</span>
-										<span>i</span>
-										<span>c</span>
+								<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.dynamicText}> 
+										dynamic
 									</span> 
 									<span><br/>dancers.</span>
 								</p>

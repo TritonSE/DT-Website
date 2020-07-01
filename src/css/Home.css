@@ -4,18 +4,32 @@
     height: 100%;
 }
 
-.Flight-Animation > span:hover{
+
+/* .Flight-Animation:hover{
     color: rgb(15, 185, 185);
     position: relative;
+} */
+/* 
+@keyframes wobble {
+    25% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(-30deg);
+    }
+    75% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 
-    animation: move-text 1.75s forwards;
-}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} */
 
-@keyframes move-text {
-    0% { bottom: -0.2em; opacity: 1; }
-    50% { bottom: 0.2em; }
-    100% { bottom: 0; opacity: 1; }
-}
 
 .Text-Container{
     margin-top: 1%;
