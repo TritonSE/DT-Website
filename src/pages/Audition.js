@@ -25,7 +25,7 @@ class Audition extends Component {
       <div className="hideHorizontalScroll">
         <div className="web">
           <Toolbar bool={false} />
-          <Row>
+          <Row className="row">
             <Col>
               <AuditionImages />
             </Col>
@@ -49,7 +49,7 @@ class Audition extends Component {
         <div className="mobile">
           <Toolbar bool={false} />
           <h1 className="title audition-info">Audition</h1>
-          <Row>
+          <Row className="row">
             <NoRightClickImg
               src={firstImg}
               alt=""
