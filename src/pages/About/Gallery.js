@@ -35,8 +35,8 @@ class Gallery extends Component {
     return(
       <div>
          <Toolbar />
-         <Tabs className="tabholder" fill defaultActiveKey="photos">
-           <Tab eventKey="photos" title="Photos">
+         <Tabs fill className="tabholder" defaultActiveKey="photos">
+           <Tab className="tab" eventKey="photos" title="Photos">
              <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
              <div className="text-modal-container"> 
                <h1 className="tab-title"> Photo Gallery </h1>
@@ -46,7 +46,7 @@ class Gallery extends Component {
             </div>
             </Tab>
          
-           <Tab eventKey="videos" title="Videos">
+           <Tab className="tab" eventKey="videos" title="Videos">
             {/*Render first div if window is desktop size, render second div if tablet or mobile*/}
             {
             this.state.isDesktop ? 

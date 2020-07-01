@@ -1,5 +1,10 @@
 .tabholder {
     font-size: 25px;
+    width: 100%;
+}
+
+.tab {
+    width: 100%;
 }
 
 .tabholder > a {
