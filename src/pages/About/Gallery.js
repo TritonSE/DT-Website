@@ -80,7 +80,7 @@ class Gallery extends Component {
                   <p className="subscribe-text"> For more videos, click <a style={{color: '#FF4081'}} target="_blank" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to subscribe to our Youtube channel! </p>
                 </div>  
 
-                {(window.innerWidth <= 600 && window.innerHeight < 900) ? <div className="bottom-absolute"> <Footer/> </div> : <Footer />}
+                {(window.innerWidth <= 600 && window.innerHeight < 950) ? <div className="bottom-absolute"> <Footer/> </div> : <Footer />}
               </div>
           }
           </TabPane>

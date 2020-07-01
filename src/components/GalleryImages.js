@@ -18,8 +18,6 @@ class GalleryImages extends React.Component {
 	}
 	componentDidMount() {
 		window.scrollTo(0,0);
-		this.updateWindowDimensions();
-		window.addEventListener('resize', this.updateWindowDimensions);
 	}
 	
 	updateWindowDimensions() {
@@ -31,10 +29,6 @@ class GalleryImages extends React.Component {
 		}
 	}
 	
-	componentWillUnmount() {
-		window.removeEventListener('resize', this.updateWindowDimensions);
-  }
-
     render() {
 
         const options = {
@@ -128,7 +122,7 @@ class GalleryImages extends React.Component {
           return(
             <div onContextMenu={(e)=>  {e.preventDefault(); return false;}}>
               <ImageMasonry
-                numCols={this.state.isMobile ? 2:4}
+                numCols={4}
                 containerWidth={"95%"} className="yes">
                   {images.map((image, i) => {
                     return(
@@ -136,13 +130,7 @@ class GalleryImages extends React.Component {
                           key={i}
                           className="tile"
                           >
-                          {/* <img src={image} alt={image} className="image-hover-opacity"/> */}
                           <SingleSource key={image} src={image}/>
-                          {/* <ModalImage
-                            small={image}
-                            large={image}
-                            alt="Hello World!"
-                          /> */}
                   </div>
                   )})}
               </ImageMasonry>
