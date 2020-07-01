@@ -35,15 +35,13 @@ class Gallery extends Component {
     return(
       <div>
          <Toolbar />
-         <Tabs className="tabholder" defaultActiveKey="photos">
+         <Tabs fill className="tabholder" defaultActiveKey="photos">
            <Tab className="tab" eventKey="photos" title="Photos">
-             <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
              <div className="text-modal-container"> 
                <h1 className="tab-title"> Photo Gallery </h1>
              </div> 
             <GalleryImages/>
             <Footer />
-            </div>
             </Tab>
          
            <Tab className="tab" eventKey="videos" title="Videos">

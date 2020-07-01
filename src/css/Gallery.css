@@ -13,7 +13,8 @@
 
 .gallery-title {
     color: #FF4081;
-    margin-top: 5%;
+    margin: auto;  
+    text-align: center;
 }
 
 .text-modal-container {
@@ -37,8 +38,8 @@
 }
 
 .tab-title {
-    margin-top: 30px;
     color: #FF4081;
+    margin: auto;
     font-size: 4vw;
 }
 
