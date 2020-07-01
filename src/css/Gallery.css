@@ -4,7 +4,8 @@
 
 .yes {
     background-color: yellow;
-    width: 10%;
+    min-width: 100%;
+    min-height: 50%;
 }
 
 .tabholder > a {
