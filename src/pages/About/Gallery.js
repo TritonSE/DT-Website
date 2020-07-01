@@ -44,11 +44,10 @@ class Gallery extends Component {
          <Toolbar />
          <Tabs className="tabholder" fill defaultActiveKey="photos">
            <TabPane className="tab1" eventKey="photos" title="Photos">
-             <div style={{width: "100%", height: "100%", backgroundColor: "blue", marginTop:"30px"}}>
+             <div style={{width: "100%", height: "100%",marginTop:"30px"}}>
              <div className="text-modal-container"> 
                <h1 className="tab-title"> Photo Gallery </h1>
              </div> 
-            <GalleryImages/>
             </div>
             </TabPane>
          
@@ -86,6 +85,7 @@ class Gallery extends Component {
           }
           </TabPane>
          </Tabs>
+            <GalleryImages/>
       </div>
     );
   }

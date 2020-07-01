@@ -2,14 +2,17 @@
     font-size: 25px;
 }
 
+.yes {
+    background-color: yellow;
+    width: 10%;
+}
+
 .tabholder > a {
     color: rgb(15, 185, 185);
 }
 
 .tab1 {
     width: 120%;
-    height: 100%;
-    background-color: red;
 }
 
 .gallery-title {
