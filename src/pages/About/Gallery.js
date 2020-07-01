@@ -18,7 +18,12 @@ class Gallery extends Component {
   componentDidMount() {
     this.updateWindowDimensions();
     console.log(window.innerHeight, window.innerWidth);
-		window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener('resize', this.updateWindowDimensions);
+    let visited = sessionStorage["first"];
+    if(visited) {
+      window.location.reload();
+      sessionStorage["first"]= true;
+    }
 	}
 	
 	updateWindowDimensions() {
@@ -37,7 +42,7 @@ class Gallery extends Component {
          <Toolbar />
          <Tabs className="tabholder" fill defaultActiveKey="photos">
            <TabPane className="tab1" eventKey="photos" title="Photos">
-             <div style={{width: "100%", height: "100%"}}>
+             <div style={{width: "100%", height: "100%", backgroundColor: "blue", marginTop:"30px"}}>
              <div className="text-modal-container"> 
                <h1 className="tab-title"> Photo Gallery </h1>
              </div> 
