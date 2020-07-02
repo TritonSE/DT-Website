@@ -16,7 +16,6 @@
 }
 
 .youtube-iframe {
-    margin: auto;
     height: 30vw;
     width: 50%;
     margin-top: 30px;
@@ -56,7 +55,6 @@
 }
 
 @media only screen and (max-width: 1100px) {
-
     .youtube-iframe {
         height: 400px;
     }
@@ -90,6 +88,7 @@
         display: block;
         width: 70%;
         height: 40vw;
+        margin-left: 12%;
     }
 
     .tab-title {
@@ -116,7 +115,6 @@
 
     .youtube-iframe {
         width: 100%;
-
     }
 
     .DPT-logo {
