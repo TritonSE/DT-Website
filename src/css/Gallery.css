@@ -73,21 +73,22 @@
 @media only screen and (max-width: 800px) {
     .DPT-logo {
         width: 200px;
-        height: 200px;;
+        height: 200px;
     }
 
     .videos-container {
         float: none;
         margin: auto;
         width: 100%;
+        margin-bottom: -15%;
     }
 
     .youtube-iframe {
-        margin-top: -10%;
+        margin-top: -20%;
         display: block;
         width: 70%;
         height: 40vw;
-        margin-left: 13%;
+        margin: auto;
     }
 
     .tab-title {
@@ -96,7 +97,7 @@
     }
 
     .tabholder {
-        font-size: 15px;
+        font-size: 25px;
     }
 
     .subscribe-text {
@@ -114,6 +115,10 @@
 
     .youtube-iframe {
         width: 100%;
+    }
+
+    .videos-container {
+        margin-bottom: -25%;
     }
 
     .DPT-logo {
