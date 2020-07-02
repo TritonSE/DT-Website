@@ -80,7 +80,6 @@ class Gallery extends Component {
                   <iframe className="youtube-iframe" src="https://www.youtube.com/embed/+lastest?list=PLCyEpHAXCjJMDXWsfMdWfD1NHh3zoYa1m" frameborder="0" allowFullScreen></iframe>
                 </div>  
 
-                {(window.innerWidth <= 600 && window.innerHeight < 950) ? <div className="bottom-absolute"> <Footer/> </div> : <Footer />}
               </div>
           }
           </TabPane>
