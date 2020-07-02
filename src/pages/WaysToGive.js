@@ -132,6 +132,7 @@ class WaysToGive extends Component {
 				<div className="textWays" >
 					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 					<h1>Ways to<br/>Give</h1>
+					<WaysToGiveText />
 					<button 
 						className="btn btn-secondary Donate-Button"
 						style = {{marginLeft:"calc(-5.5vw"}}
@@ -139,9 +140,8 @@ class WaysToGive extends Component {
 					>
 						Donate 
 				</button>
-					<WaysToGiveText />
 				</div>
-				<div className="support-footer">
+				<div className = "support-footer">
 					<Footer />
 				</div>
 				</div>
