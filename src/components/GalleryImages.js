@@ -108,6 +108,7 @@ class GalleryImages extends React.Component {
             // require('../images/gallery/winter fun 2010 046.JPG'), 
           ]
 
+
           return(
             <div>
               <ImageMasonry
@@ -119,14 +120,7 @@ class GalleryImages extends React.Component {
                           key={i}
                           className="tile"
                           >
-                          {/* <img src={image} alt={image} className="image-hover-opacity"/> */}
-                          {/* <SingleSource key={image} src={image}/> */}
                           <NoRightClickImg src={image}/>
-                          {/* <ModalImage
-                            small={image}
-                            large={image}
-                            alt="Hello World!"
-                          /> */}
                   </div>
                   )})}
               </ImageMasonry>
