@@ -8,6 +8,17 @@
     align-items: center;
     padding: 1.5%;
     overflow-x: hidden;
+    /* position: sticky;
+    bottom: 0; */
+}
+
+.Highlight{
+    color: black;
+}
+
+.Highlight:hover{
+    color: #FF4081;
+    text-decoration: none;
 }
 
 .Contact-Text{
@@ -49,38 +60,53 @@
     }
 }
 
-/* @media only screen and (max-width: 800px) {
-    .Footer{
-        justify-content: center;
-    }
-
-    .Contact-Info-Text{
-        font-size: 1.5vw;
-    }
-
-    .Social-Icon-Formatting{
-        margin-left: 2vw;
-    }
-} */
 /* Renders a sticky footer (almost) strictly for mobile */
 @media only screen and (max-width: 700px) {
     .Footer{
-        padding: 3.5%;
         flex-direction: column;
         position: sticky;
         bottom: 0;
         z-index: 10;
     }
 
-    .Contact-Text{
-        font-size: 5.3vw;
-    }
-    
-    .Contact-Info-Text{
-        font-size: 3.4vw;
-    }
-
     .Social-Icon-Formatting{
         margin-left: 0;
+    }
+
+    @media only screen and (orientation:portrait) {
+
+        .Footer{
+            padding: 3.5%;
+        }
+
+        .Contact-Text{
+            font-size: 5.3vw;
+        }
+        
+        .Contact-Info-Text{
+            font-size: 3.4vw;
+        }
+
+    }
+
+    @media only screen and (orientation:landscape) {
+        
+        .Footer{
+            padding: 1vw;
+        }
+
+        .Contact-Text{
+            font-size: 3.3vw;
+        }
+        
+        .Contact-Info-Text{
+            font-size: 2.4vw;
+        }
+
+        .Social-Icon-Formatting{
+            margin-top: 0%;
+            margin-bottom: -1vw;
+        }
+
     }
 }

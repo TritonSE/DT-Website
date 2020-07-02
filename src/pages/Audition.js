@@ -16,12 +16,10 @@ import firstImg from "../images/audition/first.jpg";
 import secondImg from "../images/audition/second.jpg";
 
 class Audition extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
 
   render() {
     return (
+      <div>
       <div className="hideHorizontalScroll">
         <div className="web">
           <Toolbar bool={false} />
@@ -75,6 +73,7 @@ class Audition extends Component {
           </Row>
           <Footer />
         </div>
+      </div>
       </div>
     );
   }
