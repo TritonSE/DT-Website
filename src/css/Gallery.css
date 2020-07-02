@@ -11,18 +11,17 @@
     margin-top: 5%;
 }
 
-.text-modal-container {
+.photos-container {
     display: flex;
 }
 
 .youtube-iframe {
-    margin: auto;
     height: 30vw;
     width: 50%;
     margin-top: 30px;
 }
 
-.gallery-text-container {
+.videos-container {
     float: left;
     margin-left: 7%;
     margin-right: 3%;
@@ -66,20 +65,30 @@
 
     .tab-title {
         font-size: 5vw;
+        text-align: center;
     }
+
 }
 
 @media only screen and (max-width: 800px) {
     .DPT-logo {
-        margin-top: 5%;
-        width: 15%;
-        height: 15%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .videos-container {
+        float: none;
+        margin: auto;
+        width: 100%;
+        margin-bottom: -15%;
     }
 
     .youtube-iframe {
-        margin-top: 0px;
+        margin-top: -20%;
+        display: block;
         width: 70%;
         height: 40vw;
+        margin: auto;
     }
 
     .tab-title {
@@ -88,11 +97,11 @@
     }
 
     .tabholder {
-        font-size: 15px;
+        font-size: 25px;
     }
 
     .subscribe-text {
-        margin-top: 3%;
+        margin-top: -3%;
         font-size: 22px;
         padding-left: 5%;
         padding-right: 5%;
@@ -100,29 +109,31 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .text-modal-container {
+    .photos-container {
         display: inline;
     }
 
     .youtube-iframe {
         width: 100%;
+    }
 
+    .videos-container {
+        margin-bottom: -25%;
     }
 
     .DPT-logo {
-        margin-top: 5%;
-        width: 12%;
-        height: 12%;
+        margin-top: -5%;
+        width: 150px;
+        height: 150px;
     }
 
     .youtube-iframe {
-        margin-top: 0px;
+        margin-top: -25%;
         width: 70%;
         height: 40vw;
     }
 
     .subscribe-text {
-        margin-top: 5%;
         font-size: 4.2vw;
     }
 
@@ -131,12 +142,6 @@
        margin-left: 0px;
        margin-top: 30px;
        margin-bottom: 20px;
-    }
-
-    .bottom-absolute {
-        bottom: 0;
-        position: absolute;
-        width: 100%;
     }
 
     .tabholder {
