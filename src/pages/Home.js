@@ -23,7 +23,6 @@ class Home extends React.Component {
 	}
 
 	componentDidMount() {
-		// window.scrollTo(0,0);
 		this.updateWindowDimensions();
 		window.textTimer = setInterval(this.changeStyle, 1000);
 		window.addEventListener('resize', this.updateWindowDimensions);
