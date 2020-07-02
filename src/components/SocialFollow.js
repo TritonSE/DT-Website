@@ -10,7 +10,7 @@ const igLink = "https://www.instagram.com/dynamicsperformanceteam/?hl=en";
 
 const mailLink = "mailto:dynamicsperformanceteam@gmail.com?subject=Hi, Dynamics Performance Team!";
 
-const mailChimpLink = "https://yahoo.us10.list-manage.com/subscribe/post?u=ef82b25683d865ac2ef14450e&amp;id=bfdc7f3462";
+const mailChimpLink = "https://gmail.us4.list-manage.com/subscribe/post?u=d1eeb18ee37a90dc8b1251b7b&amp;id=6432994186";
 
 const youtubeLink = "https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g";
 
@@ -34,7 +34,8 @@ const CustomForm = ({ status, message, onValidated }) => {
         borderRadius: "2%",
         padding: 10,
         marginTop: "10vh",
-        display: "inline-block"
+        display: "inline-block",
+        zIndex: 11
       }}
     >
       {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
@@ -124,7 +125,7 @@ class SocialFollow extends Component{
                 <li>
                   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
                   <a onClick={this.handleOpenModal} style={{display:"flex",justifyContent: "center"}}  title ="Subscribe to our Newsletter!" target="_blank" rel="noopener noreferrer">Subscribe</a>
-                    <Modal className="subscribe-modal" isOpen={this.state.showModal} contentLabel="Subscribe to our Newsletter" id='myModal' >
+                    <Modal className="subscribe-modal" tabIndex="10" isOpen={this.state.showModal} contentLabel="Subscribe to our Newsletter" id='myModal' >
                        <h2>Subscribe to our Newsletter</h2>
                        <MailchimpSubscribe
                         url={mailChimpLink}

@@ -55,6 +55,7 @@
     border-radius: 4px; 
     outline: none; 
     padding: 20px;
+    z-index: 10;
     /**style="background: rgb(239, 239, 239); border-radius: 2px; padding: 10px; display: inline-block;"><input type="text" placeholder="Your name" style="font-size: 2em; padding: 5px;"><br><input type="email" placeholder="Your email" style="font-size: 2em; padding: 5px;"><br><button style="font-size: 2em; padding: 5px;">Submit</button></div><button>Close</button></div>
     */
 }
