@@ -11,7 +11,7 @@
     margin-top: 5%;
 }
 
-.text-modal-container {
+.photos-container {
     display: flex;
 }
 
@@ -22,7 +22,7 @@
     margin-top: 30px;
 }
 
-.gallery-text-container {
+.videos-container {
     float: left;
     margin-left: 7%;
     margin-right: 3%;
@@ -78,7 +78,7 @@
         height: 200px;;
     }
 
-    .gallery-text-container {
+    .videos-container {
         float: none;
         margin: auto;
         width: 100%;
@@ -110,7 +110,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .text-modal-container {
+    .photos-container {
         display: inline;
     }
 
@@ -140,12 +140,6 @@
        margin-left: 0px;
        margin-top: 30px;
        margin-bottom: 20px;
-    }
-
-    .bottom-absolute {
-        bottom: 0;
-        position: absolute;
-        width: 100%;
     }
 
     .tabholder {
