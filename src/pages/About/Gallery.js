@@ -76,10 +76,12 @@ class Gallery extends Component {
                   <h1 className="tab-title"> Video Gallery </h1>
                 </div>
 
-                <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>  
+                <div >  
                   <iframe className="youtube-iframe" src="https://www.youtube.com/embed/+lastest?list=PLCyEpHAXCjJMDXWsfMdWfD1NHh3zoYa1m" frameborder="0" allowFullScreen></iframe>
+                  <p className="subscribe-text"> For more videos, click <a style={{color: '#FF4081'}} target="_blank" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to subscribe to our Youtube channel! </p>
                 </div>  
 
+                {(window.innerWidth <= 600 && window.innerHeight < 950) ? <div className="bottom-absolute"> <Footer/> </div> : <Footer />}
               </div>
           }
           </TabPane>
