@@ -28,10 +28,7 @@ import '../css/Slideshow.css';
 			infinite: true,
 			pauseOnHover: true,
 			indicators: this.props.indicators,
- 			arrows: true,
- 			// onChange: (oldIndex, newIndex) => {
- 			//   console.log(`slide transition from ${oldIndex} to ${newIndex}`);
- 			// }
+ 			arrows: true
  		  }
  		  const Slideshow = () => {
 			var pictures = slideImages.map((item, i) => 

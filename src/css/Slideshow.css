@@ -20,6 +20,10 @@
     image-rendering: pixelated;
 }
 
+.each-slide:hover img{
+  opacity: 0.75;
+}
+
 
 @media only screen and (max-width: 600px) {
     .danceimg{
