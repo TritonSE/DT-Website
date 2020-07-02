@@ -3,7 +3,6 @@
 }
 
 .yes {
-    background-color: yellow;
     min-width: 100%;
 }
 
@@ -18,10 +17,6 @@
 .gallery-title {
     color: #FF4081;
     margin-top: 5%;
-}
-
-.text-modal-container {
-    display: flex;
 }
 
 .youtube-iframe {
@@ -108,10 +103,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .text-modal-container {
-        display: block;
-    }
-
     .youtube-iframe {
         width: 100%;
 
