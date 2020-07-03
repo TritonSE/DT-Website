@@ -106,8 +106,8 @@
 }
 
 .smile-2 {
-    width: calc(15vmax);
-    height: calc(15vmax);
+    width: calc(15vw);
+    height: calc(15vw);
     margin-right: 3.5vw;
 }
 
@@ -136,8 +136,8 @@
 }
 
 .instructions-2 {
-    width: calc(15vmax);
-    height: calc(15vmax);
+    width: calc(15vw);
+    height: calc(15vw);
 }
 
 .support-footer {
@@ -160,6 +160,8 @@
         font-size: 5vmin;
         margin-bottom: 5vmin;
     }
+
+    /*
     .bodytxt {
         width: calc(57.5vw);
         height: calc(65vh);
@@ -171,13 +173,15 @@
         float:right;
         font-family: 'Lato', serif;
         font-style:normal;
-        /*margin-top: calc(4.5vh);*/
+        /*margin-top: calc(4.5vh);
     }
+    /*
     .smile {
         width: calc(20vmin);
         height: calc(20vmin);
         display: block; 
         /**position: relative;*/
+        /*
         padding-top: calc(1vmin);
         margin-top: calc(1vmin);
         float: bottom;
@@ -191,18 +195,20 @@
         height: calc(20vmin);
         display: block;
         /**position: relative;*/
-        padding-top: calc(1vmin);
+        /*padding-top: calc(1vmin);*/
         /**top: calc(-7.5vmin);*/
-        /**top: calc(-55vmin);*/
+        /**top: calc(-55vmin);
         margin-top: calc(-20vmin);
         margin-left: calc(32.5vmin);
     }
-    
+    */
+    /*
     .support-footer {
         width: 100%;
         position: absolute; 
         top: calc(60vh);
     }
+    */
 }
 
 @media only screen and (max-width: 1024px) and (max-height: 1023px) {

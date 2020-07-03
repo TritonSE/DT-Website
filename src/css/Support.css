@@ -136,8 +136,11 @@
 @media only screen and (max-width: 1024px) and (min-height: 1023px){
   .Donate-Button{
     /**margin-top: 5%;*/
+    /*
     position: relative;
     right: calc(-5.5vmin);
+    */
+    margin-top: 0px;
    }
    .Amount-Text{
     max-width: 18%; 
