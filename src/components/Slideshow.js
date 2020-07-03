@@ -1,30 +1,47 @@
 import React, { Component } from 'react';
-import { Slide } from 'react-slideshow-image';
+import { Fade} from 'react-slideshow-image';
+import NoRightClickImg from '../components/NoRightClickImg';
+import '../css/Slideshow.css';
 
- import '../css/Slideshow.css';
  class Slideshow extends Component {
      render() {
+
+		const slideImages=[
+			require('../images/home/Main Page 1.jpg'), 
+			require('../images/home/Main Page 4.jpg'),
+			require('../images/home/Main Page 5.jpg'), 
+			require('../images/home/Main Page 6.jpg'),
+			require('../images/home/Main Page 7.jpg'), 
+			require('../images/home/Main Page 8.jpg'),
+			require('../images/home/Main Page 9.jpg'), 
+			require('../images/home/Main Page 10.jpg'),
+			require('../images/home/Main Page 11.jpg'), 
+			require('../images/home/Main Page 12.jpg'), 
+			require('../images/home/Main Page 13.jpg'), 
+			require('../images/home/Main Page 14.jpg')
+		]
+
  		// component will render JSX (react's version of html) inside return statement
  		const properties = {
  			duration: 3000,
- 			transitionDuration: 500,
+			transitionDuration: 500,
 			infinite: true,
+			pauseOnHover: true,
 			indicators: this.props.indicators,
- 			arrows: true,
- 			onChange: (oldIndex, newIndex) => {
- 			  console.log(`slide transition from ${oldIndex} to ${newIndex}`);
- 			}
+ 			arrows: true
  		  }
  		  const Slideshow = () => {
-            var pictures = this.props.slideImages.map((item, i) => 
+			var pictures = slideImages.map((item, i) => 
+			<div className="each-fade">
 				<div className="each-slide"> 
-					<img src = {item} alt="Loading Error"/> 
-				</div>);
+					<NoRightClickImg src = {item} alt="Loading Error" disableEnlarging={true}/> 
+				</div>
+			</div>);
  			return (
- 				<div className="danceimg" onContextMenu={(e)=> {e.preventDefault(); return false;}}>
-                    <Slide {...properties}>
+ 				<div className="danceimg">
+                    <Fade {...properties}>
 						{pictures}
-                    </Slide>
+                    </Fade>
             </div>
  			)
          }

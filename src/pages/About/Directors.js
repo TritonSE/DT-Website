@@ -3,6 +3,7 @@ import Toolbar from '../../components/Toolbar.js';
 import DirectorProfile from '../../components/DirectorProfile.js'
 import SupportingDirectors from '../../components/SupportingDirectors.js';
 import '../../css/Directors.css';
+import '../../css/Global.css';
 import Footer from '../../components/Footer.js';
 
 class Directors extends Component {
@@ -14,7 +15,6 @@ class Directors extends Component {
 		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 	}
 	componentDidMount() {
-		window.scrollTo(0,0);
 		this.updateWindowDimensions();
 		window.addEventListener('resize', this.updateWindowDimensions);
 	}
