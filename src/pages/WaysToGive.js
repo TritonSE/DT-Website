@@ -133,17 +133,23 @@ class WaysToGive extends Component {
 					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 					<h1>Ways to<br/>Give</h1>
 					<WaysToGiveText />
-					<button 
-						className="btn btn-secondary Donate-Button"
-						style = {{marginLeft:"calc(-5.5vw"}}
-						onClick={this.handleDonateButtonClicked}
-					>
-						Donate 
-				</button>
+					<div className="amazon">
+					<p>Amazon Smile Donations</p>
+					<div className="image-container" >
+				<ModalImage
+					className = "smile-2"
+					small = {Amazon}
+					large = {Amazon}
+				/>
+				<ModalImage
+					className = "instructions-2"
+					small = {Instructions}
+					medium = {Instructions}
+				/>
 				</div>
-				<div className = "support-footer">
+				</div>
+				</div>
 					<Footer />
-				</div>
 				</div>
 			);
 		}

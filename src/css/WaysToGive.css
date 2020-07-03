@@ -15,12 +15,14 @@
 .textWays {
     color: #0f0f0f;
     text-align: left;
-    padding-left: 10%;
+    /*padding-left: 10%;*/
     font-family: 'Lato', serif;
     font-style:normal;
+    /*
     padding-top: calc(2vmin);
     top: calc(-10vmin);
      margin-bottom: -250px;
+     */
      
 }
 
@@ -30,11 +32,12 @@
     font-weight: normal;
     font-size: 6.2vw;
     margin-bottom: 5vmin;
+    margin-left: 10%;
 }
 
 .bodytxt {
     width: calc(57.5vw);
-    height: calc(65vh);
+    height: auto;
     color: #0f0f0f;
     position: relative;
     top: calc(-15.5vw);
@@ -78,9 +81,16 @@
     font-family: 'Lato', serif;
     font-style: normal; 
     text-decoration: underline;
-    margin-top: 7.5%;
+    margin-top: 5%;
+    text-align: center;
     /**margin-left: 32.5%;*/
-    float: bottom;
+    /*float: bottom;*/
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .smile {
@@ -95,6 +105,12 @@
     margin-left: calc(4vmax);
 }
 
+.smile-2 {
+    width: calc(15vmax);
+    height: calc(15vmax);
+    margin-right: 3.5vw;
+}
+
 .currentfund {
     width: calc(40vmin);
     height: calc(71min);
@@ -106,8 +122,8 @@
 }
 
 .instructions {
-    width: calc(17vmax);
-    height: calc(17vmax);
+    width: calc(15vmax);
+    height: calc(15vmax);
     display: block;
     /**position: relative;*/
     right: calc(13.33vmax);
@@ -119,10 +135,21 @@
     margin-left: calc(26vmax);
 }
 
+.instructions-2 {
+    width: calc(15vmax);
+    height: calc(15vmax);
+}
+
 .support-footer {
     width: 100%;
     position: relative;
     top: 50vw;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 1024px) and (min-height: 1023px){
