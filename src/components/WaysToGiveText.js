@@ -14,7 +14,7 @@ class WaysToGiveText extends Component {
 		super(props);
 		this.myRef = React.createRef();
 		this.imageRef = React.createRef();
-		this.state = {width: 0, height: 0, isMobile: false, donateButtonClicked: false};
+		this.state = {isMobile: false, donateButtonClicked: false};
 		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 		this.handleDonateButtonClicked = this.handleDonateButtonClicked.bind(this);
 	}
@@ -32,13 +32,12 @@ class WaysToGiveText extends Component {
 	}
 
 	updateWindowDimensions() {
-		if (window.innerWidth > 600) {
+		if (window.innerWidth > 600 && this.state.isMobile) {
 			this.setState({isMobile: false});
 		}
-		else if (window.innerWidth <= 600) {
+		else if (window.innerWidth <= 600 && !this.state.isMobile) {
 			this.setState({isMobile: true});
 		}
-		this.setState({width: window.innerWidth, height: window.innerHeight});
 	}
 
 	componentWillUnmount() {
@@ -90,24 +89,50 @@ class WaysToGiveText extends Component {
             </div>
 			);
 		}
-        else {
-        return (
-            <div className = "bodytxt">
-                <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-                <p> 
-                Dynamics Performance Team is proud to be part of the local arts community in the Bay Area for the past 15 years. We are committed to giving youth and young adults the opportunity to train in versatile genres and grow their passion for dance. Performing Arts are an essential part of the community, and with your help, we can continue to offer training to all dancers regardless of financial background.
-
- </p>
- <p>
-Dynamics Performance Team is a publicly Funded 501(c)(3) non-profit organization that depends on our generous donors, corporate sponsors, and friends. Your tax-deductible gift allows Dynamics to present quality performances, keep rates low, and offer scholarships to our dancers—affordability should not be an obstacle in the way of our dancers’ dreams. Your donation also allows for Dynamics dancers to compete, train at conventions, travel to nationals, and purchase costumes.
-</p>
-<p>
-To learn more about our individual or corporate giving programs and benefits, 
-<a href = {SponsorLetter} target = "_blank"> <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', textDecorationLine: 'underline'}}>please read our sponsor letter here </span></a>, or contact us at dynamicsperformanceteam@gmail.com. You can also give us a call at (408) 622-0249.
-</p>
-                 
-                 </div>
-        );
+        else if(this.state.isMobile && !this.state.donateButtonClicked) {
+			return (
+				<div className = "bodytxt">
+					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
+					<p> 
+					Dynamics Performance Team is proud to be part of the local arts community in the Bay Area for the past 15 years. We are committed to giving youth and young adults the opportunity to train in versatile genres and grow their passion for dance. Performing Arts are an essential part of the community, and with your help, we can continue to offer training to all dancers regardless of financial background.
+					</p>
+					<p>
+					Dynamics Performance Team is a publicly Funded 501(c)(3) non-profit organization that depends on our generous donors, corporate sponsors, and friends. Your tax-deductible gift allows Dynamics to present quality performances, keep rates low, and offer scholarships to our dancers—affordability should not be an obstacle in the way of our dancers’ dreams. Your donation also allows for Dynamics dancers to compete, train at conventions, travel to nationals, and purchase costumes.
+					</p>
+					<p>
+					To learn more about our individual or corporate giving programs and benefits, 
+					<a href = {SponsorLetter} target = "_blank"> <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', textDecorationLine: 'underline'}}>please read our sponsor letter here </span></a>, or contact us at dynamicsperformanceteam@gmail.com. You can also give us a call at (408) 622-0249.
+					</p>
+					<div className="button-container" >
+						<button 
+								className="btn btn-secondary Donate-Button"
+								onClick={this.handleDonateButtonClicked}
+							>
+								Donate 
+						</button>
+					</div>
+				</div>
+			);
+		}
+		else if(this.state.isMobile && this.state.donateButtonClicked) {
+			return (
+				<div className = "bodytxt">
+					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
+					<p> 
+					Dynamics Performance Team is proud to be part of the local arts community in the Bay Area for the past 15 years. We are committed to giving youth and young adults the opportunity to train in versatile genres and grow their passion for dance. Performing Arts are an essential part of the community, and with your help, we can continue to offer training to all dancers regardless of financial background.
+					</p>
+					<p>
+					Dynamics Performance Team is a publicly Funded 501(c)(3) non-profit organization that depends on our generous donors, corporate sponsors, and friends. Your tax-deductible gift allows Dynamics to present quality performances, keep rates low, and offer scholarships to our dancers—affordability should not be an obstacle in the way of our dancers’ dreams. Your donation also allows for Dynamics dancers to compete, train at conventions, travel to nationals, and purchase costumes.
+					</p>
+					<p>
+					To learn more about our individual or corporate giving programs and benefits, 
+					<a href = {SponsorLetter} target = "_blank"> <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', textDecorationLine: 'underline'}}>please read our sponsor letter here </span></a>, or contact us at dynamicsperformanceteam@gmail.com. You can also give us a call at (408) 622-0249.
+					</p>
+					<div className="button-container" >
+						<SupportStates />
+					</div>
+				</div>
+			);
         }
     }
 }
