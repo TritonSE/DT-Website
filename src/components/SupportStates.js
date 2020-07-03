@@ -58,16 +58,23 @@ class SupportStates extends Component {
   handleUpdateAmount = (event) =>{
     this.setState({amount: event.target.value});
     var validator = require('validator');
+    var value = parseFloat(event.target.value);
 
-    if(event.target.value == ''){
+    if(event.target.value == ' '){
       this.setState({displayError: true, errorMsg: "Amount cannot be empty"});
     }
-    else if(!(validator.isCurrency(event.target.value, {digits_after_decimal: [1,2]}))){
-      this.setState({displayError: true, errorMsg: "Too many decimal digits"});
-    } 
-    else if(!(validator.isCurrency(event.target.value, {allow_negatives: false, digits_after_decimal: [1,2]}) && parseFloat(event.target.value) > 0)){
+    else if(isNaN(value)){
+      this.setState({displayError: true, errorMsg: "Not a valid number"});
+    }
+    else if(value <=0){
       this.setState({displayError: true, errorMsg: "Amount must be positive"});
+    }
+    else if(!(validator.isCurrency(event.target.value, {allow_negatives: false, digits_after_decimal: [0,1,2]}))){
+      this.setState({displayError: true, errorMsg: "Maximum of 2 decimal places"});
     } 
+    //  else if(!(validator.isCurrency(event.target.value, {digits_after_decimal: [0,1,2]}))){
+    //   this.setState({displayError: true, errorMsg: "Too many decimal digits"});
+    // } 
     else{
       this.setState({displayError: false, errorMsg: ""});
     }
@@ -89,11 +96,9 @@ class SupportStates extends Component {
     //render this layout if at Stage 1 (used for updating amount to donate)
     if(this.state.displayAmountAdjust){
       return (
-        <div>
-          <FormGroup>
-            <DonateAmountInput amount={this.state.amount} displayError={this.state.displayError} handleUpdateAmount={this.handleUpdateAmount} handleAmountChange={this.handleAmountChange}/>
-            <p className="text-danger">{this.state.errorMsg}</p>
-          </FormGroup>
+        <div style={{display:"flex", justifyContent:"center"}}> 
+            <DonateAmountInput errorMsg={this.state.errorMsg} amount={this.state.amount} displayError={this.state.displayError} handleUpdateAmount={this.handleUpdateAmount} handleAmountChange={this.handleAmountChange}/>
+            {/* <p className="text-danger">{this.state.errorMsg}</p> */}
           {/* <div className="Proceed-Style" style={{backgroundColor:"blue"}}>
             <text
               className="Amount-Text1"

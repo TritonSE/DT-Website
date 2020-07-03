@@ -57,7 +57,7 @@ class WaysToGive extends Component {
 			<div className="textWays" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 				<h1>Ways to Give</h1>
-                <WaysToGiveText />
+                <WaysToGiveText/>
 				<button 
 						className="btn btn-secondary Donate-Button"
 						//style = {{marginLeft:"calc(-5.5vw"}}
@@ -65,9 +65,7 @@ class WaysToGive extends Component {
 				>
 						Donate 
 				</button>
-				<div className="amazon">
-					<p>Amazon Smile Donations</p>
-				</div>
+					<p className="amazon">Amazon Smile Donations</p>
 				<ModalImage
 					className = "smile"
 					style = {{marginTop: '-50%'}}
@@ -80,9 +78,7 @@ class WaysToGive extends Component {
 					medium = {Instructions}
 				/>
 			</div>
-			<div className="support-footer">
-					<Footer />
-				</div>
+			<Footer />
 			</div>
 		);
 		}
@@ -109,9 +105,7 @@ class WaysToGive extends Component {
 					medium = {Instructions}
 				/>
 			</div>
-			<div className="support-footer">
-					<Footer />
-				</div>
+			<Footer />
 			</div>
 		);
 		}
@@ -138,18 +132,24 @@ class WaysToGive extends Component {
 				<div className="textWays" >
 					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 					<h1>Ways to<br/>Give</h1>
-					<button 
-						className="btn btn-secondary Donate-Button"
-						style = {{marginLeft:"calc(-5.5vw"}}
-						onClick={this.handleDonateButtonClicked}
-					>
-						Donate 
-				</button>
 					<WaysToGiveText />
+					<div className="amazon">
+					<p>Amazon Smile Donations</p>
+					<div className="image-container" >
+				<ModalImage
+					className = "smile-2"
+					small = {Amazon}
+					large = {Amazon}
+				/>
+				<ModalImage
+					className = "instructions-2"
+					small = {Instructions}
+					medium = {Instructions}
+				/>
 				</div>
-				<div className="support-footer">
+				</div>
+				</div>
 					<Footer />
-				</div>
 				</div>
 			);
 		}

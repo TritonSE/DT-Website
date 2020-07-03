@@ -1,11 +1,9 @@
-.Support-Text{
+/* .Support-Text{
   color: black;
   opacity: 1;
   font-size: 2.5vh;
   font-family: 'Lato', serif;
   letter-spacing: 0;
-  /* -webkit-transform: translate(-15%, -5%);
-  transform: translate(-15%,-5%); */
   white-space: pre-line;
   width: 40%;
 }
@@ -18,8 +16,6 @@
   margin-top: 1%;
   color: #FF4081;
   opacity: 1;
-  /* -webkit-transform: translate(-10%, -5%);
-  transform: translate(-10%,-5%); */
   line-height: 15vh; 
   width: 40%;
 }
@@ -28,24 +24,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-} 
-.Try{
+}  */
+/* .Try{
   position: absolute;
   top: 33%;
   left: 12%;
   right: 5%;
-}
+} */
 
-.Attempt{
-  padding: 5%;
+.Donate-Amount-Input{
+  margin-top: 4vw;
+  /* padding: 4vw; */
 }
 .Donate-Button{
- font-size: 1.33vw;
+ margin-top: 4vw;
+ font-size: 1.5vw;
  background-color: #FF4081;
  text-align: center;
  /**margin-top: 5%;*/
+ /*
  position: relative;
  right: calc(-5.5vmax);
+ */
+}
+
+.Donate-Button:hover{
+  background-color: #ce57aa;
 }
 
 .Proceed-Style{
@@ -85,10 +89,12 @@
   text-align: center;
   font-size: 1.3vw;
   color: red;
+  display: ;
 }
 
-.Error .Border{
-    border: 1px solid red;
+.Border{
+    width: 10%;
+    text-align: center;
 }
 
 .Proceed-Button{
@@ -101,7 +107,8 @@
  /*margin-top: 2.5%;*/
 }
  .Checkout-Style{
-   background-color: cornflowerblue;
+   /* background-color: cornflowerblue; */
+   margin-top: 4vw;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -142,6 +149,11 @@
   /*margin-top: 2.5%;*/
  }
 
+ .Adjust-Button:hover{
+  background-color: #ce57aa;
+}
+
+
  .alert {
   color: #FF0000;
   width: 10vw;
@@ -166,3 +178,24 @@
     margin-top: 0.7vw;
   }
 } */
+
+
+@media only screen and (max-width: 600px) {
+  .Donate-Button{
+    font-size: 3.5vw;
+   }
+
+   .Adjust-Button{
+    font-size: 3vw;
+   }
+
+  .Chosen-Amount{
+    width: 8vw;
+    height: 6vw;
+    font-size: 2.33vw;
+  }
+
+  .Amount-Text1{
+    font-size: 2.33vw;
+  }
+}
