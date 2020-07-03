@@ -17,6 +17,7 @@ import DonateAmountInput from '../components/DonateAmountInput';
  * different states of Paypal checkout (setup before API call)
  */
 class SupportStates extends Component {
+  
   state= {
 		amount: '', //amount user will donate (given to PayPal API)
     displayError: false, //enabled when amount is invalid 

@@ -29,7 +29,8 @@ class DonateAmountInput extends React.Component {
                     className="Donate-Amount-Input"
                     actionPosition='right'
                     // fluid={true}
-                    size={"large"}
+                    // size={this.props.isMobile ? "mini":"small"}
+                    size={"mini"}
                     placeholder='5.00'
                     // icon='usd' 
                     // iconPosition='left'

@@ -13,8 +13,6 @@ import Footer from '../components/Footer.js';
 class WaysToGive extends Component {
     constructor(props){
 		super(props);
-		this.myRef = React.createRef();
-		this.imageRef = React.createRef();
 		this.state = {isMobile: false};
 		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 	}
@@ -44,24 +42,24 @@ class WaysToGive extends Component {
 		if (this.state.isMobile) {
 		return (
 			<div>
-			<div className="textWays" >
-				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-				<h1>Ways to Give</h1>
-                <WaysToGiveText />
-				<p className="amazon">Amazon Smile Donations</p>
-				<ModalImage
-					className = "smile"
-					style = {{marginTop: '-50%'}}
-					small = {Amazon}
-					large = {Amazon}
-				/>
-				<ModalImage
-					className = "instructions"
-					small = {Instructions}
-					medium = {Instructions}
-				/>
-			</div>
-			<Footer />
+				<div className="textWays" >
+					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
+					<h1>Ways to Give</h1>
+					<WaysToGiveText/>
+					<p className="amazon">Amazon Smile Donations</p>
+					<ModalImage
+						className = "smile"
+						style = {{marginTop: '-50%'}}
+						small = {Amazon}
+						large = {Amazon}
+					/>
+					<ModalImage
+						className = "instructions"
+						small = {Instructions}
+						medium = {Instructions}
+					/>
+				</div>
+				<Footer />
 			</div>
 		);
 		}
@@ -70,26 +68,33 @@ class WaysToGive extends Component {
 				// can only return one element so if you want more than one make sure they're nested inside a div
 				<div>
 					<div className="textWays" >
-						<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-						<h1>Ways to<br/>Give</h1>
-						<WaysToGiveText />
-						<div className="amazon">
-							<p>Amazon Smile Donations</p>
-							<div className="image-container" >
-								<ModalImage
-									className = "smile-2"
-									small = {Amazon}
-									large = {Amazon}
-								/>
-								<ModalImage
-									className = "instructions-2"
-									small = {Instructions}
-									medium = {Instructions}
-								/>
+						{/* <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'/> */}
+						<div className="Left-Container">
+							<h1>Ways to<br/>Give</h1>
+							<div className="Amazon-Container">
+								<p className="Amazon-Title">Amazon Smile Donations</p>
+								<div className="image-container" >
+									<ModalImage
+										className = "Images Img-Align"
+										small = {Amazon}
+										large = {Amazon}
+									/>
+									<ModalImage
+										className = "Images"
+										small = {Instructions}
+										medium = {Instructions}
+									/>
+								</div>
 							</div>
 						</div>
+						<div className="Right-Container">
+							<WaysToGiveText/>
+						</div>
 					</div>
+					<div style={{marginTop:"3%"}}>
 					<Footer />
+					</div>
+					
 				</div>
 			);
 		}
