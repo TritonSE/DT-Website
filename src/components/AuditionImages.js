@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Image from "react-bootstrap/Image";
 import firstImg from "../images/audition/first.jpg";
 import secondImg from "../images/audition/second.jpg";
 import "../css/Audition.css";

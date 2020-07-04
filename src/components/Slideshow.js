@@ -32,7 +32,7 @@ import '../css/Slideshow.css';
  		  }
  		  const Slideshow = () => {
 			var pictures = slideImages.map((item, i) => 
-			<div className="each-fade">
+			<div key={i} className="each-fade">
 				<div className="each-slide"> 
 					<NoRightClickImg src = {item} alt="Loading Error" disableEnlarging={true}/> 
 				</div>

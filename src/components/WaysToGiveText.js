@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import '../css/WaysToGive.css';
 import SponsorLetter from '../images/waytogive/Sponsor Letter 2019-20.pdf'
 import Amazon from '../images/waytogive/amazon smile.jpg';
-import CurrentFund from '../images/waytogive/Kendra Scott Fundraiser 1.png';
 import Instructions from '../images/waytogive/amazon smile instructions.jpg';
 import ModalImage from 'react-modal-image';
-import Footer from '../components/Footer.js';
 
 class WaysToGiveText extends Component {
     constructor(props){
@@ -49,7 +47,7 @@ Dynamics Performance Team is a publicly Funded 501(c)(3) non-profit organization
 </p>
 <p>
 To learn more about our individual or corporate giving programs and benefits, 
-<a href = {SponsorLetter} target = "_blank"> <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', textDecorationLine: 'underline'}}>please read our sponsor letter here </span></a>, or contact us at dynamicsperformanceteam@gmail.com. You can also give us a call at (408) 622-0249.
+<a href = {SponsorLetter} target = "_blank" rel="noopener noreferrer"> <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', textDecorationLine: 'underline'}}>please read our sponsor letter here </span></a>, or contact us at dynamicsperformanceteam@gmail.com. You can also give us a call at (408) 622-0249.
 </p>
 <div className="amazon">
 					<p>Amazon Smile Donations</p>
@@ -80,7 +78,7 @@ Dynamics Performance Team is a publicly Funded 501(c)(3) non-profit organization
 </p>
 <p>
 To learn more about our individual or corporate giving programs and benefits, 
-<a href = {SponsorLetter} target = "_blank"> <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', textDecorationLine: 'underline'}}>please read our sponsor letter here </span></a>, or contact us at dynamicsperformanceteam@gmail.com. You can also give us a call at (408) 622-0249.
+<a href = {SponsorLetter} target = "_blank" rel="noopener noreferrer"> <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', textDecorationLine: 'underline'}}>please read our sponsor letter here </span></a>, or contact us at dynamicsperformanceteam@gmail.com. You can also give us a call at (408) 622-0249.
 </p>
                  
                  </div>
