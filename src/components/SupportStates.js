@@ -8,8 +8,6 @@
 import React, { Component } from 'react';
 import '../css/Support.css';
 import PaypalButton from '../components/PaypalButton.js'
-import { IoIosAlert } from "react-icons/io";
-import { FormGroup, Form } from 'react-bootstrap';
 import DonateAmountInput from '../components/DonateAmountInput';
 
 /**
@@ -73,24 +71,9 @@ class SupportStates extends Component {
     else if(!(validator.isCurrency(event.target.value, {allow_negatives: false, digits_after_decimal: [0,1,2]}))){
       this.setState({displayError: true, errorMsg: "Maximum of 2 decimal places"});
     } 
-    //  else if(!(validator.isCurrency(event.target.value, {digits_after_decimal: [0,1,2]}))){
-    //   this.setState({displayError: true, errorMsg: "Too many decimal digits"});
-    // } 
     else{
       this.setState({displayError: false, errorMsg: ""});
     }
-    // else if(parseFloat(event.target.value) > 0)
-    // //set error if amount is either invalid or <= 0
-		// if(!(validator.isCurrency(event.target.value, {allow_negatives: false, digits_after_decimal: [1,2]}) && parseFloat(event.target.value) > 0)){
-		// 		if(!this.state.displayError){
-		// 			this.setState({displayError: true});
-		// 		}
-		// 		return;
-    // }
-    // //no current error but previously had error state --> reverse error state 
-		// else if(this.state.displayError){
-		// 	this.setState({displayError: false});
-		// }
   }
   
 	render() {
@@ -99,33 +82,6 @@ class SupportStates extends Component {
       return (
         <div style={{display:"flex", justifyContent:"center"}}> 
             <DonateAmountInput errorMsg={this.state.errorMsg} amount={this.state.amount} displayError={this.state.displayError} handleUpdateAmount={this.handleUpdateAmount} handleAmountChange={this.handleAmountChange}/>
-            {/* <p className="text-danger">{this.state.errorMsg}</p> */}
-          {/* <div className="Proceed-Style" style={{backgroundColor:"blue"}}>
-            <text
-              className="Amount-Text1"
-            >
-              {"Amount: $"}
-            </text>
-            <input
-                type="number"
-                inputmode="numeric"
-                className="Amount-Text"
-                displayError={true}
-                value={this.state.amount === '' ? null:this.state.amount}
-                placeholder="5.00"
-                onChange={this.handleUpdateAmount}
-              >
-              </input>
-          <button 
-            className="btn btn-secondary Proceed-Button"
-            onClick={this.handleAmountChange}
-          >
-            {"Proceed"}
-          </button>
-          </div>
-          <div style={{display: 'flex',  justifyContent:'center'}}>
-            <h1 style={{fontSize:"1.3vw", color:"red"}}> {this.state.errorMsg} </h1>
-          </div> */}
         </div>
           );
     }
@@ -133,12 +89,10 @@ class SupportStates extends Component {
     else{
       return (
         <div className="Checkout-Style">
-            <div className="PayPal-Style">
               <PaypalButton amount={this.state.amount}/>
-            </div>
             <div className="Adjust-Style">
               <text
-                className="Amount-Text1"
+                className="Amount-Text"
                 style={{bottom: "3%", fontWeight: "bold"}}
               >
                 {"$"}

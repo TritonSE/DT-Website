@@ -1,127 +1,13 @@
-/* .Support-Text{
-  color: black;
-  opacity: 1;
-  font-size: 2.5vh;
-  font-family: 'Lato', serif;
-  letter-spacing: 0;
-  white-space: pre-line;
-  width: 40%;
-}
-.Header-Text{
-  text-align: left;
-  font-family: 'Lato', serif;
-  font-size: 12.2vh;
-  letter-spacing: 0;
-  margin-left: 3%;
-  margin-top: 1%;
-  color: #FF4081;
-  opacity: 1;
-  line-height: 15vh; 
-  width: 40%;
-}
-.Alignment-Text{
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}  */
-/* .Try{
-  position: absolute;
-  top: 33%;
-  left: 12%;
-  right: 5%;
-} */
-
-
-.Donate-Amount-Input{
-  /* margin-top: 4vw; */
-  /* padding: 4vw; */
-}
-.Donate-Button{
- margin-top: 4vw;
- font-size: 1.5vw;
- background-color: #FF4081;
- text-align: center;
- text-anchor: middle;
- display: flex;
- /* justify-content: center; */
- align-items: center;
- /**margin-top: 5%;*/
- /*
- position: relative;
- right: calc(-5.5vmax);
- */
-}
-
-.Donate-Button:hover{
-  background-color: #ce57aa;
-}
-
-.Proceed-Style{
-  display: flex;
-  /* justify-content: center; */
-  justify-content: space-between;
-  align-items: center;
-  /* align-items: center; */
-  /* background-color: chocolate; */
-  /**
-  margin-top: 7%;
-  */
-  /**margin-left:37%;*/
-  /* position: relative;
-  margin-right: 12.5%; */
-}
 
 .Amount-Text{
-  /* height: 7%;
-  max-width: 18%; 
-  bottom: 5%; */
-  /* border: 1px solid red; */
   text-align: center;
   font-size: 1.33vw;
-}
-.Amount-Text1{
-  /* height: 7%;
-  max-width: 18%;  */
-  text-align: center;
-  font-size: 1.33vw;
-  /* bottom: 3%; */
-  /* font-weight: bold; */
-  /* margin-left: -5%; */
-}
-
-.Error-Message{
-  text-align: center;
-  font-size: 1.3vw;
-  color: red;
-  display: ;
-}
-
-.Border{
-    width: 10%;
-    text-align: center;
-}
-
-.Proceed-Button{
- font-size: 1.33vw;
- height: 10%;
- background-color: #FF4081;
- text-align: center;
- /* margin-left: 1%;
- margin-top: -0.5%; */
- /*margin-top: 2.5%;*/
 }
  .Checkout-Style{
-   /* background-color: cornflowerblue; */
-   /* margin-top: 4vw; */
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column-reverse;
-   /**
-   margin-top: 5%;
-   margin-left: 8%;
-   */
  }
 
  .Adjust-Style{
@@ -129,12 +15,6 @@
    justify-content: center;
    align-items: center;
    margin-bottom: 2%;
-  /* margin-left: 20%; */
-  /*margin-top: -3%;*/
- }
-
- .PayPal-Style{
-   /* width: 10vw; */
  }
 
  .Chosen-Amount{
@@ -149,9 +29,6 @@
   font-size: 1.33vw;
   background-color: #FF4081;
   text-align: center;
-  /* margin-left: 1%;
-  margin-top: -1.5%; */
-  /*margin-top: 2.5%;*/
  }
 
  .Adjust-Button:hover{
@@ -159,36 +36,7 @@
 }
 
 
- .alert {
-  color: #FF0000;
-  width: 10vw;
-  height: 10vw;
-  /* margin-top: 0.5%;
-  margin-left: -1%; */
- }
-/* .Adjust-Style{
-  margin-left: 55%;
-}
-.PayPal-Style{
-  width: 20%;
-  margin-left: 7%;
-  margin-top: 7%;
-} */
-
-/* @media only screen and (max-width: 900px){
-  .Proceed-Style{
-    background-color: cornflowerblue;
-  }
-  .Amount-Text1{
-    margin-top: 0.7vw;
-  }
-} */
-
-
 @media only screen and (max-width: 600px) {
-  .Donate-Button{
-    font-size: 3.5vw;
-   }
 
    .Adjust-Button{
     font-size: 3vw;
@@ -200,7 +48,7 @@
     font-size: 2.63vw;
   }
 
-  .Amount-Text1{
+  .Amount-Text{
     font-size: 2.33vw;
   }
 }

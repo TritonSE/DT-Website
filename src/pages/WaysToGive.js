@@ -67,7 +67,7 @@ class WaysToGive extends Component {
 			return (
 				// can only return one element so if you want more than one make sure they're nested inside a div
 				<div>
-					<div className="textWays" >
+					<div className="Main-Container" >
 						{/* <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'/> */}
 						<div className="Left-Container">
 							<h1>Ways to<br/>Give</h1>
@@ -92,7 +92,7 @@ class WaysToGive extends Component {
 						</div>
 					</div>
 					<div style={{marginTop:"3%"}}>
-					<Footer />
+						<Footer />
 					</div>
 					
 				</div>
