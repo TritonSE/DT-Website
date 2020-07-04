@@ -16,10 +16,6 @@ import ScrollToTop from './components/ScrollToTop.js';
 
 class App extends Component {
 
-	constructor(props){
-		super(props);
-	}
-
 	componentDidMount(){
 		//visited resets to true every time a new session is started (user leaves domain)
 		let visited = sessionStorage["alreadyVisited"];

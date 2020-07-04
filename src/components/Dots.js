@@ -5,9 +5,9 @@ class Dots extends React.Component {
     render() {
         return(
             <div className="dots">
-			        <span class="dot"></span>
-			        <span class="dot"></span>
-			        <span class="dot"></span>
+			        <span className="dot"></span>
+			        <span className="dot"></span>
+			        <span className="dot"></span>
 			</div>
         );
     }

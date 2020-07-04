@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import VizSensor from 'react-visibility-sensor';
 import mainBanner from '../images/home/Facebook_Cover_2019.png';
 import Slideshow from '../components/Slideshow.js';
@@ -102,7 +102,7 @@ class Home extends React.Component {
 					<NoRightClickImg style={{height: this.state.width * 0.4, width: "100%"}} imgClassName="banner-img" src={mainBanner} />
 					<div style={{display:this.state.imgViz ? "none":"flex", justifyContent:"center"}}>
 						<button className="Scroll-Button" onClick={this.scrollToSlideShow}>
-							<i class="fas fa-angle-double-down fa-2x"/>
+							<i className="fas fa-angle-double-down fa-2x"/>
 						</button>
 					</div>
 					{/* <h1 className="Flight-Animation">
