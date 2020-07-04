@@ -32,7 +32,7 @@ class Toolbar extends Component {
     let hideIcons = window.innerWidth <= 1150;
 
     // only update icon display when necessary
-    if (hideIcons != this.state.hideIcons) {
+    if (hideIcons !== this.state.hideIcons) {
       this.setState({hideIcons: hideIcons});
     }
   }

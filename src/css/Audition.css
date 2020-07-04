@@ -4,6 +4,7 @@
 }
 .row {
   width: 100%;
+  margin: auto;
 }
 .title {
   padding-top: 7%;
@@ -41,7 +42,6 @@
 /* MOBILE DESIGNS*/
 @media only screen and (max-width: 600px) {
   .mobile {
-    display: inline-block;
   }
   
   .dot {
@@ -55,13 +55,11 @@
     text-align: center;
   }
   .image2 {
-    margin-left: -8%;
-    width: 110%;
+    margin-left: 0%;
   }
 
   .image1 {
-    width: 110%;
-    margin-left: -8%;
+    margin-left: 0%;
     padding-bottom: 8%;
   }
 
@@ -71,5 +69,12 @@
   .font {
     padding-right: 5%;
     padding-left: 5%;
+  }
+
+  .auditionIMG {
+    margin: 0 auto;
+    padding-left: 0px;
+    width: 90%;
+    display: block;
   }
 }

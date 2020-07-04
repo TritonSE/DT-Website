@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Toolbar from "../../components/Toolbar";
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import '../../css/About.css';
 import '../../css/Global.css';
 import image1 from "../../images/colleges/mmc.png";

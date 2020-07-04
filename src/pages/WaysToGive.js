@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Toolbar from '../components/Toolbar.js';
 import WaysToGiveText from '../components/WaysToGiveText.js';
 import Amazon from '../images/waytogive/amazon smile.jpg';
-import CurrentFund from '../images/waytogive/Kendra Scott Fundraiser 1.png';
 import Instructions from '../images/waytogive/amazon smile instructions.jpg';
 import ModalImage from 'react-modal-image';
 import '../css/Support.css';
