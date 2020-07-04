@@ -55,17 +55,11 @@
     border-radius: 4px; 
     outline: none; 
     padding: 20px;
-    z-index: 10;
+    z-index: 9999;
     /**style="background: rgb(239, 239, 239); border-radius: 2px; padding: 10px; display: inline-block;"><input type="text" placeholder="Your name" style="font-size: 2em; padding: 5px;"><br><input type="email" placeholder="Your email" style="font-size: 2em; padding: 5px;"><br><button style="font-size: 2em; padding: 5px;">Submit</button></div><button>Close</button></div>
     */
 }
 
-.subscribe-modal h2{
-    font-family: 'Lato', serif;
-    font-style:normal;
-    font-size: calc(5.5vw);
-    color: #FF4081;
-}
 
 .submit-button {
     font-size: 4vmin;
@@ -103,6 +97,15 @@
     background-color: #FF6699;
     transition: 0.5s;
     cursor: pointer;
+}
+
+.mailchimp-form {
+    background: #FF4081;
+    border-radius: 2%;
+    padding: 10;
+    margin-top: 10vh;
+    display: inline-block;
+    z-index: 11;
 }
 
 .mailchimp-box {
@@ -326,5 +329,17 @@
     .Social ul li a {
         width: 135%;
         height: 135%;
+    }
+
+    .subscribe-modal {
+        bottom: 175px;
+    }
+
+    .subscribe-modal h1 {
+        margin-bottom: -5vh;
+    }
+
+    .close-button {
+        margin-top: 5vh;
     }
 }

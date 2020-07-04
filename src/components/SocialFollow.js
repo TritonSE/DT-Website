@@ -35,7 +35,6 @@ const CustomForm = ({ status, message, onValidated }) => {
         padding: 10,
         marginTop: "10vh",
         display: "inline-block",
-        zIndex: 11
       }}
     >
       {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
@@ -70,6 +69,10 @@ const CustomForm = ({ status, message, onValidated }) => {
       </button>
     </div>
   );
+};
+
+const customStyle = {
+  overlay: {zIndex: 10}
 };
 
 class SocialFollow extends Component{
@@ -125,8 +128,8 @@ class SocialFollow extends Component{
                 <li>
                   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
                   <a onClick={this.handleOpenModal} style={{display:"flex",justifyContent: "center"}}  title ="Subscribe to our Newsletter!" target="_blank" rel="noopener noreferrer">Subscribe</a>
-                    <Modal className="subscribe-modal" tabIndex="10" isOpen={this.state.showModal} contentLabel="Subscribe to our Newsletter" id='myModal' >
-                       <h2>Subscribe to our Newsletter</h2>
+                    <Modal className="subscribe-modal" style={customStyle} tabIndex="-1" isOpen={this.state.showModal} contentLabel="Subscribe to our Newsletter" id='myModal' >
+                       <h1>Subscribe to our Newsletter</h1>
                        <MailchimpSubscribe
                         url={mailChimpLink}
                         render={({ subscribe, status, message }) => (
