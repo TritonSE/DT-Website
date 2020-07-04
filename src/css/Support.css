@@ -32,8 +32,9 @@
   right: 5%;
 } */
 
+
 .Donate-Amount-Input{
-  margin-top: 4vw;
+  /* margin-top: 4vw; */
   /* padding: 4vw; */
 }
 .Donate-Button{
@@ -42,6 +43,9 @@
  background-color: #FF4081;
  text-align: center;
  text-anchor: middle;
+ display: flex;
+ /* justify-content: center; */
+ align-items: center;
  /**margin-top: 5%;*/
  /*
  position: relative;
@@ -109,7 +113,7 @@
 }
  .Checkout-Style{
    /* background-color: cornflowerblue; */
-   margin-top: 4vw;
+   /* margin-top: 4vw; */
    display: flex;
    justify-content: center;
    align-items: center;

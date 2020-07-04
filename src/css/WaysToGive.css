@@ -59,6 +59,7 @@
 
 .bodytxt {
     width: calc(40vw);
+    /* background-color: blue; */
     /* top: calc(-15.5vw); */
     /* font-size: calc(1.25vw); */
     /* padding-right: 10%; */
@@ -121,8 +122,8 @@
 }
 
 .Amazon-Container .Images{
-    width: calc(15vw);
-    height: calc(15vw);
+    width: calc(18vw);
+    height: calc(18vw);
 }
 
 .Amazon-Container .Img-Align{
@@ -186,6 +187,7 @@
     display: flex;
     /* align-items: center; */
     justify-content: center;
+    margin-top: 7%;
 }
 
 
@@ -210,14 +212,23 @@
         margin-top: 0%;
     }
 
+    .Amazon-Container .Images{
+        width: calc(35vw);
+        height: calc(35vw);
+    }
+    
+    .Amazon-Container .Img-Align{
+        margin-right: 3.5vw;
+    }
+
 
    .Left-Container h1{
-        /* font-size: 7.3vw; */
+        font-size: 10.3vw;
         text-align: center;
    }
 
    .bodytxt p{
-        font-size: calc(1.75vw);
+        font-size: calc(2.25vw);
     }
 /* 
    .Left-Container p{
