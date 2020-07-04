@@ -48,7 +48,7 @@ class Directors extends Component {
 		if(this.state.isMobile){
 			return (
 				<div>
-					<Toolbar/>
+					<Toolbar bool={true}/>
 					<div className="Title-Container">
 						<h1 className="Title-Season Teal"> 2019-20 Season </h1>
 						<h1 className="Title-Directors Pink"> Board of <br/> Directors </h1>
@@ -70,7 +70,7 @@ class Directors extends Component {
 		else{
 			return (
 				<div>
-					<Toolbar/>
+					<Toolbar bool={true}/>
 					<div className="Title-Container">
 						<h1 className="Title-Season Teal"> 2019-20 Season </h1>
 						<h1 className="Title-Directors Pink"> Board of Directors </h1>
