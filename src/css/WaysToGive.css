@@ -243,14 +243,13 @@
     */
     .textWays{
         color: #0f0f0f;
-        font-size: calc(5vh);
         font-family: 'Lato', serif;
         white-space: nowrap;
         font-style:normal;
         /*padding-left: calc(33.5vmin);*/
         text-align: center;
         /*padding-top: calc(75vmin);*/
-        margin-left: calc(-9.5vw);
+        /*margin-left: calc(-9.5vw);*/
         overflow-x:hidden;
         display: flex;
         flex-direction: column;
@@ -346,7 +345,7 @@
         margin-top: 0px;
         margin-left: 0px;
         margin-top: 5%;
-        margin-bottom: 75vw;
+        /*margin-bottom: 75vw;*/
     }
 
     .support-footer {
@@ -356,11 +355,13 @@
     }
 
     .textWays h1 {
-        color: '#FF4081';
+        color: #FF4081;
         font-style: normal;
         font-weight: normal;
         font-size: 5vh;
         margin-bottom: 0vh;
+        text-align: center;
+        margin-left: 0px;
     }
 
     .amazon-container {
