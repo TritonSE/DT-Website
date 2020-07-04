@@ -60,7 +60,7 @@ class WaysToGive extends Component {
 				<h1 className="Pink">Ways to Give</h1>
                 <WaysToGiveText />
 				<button 
-						className="btn btn-secondary Donate-Button"
+						className="btn btn-secondary Donate-Button Pink-Background"
 						//style = {{marginLeft:"calc(-5.5vw"}}
 						onClick={this.handleDonateButtonClicked}
 				>
@@ -140,7 +140,7 @@ class WaysToGive extends Component {
 					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
 					<h1 className="Pink">Ways to<br/>Give</h1>
 					<button 
-						className="btn btn-secondary Donate-Button"
+						className="btn btn-secondary Donate-Button Pink-Background"
 						style = {{marginLeft:"calc(-5.5vw"}}
 						onClick={this.handleDonateButtonClicked}
 					>

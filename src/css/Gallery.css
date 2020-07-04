@@ -2,15 +2,6 @@
     font-size: 25px;
 }
 
-.tabholder > a {
-    color: rgb(15, 185, 185);
-}
-
-.gallery-title {
-    color: #FF4081;
-    margin-top: 5%;
-}
-
 .photos-container {
     display: flex;
 }
@@ -40,12 +31,6 @@
     height: 300px;
     width: 300px;
 } 
-
-.modal-button {
-    border-radius: 5px;
-    color: #FF4081;
-    border-style: none;
-}
 
 .subscribe-text {
     font-size: 3vh;

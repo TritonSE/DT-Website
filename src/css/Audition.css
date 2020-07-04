@@ -17,7 +17,6 @@
 }
 .colored-bullets ul li::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #ff4081; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   font-size: 1.5em;
   display: inline-block; /* Needed to add space between the bullet and the text */
@@ -45,9 +44,6 @@
     display: inline-block;
   }
   
-  .colored-bullets ul li::before {
-    color: rgb(15, 185, 185); /* Change the color */
-  }
   .dot {
     display: none;
   }

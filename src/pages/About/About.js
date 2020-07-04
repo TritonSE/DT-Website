@@ -28,7 +28,7 @@ class About extends Component {
 					<p className="About-Paragraph3"> In its now 16 seasons, DPT has brought original work to the stage every spring, priding itself on its creative and visually appealing performances. Dancers who train with DPT show a noticeable amount of growth in technique, artistry, and confidence. DPT has competed and won many titles on the regional and national level, and has received special awards for creativity and excellence. DPT has performed throughout their community for organizations such as a Los Gatos Chamber of Commerce, San Jose City Hall, Chinese History Cultural Project, World Financial Group, India Airlines and the American Cancer Society. In 2019 the team celebrated its 15th season with special commendations from U.S. Congressman Ro Khanna, and U.S. Senator Dianne Feinstein. </p>
 					<p className="About-Paragraph4"> DPT is a non-profit organization in San Jose not associated with any single dance studio. We audition our dancers from the Bay Area, and every dancer is given an equal opportunity regardless of the studio they attend. We hold open auditions and cast our team based solely on the dancer’s age and skill level. </p>
 					<Container>
-						<div className="Boxed">
+						<div className="Boxed Pink-Bullets">
 
 						<h3 className="Colleges-List"> Dancers have gone on to dance at such colleges as: </h3>
 						<ul className="Colleges">
@@ -67,7 +67,7 @@ class About extends Component {
 			<td className="column2">
 				<NoRightClickImg imgClassName="dancers-Image" src={image} alt="could not load"/>
 				<Container>
-				<div className="Boxed">
+				<div className="Boxed Pink-Bullets">
 				<h3 className="Colleges-List"> Dancers have gone on to dance at such colleges as: </h3>
 				<img className="MMC-Logo" src={image1} alt="could not load"/>
 				<img className="SDSU-Logo" src={image2} alt="could not load"/>

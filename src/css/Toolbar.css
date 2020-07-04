@@ -46,23 +46,15 @@ justify-content: flex-start;
 }
 
 .Home-Header:hover{
-  color: #FF4081 !important; 
   transition: 0.5s !important;
 }
 .Home-Header:hover{
-  color: #FF4081 !important; 
   transition: 0.5s !important;
 }
 .Auditions-Header:hover{
-  color: rgb(15, 185, 185) !important;
   transition: 0.5s !important;
 }
 .Support-Header:hover{
-  color: #FF4081 !important;
-  transition: 0.5s !important;
-}
-.Contact-Header:hover{
-  color: rgb(15, 185, 185) !important;
   transition: 0.5s !important;
 }
 
@@ -70,20 +62,9 @@ justify-content: flex-start;
   color: black;
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: rgb(15, 185, 185);
-  transition: 0.5s; 
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color:rgb(15, 185, 185) !important;
-}
-
-
 .logo-text{
   text-decoration: none !important;
 }
-
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active {
   color: rgba(29, 153, 202, 0.7) !important;

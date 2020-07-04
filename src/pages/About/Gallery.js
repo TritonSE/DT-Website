@@ -10,7 +10,7 @@ class Gallery extends Component {
     return(
       <div>
          <Toolbar />
-         <Tabs className="tabholder" fill defaultActiveKey="photos">
+         <Tabs className="tabholder Teal" fill defaultActiveKey="photos">
            <TabPane eventKey="photos" title="Photos">
              <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
              <div className="photos-container"> 
@@ -28,7 +28,7 @@ class Gallery extends Component {
                     <h1 className="tab-title Pink"> Video Gallery </h1>
                     <img className="DPT-logo" src={require("../../images/logo1.png")}></img>
                     <br />
-                    <p className="subscribe-text"> For more videos, click <a style={{color: '#FF4081'}} target="_blank" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to subscribe to our Youtube channel! </p>
+                    <p className="subscribe-text"> For more videos, click <a className="Pink" target="_blank" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to subscribe to our Youtube channel! </p>
                   </div> 
                 </div>
 

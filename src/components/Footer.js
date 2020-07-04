@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SocialIcons from './SocialFollow.js';
 import '../css/Footer.css';
+import '../css/Global.css';
 
 class Footer extends Component {
 
@@ -31,7 +32,7 @@ class Footer extends Component {
 
         if(this.state.isMobile){
             return (
-                <div className="Footer">
+                <div className="Footer Teal-Background">
                     <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                         <h1 className="Contact-Text">
                                 Contact <br/> Us
@@ -49,7 +50,7 @@ class Footer extends Component {
             );
         } else {
             return (
-                <div className="Footer">
+                <div className="Footer Teal-Background">
                     <h1 className="Contact-Text">
                             Contact <br/> Us
                     </h1>
