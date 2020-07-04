@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7e9512ea0a5b5de899ce2539485f378c",
+    "revision": "b92fc77afc7651f5c8805a6f9b15d0d1",
     "url": "/index.html"
   },
   {
-    "revision": "618ba10f3aebef434fb0",
+    "revision": "1575d16ae317aec053be",
     "url": "/static/css/2.b7696511.chunk.css"
   },
   {
-    "revision": "bb000ec6b77c98cbf656",
+    "revision": "6b3dfde44951076b9e87",
     "url": "/static/css/main.8fb88b97.chunk.css"
   },
   {
-    "revision": "618ba10f3aebef434fb0",
-    "url": "/static/js/2.879ea8e9.chunk.js"
+    "revision": "1575d16ae317aec053be",
+    "url": "/static/js/2.5c897a66.chunk.js"
   },
   {
     "revision": "f42d3337eccfea277ae2b63907e6055b",
-    "url": "/static/js/2.879ea8e9.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.5c897a66.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bb000ec6b77c98cbf656",
-    "url": "/static/js/main.fc0aa779.chunk.js"
+    "revision": "6b3dfde44951076b9e87",
+    "url": "/static/js/main.fa99dc62.chunk.js"
   },
   {
     "revision": "5faee441ad9bfde3e6d0",
@@ -126,10 +126,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c61b26fdfaa8fe87cf2020a718eab94c",
     "url": "/static/media/IMG_6707 (1).c61b26fd.jpg"
-  },
-  {
-    "revision": "51a73c18536063202cb6aaed37587043",
-    "url": "/static/media/Kendra Scott Fundraiser 1.51a73c18.png"
   },
   {
     "revision": "497a5ea97445522bd325d7c38dc283ac",
