@@ -21,7 +21,7 @@ class History extends React.Component{
 			{/* FOR MOBILE */}
 			<div className="mobile">
 			<Container>
-					<h1 className="history-title"> Our History </h1>
+					<h1 className="history-title Teal"> Our History </h1>
 					<NoRightClickImg imgClassName="dancers-image" src={image0} alt="could not load"/>
 					<p className="Photo-Description">DPT's first group photo circa 2005</p>
 
@@ -30,7 +30,7 @@ class History extends React.Component{
 					<p className="History-Paragraph3"> Wanting to share the joy of dance with a younger generation, DPT brought on another long-standing performer and dance captain of the team, Danielle (Dizzle) de Ojeda, to direct a new junior team for 8 to 11-year-old performers in fall 2013—the Dynamos were born! In 2016, the beloved Miss Sara retired from Dynamics to start a new adventure; Miss Dizzle joined Mr. Charles as Co-Director that year, and continues to serve as Artistic Director to this date. </p>
 					<p className="History-Paragraph4"> In its now 16 seasons, DPT has brought original work to the stage every spring, priding itself on its creative and visually appealing performances. Dancers who train with DPT show a noticeable amount of growth in technique, artistry, and confidence. DPT has competed and won many titles on the regional and national level, and has received special awards for creativity and excellence. DPT has performed throughout their community for organizations such as a Los Gatos Chamber of Commerce, San Jose City Hall, Chinese History Cultural Project, World Financial Group, India Airlines and the American Cancer Society. In 2019 the team celebrated its 15th season with special commendations from U.S. Congressman Ro Khanna, and U.S. Senator Dianne Feinstein. </p>
 					<Container>
-						<div className="Boxed">
+						<div className="Boxed Pink-Bullets">
 
 						<h3 className="Colleges-List"> Dancers have gone on to dance at such colleges as: </h3>
 						<ul className="Colleges">
@@ -60,7 +60,7 @@ class History extends React.Component{
 			<div className="div">
             <Row>
 			<Col className="column1">
-				<h1 className="History-Title"> Our History </h1>
+				<h1 className="History-Title Teal"> Our History </h1>
 				<NoRightClickImg imgClassName="Dancers-image" src={image0} alt="could not load"/>
 				<p className="Photo-Description">DPT's first group photo circa 2005</p>
 			</Col>
@@ -71,7 +71,7 @@ class History extends React.Component{
 				<p className="History-Paragraph4"> In its now 16 seasons, DPT has brought original work to the stage every spring, priding itself on its creative and visually appealing performances. Dancers who train with DPT show a noticeable amount of growth in technique, artistry, and confidence. DPT has competed and won many titles on the regional and national level, and has received special awards for creativity and excellence. DPT has performed throughout their community for organizations such as a Los Gatos Chamber of Commerce, San Jose City Hall, Chinese History Cultural Project, World Financial Group, India Airlines and the American Cancer Society. In 2019 the team celebrated its 15th season with special commendations from U.S. Congressman Ro Khanna, and U.S. Senator Dianne Feinstein. </p>
 			</Col>
 			</Row>
-			<div className="boxed">
+			<div className="boxed Pink-Bullets">
 				<h3 className="Colleges-List"> Dancers have gone on to dance at such colleges as: </h3>
 				<img className="MMC-Logo" src={image1} alt="could not load"/>
 				<img className="SDSU-Logo" src={image2} alt="could not load"/>

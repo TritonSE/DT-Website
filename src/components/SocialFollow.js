@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/SocialFollow.css';
+import '../css/Global.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const fbLink = "https://www.facebook.com/DynamicsPerformanceTeam/";
@@ -15,7 +16,7 @@ const yelpLink = "https://www.yelp.com/biz/dynamics-performance-team-san-jose";
 class SocialFollow extends Component{
     render(){
         return(
-            <div className="Social">
+            <div className="Social Pink-Bullets">
               <ul>
 
               <li>

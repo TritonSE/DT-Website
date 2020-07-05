@@ -90,7 +90,7 @@ class SupportStates extends Component {
           <IoIosAlert className="alert" style={{display: this.state.displayError ? null:'none'}}/>
           <button 
             style={{left: "53%"}} 
-            className="btn btn-secondary Proceed-Button"
+            className="btn btn-secondary Proceed-Button Pink-Background"
             onClick={this.handleAmountChange}
           >
             {"Proceed"}
@@ -120,7 +120,7 @@ class SupportStates extends Component {
             >
             </input>
             <button 
-              className="btn btn-secondary Adjust-Button"
+              className="btn btn-secondary Adjust-Button Pink-Background"
               onClick={this.handleAmountChange}
             >
               {"Adjust"}

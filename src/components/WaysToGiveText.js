@@ -47,7 +47,7 @@ Dynamics Performance Team is a publicly Funded 501(c)(3) non-profit organization
 </p>
 <p>
 To learn more about our individual or corporate giving programs and benefits, 
-<a href = {SponsorLetter} target = "_blank" rel="noopener noreferrer"> <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', textDecorationLine: 'underline'}}>please read our sponsor letter here </span></a>, or contact us at dynamicsperformanceteam@gmail.com. You can also give us a call at (408) 622-0249.
+<a href = {SponsorLetter} target = "_blank" rel="noopener noreferrer"> <span className="Pink" style={{fontStyle: 'normal',fontWeight: 'normal', textDecorationLine: 'underline'}}>please read our sponsor letter here </span></a>, or contact us at dynamicsperformanceteam@gmail.com. You can also give us a call at (408) 622-0249.
 </p>
 <div className="amazon">
 					<p>Amazon Smile Donations</p>
@@ -78,7 +78,7 @@ Dynamics Performance Team is a publicly Funded 501(c)(3) non-profit organization
 </p>
 <p>
 To learn more about our individual or corporate giving programs and benefits, 
-<a href = {SponsorLetter} target = "_blank" rel="noopener noreferrer"> <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', textDecorationLine: 'underline'}}>please read our sponsor letter here </span></a>, or contact us at dynamicsperformanceteam@gmail.com. You can also give us a call at (408) 622-0249.
+<a href = {SponsorLetter} target = "_blank" rel="noopener noreferrer"> <span className="Pink" style={{fontStyle: 'normal',fontWeight: 'normal', textDecorationLine: 'underline'}}>please read our sponsor letter here </span></a>, or contact us at dynamicsperformanceteam@gmail.com. You can also give us a call at (408) 622-0249.
 </p>
                  
                  </div>

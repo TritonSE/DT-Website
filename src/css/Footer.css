@@ -1,5 +1,5 @@
 .Footer{
-    background-color: rgb(15, 185, 185);
+    
     color: black;
     width: 100%;
     margin-top: 5%;
@@ -17,7 +17,6 @@
 }
 
 .Highlight:hover{
-    color: #FF4081;
     text-decoration: none;
 }
 

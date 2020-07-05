@@ -16,7 +16,6 @@
     width: 35px;
     height: 35px;
     border-radius: 10%;
-    color: #FF4081;
     background-color: #333333;
     transition: 0.5s;
     transform: translate(0,0px);
@@ -37,7 +36,6 @@
 
 .Social ul li a:hover{
     color: white;
-    background-color: #FF4081;
     transition: 0.5s;
     
     position: relative;

@@ -30,7 +30,7 @@ class Audition extends Component {
 
             <Col className="audition-text font">
               <Container>
-                <h1 className="title">Audition</h1>
+                <h1 className="title Teal">Audition</h1>
                 <AuditionInfo />
               </Container>
 
@@ -46,7 +46,7 @@ class Audition extends Component {
 
         <div className="mobile">
           <Toolbar bool={false} />
-          <h1 className="title audition-info">Audition</h1>
+          <h1 className="audition-info Teal">Audition</h1>
           <Row className="row">
             <NoRightClickImg
               src={firstImg}
