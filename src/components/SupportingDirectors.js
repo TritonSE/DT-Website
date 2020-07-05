@@ -5,7 +5,7 @@ class SupportingDirectors extends Component {
 	render() {
         var nameDisplays = this.props.names.map((item,i) => 
             <p style={{marginLeft:"2%"}}>
-                <span className="Teal" style={{fontWeight:"bold", textTransform:"uppercase"}}> {this.props.titles[i]} |</span> {item}
+                <span style={{color:"rgb(15, 185, 185)", fontWeight:"bold", textTransform:"uppercase"}}> {this.props.titles[i]} |</span> {item}
             </p>
         );
 		return (

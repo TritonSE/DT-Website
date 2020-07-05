@@ -4,7 +4,6 @@ import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
 import { LinkContainer} from 'react-router-bootstrap';
-import '../css/Global.css';
 //import "../css/Toolbar.css"
 
 class Toolbar extends Component {
@@ -57,11 +56,14 @@ class Toolbar extends Component {
             <NavLink  
               to="/" 
               href = "/Home" 
-              exact activeClassName = "Pink-Active active" 
-              className= "Home-Header Pink" 
+              exact activeClassName = "active" 
+              className= "Home-Header" 
               style={{
                 fontWeight: "bold",
                 color: "black",
+              }} 
+              activeStyle={{
+                color: "#FF4081"
               }}> 
                 Home
             </NavLink>
@@ -96,11 +98,13 @@ class Toolbar extends Component {
             <NavLink 
               to = "/Support" 
               href="/Support" 
-              exact activeClassName="Pink-Active"
-              className = "Support-Header Pink" 
+              className = "Support-Header" 
               style={{
                 fontWeight: "bold",
                 color: "black"
+              }}
+              activeStyle={{
+                color: "#FF4081"
               }}>
                 Support
             </NavLink>
@@ -109,11 +113,14 @@ class Toolbar extends Component {
              <NavLink 
               to="/Audition"
               href= "/Audition"
-              exact activeClassName = "Teal-Active active"
-              className= "Auditions-Header Teal"
+              exact activeClassName = "active"
+              className= "Auditions-Header"
               style={{
                 fontWeight: "bold",
                 color: "black",
+              }}
+              activeStyle={{
+                color: "rgb(15, 185, 185)"
               }}>
                 Audition
               </NavLink>

@@ -6,6 +6,9 @@
   width: 100%;
   margin: auto;
 }
+.audition-info {
+  color: #ff4081;
+}
 .title {
   padding-top: 7%;
 }
@@ -18,6 +21,7 @@
 }
 .colored-bullets ul li::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ff4081; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   font-size: 1.5em;
   display: inline-block; /* Needed to add space between the bullet and the text */
@@ -43,7 +47,13 @@
 @media only screen and (max-width: 600px) {
   .mobile {
   }
-  
+  .title {
+    font-size: 5em;
+    text-align: center;
+  }
+  .colored-bullets ul li::before {
+    color: rgb(15, 185, 185); /* Change the color */
+  }
   .dot {
     display: none;
   }
@@ -52,7 +62,6 @@
   }
   .audition-info {
     margin-bottom: -20px;
-    text-align: center;
   }
   .image2 {
     margin-left: 0%;

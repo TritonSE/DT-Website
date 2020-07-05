@@ -10,7 +10,7 @@ class DirectorProfile extends Component {
                 <DirectorImages imgTop={this.props.imgTop} imgBottom={this.props.imgBottom}/>
                 <div className="Director-Profile-Text">
                     <p>
-                        <span className="Teal" style={{fontWeight:"bold", textTransform:"uppercase"}}> {this.props.title} |</span> {this.props.name}
+                        <span style={{color:"rgb(15, 185, 185)", fontWeight:"bold", textTransform:"uppercase"}}> {this.props.title} |</span> {this.props.name}
                     </p>
                     {text}
                 </div>

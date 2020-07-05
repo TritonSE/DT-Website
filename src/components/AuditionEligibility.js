@@ -4,7 +4,7 @@ import React, { Component } from "react";
 class AuditionEligibility extends Component {
   render() {
     return (
-      <div className="colored-bullets font Pink-Bullets">
+      <div className="colored-bullets font">
         <div>
           <h3>DPT Senior Team eligibility:</h3>
           <ul>

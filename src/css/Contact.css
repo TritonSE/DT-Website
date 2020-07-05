@@ -1,0 +1,77 @@
+
+.reach{
+padding-left: 30%;
+padding-top: 5%;
+width: 35%;
+height: 23%;
+text-align: left;
+font-family: 'Lato', serif;
+font-size:  13.5vh;
+line-height: 12.5vh;
+letter-spacing: 0;
+color: #FF4081;
+opacity: 1;
+}
+
+.out{
+  padding-left: 270%;
+}
+.number {
+padding-top: 1%;
+padding-left: 55%;
+width: 80%;
+height: 24%;
+text-align: left;
+font-family:'Lato', serif;
+font-size: 6vh;
+line-height: 7vh;
+letter-spacing: 0;
+color: #000000;
+opacity: 1;
+}
+
+.hoverBlack:hover{
+  color:black
+
+}
+
+@media only screen and (min-width: 801px)
+{
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .mobile{
+    padding-top: 0%;
+    padding-left: 26%;
+    width: 30%;
+    height: 10%;
+    text-align: center;
+    font-family: 'Lato', serif;
+    font-size:  7vh;
+    line-height: 6.5vh;
+    letter-spacing: 0;
+    color: #FF4081;
+    opacity: 1;
+    }
+
+    .reach{
+      display: none;
+    }
+    
+    .number {
+    padding-top: 1%;
+    padding-left: 27.5%;
+    width: 80%;
+    height: 24%;
+    text-align: left;
+    font-family:'Lato', serif;
+    font-size: 3.5vh;
+    line-height: 5vh;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    }
+}

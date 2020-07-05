@@ -9,12 +9,12 @@ class Gallery extends Component {
   render() {
     return(
       <div>
-         <Toolbar bool={true}/>
-         <Tabs className="tabholder Teal" fill defaultActiveKey="photos">
+         <Toolbar />
+         <Tabs className="tabholder" fill defaultActiveKey="photos">
            <TabPane eventKey="photos" title="Photos">
              <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
              <div className="photos-container"> 
-               <h1 className="tab-title Pink"> Photo Gallery </h1>
+               <h1 className="tab-title"> Photo Gallery </h1>
              </div> 
             <GalleryImages/>
             <Footer />
@@ -25,10 +25,10 @@ class Gallery extends Component {
               <div>
                 <div style={{alignItems: "center", justifyContent: "center"}}>
                   <div className="videos-container"> 
-                    <h1 className="tab-title Pink"> Video Gallery </h1>
+                    <h1 className="tab-title"> Video Gallery </h1>
                     <img className="DPT-logo" alt="Couldn't load.."src={require("../../images/logo1.png")}></img>
                     <br />
-                    <p className="subscribe-text"> For more videos, click <a className="Pink" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to subscribe to our Youtube channel! </p>
+                    <p className="subscribe-text"> For more videos, click <a style={{color: '#FF4081'}} target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to subscribe to our Youtube channel! </p>
                   </div> 
                 </div>
 

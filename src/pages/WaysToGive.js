@@ -7,7 +7,6 @@ import '../css/Support.css';
 import '../css/WaysToGive.css';
 import SupportStates from '../components/SupportStates.js';
 import Footer from '../components/Footer.js';
-import "../css/Global.css";
 
 class WaysToGive extends Component {
     constructor(props){
@@ -55,10 +54,10 @@ class WaysToGive extends Component {
 			<div>
 			<div className="textWays" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-				<h1 className="Pink">Ways to Give</h1>
+				<h1>Ways to Give</h1>
                 <WaysToGiveText />
 				<button 
-						className="btn btn-secondary Donate-Button Pink-Background"
+						className="btn btn-secondary Donate-Button"
 						//style = {{marginLeft:"calc(-5.5vw"}}
 						onClick={this.handleDonateButtonClicked}
 				>
@@ -90,7 +89,7 @@ class WaysToGive extends Component {
 			<div>
 			<div className="textWays" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-				<h1 className="Pink">Ways to Give</h1>
+				<h1>Ways to Give</h1>
                 <WaysToGiveText />
 				<SupportStates />
 				<div className="amazon">
@@ -120,7 +119,7 @@ class WaysToGive extends Component {
 			<div>
 			<div className="textWays" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-				<h1 className="Pink">Ways to<br/>Give</h1>
+				<h1>Ways to<br/>Give</h1>
                 <WaysToGiveText />
 				<SupportStates />
 			</div>
@@ -136,9 +135,9 @@ class WaysToGive extends Component {
 				<div>
 				<div className="textWays" >
 					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-					<h1 className="Pink">Ways to<br/>Give</h1>
+					<h1>Ways to<br/>Give</h1>
 					<button 
-						className="btn btn-secondary Donate-Button Pink-Background"
+						className="btn btn-secondary Donate-Button"
 						style = {{marginLeft:"calc(-5.5vw"}}
 						onClick={this.handleDonateButtonClicked}
 					>

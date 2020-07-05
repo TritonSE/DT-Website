@@ -78,7 +78,7 @@ class Home extends React.Component {
 				<div style={{position:"relative"}}>
 					<Toolbar/>
 					<NoRightClickImg src={mainBanner} style={{height: this.state.width * 0.45, width: "100%"}}/>
-					<p className="Dynamic-Text" >A team of <span className="Pink" style={{fontStyle: 'normal',fontWeight: 'normal', marginLeft:"5px", marginRight:"5px"}}id='dynamics' ref={this.dynamicText}> dynamic </span> dancers.</p>
+					<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', marginLeft:"5px", marginRight:"5px"}}id='dynamics' ref={this.dynamicText}> dynamic </span> dancers.</p>
 					<div className="Right-Container">
 						<Slideshow indicators={false}/>
 					</div>	
@@ -88,8 +88,8 @@ class Home extends React.Component {
 		
 								Dancers learn quality technique along with competitive choreography in both commercial and concert styles. Like the five points of a star, DPT has five primary goals: instill technique, performance, character, dedication and passion in all of its dancers. Dancers have the opportunity to perform in groups, trios, duets, and even solos.<br/> <br/>
 		
-								DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link className="Pink" to='/Audition'>Click here</Link> for more information. 
-								Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link className="Pink" to="/About/AboutUs">Click here</Link> to learn more about DPT.
+								DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link style={{color: '#FF4081'}} to='/Audition'>Click here</Link> for more information. 
+								Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link style={{color: '#FF4081'}} to="/About/AboutUs">Click here</Link> to learn more about DPT.
 						</p>
 					</div>
 					<Footer/>
@@ -101,7 +101,7 @@ class Home extends React.Component {
 					<Toolbar/>
 					<NoRightClickImg style={{height: this.state.width * 0.4, width: "100%"}} imgClassName="banner-img" src={mainBanner} />
 					<div style={{display:this.state.imgViz ? "none":"flex", justifyContent:"center"}}>
-						<button className="Scroll-Button Teal-Background" onClick={this.scrollToSlideShow}>
+						<button className="Scroll-Button" onClick={this.scrollToSlideShow}>
 							<i className="fas fa-angle-double-down fa-2x"/>
 						</button>
 					</div>
@@ -117,7 +117,7 @@ class Home extends React.Component {
 					>
 						<div className="Text-Container" ref={this.scrollReference}>
 							<div className="Left-Container" style={{width: this.state.width*0.5}}>
-								<p className="Dynamic-Text" >A team of <span className="Pink" style={{fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.dynamicText}> 
+								<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.dynamicText}> 
 										dynamic
 									</span> 
 									<span><br/>dancers.</span>
@@ -127,8 +127,8 @@ class Home extends React.Component {
 				
 										Dancers learn quality technique along with competitive choreography in both commercial and concert styles. Like the five points of a star, DPT has five primary goals: instill technique, performance, character, dedication and passion in all of its dancers. Dancers have the opportunity to perform in groups, trios, duets, and even solos.<br/> <br/>
 				
-										DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link className="Pink" to='/Audition'>Click here</Link> for more information. 
-										Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link className="Pink" to="/About/AboutUs">Click here</Link> to learn more about DPT.
+										DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link style={{color: '#FF4081'}} to='/Audition'>Click here</Link> for more information. 
+										Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link style={{color: '#FF4081'}} to="/About/AboutUs">Click here</Link> to learn more about DPT.
 								</p>
 							</div>
 							<div className="Right-Container" style={{width: this.state.width*0.5}}>
