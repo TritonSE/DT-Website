@@ -30,9 +30,9 @@
     color: '#FF4081';
     font-style: normal;
     font-weight: normal;
-    font-size: 6.2vw;
     margin-bottom: 5vmin;
     margin-left: 10%;
+    font-size: 75px;
 }
 
 .bodytxt {
@@ -311,10 +311,8 @@
     }
 
     .textWays h1 {
-        color: '#FF4081';
         font-style: normal;
         font-weight: normal;
-        font-size: 5vh;
         margin-bottom: 0vh;
     }
 

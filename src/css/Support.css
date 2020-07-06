@@ -1,4 +1,5 @@
 
+
 .Amount-Text{
   text-align: center;
   font-size: 1.33vw;
@@ -27,9 +28,9 @@
 
  .Adjust-Button{
   font-size: 1.33vw;
-  background-color: #FF4081;
   text-align: center;
  }
+
 
  .Adjust-Button:hover{
   background-color: #ce57aa;

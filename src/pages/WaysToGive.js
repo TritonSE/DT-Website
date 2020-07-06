@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Toolbar from '../components/Toolbar.js';
 import WaysToGiveText from '../components/WaysToGiveText.js';
 import Amazon from '../images/waytogive/amazon smile.jpg';
-import CurrentFund from '../images/waytogive/Kendra Scott Fundraiser 1.png';
 import Instructions from '../images/waytogive/amazon smile instructions.jpg';
 import ModalImage from 'react-modal-image';
 import '../css/Support.css';
 import '../css/WaysToGive.css';
 import SupportStates from '../components/SupportStates.js';
 import Footer from '../components/Footer.js';
+import "../css/Global.css";
 
 class WaysToGive extends Component {
     constructor(props){
@@ -44,7 +43,7 @@ class WaysToGive extends Component {
 			<div>
 				<div className="textWays" >
 					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-					<h1>Ways to Give</h1>
+					<h1 className="Pink">Ways to Give</h1>
 					<WaysToGiveText/>
 					<p className="amazon">Amazon Smile Donations</p>
 					<ModalImage
@@ -70,7 +69,7 @@ class WaysToGive extends Component {
 					<div className="Main-Container" >
 						{/* <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'/> */}
 						<div className="Left-Container">
-							<h1>Ways to<br/>Give</h1>
+							<h1 className="Pink">Ways to<br/>Give</h1>
 							<div className="Amazon-Container">
 								<p className="Amazon-Title">Amazon Smile Donations</p>
 								<div className="image-container" >

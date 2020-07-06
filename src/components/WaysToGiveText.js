@@ -50,15 +50,6 @@ class WaysToGiveText extends Component {
 						I'll Support You!
 					</AwesomeButton>
 
-							// <button 
-							// 	className="btn btn-secondary Donate-Button"
-							// 	onClick={this.handleDonateButtonClicked}
-							// >
-							// 	{/* <IoIosCalculator/> */}
-							// 	<AiFillGift/>
-							// 	I'll Donate!
-								
-							// </button>
 					}
 				</div>
 					
