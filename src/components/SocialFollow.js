@@ -29,37 +29,29 @@ const CustomForm = ({ status, message, onValidated }) => {
     });
 
   return (
-    <div
-      style={{
-        background: "#FF4081",
-        borderRadius: "2%",
-        padding: 10,
-        marginTop: "10vh",
-        display: "inline-block",
-      }}
-    >
-      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
+    <div className="mailchimp-input-container">
+      {status === "sending" && <div style={{ color: "blue", fontSize:"15px" }}>sending...</div>}
       {status === "error" && (
         <div
-          style={{ color: "black" }}
+          style={{ color: "black", fontSize: "15px" }}
           dangerouslySetInnerHTML={{ __html: "Error: " + message }}
         />
       )}
       {status === "success" && (
         <div
-          style={{ color: "green" }}
+          style={{ color: "green", fontSize: "15px" }}
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
       <input
-        style={{ fontSize: "5vmin", padding: 5, color: '#333333' }}
+        style={{ height: "30px", width: "200px", fontSize: "15px", padding: 5, color: '#333333' }}
         ref={node => (name = node)}
         type="text"
         placeholder="Your name"
       />
       <br />
       <input
-        style={{ fontSize: "5vmin", padding: 5, color: '#333333', borderColor: 'white'  }}
+        style={{ height: "30px", width: "200px", fontSize: "15px", padding: 5, color: '#333333', borderColor: 'white'  }}
         ref={node => (email = node)}
         type="email"
         placeholder="Your email"
@@ -129,8 +121,9 @@ class SocialFollow extends Component{
                 <li>
                   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
                   <a onClick={this.handleOpenModal} style={{display:"flex",justifyContent: "center"}}  title ="Subscribe to our Newsletter!" target="_blank" rel="noopener noreferrer">Subscribe</a>
-                    <Modal className="subscribe-modal" style={customStyle} tabIndex="-1" isOpen={this.state.showModal} contentLabel="Subscribe to our Newsletter" id='myModal' >
-                       <h1>Subscribe to our Newsletter</h1>
+                    <Modal className="subscribe-modal" style={customStyle} tabIndex="-1" isOpen={this.state.showModal} 
+                          shouldCloseOnEsc={true} onRequestClose={this.handleCloseModal} contentLabel="Subscribe to our Newsletter" id='myModal' >
+                       <h1>Subscribe to our Newsletter!</h1>
                        <MailchimpSubscribe
                         url={mailChimpLink}
                         render={({ subscribe, status, message }) => (

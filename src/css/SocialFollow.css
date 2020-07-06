@@ -5,6 +5,16 @@
     display: flex;
 }
 
+.mailchimp-input-container {
+    background: #FF4081;
+    border-radius: 2%;
+    padding: 10;
+    margin-top: 30px;
+    display: inline-block;
+    height: auto;
+    width: 20vw;
+}
+
 .Social ul li {
     list-style: none;
     margin: 0 11px;
@@ -42,30 +52,32 @@
 
 .subscribe-modal {
     text-align: center;
-    position: absolute; 
-    top: 40px; 
-    left: 40px; 
-    right: 40px; 
-    bottom: 40px; 
-    border: 1px solid rgb(204, 204, 204); 
-    background: rgb(255, 255, 255); 
-    overflow: auto; 
+    font-size: 30px;
+    height: 40vw;
+    width: 30vw;
+    background: rgb(255, 255, 255);
     border-radius: 4px; 
     outline: none; 
-    padding: 20px;
-    /**style="background: rgb(239, 239, 239); border-radius: 2px; padding: 10px; display: inline-block;"><input type="text" placeholder="Your name" style="font-size: 2em; padding: 5px;"><br><input type="email" placeholder="Your email" style="font-size: 2em; padding: 5px;"><br><button style="font-size: 2em; padding: 5px;">Submit</button></div><button>Close</button></div>
-    */
+
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    margin: auto;
 }
 
 .subscribe-modal h1 {
     color: #FF4081;
+    font-size: 3vw;
+    margin-top: 3vw;
 }
 
 
 .submit-button {
-    font-size: 4vmin;
+    font-size: 15px;
     padding: 5;
-    margin-top: 1vmin;
+    margin-top: 5px;
+    height: 30px;
+    width: 70px;
     color: white;
     background-color: #333333;
     border-color: #333333;
@@ -82,12 +94,14 @@
 }
 
 .close-button {
-    font-size: 4vmin;
+    font-size: 15px;
     padding: 5;
-    margin-top: 20vmin;
+    margin-top: 40px;
     color: white;
     background-color: #FF4081;
     border-color: #FF4081;
+    height: 30px;
+    width: 70px;
     border-radius: 10%;
     transition: 0.5s;
     transform: translate(0,0px);
@@ -203,6 +217,24 @@
 } 
 
 @media only screen and (max-width: 1150px){
+    body {
+        background-color: blue;
+    }
+    .subscribe-modal {
+        text-align: center;
+        font-size: 30px;
+        height: 40vw;
+        width: 30vw;
+        background: rgb(255, 255, 255);
+        border-radius: 4px; 
+        outline: none; 
+
+        position: absolute;
+        left: 0; right: 0;
+        top: 700px; bottom: 800px;
+        margin: auto;
+    }
+
     .Social {
         margin-top: -5px;
     }
