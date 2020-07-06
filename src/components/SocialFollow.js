@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../css/SocialFollow.css';
 import '../css/Global.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Modal from 'react-modal';
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 const fbLink = "https://www.facebook.com/DynamicsPerformanceTeam/";
 
@@ -9,11 +11,89 @@ const igLink = "https://www.instagram.com/dynamicsperformanceteam/?hl=en";
 
 const mailLink = "mailto:dynamicsperformanceteam@gmail.com?subject=Hi, Dynamics Performance Team!";
 
+const mailChimpLink = "https://gmail.us4.list-manage.com/subscribe/post?u=d1eeb18ee37a90dc8b1251b7b&amp;id=6432994186";
+
 const youtubeLink = "https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g";
 
 const yelpLink = "https://www.yelp.com/biz/dynamics-performance-team-san-jose";
 
+const CustomForm = ({ status, message, onValidated }) => {
+  let email, name;
+  const submit = () =>
+    email &&
+    name &&
+    email.value.indexOf("@") > -1 &&
+    onValidated({
+      EMAIL: email.value,
+      NAME: name.value
+    });
+
+  return (
+    <div
+      style={{
+        background: "#FF4081",
+        borderRadius: "2%",
+        padding: 10,
+        marginTop: "10vh",
+        display: "inline-block",
+      }}
+    >
+      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
+      {status === "error" && (
+        <div
+          style={{ color: "black" }}
+          dangerouslySetInnerHTML={{ __html: "Error: " + message }}
+        />
+      )}
+      {status === "success" && (
+        <div
+          style={{ color: "green" }}
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+      <input
+        style={{ fontSize: "5vmin", padding: 5, color: '#333333' }}
+        ref={node => (name = node)}
+        type="text"
+        placeholder="Your name"
+      />
+      <br />
+      <input
+        style={{ fontSize: "5vmin", padding: 5, color: '#333333', borderColor: 'white'  }}
+        ref={node => (email = node)}
+        type="email"
+        placeholder="Your email"
+      />
+      <br />
+      <button className="submit-button" onClick={submit}>
+        Submit
+      </button>
+    </div>
+  );
+};
+
+const customStyle = {
+  overlay: {zIndex: 10}
+};
+
 class SocialFollow extends Component{
+    constructor(props) {
+      super(props);
+      this.state= {
+        showModal: false
+      };
+      this.handleOpenModal = this.handleOpenModal.bind(this);
+      this.handleCloseModal = this.handleCloseModal.bind(this);
+    }
+
+    handleOpenModal() {
+      this.setState({ showModal: true });
+    }
+
+    handleCloseModal() {
+      this.setState({ showModal: false });
+    }
+
     render(){
         return(
             <div className="Social Pink-Bullets">
@@ -47,7 +127,23 @@ class SocialFollow extends Component{
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.mailchimp.com" title ="Subscribe to our Newsletter!" target="_blank" rel="noopener noreferrer" style={{display:"flex",justifyContent: "center"}} alt="error loading img">Subscribe</a>
+                  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
+                  <a onClick={this.handleOpenModal} style={{display:"flex",justifyContent: "center"}}  title ="Subscribe to our Newsletter!" target="_blank" rel="noopener noreferrer">Subscribe</a>
+                    <Modal className="subscribe-modal" style={customStyle} tabIndex="-1" isOpen={this.state.showModal} contentLabel="Subscribe to our Newsletter" id='myModal' >
+                       <h1>Subscribe to our Newsletter</h1>
+                       <MailchimpSubscribe
+                        url={mailChimpLink}
+                        render={({ subscribe, status, message }) => (
+                        <CustomForm
+                         status={status}
+                         message={message}
+                         onValidated={formData => subscribe(formData)}
+                      />
+                      )}
+                      />
+                      <br />
+                      <button className="close-button" onClick={this.handleCloseModal}>Close</button>
+                    </Modal>
                 </li>
               </ul>
             </div>
