@@ -40,8 +40,8 @@ const CustomForm = ({ status, message, onValidated }) => {
       {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
       {status === "error" && (
         <div
-          style={{ color: "red" }}
-          dangerouslySetInnerHTML={{ __html: message }}
+          style={{ color: "black" }}
+          dangerouslySetInnerHTML={{ __html: "Error: " + message }}
         />
       )}
       {status === "success" && (
