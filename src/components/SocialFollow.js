@@ -36,6 +36,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         padding: 10,
         marginTop: "10vh",
         display: "inline-block",
+        width: "40vw"
       }}
     >
       {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
@@ -52,14 +53,14 @@ const CustomForm = ({ status, message, onValidated }) => {
         />
       )}
       <input
-        style={{ fontSize: "5vmin", padding: 5, color: '#333333' }}
+        style={{ fontSize: "5vmin", width: "30vw", padding: 5, color: '#333333' }}
         ref={node => (name = node)}
         type="text"
         placeholder="Your name"
       />
       <br />
       <input
-        style={{ fontSize: "5vmin", padding: 5, color: '#333333', borderColor: 'white'  }}
+        style={{ fontSize: "5vmin", width: "30vw", padding: 5, color: '#333333', borderColor: 'white'  }}
         ref={node => (email = node)}
         type="email"
         placeholder="Your email"
