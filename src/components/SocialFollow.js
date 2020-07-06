@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/SocialFollow.css';
+import '../css/Global.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Modal from 'react-modal';
 import MailchimpSubscribe from "react-mailchimp-subscribe"
@@ -95,7 +96,7 @@ class SocialFollow extends Component{
 
     render(){
         return(
-            <div className="Social">
+            <div className="Social Pink-Bullets">
               <ul>
 
               <li>
