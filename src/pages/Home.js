@@ -77,7 +77,7 @@ class Home extends React.Component {
 			return(
 				<div style={{position:"relative"}}>
 					<Toolbar/>
-					<NoRightClickImg src={mainBanner} style={{height: this.state.width * 0.45, width: "100%"}}/>
+					<NoRightClickImg src={mainBanner} style={{height: this.state.width * 0.45, width: "100%"}} disableEnlarging={true}/>
 					<p className="Dynamic-Text" >A team of <span className="Pink" style={{fontStyle: 'normal',fontWeight: 'normal', marginLeft:"5px", marginRight:"5px"}}id='dynamics' ref={this.dynamicText}> dynamic </span> dancers.</p>
 					<div className="Right-Container">
 						<Slideshow indicators={false}/>
@@ -99,7 +99,7 @@ class Home extends React.Component {
 			return(
 				<div style={{position:"relative"}}>
 					<Toolbar/>
-					<NoRightClickImg style={{height: this.state.width * 0.4, width: "100%"}} imgClassName="banner-img" src={mainBanner} />
+					<NoRightClickImg style={{height: this.state.width * 0.4, width: "100%"}} imgClassName="banner-img" src={mainBanner} disableEnlarging={true}/>
 					<div style={{display:this.state.imgViz ? "none":"flex", justifyContent:"center"}}>
 						<button className="Scroll-Button Teal-Background" onClick={this.scrollToSlideShow}>
 							<i className="fas fa-angle-double-down fa-2x"/>
