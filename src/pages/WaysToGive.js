@@ -5,7 +5,6 @@ import Instructions from '../images/waytogive/amazon smile instructions.jpg';
 import ModalImage from 'react-modal-image';
 import '../css/Support.css';
 import '../css/WaysToGive.css';
-import SupportStates from '../components/SupportStates.js';
 import Footer from '../components/Footer.js';
 import "../css/Global.css";
 

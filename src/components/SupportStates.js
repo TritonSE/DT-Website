@@ -59,7 +59,7 @@ class SupportStates extends Component {
     var validator = require('validator');
     var value = parseFloat(event.target.value);
 
-    if(event.target.value == ' '){
+    if(event.target.value === ' '){
       this.setState({displayError: true, errorMsg: "Amount cannot be empty"});
     }
     else if(isNaN(value)){
