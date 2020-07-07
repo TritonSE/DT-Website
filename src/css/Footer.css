@@ -65,7 +65,7 @@
         flex-direction: column;
         position: sticky;
         bottom: 0;
-        z-index: 10;
+        z-index: 999999;
     }
 
     .Social-Icon-Formatting{
