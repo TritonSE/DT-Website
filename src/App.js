@@ -3,7 +3,7 @@ import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Support from './pages/Support';
+import Support from './pages/Dropdown/Support';
 import Directors from './pages/Dropdown/Directors';
 import Audition from './pages/Audition'
 import Mission from './pages/Dropdown/Mission'

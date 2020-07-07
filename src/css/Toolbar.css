@@ -37,7 +37,7 @@ justify-content: flex-start;
   font-size: 110%;
   font-weight: bold;
   width: 100px;
-  height: 50px;
+  
   text-align: center;
   text-decoration: none !important; 
 }
@@ -60,7 +60,7 @@ justify-content: flex-start;
 }
 /* This controls what happens when someone hovers over the "Auditions" part of the navbar */
 .Gallery-Header:hover{
-  color: #FF4081 !important; /* this is the color that appears when someone hovers */ 
+  color:rgb(15, 185, 185) !important; /* this is the color that appears when someone hovers */ 
   transition: 0.5s !important;
 }
 
@@ -72,15 +72,7 @@ justify-content: flex-start;
 .navbar-light .navbar-nav .nav-link {
   color: black;
 }
-/* This controls the "Support" part of the navbar */
-.Support-Dropdown{
-  font-size: 110%;
-  width: 100px;
-  height: 50px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none !important; 
-}
+
 /* This controls the "About" part of the dropdown */
 .About-Dropdown {
   font-weight: bold;

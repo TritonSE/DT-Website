@@ -9,14 +9,16 @@ import "../css/Toolbar.css"
 
 //Necessary Variables. *CAN EDIT* 
 
-/*this controls the URL that the support links to. Currently, it is Paypal */ 
-const url = "https://www.paypal.me/dynamicsperformance"
+
 
 /*This controls the default color the navbar text is*/
 const defaultColor = "black"
 
 /* These controls the color that the navbar links take when a user is actively on that page*/
 const activeRed = "#FF4081"
+
+/*This is the active blue color*/
+const activeBlue =  "rgb(15, 185, 185)"
 
 /**
  * This controls if the font in the navbar is bold or not. 
@@ -29,13 +31,7 @@ const fontWeight = "bold"
  */
 class Toolbar extends Component {
  
-  
- /**
-  * This function handles linking to the PayPal page in the NavBar.
-  */
-  handlePaypal() {
-    window.open(url, "_blank");
-  }
+
 
  render() {
   return(
@@ -93,6 +89,12 @@ class Toolbar extends Component {
                       Our Mission
                       </NavDropdown.Item>
                     </LinkContainer>
+                    <LinkContainer to="/Support">
+                  <NavDropdown.Item>
+                    {/* this is the part you edit if you would like the "Support Us" text to be different (in the dropdown)*/}
+                    Support Us
+                  </NavDropdown.Item>
+                </LinkContainer>
               </NavDropdown>
 
               {/* This controls the Audition part of the NavBar*/} 
@@ -111,24 +113,6 @@ class Toolbar extends Component {
               {/* this is the part you edit if you would like the "Audition" text to be different */}
                 Audition
               </NavLink>
-
-              {/** This controls the Support dropdown for the navbar*/}
-              <NavDropdown title="Support" id="collapsible-nav-dropdown" className = "Support-Dropdown">
-                <LinkContainer to="/Support">
-                  <NavDropdown.Item>
-                    {/* this is the part you edit if you would like the "Support Us" text to be different (in the dropdown)*/}
-                    Support Us
-                  </NavDropdown.Item>
-                </LinkContainer>
-                <NavDropdown.Item onClick={this.handlePaypal} eventKey={3.2}
-                style={{
-                backgroundColor: "white",
-                color: defaultColor 
-                }}>
-                {/* this is the part you edit if you would like the "PayPal" text to be different (in the dropdown)*/}
-                Paypal
-                </NavDropdown.Item>
-            </NavDropdown>
               
               {/** This controls the gallery portion of the NavBar */}
               <NavLink
@@ -141,7 +125,7 @@ class Toolbar extends Component {
                   color: defaultColor,
                 }}
                 activeStyle={{
-                  color: activeRed
+                  color: activeBlue
                 }}>
                   {/* this is the part you edit if you would like the "Gallery" text to be different*/}
                  Gallery
