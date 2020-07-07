@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Support from './pages/Dropdown/Support';
 import Directors from './pages/Dropdown/Directors';
@@ -9,9 +8,11 @@ import Audition from './pages/Audition'
 import Mission from './pages/Dropdown/Mission'
 import About from './pages/Dropdown/About'
 import History from './pages/Dropdown/History'
-import Gallery from './pages/Gallery'
+import Gallery from './pages/Dropdown/Gallery'
 import {isTablet, isMobileOnly, isBrowser} from 'react-device-detect';
 import swal from 'sweetalert';
+import {Route} from "react-router-dom";
+import ScrollToTop from './components/ScrollToTop.js';
 
 class App extends Component {
 
@@ -43,8 +44,9 @@ class App extends Component {
 	}
 
 	render() {
+
   		return (
-    		<div>
+			<ScrollToTop>
 				<Route path="/" exact render={(props) => <Home {...props}/>}/>
 				<Route path="/home" exact render={(props) => <Home {...props}/>}/>
 				<Route path = "/Dropdown/About" exact render = {(props) => <About {...props}/>}/>
@@ -54,7 +56,7 @@ class App extends Component {
 				<Route path="/Dropdown/History" exact render={(props) => <History { ... props}/>}/> 
 				<Route path="/support" exact render={(props) => <Support {...props}/>}/>
 				<Route path="/Gallery" exact render={(props) => <Gallery {...props}/>}/>
-   	 	</div>
+   	 	</ScrollToTop>
   		);
   }
 }

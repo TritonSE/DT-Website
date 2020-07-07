@@ -16,7 +16,6 @@
     width: 35px;
     height: 35px;
     border-radius: 10%;
-    color: #FF4081;
     background-color: #333333;
     transition: 0.5s;
     transform: translate(0,0px);
@@ -37,8 +36,98 @@
 
 .Social ul li a:hover{
     color: white;
-    background-color: #FF4081;
     transition: 0.5s;
+    cursor: pointer;
+}
+
+.subscribe-modal {
+    text-align: center;
+    position: absolute; 
+    top: 40px; 
+    left: 40px; 
+    right: 40px; 
+    bottom: 40px; 
+    border: 1px solid rgb(204, 204, 204); 
+    background: rgb(255, 255, 255); 
+    overflow: auto; 
+    border-radius: 4px; 
+    outline: none; 
+    padding: 20px;
+    /**style="background: rgb(239, 239, 239); border-radius: 2px; padding: 10px; display: inline-block;"><input type="text" placeholder="Your name" style="font-size: 2em; padding: 5px;"><br><input type="email" placeholder="Your email" style="font-size: 2em; padding: 5px;"><br><button style="font-size: 2em; padding: 5px;">Submit</button></div><button>Close</button></div>
+    */
+}
+
+.subscribe-modal h1 {
+    color: #FF4081;
+}
+
+
+.submit-button {
+    font-size: 4vmin;
+    padding: 5;
+    margin-top: 1vmin;
+    color: white;
+    background-color: #333333;
+    border-color: #333333;
+    border-radius: 10%;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    text-decoration: none;
+}
+
+.submit-button:hover {
+    background-color: #4d4d4d;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.close-button {
+    font-size: 4vmin;
+    padding: 5;
+    margin-top: 20vmin;
+    color: white;
+    background-color: #FF4081;
+    border-color: #FF4081;
+    border-radius: 10%;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    text-decoration: none;
+}
+
+.close-button:hover {
+    background-color: #FF6699;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.mailchimp-form {
+    background: #FF4081;
+    border-radius: 2%;
+    padding: 10;
+    margin-top: 10vh;
+    display: inline-block;
+    z-index: 11;
+}
+
+.mailchimp-box {
+    background: #efefef;
+    padding: 10;
+    margin-top: 10vh;
+    display: inline-block;
+    border-radius: 2;
+}
+
+::placeholder {
+    color: #333333 ;
+    
+    position: relative;
+    animation: move-text 1.75s forwards;
+}
+
+@keyframes move-text {
+    0% { bottom: 0.2em; opacity: 1; }
+    50% { bottom: 0.2em; }
+    100% { bottom: 0; opacity: 1; }
 }
 
  @media only screen and (max-width: 1300px){
@@ -130,16 +219,11 @@
     }
 
     .instagram-iconImg {
-        /* margin-top: 1px; */
         height: 4.5vw;
         width: 4.5vw;
     }
     
     .mail-iconImg {
-        /* margin-top: 15%; */
-        /* height: 4vh;
-        width: 5vh; */
-        /* margin:1vh; */
         margin-top: 1%;
         height: 4vw;
         width: 4.5vw;
@@ -151,13 +235,11 @@
         width: 4.5vw;
     }
     .youtube-iconImg {
-        /* margin-top: 5%; */
         height: 4.5vw;
         width: 4.5vw;
     }
 
     .yelp-iconImg {
-        /* margin-top: 15%; */
         height: 4.5vw;
         width: 4.5vw;
     }
@@ -208,40 +290,23 @@
     }
 }
 
-@media only screen and (max-width: 700px){
-
-    .instagram-iconImg {
-        /* margin-top: 1px; */
-        height: 5vh;
-        width: 5vh;
-    }
+@media only screen and (max-width: 1024px) and (min-height: 1023px) {
+        .subscribe-modal {
+            bottom: 30vh;
+            top: 20vh;
+        }
     
-    .mail-iconImg {
-        /* margin-top: 15%; */
-        /* height: 4vh;
-        width: 5vh; */
-        /* margin:1vh; */
-        margin-top: 1%;
-        height: 4vh;
-        width: 5vh;
-    }
+        .subscribe-modal h1 {
+            margin-bottom: -5vh;
+        }
+    
+        .close-button {
+            margin-top: 5vh;
+        }
+    
+}
 
-    .facebook-iconImg {
-        margin-top: -13%;
-        height: 5vh;
-        width: 5vh;
-    }
-    .youtube-iconImg {
-        /* margin-top: 5%; */
-        height: 5vh;
-        width: 5vh;
-    }
-
-    .yelp-iconImg {
-        /* margin-top: 15%; */
-        height: 5vh;
-        width: 5vh;
-    }
+@media only screen and (max-width: 700px){
 
     .Social ul li {
         margin: 1.2vw;
@@ -250,5 +315,75 @@
     .Social ul li a {
         width: 135%;
         height: 135%;
+    }
+
+    .subscribe-modal {
+        bottom: 175px;
+    }
+
+    .subscribe-modal h1 {
+        margin-bottom: -5vh;
+    }
+
+    .close-button {
+        margin-top: 5vh;
+    }
+    @media only screen and (orientation:portrait) {
+
+        .instagram-iconImg {
+            height: 5vh;
+            width: 5vh;
+        }
+        
+        .mail-iconImg {
+            margin-top: 1%;
+            height: 4vh;
+            width: 5vh;
+        }
+    
+        .facebook-iconImg {
+            margin-top: -13%;
+            height: 5vh;
+            width: 5vh;
+        }
+        .youtube-iconImg {
+            height: 5vh;
+            width: 5vh;
+        }
+    
+        .yelp-iconImg {
+            height: 5vh;
+            width: 5vh;
+        }
+
+    }
+
+    @media only screen and (orientation:landscape) {
+       
+        .instagram-iconImg {
+            height: 5vw;
+            width: 5vw;
+        }
+        
+        .mail-iconImg {
+            margin-top: 1%;
+            height: 4vw;
+            width: 5vw;
+        }
+
+        .facebook-iconImg {
+            margin-top: -13%;
+            height: 5vw;
+            width: 5vw;
+        }
+        .youtube-iconImg {
+            height: 5vw;
+            width: 5vw;
+        }
+
+        .yelp-iconImg {
+            height: 5vw;
+            width: 5vw;
+        }
     }
 }

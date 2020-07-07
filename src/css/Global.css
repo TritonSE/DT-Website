@@ -1,9 +1,45 @@
 h1 {
     font-size: 6.2vw;
     font-family: 'Lato', sans-serif;
-    color: #FF4081;
-
 }
+
+.Pink {
+    color: #FF4081;
+}
+
+
+.Pink-Active {
+    color: #FF4081 !important;
+}
+
+.Teal-Active {
+    color: rgb(15, 185, 185) !important;
+}
+
+.Pink:hover {
+    color: #FF4081 !important; 
+}
+
+.Teal {
+    color: rgb(15, 185, 185);
+}
+
+.Teal > a {
+    color: rgb(15, 185, 185);
+}
+
+.Teal:hover {
+    color: rgb(15, 185, 185) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(15, 185, 185);
+    transition: 0.5s;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+      color: rgb(15, 185, 185) !important;
+  }
 
 h2 {
     font-size: 1.15vw;
@@ -39,11 +75,38 @@ ul li {
     color: #000000;
 }
 
+.Pink-Bullets ul li a {
+    color: #FF4081;
+}
+
+.Pink-Bullets ul li:before {
+    color: #FF4081;
+}
+
+.Pink-Bullets ul li a:hover {
+    background-color: #FF4081;
+}
+
+.Pink-Background {
+    background-color: #FF4081;
+}
+
+.Teal-Background {
+    background-color: rgb(15, 185, 185);
+}
+
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 5vh;
         font-family: 'Lato', sans-serif;
+    }
+
+    .Pink {
         color: #FF4081;
+    }
+    
+    .Teal {
+        color: rgb(15, 185, 185);
     }
 
     h2 {
@@ -78,5 +141,25 @@ ul li {
         font-size: 4.2vw;
         font-family: 'Lato', sans-serif;
         color: #000000;
+    }
+
+    .Pink-Background {
+        background-color: #FF4081;
+    }
+
+    .Teal-Background {
+        background-color: rgb(15, 185, 185);
+    }
+
+    .Pink-Bullets ul li:before {
+        color: #FF4081;
+    }
+
+}
+
+@media only screen and (orientation:landscape) and (max-width: 600px) {
+    h1 {
+        font-size: 10vw;
+        font-family: 'Lato', sans-serif;
     }
 }

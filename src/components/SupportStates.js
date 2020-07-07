@@ -8,17 +8,18 @@
 import React, { Component } from 'react';
 import '../css/Support.css';
 import PaypalButton from '../components/PaypalButton.js'
-import { IoIosAlert } from "react-icons/io";
-import swal from 'sweetalert';
+import DonateAmountInput from '../components/DonateAmountInput';
 
 /**
  * Helper component to SupportMain.js. Used to go through 
  * different states of Paypal checkout (setup before API call)
  */
 class SupportStates extends Component {
+  
   state= {
 		amount: '', //amount user will donate (given to PayPal API)
-		displayError: false, //enabled when amount is invalid 
+    displayError: false, //enabled when amount is invalid 
+    errorMsg: '',
 		displayAmountAdjust: true //keeps track of checkout stage (amount adjust - Stage 1 vs. Paypal - Stage 2), default is Stage 1
   }
   
@@ -33,27 +34,13 @@ class SupportStates extends Component {
 		if(this.state.displayAmountAdjust){
       //only proceed if no error 
 			if(this.state.displayError){
-        swal({
-          title: "Invalid Amount",
-          text: "Please adjust amount until the red error icon disappears.",
-          icon: "warning",
-          button: {
-            text: "Got it"
-          }
-        });
+        // alert('Invalid amount. Please adjust until red error icon disappears.');
 				return;
       }
       //Edge Case: Set error if amount is empty, else proceed
 			else if(this.state.amount === ''){
-        swal({
-          title: "Invalid Amount",
-          text: "Please adjust amount until the red error icon disappears.",
-          icon: "warning",
-          button: {
-            text: "Got it"
-          }
-        });
-				this.setState({displayError: true});
+        // alert('Invalid amount. Please adjust until red error icon disappears.');
+				this.setState({displayError: true, errorMsg: "Amount cannot be empty"});
 				return;
 			}	 
     }
@@ -70,47 +57,31 @@ class SupportStates extends Component {
   handleUpdateAmount = (event) =>{
     this.setState({amount: event.target.value});
     var validator = require('validator');
-    //set error if amount is either invalid or <= 0
-		if(!(validator.isCurrency(event.target.value, {allow_negatives: false, digits_after_decimal: [1,2]}) && parseFloat(event.target.value) > 0)){
-				if(!this.state.displayError){
-					this.setState({displayError: true});
-				}
-				return;
+    var value = parseFloat(event.target.value);
+
+    if(event.target.value === ' '){
+      this.setState({displayError: true, errorMsg: "Amount cannot be empty"});
     }
-    //no current error but previously had error state --> reverse error state 
-		else if(this.state.displayError){
-			this.setState({displayError: false});
-		}
+    else if(isNaN(value)){
+      this.setState({displayError: true, errorMsg: "Not a valid number"});
+    }
+    else if(value <=0){
+      this.setState({displayError: true, errorMsg: "Amount must be positive"});
+    }
+    else if(!(validator.isCurrency(event.target.value, {allow_negatives: false, digits_after_decimal: [0,1,2]}))){
+      this.setState({displayError: true, errorMsg: "Maximum of 2 decimal places"});
+    } 
+    else{
+      this.setState({displayError: false, errorMsg: ""});
+    }
   }
   
 	render() {
     //render this layout if at Stage 1 (used for updating amount to donate)
     if(this.state.displayAmountAdjust){
       return (
-        <div className="Proceed-Style">
-          <text
-            className="Amount-Text"
-            style={{bottom: "3%", fontWeight: "bold", marginLeft: "-5%"}}
-          >
-            {"Amount: $"}
-          </text>
-          <input
-            type="number"
-            inputmode="numeric"
-            className="Amount-Text"
-            value={this.state.amount === '' ? null:this.state.amount}
-            placeholder="5.00"
-            onChange={this.handleUpdateAmount}
-          >
-          </input>
-          <IoIosAlert style={{display: this.state.displayError ? null:'none', color:"red", width: "2%", maxHeight:"2%", marginTop: "2%", marginLeft:"1%"}}/>
-          <button 
-            style={{left: "53%"}} 
-            className="btn btn-secondary Proceed-Button"
-            onClick={this.handleAmountChange}
-          >
-            {"Proceed"}
-          </button>
+        <div style={{display:"flex", justifyContent:"center"}}> 
+            <DonateAmountInput errorMsg={this.state.errorMsg} amount={this.state.amount} displayError={this.state.displayError} handleUpdateAmount={this.handleUpdateAmount} handleAmountChange={this.handleAmountChange}/>
         </div>
           );
     }
@@ -118,30 +89,27 @@ class SupportStates extends Component {
     else{
       return (
         <div className="Checkout-Style">
-            <div className="PayPal-Style">
               <PaypalButton amount={this.state.amount}/>
-            </div>
             <div className="Adjust-Style">
-            <text
-              className="Amount-Text"
-              style={{bottom: "3%", fontWeight: "bold"}}
-            >
-              {"$"}
-            </text>
-            <input
-              className="Chosen-Amount"
-              value={this.state.amount}
-              disabled={"disabled"}
-              style={{backgroundColor: "lightgrey"}}
-            >
-            </input>
-            <button 
-              className="btn btn-secondary Proceed-Button"
-              style={{marginTop: "7%"}}
-              onClick={this.handleAmountChange}
-            >
-              {"Adjust"}
-            </button>
+              <text
+                className="Amount-Text"
+                style={{bottom: "3%", fontWeight: "bold"}}
+              >
+                {"$"}
+              </text>
+              <input
+                className="Chosen-Amount"
+                value={this.state.amount}
+                disabled={"disabled"}
+                style={{backgroundColor: "lightgrey"}}
+              >
+              </input>
+              <button 
+                className="btn btn-secondary Adjust-Button"
+                onClick={this.handleAmountChange}
+              >
+                {"Adjust"}
+              </button>
           </div>
         </div>
           );

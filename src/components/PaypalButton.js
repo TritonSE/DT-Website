@@ -13,10 +13,9 @@ class PaypalButton extends Component {
     return (
       <PayPalButton
         style={{
-          layout: 'horizontal',
+          // layout: 'horizontal',
           color:  'gold',
           shape:  'pill',
-          maxHeight:  55,
         }}
 
         //customizes order from default settings 

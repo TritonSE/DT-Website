@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import VizSensor from 'react-visibility-sensor';
 import mainBanner from '../images/home/Facebook_Cover_2019.png';
 import Slideshow from '../components/Slideshow.js';
@@ -23,7 +23,6 @@ class Home extends React.Component {
 	}
 
 	componentDidMount() {
-		window.scrollTo(0,0);
 		this.updateWindowDimensions();
 		window.textTimer = setInterval(this.changeStyle, 1000);
 		window.addEventListener('resize', this.updateWindowDimensions);
@@ -78,23 +77,10 @@ class Home extends React.Component {
 			return(
 				<div style={{position:"relative"}}>
 					<Toolbar/>
-					<NoRightClickImg src={mainBanner} style={{height: this.state.width * 0.45, width: "100%"}}/>
-					<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal', marginLeft:"5px", marginRight:"5px"}}id='dynamics' ref={this.dynamicText}> dynamic </span> dancers.</p>
+					<NoRightClickImg src={mainBanner} style={{height: this.state.width * 0.45, width: "100%"}} disableEnlarging={true}/>
+					<p className="Dynamic-Text" >A team of <span className="Pink" style={{fontStyle: 'normal',fontWeight: 'normal', marginLeft:"5px", marginRight:"5px"}}id='dynamics' ref={this.dynamicText}> dynamic </span> dancers.</p>
 					<div className="Right-Container">
-						<Slideshow indicators={false} slideImages={[
-							require('../images/home/Main Page 1.jpg'), 
-							require('../images/home/Main Page 4.jpg'),
-							require('../images/home/Main Page 5.jpg'), 
-							require('../images/home/Main Page 6.jpg'),
-							require('../images/home/Main Page 7.jpg'), 
-							require('../images/home/Main Page 8.jpg'),
-							require('../images/home/Main Page 9.jpg'), 
-							require('../images/home/Main Page 10.jpg'),
-							require('../images/home/Main Page 11.jpg'), 
-							require('../images/home/Main Page 12.jpg'), 
-							require('../images/home/Main Page 13.jpg'), 
-							require('../images/home/Main Page 14.jpg')
-							]}/>
+						<Slideshow indicators={false}/>
 					</div>	
 					<div className="Left-Container">
 						<p className="Static-Text"> 
@@ -102,8 +88,8 @@ class Home extends React.Component {
 		
 								Dancers learn quality technique along with competitive choreography in both commercial and concert styles. Like the five points of a star, DPT has five primary goals: instill technique, performance, character, dedication and passion in all of its dancers. Dancers have the opportunity to perform in groups, trios, duets, and even solos.<br/> <br/>
 		
-								DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link style={{color: '#FF4081'}} to='/Audition'>Click here</Link> for more information. 
-								Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link style={{color: '#FF4081'}} to="/About/AboutUs">Click here</Link> to learn more about DPT.
+								DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link className="Pink" to='/Audition'>Click here</Link> for more information about auditions. 
+								Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link className="Pink" to="/About/AboutUs">Click here</Link> to learn more about DPT.
 						</p>
 					</div>
 					<Footer/>
@@ -113,13 +99,15 @@ class Home extends React.Component {
 			return(
 				<div style={{position:"relative"}}>
 					<Toolbar/>
-					<NoRightClickImg style={{height: this.state.width * 0.4, width: "100%"}} imgClassName="banner-img" src={mainBanner} />
-
+					<NoRightClickImg style={{height: this.state.width * 0.4, width: "100%"}} imgClassName="banner-img" src={mainBanner} disableEnlarging={true}/>
 					<div style={{display:this.state.imgViz ? "none":"flex", justifyContent:"center"}}>
-						<button className="Scroll-Button" onClick={this.scrollToSlideShow}>
-							<i class="fas fa-angle-double-down fa-2x"/>
+						<button className="Scroll-Button Teal-Background" onClick={this.scrollToSlideShow}>
+							<i className="fas fa-angle-double-down fa-2x"/>
 						</button>
 					</div>
+					{/* <h1 className="Flight-Animation">
+						Amrit
+					</h1> */}
 					<VizSensor
 						partialVisibility
 						minTopValue="35"
@@ -129,31 +117,22 @@ class Home extends React.Component {
 					>
 						<div className="Text-Container" ref={this.scrollReference}>
 							<div className="Left-Container" style={{width: this.state.width*0.5}}>
-								<p className="Dynamic-Text" >A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.dynamicText}> dynamic</span> <span><br/>dancers.</span></p>
+								<p className="Dynamic-Text" >A team of <span className="Pink" style={{fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.dynamicText}> 
+										dynamic
+									</span> 
+									<span><br/>dancers.</span>
+								</p>
 								<p className="Static-Text"> 
 										The Dynamics Performance Team (DPT) is an award winning non-profit dance company training the next generation of versatile artists in San Jose and the surrounding Bay Area. Established in 2005, DPT performs and competes in jazz, contemporary, lyrical, tap, and hip hop, among others. <br/> <br/>
 				
 										Dancers learn quality technique along with competitive choreography in both commercial and concert styles. Like the five points of a star, DPT has five primary goals: instill technique, performance, character, dedication and passion in all of its dancers. Dancers have the opportunity to perform in groups, trios, duets, and even solos.<br/> <br/>
 				
-										DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link style={{color: '#FF4081'}} to='/Audition'>Click here</Link> for more information. 
-										Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link style={{color: '#FF4081'}} to="/About/AboutUs">Click here</Link> to learn more about DPT.
+										DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link className="Pink" to='/Audition'>Click here</Link> for more information about auditions. 
+										Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link className="Pink" to="/About/AboutUs">Click here</Link> to learn more about DPT.
 								</p>
 							</div>
 							<div className="Right-Container" style={{width: this.state.width*0.5}}>
-								<Slideshow special={10} indicators={true} slideImages={[
-									require('../images/home/Main Page 1.jpg'), 
-									require('../images/home/Main Page 4.jpg'),
-									require('../images/home/Main Page 5.jpg'), 
-									require('../images/home/Main Page 6.jpg'),
-									require('../images/home/Main Page 7.jpg'), 
-									require('../images/home/Main Page 8.jpg'),
-									require('../images/home/Main Page 9.jpg'), 
-									require('../images/home/Main Page 10.jpg'),
-									require('../images/home/Main Page 11.jpg'), 
-									require('../images/home/Main Page 12.jpg'), 
-									require('../images/home/Main Page 13.jpg'), 
-									require('../images/home/Main Page 14.jpg')
-									]}/>
+								<Slideshow indicators={true}/>
 							</div>	
 						</div>
 					</VizSensor>

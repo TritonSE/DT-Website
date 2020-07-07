@@ -50,8 +50,8 @@ class Toolbar extends Component {
             <NavLink  
               to="/" 
               href = "/Home" 
-              exact activeClassName = "active" 
-              className= "Home-Header" 
+              exact activeClassName = "Pink-Active active" 
+              className= "Home-Header Pink" 
               style={{
                 fontWeight: fontWeight,
                 color: defaultColor,

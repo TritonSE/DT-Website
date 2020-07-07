@@ -16,23 +16,21 @@ import firstImg from "../images/audition/first.jpg";
 import secondImg from "../images/audition/second.jpg";
 
 class Audition extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
 
   render() {
     return (
+      <div>
       <div className="hideHorizontalScroll">
         <div className="web">
           <Toolbar bool={false} />
-          <Row>
+          <Row className="row">
             <Col>
               <AuditionImages />
             </Col>
 
             <Col className="audition-text font">
               <Container>
-                <h1 className="title">Audition</h1>
+                <h1 className="title Teal">Audition</h1>
                 <AuditionInfo />
               </Container>
 
@@ -48,8 +46,8 @@ class Audition extends Component {
 
         <div className="mobile">
           <Toolbar bool={false} />
-          <h1 className="title audition-info">Audition</h1>
-          <Row>
+          <h1 className="audition-info Teal">Audition</h1>
+          <Row className="row">
             <NoRightClickImg
               src={firstImg}
               alt=""
@@ -75,6 +73,7 @@ class Audition extends Component {
           </Row>
           <Footer />
         </div>
+      </div>
       </div>
     );
   }

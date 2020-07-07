@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Toolbar from '../../components/Toolbar';
 import { Container, Col, Row } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
@@ -16,11 +16,11 @@ class Mission extends React.Component{
 			{/* FOR MOBILE */}
 			<div className="Mobile">
 			<Container>
-					<h1 className="Mission-Title"> Our Mission </h1>
+					<h1 className="Mission-Title Teal"> Our Mission </h1>
 					<NoRightClickImg imgClassName="Dancers-Image" src={image} alt="could not load"/>
 					<p className="Mission-Paragraph"> The specific purpose of this organization is to inspire, educate, and promote passion, dedication, and performance within the art of dance.  All funds, whether income or principal, and whether acquired by gift or contribution or otherwise, shall be devoted to said purposes. </p>
 					<p className="Support-link"> To donate to our non-profit, please 
-					<Link style={{color: '#FF4081'}} to="/support"> click here! </Link>
+					<Link className="Pink" to="/support"> click here! </Link>
 					</p>
 			</Container>
 			</div>
@@ -29,10 +29,10 @@ class Mission extends React.Component{
 			<div className="div">
 				<Row>
 				<Col className="column1">
-					<h1 className="Mission-Title"> Our Mission </h1>
+					<h1 className="Mission-Title Teal"> Our Mission </h1>
 					<p className="Mission-Paragraph"> The specific purpose of this organization is to inspire, educate, and promote passion, dedication, and performance within the art of dance.  All funds, whether income or principal, and whether acquired by gift or contribution or otherwise, shall be devoted to said purposes. </p>
 				<p className="Support-Link"> To donate to our non-profit, please 
-				<Link style={{color: '#FF4081'}} to="/Support"> click here! </Link>
+				<Link className="Pink" to="/Support"> click here! </Link>
 				</p>
 				</Col>
 				<Col xs={7} className="column2">

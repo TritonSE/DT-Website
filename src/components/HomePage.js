@@ -48,7 +48,7 @@ class HomePage extends React.Component {
 				<toolbar/>
 			<div className="text" >
 				<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-				<p>A team of <span style={{color: '#FF4081',fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}> <br/>dynamic</span> <span><br/>dancers.</span></p>
+				<p>A team of <span className="Pink" style={{fontStyle: 'normal',fontWeight: 'normal'}}id='dynamics' ref={this.myRef}> <br/>dynamic</span> <span><br/>dancers.</span></p>
 				<img src={dancer} style={{transform: "rotate(5deg)"}} ref = {this.imageRef}/>
 			</div>
 			</div>

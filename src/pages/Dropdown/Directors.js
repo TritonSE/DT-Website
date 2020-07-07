@@ -15,7 +15,6 @@ class Directors extends Component {
 		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 	}
 	componentDidMount() {
-		window.scrollTo(0,0);
 		this.updateWindowDimensions();
 		window.addEventListener('resize', this.updateWindowDimensions);
 	}
@@ -48,10 +47,10 @@ class Directors extends Component {
 		if(this.state.isMobile){
 			return (
 				<div>
-					<Toolbar/>
+					<Toolbar bool={true}/>
 					<div className="Title-Container">
-						<h1 className="Title-Season"> 2019-20 Season </h1>
-						<h1 className="Title-Directors"> Board of <br/> Directors </h1>
+						<h1 className="Title-Season Teal"> 2019-20 Season </h1>
+						<h1 className="Title-Directors Pink"> Board of <br/> Directors </h1>
 					</div>
 					<DirectorProfile imgTop={require('../../images/directors/Creative Director Headshot.jpg')} imgBottom={require('../../images/directors/Creative Director Action shot.jpg')} title="Creative Director" name="Charles Solomon" text= {solomonText}/>
 					<DirectorProfile imgTop={require('../../images/directors/Artistic Director Headshot.jpg')} imgBottom={require('../../images/directors/Artistic Director Action shot.jpg')} title="Artistic Director" name="Danielle de Ojeda" text={danielleText}/>
@@ -70,10 +69,10 @@ class Directors extends Component {
 		else{
 			return (
 				<div>
-					<Toolbar/>
+					<Toolbar bool={true}/>
 					<div className="Title-Container">
-						<h1 className="Title-Season"> 2019-20 Season </h1>
-						<h1 className="Title-Directors"> Board of Directors </h1>
+						<h1 className="Title-Season Teal"> 2019-20 Season </h1>
+						<h1 className="Title-Directors Pink"> Board of Directors </h1>
 					</div>
 					<DirectorProfile imgTop={require('../../images/directors/Creative Director Headshot.jpg')} imgBottom={require('../../images/directors/Creative Director Action shot.jpg')} title="Creative Director" name="Charles Solomon" text= {solomonText}/>
 					<br/>
