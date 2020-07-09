@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Support from './pages/Support';
 import Directors from './pages/About/Directors';
 import Audition from './pages/Audition'
-import Gallery from './pages/About/Gallery'
+import Gallery from './pages/Gallery'
 import Mission from './pages/About/Mission'
 import About from './pages/About/About'
 import History from './pages/About/History'
