@@ -9,7 +9,7 @@ class Gallery extends Component {
   render() {
     return(
       <div>
-         <Toolbar bool={true}/>
+         <Toolbar bool={false}/>
          <Tabs className="tabholder Teal" fill defaultActiveKey="photos">
            <TabPane eventKey="photos" title="Photos">
              <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
