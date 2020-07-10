@@ -5,7 +5,6 @@ import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
 import { LinkContainer} from 'react-router-bootstrap';
 import '../css/Global.css';
-//import "../css/Toolbar.css"
 
 class Toolbar extends Component {
   constructor(props) {
@@ -65,6 +64,7 @@ class Toolbar extends Component {
               }}> 
                 Home
             </NavLink>
+
             <NavDropdown title="About" id="collasible-nav-dropdown" className = "Dropdown-Header">
                     <LinkContainer to = "/About/AboutUs" exact activeClassName = "active">
                       <NavDropdown.Item> 
@@ -86,36 +86,36 @@ class Toolbar extends Component {
                       Our Mission
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Gallery" exact activeClassName = "active">
-                      <NavDropdown.Item> 
-                        Gallery 
+                    <LinkContainer to = "/About/Support" href="/Support">
+                      <NavDropdown.Item>
+                        Support Us!
                       </NavDropdown.Item>
                     </LinkContainer>
               </NavDropdown>
+           
             {/** Support part of Navbar */}
-            <NavLink 
-              to = "/Support" 
-              href="/Support" 
-              exact activeClassName="Pink-Active"
-              className = "Support-Header Pink" 
-              style={{
-                fontWeight: "bold",
-                color: "black"
-              }}>
-                Support
-            </NavLink>
-
-          
              <NavLink 
               to="/Audition"
               href= "/Audition"
-              exact activeClassName = "Teal-Active active"
-              className= "Auditions-Header Teal"
+              exact activeClassName = "Pink-Active active"
+              className= "Auditions-Header Pink"
               style={{
                 fontWeight: "bold",
                 color: "black",
               }}>
                 Audition
+              </NavLink>
+              
+              <NavLink
+              to="/Gallery"
+              href="/Gallery"
+              exact activeClassName = "Teal-Active active"
+              className = "Gallery-Header Teal"
+              style={{
+                fontWieght: "bold",
+                color:"black"
+              }}>
+                Gallery
               </NavLink>
 
               </Nav>
