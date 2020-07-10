@@ -88,7 +88,7 @@ class Home extends React.Component {
 		
 								Dancers learn quality technique along with competitive choreography in both commercial and concert styles. Like the five points of a star, DPT has five primary goals: instill technique, performance, character, dedication and passion in all of its dancers. Dancers have the opportunity to perform in groups, trios, duets, and even solos.<br/> <br/>
 		
-								DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link className="Pink" to='/Audition'>Click here</Link> for more information. 
+								DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link className="Pink" to='/Audition'>Click here</Link> for more information about auditions. 
 								Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link className="Pink" to="/About/AboutUs">Click here</Link> to learn more about DPT.
 						</p>
 					</div>
@@ -127,7 +127,7 @@ class Home extends React.Component {
 				
 										Dancers learn quality technique along with competitive choreography in both commercial and concert styles. Like the five points of a star, DPT has five primary goals: instill technique, performance, character, dedication and passion in all of its dancers. Dancers have the opportunity to perform in groups, trios, duets, and even solos.<br/> <br/>
 				
-										DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link className="Pink" to='/Audition'>Click here</Link> for more information. 
+										DPT holds open auditions for dancers ages 8+ for each season, and are excited to open up the team to ages 5-7 this year! <Link className="Pink" to='/Audition'>Click here</Link> for more information about auditions. 
 										Dancers have the opportunity to perform in groups, trios, duets, and even solos. <Link className="Pink" to="/About/AboutUs">Click here</Link> to learn more about DPT.
 								</p>
 							</div>

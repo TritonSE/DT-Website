@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import Toolbar from "../../components/Toolbar";
-import GalleryImages from "../../components/GalleryImages.js";
-import Footer from '../../components/Footer.js';
-import '../../css/Gallery.css';
+import Toolbar from "../components/Toolbar";
+import GalleryImages from "../components/GalleryImages.js";
+import Footer from '../components/Footer.js';
+import '../css/Gallery.css';
 import { Tabs, TabPane } from 'react-bootstrap';
 
 class Gallery extends Component {
   render() {
     return(
       <div>
-         <Toolbar bool={true}/>
+         <Toolbar bool={false}/>
          <Tabs className="tabholder Teal" fill defaultActiveKey="photos">
            <TabPane eventKey="photos" title="Photos">
              <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
@@ -26,7 +26,7 @@ class Gallery extends Component {
                 <div style={{alignItems: "center", justifyContent: "center"}}>
                   <div className="videos-container"> 
                     <h1 className="tab-title Pink"> Video Gallery </h1>
-                    <img className="DPT-logo" alt="Couldn't load.."src={require("../../images/logo1.png")}></img>
+                    <img className="DPT-logo" alt="Couldn't load.."src={require("../images/logo1.png")}></img>
                     <br />
                     <p className="subscribe-text"> For more videos, click <a className="Pink" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCLVld8eG5THi_R1MpLobU4g">here</a> to subscribe to our Youtube channel! </p>
                   </div> 

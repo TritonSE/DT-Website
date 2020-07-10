@@ -9,39 +9,40 @@ justify-content: flex-start;
 
 
 .Home-Header{
-  color: black;
-  font-size: 115%;
+  font-size: 105%;
   font-weight: bold;
   width: 110px;
   height: 50px;
   text-decoration: none !important; 
+  text-align: center;
   
 }
   
 .Auditions-Header{
-  color: black; 
-  font-size: 115%;
+  font-size: 105%;
   font-weight: bold;
-  width: 125px;
+  width: 110px;
   height: 50px;
   text-decoration: none !important; 
+  text-align: center;
 }
-.Support-Header{
-  color: black;
-  font-size: 115%;
-  width: 125px;
+.Gallery-Header{
+  font-size: 105%;
+  width: 110px;
   height: 50px;
   font-weight: bold;
   text-decoration: none !important; 
+  text-align: center;
 }
 
 
 .Dropdown-Header {
   font-weight: bold;
-  font-size: 115%;
-  width: 125px;
+  font-size: 105%;
+  width: 110px;
   height: 50px;
   text-decoration: none !important; 
+  text-align: center;
   color: black !important;
 }
 
@@ -106,14 +107,27 @@ dropdown-item.active, .dropdown-item:active {
     padding-left: 0rem;
 }}
 
-@media only screen and (max-width: 768px){
-  .Home-Header{
-    margin-left: 0px !important;
-  }
-}
-
 @media only screen and (max-width: 850px){
   .Home-Header{
   margin-left: 10px;
 }}
+}
+
+@media only screen and (max-width: 767px){
+  .Home-Header{
+    margin-left: 0px !important;
+    text-align: left;
+  }
+
+  .Dropdown-Header {
+    text-align: left;
+  }
+
+  .Auditions-Header {
+    text-align: left;
+  }
+
+  .Gallery-Header {
+    text-align: left;
+  }
 }
