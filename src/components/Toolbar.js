@@ -92,24 +92,30 @@ class Toolbar extends Component {
                       {/* this is the part you edit if you would like the "Our Mission" text to be different (in the dropdown)*/}
                       Our Mission
                       </NavDropdown.Item>
+                    </LinkContainer>                    
+                    <LinkContainer to = "/Auditions">
+                      <NavDropdown.Item>
+                      {/* this is the part you edit if you would like the "Our Mission" text to be different (in the dropdown)*/}
+                      Auditions
+                      </NavDropdown.Item>
                     </LinkContainer>
               </NavDropdown>
 
-              {/* This controls the Audition part of the NavBar*/} 
-              <NavLink 
-              to="/Auditions"
-              href= "/Auditions"
-              exact activeClassName = "active"
-              className= "Auditions-Header"
-              style={{
-                fontWeight: fontWeight,
-                color: defaultColor,
-              }}
-              activeStyle={{
-                color: activeRed
-              }}>
-              {/* this is the part you edit if you would like the "Audition" text to be different */}
-                Audition
+            {/** This controls the gallery portion of the NavBar */}
+              <NavLink
+                to="/Gallery"
+                href="/Gallery"
+                exact activeClassName = "active"
+                className= "Gallery-Header"
+                style={{
+                  fontWeight: fontWeight,
+                  color: defaultColor,
+                }}
+                activeStyle={{
+                  color: activeRed
+                }}>
+                  {/* this is the part you edit if you would like the "Gallery" text to be different*/}
+                 Gallery
               </NavLink>
 
               {/** This controls the Support dropdown for the navbar*/}
@@ -130,23 +136,7 @@ class Toolbar extends Component {
                 </NavDropdown.Item>
             </NavDropdown>
               
-              {/** This controls the gallery portion of the NavBar */}
-              <NavLink
-                to="/Gallery"
-                href="/Gallery"
-                exact activeClassName = "active"
-                className= "Gallery-Header"
-                style={{
-                  fontWeight: fontWeight,
-                  color: defaultColor,
-                }}
-                activeStyle={{
-                  color: activeRed
-                }}>
-                  {/* this is the part you edit if you would like the "Gallery" text to be different*/}
-                 Gallery
-              </NavLink>
-              </Nav>
+                </Nav>
         </Navbar.Collapse>
         <Navbar.Brand>
 
