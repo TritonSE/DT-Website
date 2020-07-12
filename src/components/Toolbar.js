@@ -134,8 +134,25 @@ class Toolbar extends Component {
                         Support Us!
                       </NavDropdown.Item>
                     </LinkContainer>
+                    <LinkContainer to = "/About/Support" href="/Support">
+                      <NavDropdown.Item>
+                        Support Us!
+                      </NavDropdown.Item>
+                    </LinkContainer>
               </NavDropdown>
 
+              <NavLink
+              to="/Gallery"
+              href="/Gallery"
+              exact activeClassName = "Teal-Active active"
+              className = "Gallery-Header Teal"
+              style={{
+                fontWieght: "bold",
+                color:"black"
+              }}>
+                Gallery
+              </NavLink>
+              
               <NavLink
               to="/Gallery"
               href="/Gallery"
