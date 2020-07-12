@@ -8,7 +8,6 @@
 }
 
 .Title-Season{
-    color: rgb(15, 185, 185);
     font-size: 1.9vw;
 }
 
@@ -88,7 +87,7 @@
     
     .Director-Profile-Images-Top{
         height: 50vw;
-        width: 40vw;
+        width: 35vw;
     }
     
     .Director-Profile-Images-Bottom{

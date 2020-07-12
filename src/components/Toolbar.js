@@ -6,6 +6,8 @@ import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
 import { LinkContainer} from 'react-router-bootstrap';
 import "../css/Toolbar.css"
+import '../css/Global.css';
+
 
 //Necessary Variables. *CAN EDIT* 
 
@@ -18,6 +20,7 @@ const defaultColor = "black"
 /* These controls the color that the navbar links take when a user is actively on that page*/
 const activeRed = "#FF4081"
 
+
 /**
  * This controls if the font in the navbar is bold or not. 
  */
@@ -28,11 +31,39 @@ const fontWeight = "bold"
  * This is the Navigation Bar. It controls the NavBar you see at the top of the page. 
  */
 class Toolbar extends Component {
- 
+  constructor(props) {
+    super(props);
+    this.state = {
+      hideIcons: false,
+    }
+  }
   
- /**
-  * This function handles linking to the PayPal page in the NavBar.
-  */
+  componentDidMount() {
+   if(this.props.bool === true){
+      require('../css/Toolbar2.css');
+    }
+    else{
+      require('../css/Toolbar.css');
+    }
+
+    // determine whether social icons should be hidden
+    window.addEventListener('resize', this.updateDisplayIcons.bind(this));
+    this.updateDisplayIcons()
+  }
+
+  updateDisplayIcons() {
+    let hideIcons = window.innerWidth <= 1150;
+
+    // only update icon display when necessary
+    if (hideIcons !== this.state.hideIcons) {
+      this.setState({hideIcons: hideIcons});
+    }
+  }
+
+  componentWillUnmount() {
+    window.location.reload(false);
+  }
+
   handlePaypal() {
     window.open(url, "_blank");
   }
@@ -54,8 +85,8 @@ class Toolbar extends Component {
             <NavLink  
               to="/" 
               href = "/Home" 
-              exact activeClassName = "active" 
-              className= "Home-Header" 
+              exact activeClassName = "Pink-Active active" 
+              className= "Home-Header Pink" 
               style={{
                 fontWeight: fontWeight,
                 color: defaultColor,
@@ -67,9 +98,8 @@ class Toolbar extends Component {
                 Home
             </NavLink>
 
-            {/* This controls the About dropdown*/}
-            <NavDropdown title="About" id="collapsible-nav-dropdown" className = "About-Dropdown">
-                    <LinkContainer to = "/Dropdown/About">
+            <NavDropdown title="About" id="collasible-nav-dropdown" className = "About-Dropdown">
+                    <LinkContainer to = "/About/AboutUs" exact activeClassName = "active">
                       <NavDropdown.Item> 
                         {/* this is the part you edit if you would like the "About Us" text to be different (in the dropdown)*/}
                         About Us
@@ -99,23 +129,23 @@ class Toolbar extends Component {
                       Auditions
                       </NavDropdown.Item>
                     </LinkContainer>
+                    <LinkContainer to = "/About/Support" href="About/Support">
+                      <NavDropdown.Item>
+                        Support Us!
+                      </NavDropdown.Item>
+                    </LinkContainer>
               </NavDropdown>
 
-            {/** This controls the gallery portion of the NavBar */}
               <NavLink
-                to="/Gallery"
-                href="/Gallery"
-                exact activeClassName = "active"
-                className= "Gallery-Header"
-                style={{
-                  fontWeight: fontWeight,
-                  color: defaultColor,
-                }}
-                activeStyle={{
-                  color: activeRed
-                }}>
-                  {/* this is the part you edit if you would like the "Gallery" text to be different*/}
-                 Gallery
+              to="/Gallery"
+              href="/Gallery"
+              exact activeClassName = "Teal-Active active"
+              className = "Gallery-Header Teal"
+              style={{
+                fontWieght: "bold",
+                color:"black"
+              }}>
+                Gallery
               </NavLink>
 
               {/** This controls the Support dropdown for the navbar*/}
@@ -141,10 +171,7 @@ class Toolbar extends Component {
         <Navbar.Brand>
 
           {/** This is the social media icons*/}
-          <div className = "social_media"> 
-          <SocialFollow />
-          </div>
-
+          {this.state.hideIcons ? null : <SocialFollow />}
         </Navbar.Brand>
         
       </Navbar>

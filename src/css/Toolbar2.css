@@ -1,0 +1,133 @@
+.bg-custom{
+  background-color: white;
+}
+.container{
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-start;
+}
+
+
+.Home-Header{
+  font-size: 105%;
+  font-weight: bold;
+  width: 110px;
+  height: 50px;
+  text-decoration: none !important; 
+  text-align: center;
+  
+}
+  
+.Auditions-Header{
+  font-size: 105%;
+  font-weight: bold;
+  width: 110px;
+  height: 50px;
+  text-decoration: none !important; 
+  text-align: center;
+}
+.Gallery-Header{
+  font-size: 105%;
+  width: 110px;
+  height: 50px;
+  font-weight: bold;
+  text-decoration: none !important; 
+  text-align: center;
+}
+
+
+.Dropdown-Header {
+  font-weight: bold;
+  font-size: 105%;
+  width: 110px;
+  height: 50px;
+  text-decoration: none !important; 
+  text-align: center;
+  color: black !important;
+}
+
+.Home-Header:hover{
+  transition: 0.5s !important;
+}
+.Home-Header:hover{
+  transition: 0.5s !important;
+}
+.Auditions-Header:hover{
+  transition: 0.5s !important;
+}
+.Support-Header:hover{
+  transition: 0.5s !important;
+}
+
+.logo-text{
+  text-decoration: none !important;
+}
+
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active {
+  color: rgba(29, 153, 202, 0.7) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(29, 153, 202, 0.7);
+}
+
+.dropdown-menu {
+  padding: 0rem 0;
+  margin: -.875rem 0 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 0rem 0rem;
+}
+
+dropdown-item.active, .dropdown-item:active {
+  color:  rgb(0, 0, 0);
+  text-decoration: none;
+  background-color: rgba(29, 153, 202, 0.7) !important;
+}
+
+@media only screen and (max-width: 1150px) {
+  .dropdown-menu {
+    padding: 1rem 0;
+    margin: 0rem 0 0;
+  }
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+}
+
+@media (min-width: 768px){
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}}
+
+@media only screen and (max-width: 850px){
+  .Home-Header{
+  margin-left: 10px;
+}}
+}
+
+@media only screen and (max-width: 767px){
+  .Home-Header{
+    margin-left: 0px !important;
+    text-align: left;
+  }
+
+  .Dropdown-Header {
+    text-align: left;
+  }
+
+  .Auditions-Header {
+    text-align: left;
+  }
+
+  .Gallery-Header {
+    text-align: left;
+  }
+}
