@@ -33,10 +33,6 @@ justify-content: flex-start;
   text-decoration: none !important; 
   text-align: center;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 .Gallery-Header{
   font-size: 105%;
   width: 110px;
@@ -114,13 +110,6 @@ justify-content: flex-start;
   display: block;
   padding: 0px 0px;
 }
-/* This controls the dropdown "boxes" themselves */
-dropdown-item.active, .dropdown-item:active {
-  color:  rgb(0, 0, 0); /* this is the color that the text becomes when someone visits the page*/
-  text-decoration: none;
-  background-color: rgba(29, 153, 202, 0.7) !important; /*this is the color the box becomes when someone visits the page*/
-}
-
 /* This controls the pdding on the social media icons. DO NOT TOUCH */
 .navbar-brand {
   padding-top: 0px !important;

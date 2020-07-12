@@ -105,38 +105,28 @@ class Toolbar extends Component {
                         About Us
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/History">
+                    <LinkContainer to = "/About/History">
                       <NavDropdown.Item>
                         {/* this is the part you edit if you would like the "Histroy" text to be different (in the dropdown)*/}
                         History
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/Directors">
+                    <LinkContainer to = "/About/Directors">
                       <NavDropdown.Item>
                         {/* this is the part you edit if you would like the "Board of Direcotrs" text to be different (in the dropdown)*/} 
                         Board of Directors 
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/Dropdown/mission">
+                    <LinkContainer to = "/About/OurMission">
                       <NavDropdown.Item>
                       {/* this is the part you edit if you would like the "Our Mission" text to be different (in the dropdown)*/}
                       Our Mission
                       </NavDropdown.Item>
                     </LinkContainer>                    
-                    <LinkContainer to = "/Auditions">
+                    <LinkContainer to = "/About/Audition">
                       <NavDropdown.Item>
                       {/* this is the part you edit if you would like the "Our Mission" text to be different (in the dropdown)*/}
-                      Auditions
-                      </NavDropdown.Item>
-                    </LinkContainer>
-                    <LinkContainer to = "/About/Support" href="About/Support">
-                      <NavDropdown.Item>
-                        Support Us!
-                      </NavDropdown.Item>
-                    </LinkContainer>
-                    <LinkContainer to = "/About/Support" href="/Support">
-                      <NavDropdown.Item>
-                        Support Us!
+                      Audition
                       </NavDropdown.Item>
                     </LinkContainer>
               </NavDropdown>
@@ -144,20 +134,8 @@ class Toolbar extends Component {
               <NavLink
               to="/Gallery"
               href="/Gallery"
-              exact activeClassName = "Teal-Active active"
-              className = "Gallery-Header Teal"
-              style={{
-                fontWieght: "bold",
-                color:"black"
-              }}>
-                Gallery
-              </NavLink>
-              
-              <NavLink
-              to="/Gallery"
-              href="/Gallery"
-              exact activeClassName = "Teal-Active active"
-              className = "Gallery-Header Teal"
+              exact activeClassName = "Pink-Active active"
+              className = "Gallery-Header Pink"
               style={{
                 fontWieght: "bold",
                 color:"black"

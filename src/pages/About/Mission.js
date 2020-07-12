@@ -32,7 +32,7 @@ class Mission extends React.Component{
 					<h1 className="Mission-Title Teal"> Our Mission </h1>
 					<p className="Mission-Paragraph"> The specific purpose of this organization is to inspire, educate, and promote passion, dedication, and performance within the art of dance.  All funds, whether income or principal, and whether acquired by gift or contribution or otherwise, shall be devoted to said purposes. </p>
 				<p className="Support-Link"> To donate to our non-profit, please 
-				<Link className="Pink" to="/About/Support"> click here! </Link>
+				<Link className="Pink" to="/Support"> click here! </Link>
 				</p>
 				</Col>
 				<Col xs={7} className="column2">
