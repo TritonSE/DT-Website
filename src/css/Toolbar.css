@@ -94,6 +94,7 @@ justify-content: flex-start;
   padding-left: 0px !important;
   text-align: center;
   text-decoration: none !important; 
+  z-index: 200;
 }
 /* This controls what happens when someone hovers over the dropdown */
 .navbar-light .navbar-nav .nav-link:hover {
