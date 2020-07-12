@@ -16,7 +16,7 @@ class Support extends Component {
 	render() {
 			return(
 			<div>
-				<Toolbar bool={false}/>			
+				<Toolbar/>			
 					<WaysToGive/>
 			</div>
 			);
