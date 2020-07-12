@@ -86,26 +86,14 @@ class Toolbar extends Component {
                       Our Mission
                       </NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to = "/About/Support" href="/Support">
+
+                    <LinkContainer to="/About/Audition" href="/About/Audition">
                       <NavDropdown.Item>
-                        Support Us!
+                        Audition
                       </NavDropdown.Item>
                     </LinkContainer>
               </NavDropdown>
-           
-            {/** Support part of Navbar */}
-             <NavLink 
-              to="/Audition"
-              href= "/Audition"
-              exact activeClassName = "Pink-Active active"
-              className= "Auditions-Header Pink"
-              style={{
-                fontWeight: "bold",
-                color: "black",
-              }}>
-                Audition
-              </NavLink>
-              
+
               <NavLink
               to="/Gallery"
               href="/Gallery"
@@ -118,6 +106,23 @@ class Toolbar extends Component {
                 Gallery
               </NavLink>
 
+              {/** This controls the Support dropdown for the navbar*/}
+              <NavDropdown title="Support" id="collapsible-nav-dropdown" className = "Dropdown-Header">
+                <LinkContainer to="/">
+                  <NavDropdown.Item>
+                    {/* this is the part you edit if you would like the "Support Us" text to be different (in the dropdown)*/}
+                    Support Us
+                  </NavDropdown.Item>
+                </LinkContainer>
+                <NavDropdown.Item onClick={()=>{window.open("https://www.paypal.me/dynamicsperformance", "_blank")}} eventKey={3.2}
+                style={{
+                backgroundColor: "white",
+                color: "black"
+                }}>
+                {/* this is the part you edit if you would like the "PayPal" text to be different (in the dropdown)*/}
+                Paypal
+                </NavDropdown.Item>
+            </NavDropdown>
               </Nav>
         </Navbar.Collapse>
         <Navbar.Brand>
