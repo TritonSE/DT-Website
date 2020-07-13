@@ -1,3 +1,5 @@
+//https://www.nicknish.co/blog/react-currency-input
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import MaskedInput from 'react-text-mask'
