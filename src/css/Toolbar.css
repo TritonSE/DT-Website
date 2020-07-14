@@ -16,7 +16,7 @@ justify-content: flex-start;
 
 /* This controls the "HOME" part of the navbar */
 .Home-Header{
-  font-size: 105%;
+  font-size: 110%;
   font-weight: bold;
   width: 110px;
   height: 50px;
@@ -94,7 +94,6 @@ justify-content: flex-start;
   padding-left: 0px !important;
   text-align: center;
   text-decoration: none !important; 
-  z-index: 200;
 }
 /* This controls what happens when someone hovers over the dropdown */
 .navbar-light .navbar-nav .nav-link:hover {
@@ -127,7 +126,6 @@ justify-content: flex-start;
 
 @media only screen and (max-width: 767px){
   .Home-Header{
-    margin-left: 0px !important;
     text-align: left;
   }
 
@@ -171,4 +169,9 @@ justify-content: flex-start;
   .Gallery-Header {
     text-align: left;
   }
+
+  .About-Dropdown {
+    z-index: 200;
+  }
+
 }
