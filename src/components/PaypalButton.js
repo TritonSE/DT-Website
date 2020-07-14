@@ -56,6 +56,10 @@ class PaypalButton extends Component {
           });
         }}
 
+        options={{
+          merchantId: "TEST"
+        }}
+
         //Called when transaction is approved on PayPal's side
         onApprove={(data, actions) => {
           //actions.order.capture() automatically takes care of funding failures

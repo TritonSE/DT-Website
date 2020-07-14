@@ -19,7 +19,7 @@
  }
 
  .Chosen-Amount{
-  width: 20%;
+  width: 30%;
   height: 10%;
   text-align: center;
   font-size: 1.33vw;
@@ -33,18 +33,57 @@
 
 
  .Adjust-Button:hover{
-  background-color: #ce57aa;
+  background-color: #FF4081;
+}
+
+.Donate-Style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Donate-Button {
+  background-color: #FF4081;
+  line-height: 8px;
+  box-shadow: 4px 4px 4px rgb(15, 185, 185);
+  height: 45px;
+  border-radius: 7px;
+  margin-left: -15%;
+}
+
+.Donate-Button:hover{
+  background-color: rgb(15, 185, 185);
+  box-shadow: none;
+  color: black;
+}
+
+.Currency-Input{
+  padding-right: 5%;
+  font-size: 15px;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.Icon-Style{
+  margin:0 0 1px 5px;
 }
 
 
 @media only screen and (max-width: 600px) {
+
+  .Donate-Button {
+    height: 10.5vw;
+  }
+
+  .Currency-Input{
+    font-size: 11px;
+  }
 
    .Adjust-Button{
     font-size: 3vw;
    }
 
   .Chosen-Amount{
-    width: 9vw;
+    width: 13vw;
     height: 7vw;
     font-size: 2.63vw;
   }
