@@ -63,15 +63,6 @@ justify-content: flex-start;
   text-decoration: none !important;
 }
 
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active {
-  color: rgba(29, 153, 202, 0.7) !important;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(29, 153, 202, 0.7);
-}
-
 .dropdown-menu {
   padding: 0rem 0;
   margin: -.875rem 0 0;

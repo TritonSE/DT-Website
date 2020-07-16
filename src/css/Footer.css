@@ -12,13 +12,43 @@
     bottom: 0; */
 }
 
-.Highlight{
+/* .Highlight{
     color: black;
+} */
+
+.Highlight {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .Highlight:hover {
+    color: #000;
+  }
+
+.Highlight::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF4081;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
 }
 
-.Highlight:hover{
-    text-decoration: none;
+.Highlight:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
 }
+
+/* .Highlight:hover{
+    text-decoration: none;
+    color: #FF4081;
+    transition: all 0.3s ease-in-out 0s;
+} */
 
 .Contact-Text{
     font-size: 2.3vw;

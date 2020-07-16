@@ -38,9 +38,9 @@ class Footer extends Component {
                                 Contact <br/> Us
                         </h1>
                         <h1 className="Contact-Info-Text">
-                                <a className="Highlight Pink" href={`tel:4086220249`}>+ 408 622 0249  </a>
+                                <a className="Highlight" href={`tel:4086220249`}>+ 408 622 0249  </a>
                                 <br/> 
-                                <a className="Highlight Pink" href={`mailto:dynamicsperformanceteam@gmail.com`}>dynamicsperformanceteam@gmail.com</a>
+                                <a className="Highlight" href={`mailto:dynamicsperformanceteam@gmail.com`}>dynamicsperformanceteam@gmail.com</a>
                         </h1>
                     </div>
                     <div className="Social-Icon-Formatting">
@@ -57,7 +57,7 @@ class Footer extends Component {
                     <h1 className="Contact-Info-Text">
                             + 408 622 0249 
                             <br/> 
-                            <a className="Highlight Pink" href={`mailto:dynamicsperformanceteam@gmail.com`}>dynamicsperformanceteam@gmail.com</a>
+                            <a className="Highlight" href={`mailto:dynamicsperformanceteam@gmail.com`}>dynamicsperformanceteam@gmail.com</a>
                     </h1>
                 </div>
             );

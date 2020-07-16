@@ -8,8 +8,15 @@ justify-content: flex-start;
 }
 
 
+/* This applies styling to the logo on the left */
+.logo-text{
+  text-decoration: none !important;
+}
+
+
+/* This controls the "HOME" part of the navbar */
 .Home-Header{
-  font-size: 105%;
+  font-size: 110%;
   font-weight: bold;
   width: 110px;
   height: 50px;
@@ -22,10 +29,10 @@ justify-content: flex-start;
   font-weight: bold;
   width: 110px;
   height: 50px;
+  text-align: center;
   text-decoration: none !important; 
   text-align: center;
 }
-
 .Gallery-Header{
   font-size: 105%;
   width: 110px;
@@ -36,13 +43,15 @@ justify-content: flex-start;
 }
 
 
-.Dropdown-Header {
+/* This controls the "Auditions" part of the navbar */
+.Auditions-Header{
+  color: black; 
   font-weight: bold;
   font-size: 105%;
   width: 110px;
   height: 50px;
-  text-decoration: none !important; 
   text-align: center;
+  text-decoration: none !important; 
 }
 
 .Home-Header:hover{
@@ -51,6 +60,7 @@ justify-content: flex-start;
 .Home-Header:hover{
   transition: 0.5s !important;
 }
+/* This controls what happens when someone hovers over the "Auditions" part of the navbar */
 .Auditions-Header:hover{
   transition: 0.5s !important;
 }
@@ -58,33 +68,54 @@ justify-content: flex-start;
   transition: 0.5s !important;
 }
 
+
+/* DROPDOWNS */
+
+
+/* This controls the color of the label of the dropdowns*/
 .navbar-light .navbar-nav .nav-link {
   color: black;
 }
-
-.logo-text{
-  text-decoration: none !important;
+/* This controls the "Support" part of the navbar */
+.Support-Dropdown{
+  font-size: 110%;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none !important; 
 }
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active {
-  color: rgba(29, 153, 202, 0.7) !important;
+/* This controls the "About" part of the dropdown */
+.About-Dropdown {
+  font-weight: bold;
+  font-size: 110%;
+  width: 100px;
+  height: 50px;
+  padding-left: 0px !important;
+  text-align: center;
+  text-decoration: none !important; 
 }
-
+/* This controls what happens when someone hovers over the dropdown */
+.navbar-light .navbar-nav .nav-link:hover {
+  color:rgb(15, 185, 185) !important; /* this is the color that appears when someone hovers */ 
+  transition: .5s !important;
+}
+/*This controls the dropdowns of the navbar */
 .dropdown-menu {
   padding: 0rem 0;
   margin: -.875rem 0 0;
 }
-
+/*This controls each element on the navbar*/
 .nav-link {
   display: block;
-  padding: 0rem 0rem;
+  padding: 0px 0px;
+}
+/* This controls the pdding on the social media icons. DO NOT TOUCH */
+.navbar-brand {
+  padding-top: 0px !important;
 }
 
-dropdown-item.active, .dropdown-item:active {
-  color:  rgb(0, 0, 0);
-  text-decoration: none;
-  background-color: rgba(29, 153, 202, 0.7) !important;
-}
+/* THIS HANDLES SCREEN RESIZING. DO NOT TOUCH */
 
 @media only screen and (max-width: 1150px) {
   .dropdown-menu {
@@ -92,22 +123,32 @@ dropdown-item.active, .dropdown-item:active {
     margin: 0rem 0 0;
   }
 
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0rem;
-    padding-left: 0rem;
-}
-}
 
-@media (min-width: 768px){
-.navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0rem;
-    padding-left: 0rem;
-}}
+@media only screen and (max-width: 767px){
+  .Home-Header{
+    text-align: left;
+  }
+
+  .About-Dropdown {
+    text-align: left;
+  }
+
+  .Support-Dropdown{
+    text-align: left;
+  }
+
+  .Auditions-Header {
+    text-align: left;
+  }
+
+  .Gallery-Header {
+    text-align: left;
+  }
+}
 
 @media only screen and (max-width: 850px){
   .Home-Header{
-  margin-left: 10px;
+  margin-left: 20px;
 }}
 }
 
@@ -128,4 +169,9 @@ dropdown-item.active, .dropdown-item:active {
   .Gallery-Header {
     text-align: left;
   }
+
+  .About-Dropdown {
+    z-index: 200;
+  }
+
 }
