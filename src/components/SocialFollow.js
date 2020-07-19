@@ -31,20 +31,11 @@ const CustomForm = ({ status, message, onValidated }) => {
     });
 
   return (
-    <div
-      style={{
-        // background: "#FF4081",
-        // borderRadius: "2%",
-        // padding: 10,
-        // marginTop: "10vh",
-        // display: "inline-block",
-        // width: "40vw"
-      }}
-    >
-      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
+    <div>
+      {status === "sending" && <div style={{ color: "blue" }}>Sending...</div>}
       {status === "error" && (
         <div
-          style={{ color: "black" }}
+          style={{ color: "red" }}
           dangerouslySetInnerHTML={{ __html: "Error: " + message }}
         />
       )}
@@ -57,14 +48,12 @@ const CustomForm = ({ status, message, onValidated }) => {
 
       <input
         className="subscribe-input"
-        // style={{ fontSize: "5vmin", width: "30vw", padding: 5, color: '#333333' }}
         ref={node => (name = node)}
         type="text"
         placeholder="Name..."
       />
       <input
         className="subscribe-input"
-        // style={{ fontSize: "5vmin", width: "30vw", padding: 5, color: '#333333', borderColor: 'white'  }}
         ref={node => (email = node)}
         type="email"
         placeholder="Email..."
@@ -151,7 +140,6 @@ class SocialFollow extends Component{
                       )}
                       />
                       <br />
-                      {/* <button className="close-button" onClick={this.handleCloseModal}>Close</button> */}
                     </Modal>
                 </li>
               </ul>
