@@ -1,5 +1,4 @@
 .Footer{
-    
     color: black;
     width: 100%;
     margin-top: 5%;
@@ -8,8 +7,6 @@
     align-items: center;
     padding: 1.5%;
     overflow-x: hidden;
-    /* position: sticky;
-    bottom: 0; */
 }
 
 .Collapse-Icon{
@@ -20,10 +17,6 @@
     background-color: transparent;
     border: none;
 }
-
-/* .Highlight{
-    color: black;
-} */
 
 .Highlight {
     position: relative;
@@ -52,12 +45,6 @@
     visibility: visible;
     transform: scaleX(1);
 }
-
-/* .Highlight:hover{
-    text-decoration: none;
-    color: #FF4081;
-    transition: all 0.3s ease-in-out 0s;
-} */
 
 .Contact-Text{
     font-size: 2.3vw;

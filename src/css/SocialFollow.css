@@ -44,28 +44,13 @@
     text-align: center;
     margin: auto;
     margin-top: 2vw;
-    /* position: absolute; */
-    /* top: 10vw; */
-    /* left: 35%; */
-    /* position: fixed; */
-    /* top: 7%; */
-    /* margin-left: 5vw; */
-    /* margin-top: 3vw; */
-    /* position: absolute;  */
-    /* top: 40px; 
-    left: 40px; 
-    right: 40px; 
-    bottom: 40px;  */
     width: 30vw;
     border: 1px solid rgb(204, 204, 204); 
     background: rgb(255, 255, 255); 
     overflow: auto; 
     border-radius: 4px; 
     outline: none; 
-    /* padding: 20px; */
     padding: 20px 20px 0px 20px;
-    /**style="background: rgb(239, 239, 239); border-radius: 2px; padding: 10px; display: inline-block;"><input type="text" placeholder="Your name" style="font-size: 2em; padding: 5px;"><br><input type="email" placeholder="Your email" style="font-size: 2em; padding: 5px;"><br><button style="font-size: 2em; padding: 5px;">Submit</button></div><button>Close</button></div>
-    */
 }
 
 .subscribe-modal h1 {
@@ -103,69 +88,20 @@
     font-size: 1.6vw;
     color: white;
     background-color: #FF4081;
-    /* background-color: rgb(15, 185, 185); */
-    /* background: 
-        linear-gradient(
-            170deg,
-            blue,
-            rgb(15, 185, 185),
-            #FF4081
-        )
-    ; */
-    /* linear-gradient(
-      170deg,
-      ,
-      var(--color-2) 80%
-    ); */
     box-shadow: 4px 4px 4px black;
-
-    /* border: 1px solid #FF4081;  */
     border-radius: 5px; 
-
-    /* font-size: 4vmin;
-    padding: 5;
-    margin-top: 1vmin;
-    color: white;
-    background-color: #333333;
-    border-color: #333333;
-    border-radius: 10%;
-    transition: 0.5s;
-    transform: translate(0,0px);
-    text-decoration: none; */
 }
 
 .submit-button:hover {
     background: black;
     box-shadow: none;
-    /* transition: 0.5s;
-    cursor: pointer; */
 }
 
 .subscribe-img{
     margin-top: 2vw;
     width: 100%;
     border-radius: 15px; 
-    /* height: 20%; */
 }
-
-/* .close-button {
-    font-size: 4vmin;
-    padding: 5;
-    margin-top: 20vmin;
-    color: white;
-    background-color: #FF4081;
-    border-color: #FF4081;
-    border-radius: 10%;
-    transition: 0.5s;
-    transform: translate(0,0px);
-    text-decoration: none;
-}
-
-.close-button:hover {
-    background-color: #FF6699;
-    transition: 0.5s;
-    cursor: pointer;
-} */
 
 .mailchimp-form {
     background: #FF4081;
@@ -393,7 +329,6 @@
             font-size: 2.7vh;
             margin-top: 2vh;
         }
-        
         
         .submit-button {
             margin-top: 2.5vh;

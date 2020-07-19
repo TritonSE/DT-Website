@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import SocialIcons from './SocialFollow.js';
 import '../css/Footer.css';
 import '../css/Global.css';
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
+import { Collapse} from 'reactstrap';
 
 class Footer extends Component {
 
     MOBILE_MAX_WIDTH = 1150; //Largest screen size the mobile layout renders for
-    COLLAPSE_RENDER_MAX = 700; //Largest screen size the mobile layout renders for
+    COLLAPSE_RENDER_MAX = 700; //Largest screen size the collapse/expand icon renders for
 
     constructor(props){
 		super(props);
