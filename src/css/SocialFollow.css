@@ -80,6 +80,10 @@
     font-style: italic;
 }
 
+.Newsletter-Feedback{
+    font-size: 1.4vw;
+}
+
 .subscribe-input{
     font-size: 1.7vw;
     width: 100%;
@@ -353,21 +357,6 @@
     }
 }
 
-@media only screen and (max-width: 1024px) and (min-height: 1023px) {
-        /* .subscribe-modal {
-            bottom: 30vh;
-            top: 20vh;
-        }
-    
-        .subscribe-modal h1 {
-            margin-bottom: -5vh;
-        }
-    
-        .close-button {
-            margin-top: 5vh;
-        } */
-    
-}
 
 @media only screen and (max-width: 700px){
 
@@ -380,36 +369,41 @@
         height: 135%;
     }
 
-    .subscribe-modal {
-        width: 40vh;
-        margin-top: 10vw;
-    }
-
-    .subscribe-modal h1 {
-        font-size: 3.4vh;
-    }
-    
-    .subscribe-modal p {
-        font-size: 2.4vh;
-    }
-    
-    .subscribe-input{
-        font-size: 2.7vh;
-        margin-top: 2vh;
-    }
-    
-    
-    .submit-button {
-        margin-top: 2.5vh;
-        font-size: 2.6vh;
-    }
-    
-    .subscribe-img{
-        margin-top: 3vh;
-        height: 17vh;
-    }
-
     @media only screen and (orientation:portrait) {
+
+
+        .subscribe-modal {
+            width: 40vh;
+            margin-top: 10vw;
+        }
+
+        .subscribe-modal h1 {
+            font-size: 3.4vh;
+        }
+        
+        .subscribe-modal p {
+            font-size: 2.4vh;
+        }
+
+        .Newsletter-Feedback{
+            font-size: 2.4vh;
+        }
+        
+        .subscribe-input{
+            font-size: 2.7vh;
+            margin-top: 2vh;
+        }
+        
+        
+        .submit-button {
+            margin-top: 2.5vh;
+            font-size: 2.6vh;
+        }
+        
+        .subscribe-img{
+            margin-top: 3vh;
+            height: 17vh;
+        }
 
         .instagram-iconImg {
             height: 5vh;
@@ -440,6 +434,38 @@
     }
 
     @media only screen and (orientation:landscape) {
+
+        .subscribe-modal {
+            width: 40vw;
+            margin-top: 0vw;
+        }
+
+        .subscribe-modal h1 {
+            font-size: 2.6vw;
+        }
+        
+        .subscribe-modal p {
+            font-size: 1.4vw;
+        }
+
+        .Newsletter-Feedback{
+            font-size: 1.4vw;
+        }
+        
+        .subscribe-input{
+            font-size: 2vw;
+            margin-top: 2vh;
+        }
+        
+        .submit-button {
+            margin-top: 2.5vh;
+            font-size: 1.8vw;
+        }
+        
+        .subscribe-img{
+            margin-top: 3vh;
+            height: 10vw;
+        }
        
         .instagram-iconImg {
             height: 5vw;

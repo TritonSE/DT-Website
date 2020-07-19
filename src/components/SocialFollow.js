@@ -21,7 +21,7 @@ const yelpLink = "https://www.yelp.com/biz/dynamics-performance-team-san-jose";
 
 const CustomForm = ({ status, message, onValidated }) => {
   let email, name;
-  const submit = () =>
+  const submit = () => 
     email &&
     name &&
     email.value.indexOf("@") > -1 &&
@@ -32,15 +32,17 @@ const CustomForm = ({ status, message, onValidated }) => {
 
   return (
     <div>
-      {status === "sending" && <div style={{ color: "blue" }}>Sending...</div>}
+      {status === "sending" && <div className="Newsletter-Feedback" style={{ color: "blue" }}>Sending...</div>}
       {status === "error" && (
         <div
+          className="Newsletter-Feedback"
           style={{ color: "red" }}
           dangerouslySetInnerHTML={{ __html: "Error: " + message }}
         />
       )}
       {status === "success" && (
         <div
+          className="Newsletter-Feedback"
           style={{ color: "green" }}
           dangerouslySetInnerHTML={{ __html: message }}
         />
