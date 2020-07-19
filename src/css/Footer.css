@@ -12,6 +12,15 @@
     bottom: 0; */
 }
 
+.Collapse-Icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1vw 1vw 0vw 0vw;
+    background-color: transparent;
+    border: none;
+}
+
 /* .Highlight{
     color: black;
 } */

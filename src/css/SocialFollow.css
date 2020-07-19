@@ -46,7 +46,7 @@
     /* position: fixed; */
     /* top: 7%; */
     /* margin-left: 5vw; */
-    /* margin-top: 3vw; */
+    margin-top: 3vw;
     /* position: absolute;  */
     /* top: 40px; 
     left: 40px; 
@@ -94,15 +94,16 @@
     margin-top: 2vw;
     font-size: 1.6vw;
     color: white;
+    background-color: #FF4081;
     /* background-color: rgb(15, 185, 185); */
-    background: 
+    /* background: 
         linear-gradient(
             170deg,
             blue,
             rgb(15, 185, 185),
             #FF4081
         )
-    ;
+    ; */
     /* linear-gradient(
       170deg,
       ,
@@ -126,7 +127,8 @@
 }
 
 .submit-button:hover {
-    background: #FF4081;
+    background: black;
+    box-shadow: none;
     /* transition: 0.5s;
     cursor: pointer; */
 }
