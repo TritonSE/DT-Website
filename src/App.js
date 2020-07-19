@@ -25,7 +25,7 @@ class App extends Component {
 		if(isTablet){
 			swal({
 				title: "Viewing Experience",
-				text: "Turn tablet horizontally (landscape) for best user experience",
+				text: "Use in landscape for best user experience!",
 				button: {
 					text: "Got it"
 				}
@@ -34,7 +34,7 @@ class App extends Component {
 		else if(isMobileOnly){
 			swal({
 				title: "Viewing Experience",
-				text: "Turn phone vertically (portrait) for best user experience",
+				text: "Use in portrait for best user experience!",
 				button: {
 					text: "Got it"
 				}

@@ -42,28 +42,78 @@
 
 .subscribe-modal {
     text-align: center;
-    position: absolute; 
-    top: 40px; 
+    margin: auto;
+    /* position: fixed; */
+    /* top: 7%; */
+    /* margin-left: 5vw; */
+    /* margin-top: 3vw; */
+    /* position: absolute;  */
+    /* top: 40px; 
     left: 40px; 
     right: 40px; 
-    bottom: 40px; 
+    bottom: 40px;  */
+    width: 30vw;
     border: 1px solid rgb(204, 204, 204); 
     background: rgb(255, 255, 255); 
     overflow: auto; 
     border-radius: 4px; 
     outline: none; 
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 20px 20px 0px 20px;
     /**style="background: rgb(239, 239, 239); border-radius: 2px; padding: 10px; display: inline-block;"><input type="text" placeholder="Your name" style="font-size: 2em; padding: 5px;"><br><input type="email" placeholder="Your email" style="font-size: 2em; padding: 5px;"><br><button style="font-size: 2em; padding: 5px;">Submit</button></div><button>Close</button></div>
     */
 }
 
 .subscribe-modal h1 {
-    color: #FF4081;
+    color: white;
+    font-size: 2.4vw;
+    background-color: #FF4081;
+}
+
+.subscribe-modal p {
+    margin-top: 2vw;
+    font-size: 1.4vw;
+    font-style: italic;
+}
+
+.subscribe-input{
+    font-size: 1.7vw;
+    width: 100%;
+    border: 4px solid #FF4081; 
+    border-radius: 10px; 
+    margin-top: 2vw;
+    box-shadow: 4px 4px 4px rgb(15, 185, 185);
+}
+
+.subscribe-input::placeholder{
+    color: #686565;
 }
 
 
 .submit-button {
-    font-size: 4vmin;
+    margin-top: 2vw;
+    font-size: 1.6vw;
+    color: white;
+    /* background-color: rgb(15, 185, 185); */
+    background: 
+        linear-gradient(
+            170deg,
+            blue,
+            rgb(15, 185, 185),
+            #FF4081
+        )
+    ;
+    /* linear-gradient(
+      170deg,
+      ,
+      var(--color-2) 80%
+    ); */
+    box-shadow: 4px 4px 4px black;
+
+    /* border: 1px solid #FF4081;  */
+    border-radius: 5px; 
+
+    /* font-size: 4vmin;
     padding: 5;
     margin-top: 1vmin;
     color: white;
@@ -72,13 +122,20 @@
     border-radius: 10%;
     transition: 0.5s;
     transform: translate(0,0px);
-    text-decoration: none;
+    text-decoration: none; */
 }
 
 .submit-button:hover {
-    background-color: #4d4d4d;
-    transition: 0.5s;
-    cursor: pointer;
+    background: #FF4081;
+    /* transition: 0.5s;
+    cursor: pointer; */
+}
+
+.subscribe-img{
+    margin-top: 2vw;
+    width: 100%;
+    border-radius: 15px; 
+    /* height: 20%; */
 }
 
 .close-button {
