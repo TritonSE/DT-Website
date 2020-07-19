@@ -43,10 +43,14 @@
 .subscribe-modal {
     text-align: center;
     margin: auto;
+    margin-top: 2vw;
+    /* position: absolute; */
+    /* top: 10vw; */
+    /* left: 35%; */
     /* position: fixed; */
     /* top: 7%; */
     /* margin-left: 5vw; */
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     /* position: absolute;  */
     /* top: 40px; 
     left: 40px; 
@@ -140,7 +144,7 @@
     /* height: 20%; */
 }
 
-.close-button {
+/* .close-button {
     font-size: 4vmin;
     padding: 5;
     margin-top: 20vmin;
@@ -157,7 +161,7 @@
     background-color: #FF6699;
     transition: 0.5s;
     cursor: pointer;
-}
+} */
 
 .mailchimp-form {
     background: #FF4081;
@@ -350,7 +354,7 @@
 }
 
 @media only screen and (max-width: 1024px) and (min-height: 1023px) {
-        .subscribe-modal {
+        /* .subscribe-modal {
             bottom: 30vh;
             top: 20vh;
         }
@@ -361,7 +365,7 @@
     
         .close-button {
             margin-top: 5vh;
-        }
+        } */
     
 }
 
@@ -377,16 +381,34 @@
     }
 
     .subscribe-modal {
-        bottom: 175px;
+        width: 40vh;
+        margin-top: 10vw;
     }
 
     .subscribe-modal h1 {
-        margin-bottom: -5vh;
+        font-size: 3.4vh;
+    }
+    
+    .subscribe-modal p {
+        font-size: 2.4vh;
+    }
+    
+    .subscribe-input{
+        font-size: 2.7vh;
+        margin-top: 2vh;
+    }
+    
+    
+    .submit-button {
+        margin-top: 2.5vh;
+        font-size: 2.6vh;
+    }
+    
+    .subscribe-img{
+        margin-top: 3vh;
+        height: 17vh;
     }
 
-    .close-button {
-        margin-top: 5vh;
-    }
     @media only screen and (orientation:portrait) {
 
         .instagram-iconImg {
