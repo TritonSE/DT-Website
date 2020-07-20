@@ -3,7 +3,9 @@ import '../css/SocialFollow.css';
 import '../css/Global.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Modal from 'react-modal';
-import MailchimpSubscribe from "react-mailchimp-subscribe"
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import NoRightClickImg from '../components/NoRightClickImg';
+import mainBanner from '../images/home/Facebook_Cover_2019.png';
 
 const fbLink = "https://www.facebook.com/DynamicsPerformanceTeam/";
 
@@ -19,7 +21,7 @@ const yelpLink = "https://www.yelp.com/biz/dynamics-performance-team-san-jose";
 
 const CustomForm = ({ status, message, onValidated }) => {
   let email, name;
-  const submit = () =>
+  const submit = () => 
     email &&
     name &&
     email.value.indexOf("@") > -1 &&
@@ -29,46 +31,41 @@ const CustomForm = ({ status, message, onValidated }) => {
     });
 
   return (
-    <div
-      style={{
-        background: "#FF4081",
-        borderRadius: "2%",
-        padding: 10,
-        marginTop: "10vh",
-        display: "inline-block",
-        width: "40vw"
-      }}
-    >
-      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
+    <div>
+      {status === "sending" && <div className="Newsletter-Feedback" style={{ color: "blue" }}>Sending...</div>}
       {status === "error" && (
         <div
-          style={{ color: "black" }}
+          className="Newsletter-Feedback"
+          style={{ color: "red" }}
           dangerouslySetInnerHTML={{ __html: "Error: " + message }}
         />
       )}
       {status === "success" && (
         <div
+          className="Newsletter-Feedback"
           style={{ color: "green" }}
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
+
       <input
-        style={{ fontSize: "5vmin", width: "30vw", padding: 5, color: '#333333' }}
+        className="subscribe-input"
         ref={node => (name = node)}
         type="text"
-        placeholder="Your name"
+        placeholder="Name..."
       />
-      <br />
       <input
-        style={{ fontSize: "5vmin", width: "30vw", padding: 5, color: '#333333', borderColor: 'white'  }}
+        className="subscribe-input"
         ref={node => (email = node)}
         type="email"
-        placeholder="Your email"
+        placeholder="Email..."
       />
+
       <br />
       <button className="submit-button" onClick={submit}>
-        Submit
+        Subscribe!
       </button>
+      <NoRightClickImg imgClassName="subscribe-img" src={mainBanner} disableEnlarging={true}/>
     </div>
   );
 };
@@ -129,10 +126,11 @@ class SocialFollow extends Component{
                 </li>
                 <li>
                   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-                  <a onClick={this.handleOpenModal} style={{display:"flex",justifyContent: "center"}}  title ="Subscribe to our Newsletter!" target="_blank" rel="noopener noreferrer">Subscribe</a>
+                  <a onClick={this.handleOpenModal} style={{display:"flex", justifyContent: "center", alignItems:"center"}}  title ="Subscribe to our Newsletter!" target="_blank" rel="noopener noreferrer">Subscribe</a>
                     <Modal className="subscribe-modal" style={customStyle} tabIndex="-1" isOpen={this.state.showModal} 
                           onRequestClose={this.handleCloseModal} shouldCloseOnEsc={true} contentLabel="Subscribe to our Newsletter" id='myModal' >
                        <h1>Subscribe to our Newsletter</h1>
+                       <p> Get the latest information on the Dynamics Performance Team!</p>
                        <MailchimpSubscribe
                         url={mailChimpLink}
                         render={({ subscribe, status, message }) => (
@@ -144,7 +142,6 @@ class SocialFollow extends Component{
                       )}
                       />
                       <br />
-                      <button className="close-button" onClick={this.handleCloseModal}>Close</button>
                     </Modal>
                 </li>
               </ul>

@@ -42,62 +42,67 @@
 
 .subscribe-modal {
     text-align: center;
-    position: absolute; 
-    top: 40px; 
-    left: 40px; 
-    right: 40px; 
-    bottom: 40px; 
+    margin: auto;
+    margin-top: 2vw;
+    width: 30vw;
     border: 1px solid rgb(204, 204, 204); 
     background: rgb(255, 255, 255); 
     overflow: auto; 
     border-radius: 4px; 
     outline: none; 
-    padding: 20px;
-    /**style="background: rgb(239, 239, 239); border-radius: 2px; padding: 10px; display: inline-block;"><input type="text" placeholder="Your name" style="font-size: 2em; padding: 5px;"><br><input type="email" placeholder="Your email" style="font-size: 2em; padding: 5px;"><br><button style="font-size: 2em; padding: 5px;">Submit</button></div><button>Close</button></div>
-    */
+    padding: 20px 20px 0px 20px;
 }
 
 .subscribe-modal h1 {
-    color: #FF4081;
+    color: white;
+    font-size: 2.4vw;
+    background-color: #FF4081;
+}
+
+.subscribe-modal p {
+    margin-top: 2vw;
+    font-size: 1.4vw;
+    font-style: italic;
+}
+
+.Newsletter-Feedback{
+    font-size: 1.4vw;
+}
+
+.subscribe-input{
+    font-size: 1.7vw;
+    width: 100%;
+    border: 4px solid #FF4081; 
+    border-radius: 10px; 
+    margin-top: 2vw;
+    box-shadow: 4px 4px 4px rgb(15, 185, 185);
+}
+
+.subscribe-input::placeholder{
+    color: #686565;
 }
 
 
 .submit-button {
-    font-size: 4vmin;
-    padding: 5;
-    margin-top: 1vmin;
+    margin-top: 2vw;
+    font-size: 1.6vw;
     color: white;
-    background-color: #333333;
-    border-color: #333333;
-    border-radius: 10%;
-    transition: 0.5s;
-    transform: translate(0,0px);
-    text-decoration: none;
+    background-color: #FF4081;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 5px; 
 }
 
 .submit-button:hover {
-    background-color: #4d4d4d;
-    transition: 0.5s;
-    cursor: pointer;
+    background: linear-gradient(
+       45deg, rgb(18, 106, 179), rgb(15, 185, 185), #FF4081
+    );
+    box-shadow: none;
 }
 
-.close-button {
-    font-size: 4vmin;
-    padding: 5;
-    margin-top: 20vmin;
-    color: white;
-    background-color: #FF4081;
-    border-color: #FF4081;
-    border-radius: 10%;
-    transition: 0.5s;
-    transform: translate(0,0px);
-    text-decoration: none;
-}
-
-.close-button:hover {
-    background-color: #FF6699;
-    transition: 0.5s;
-    cursor: pointer;
+.subscribe-img{
+    margin-top: 2vw;
+    width: 100%;
+    border-radius: 15px; 
 }
 
 .mailchimp-form {
@@ -290,21 +295,6 @@
     }
 }
 
-@media only screen and (max-width: 1024px) and (min-height: 1023px) {
-        .subscribe-modal {
-            bottom: 30vh;
-            top: 20vh;
-        }
-    
-        .subscribe-modal h1 {
-            margin-bottom: -5vh;
-        }
-    
-        .close-button {
-            margin-top: 5vh;
-        }
-    
-}
 
 @media only screen and (max-width: 700px){
 
@@ -317,18 +307,40 @@
         height: 135%;
     }
 
-    .subscribe-modal {
-        bottom: 175px;
-    }
-
-    .subscribe-modal h1 {
-        margin-bottom: -5vh;
-    }
-
-    .close-button {
-        margin-top: 5vh;
-    }
     @media only screen and (orientation:portrait) {
+
+
+        .subscribe-modal {
+            width: 40vh;
+            margin-top: 10vw;
+        }
+
+        .subscribe-modal h1 {
+            font-size: 3.4vh;
+        }
+        
+        .subscribe-modal p {
+            font-size: 2.4vh;
+        }
+
+        .Newsletter-Feedback{
+            font-size: 2.4vh;
+        }
+        
+        .subscribe-input{
+            font-size: 2.7vh;
+            margin-top: 2vh;
+        }
+        
+        .submit-button {
+            margin-top: 2.5vh;
+            font-size: 2.6vh;
+        }
+        
+        .subscribe-img{
+            margin-top: 3vh;
+            height: 17vh;
+        }
 
         .instagram-iconImg {
             height: 5vh;
@@ -359,6 +371,38 @@
     }
 
     @media only screen and (orientation:landscape) {
+
+        .subscribe-modal {
+            width: 40vw;
+            margin-top: 0vw;
+        }
+
+        .subscribe-modal h1 {
+            font-size: 2.6vw;
+        }
+        
+        .subscribe-modal p {
+            font-size: 1.4vw;
+        }
+
+        .Newsletter-Feedback{
+            font-size: 1.4vw;
+        }
+        
+        .subscribe-input{
+            font-size: 2vw;
+            margin-top: 2vh;
+        }
+        
+        .submit-button {
+            margin-top: 2.5vh;
+            font-size: 1.8vw;
+        }
+        
+        .subscribe-img{
+            margin-top: 3vh;
+            height: 10vw;
+        }
        
         .instagram-iconImg {
             height: 5vw;

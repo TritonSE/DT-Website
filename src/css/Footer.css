@@ -1,5 +1,4 @@
 .Footer{
-    
     color: black;
     width: 100%;
     margin-top: 5%;
@@ -8,13 +7,16 @@
     align-items: center;
     padding: 1.5%;
     overflow-x: hidden;
-    /* position: sticky;
-    bottom: 0; */
 }
 
-/* .Highlight{
-    color: black;
-} */
+.Collapse-Icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1vw 1vw 0vw 0vw;
+    background-color: transparent;
+    border: none;
+}
 
 .Highlight {
     position: relative;
@@ -43,12 +45,6 @@
     visibility: visible;
     transform: scaleX(1);
 }
-
-/* .Highlight:hover{
-    text-decoration: none;
-    color: #FF4081;
-    transition: all 0.3s ease-in-out 0s;
-} */
 
 .Contact-Text{
     font-size: 2.3vw;
@@ -95,7 +91,7 @@
         flex-direction: column;
         position: sticky;
         bottom: 0;
-        z-index: 999999;
+        z-index: 10;
     }
 
     .Social-Icon-Formatting{

@@ -38,8 +38,8 @@ class PaypalButton extends Component {
         onError={(err) => {
           swal({
             title: "Unexpected Error",
-            text: "Sorry, an unexpected error has occurred. Please try again later.",
-            icon: "warning",
+            text: "Paypal isn't responding right now. Please recheck your donation amount or try again later.",
+            icon: "error",
             button: {
               text: "Ok"
             }
@@ -54,10 +54,6 @@ class PaypalButton extends Component {
               text: "Ok"
             }
           });
-        }}
-
-        options={{
-          merchantId: "TEST"
         }}
 
         //Called when transaction is approved on PayPal's side
