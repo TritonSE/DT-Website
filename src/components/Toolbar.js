@@ -39,13 +39,6 @@ class Toolbar extends Component {
   }
   
   componentDidMount() {
-   if(this.props.bool === true){
-      require('../css/Toolbar2.css');
-    }
-    else{
-      require('../css/Toolbar.css');
-    }
-
     // determine whether social icons should be hidden
     window.addEventListener('resize', this.updateDisplayIcons.bind(this));
     this.updateDisplayIcons()
@@ -58,10 +51,6 @@ class Toolbar extends Component {
     if (hideIcons !== this.state.hideIcons) {
       this.setState({hideIcons: hideIcons});
     }
-  }
-
-  componentWillUnmount() {
-    window.location.reload(false);
   }
 
   handlePaypal() {
