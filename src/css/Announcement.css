@@ -30,4 +30,10 @@ a:hover {
     .Announcement-Text {
         font-size: 4.2vw;
     }
+
+    .Announcement-Text-Padding {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
 }
