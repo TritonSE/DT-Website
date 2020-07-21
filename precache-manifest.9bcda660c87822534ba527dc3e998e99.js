@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "54a1149a96b56d7b9e161ee7f2d48d40",
+    "revision": "379e77f1b3a08eb4b04d2ef98f1b08e9",
     "url": "/index.html"
   },
   {
-    "revision": "c287c7bedb0d469ea997",
+    "revision": "3f43ec380d01027e7066",
     "url": "/static/css/2.89b66d9e.chunk.css"
   },
   {
-    "revision": "a534885f476059d53599",
-    "url": "/static/css/main.0e4c74b1.chunk.css"
+    "revision": "443bb1cb8ad2a971354d",
+    "url": "/static/css/main.7e0208bd.chunk.css"
   },
   {
-    "revision": "c287c7bedb0d469ea997",
-    "url": "/static/js/2.ebfc675c.chunk.js"
+    "revision": "3f43ec380d01027e7066",
+    "url": "/static/js/2.e3cc5eb3.chunk.js"
   },
   {
     "revision": "13be180cfc5d47ac989b039cae2072b6",
-    "url": "/static/js/2.ebfc675c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.e3cc5eb3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a534885f476059d53599",
-    "url": "/static/js/main.1c834a71.chunk.js"
+    "revision": "443bb1cb8ad2a971354d",
+    "url": "/static/js/main.d1d138e9.chunk.js"
   },
   {
     "revision": "5faee441ad9bfde3e6d0",
@@ -62,6 +62,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b1733aad6dc82446fbbe4ea36ca1eb0e",
     "url": "/static/media/37644851_10156535473829555_3524298065420746752_n.b1733aad.jpg"
+  },
+  {
+    "revision": "19b9724c104b7a8612739ef3a8646dc5",
+    "url": "/static/media/AGE_12+_DPT_Audition_Information.19b9724c.pdf"
+  },
+  {
+    "revision": "fa01276f40cdad2acae44699a2f25dcf",
+    "url": "/static/media/AGE_5-7_Dynamites_Audition_Information.fa01276f.pdf"
+  },
+  {
+    "revision": "61f90f7b5af97dcef6a26fec5c6f3e32",
+    "url": "/static/media/AGE_8-11_Dynamos_Audition_Information.61f90f7b.pdf"
   },
   {
     "revision": "0d90333e7a260354cfe182519cd50793",
