@@ -33,6 +33,13 @@
 .mobile {
   display: none;
 }
+.Tryout-Announcement-Container {
+  border-radius: 7px;
+  padding: 5px;
+}
+.Tryout-Announcement-Text {
+  font-weight: bold;
+}
 @media only screen and (min-width: 601px) {
   .mobile {
     display: none;
@@ -76,5 +83,9 @@
     padding-left: 0px;
     width: 90%;
     display: block;
+  }
+  .Tryout-Announcement-Text {
+    padding-right: 5%;
+    padding-left: 5%;
   }
 }

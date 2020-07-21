@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import Toolbar from "../components/Toolbar.js";
 
 import AuditionImages from "../components/AuditionImages.js";
-import Dots from "../components/Dots";
 import AuditionInfo from "../components/AuditionInfo.js";
 import AuditionEligibility from "../components/AuditionEligibility.js";
 import Footer from "../components/Footer";
@@ -30,13 +29,12 @@ class Audition extends Component {
 
             <Col className="audition-text font">
               <Container>
-                <h1 className="title Teal">Audition</h1>
-                <AuditionInfo />
+                <h1 className="title Pink">Audition</h1>
               </Container>
 
-              <Dots />
 
               <Container>
+                <AuditionInfo />
                 <AuditionEligibility />
               </Container>
             </Col>

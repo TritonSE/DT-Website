@@ -42,7 +42,7 @@ class WaysToGive extends Component {
 			<div>
 				<div className="textWays" >
 					<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
-					<h1 className="Pink">Ways to Give</h1>
+					<h1 className="Teal">Ways to Give</h1>
 					<WaysToGiveText/>
 					<p className="amazon">Amazon Smile Donations</p>
 					<ModalImage
@@ -68,7 +68,7 @@ class WaysToGive extends Component {
 					<div className="Main-Container" >
 						{/* <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'/> */}
 						<div className="Left-Container">
-							<h1 className="Pink">Ways to<br/>Give</h1>
+							<h1 className="Teal">Ways to<br/>Give</h1>
 							<div className="Amazon-Container">
 								<p className="Amazon-Title">Amazon Smile Donations</p>
 								<div className="image-container" >

@@ -4,6 +4,7 @@ import {Navbar,Nav,NavDropdown} from 'react-bootstrap';
 import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
+import Announcement from './Announcement';
 import { LinkContainer} from 'react-router-bootstrap';
 import "../css/Toolbar.css"
 import '../css/Global.css';
@@ -159,6 +160,8 @@ class Toolbar extends Component {
         </Navbar.Brand>
         
       </Navbar>
+
+      <Announcement />
     </div>
   );
   }
