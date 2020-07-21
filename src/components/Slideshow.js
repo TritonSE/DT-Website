@@ -7,6 +7,7 @@ import '../css/Slideshow.css';
      render() {
 
 		const slideImages=[
+			require('../images/home/batch_Dynamics 2020 Show Flyer.jpg'),
 			require('../images/home/Main Page 1.jpg'), 
 			require('../images/home/Main Page 4.jpg'),
 			require('../images/home/Main Page 5.jpg'), 
@@ -34,7 +35,7 @@ import '../css/Slideshow.css';
 			var pictures = slideImages.map((item, i) => 
 			<div key={i} className="each-fade">
 				<div className="each-slide"> 
-					<NoRightClickImg src = {item} alt="Loading Error" disableEnlarging={true}/> 
+					<NoRightClickImg src={item} alt="Loading Error" disableEnlarging={true}/> 
 				</div>
 			</div>);
  			return (

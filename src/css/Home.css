@@ -4,6 +4,12 @@
     height: 100%;
 }
 
+.flyer-img {
+    height: 20%;
+    width: 10%;
+    margin-left: 7%;
+}
+
 .Text-Container{
     margin-top: 1%;
     display: flex;
@@ -44,6 +50,12 @@
     height: 5vw;
     width: 5vw;
     border-radius: 50%;
+}
+
+.Event-Text {
+    margin-left: 7%;
+    font-size: 3.2vw;
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 600px) {

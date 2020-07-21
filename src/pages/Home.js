@@ -8,6 +8,8 @@ import Toolbar from '../components/Toolbar.js';
 import Footer from '../components/Footer.js';
 import { Link } from 'react-router-dom';
 import NoRightClickImg from '../components/NoRightClickImg';
+import ModalImage from 'react-modal-image';
+import Flyer from '../images/home/batch_Dynamics 2020 Show Flyer.jpg';
 
 
 class Home extends React.Component {
