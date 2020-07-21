@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e0208bd.chunk.css",
-    "main.js": "/static/js/main.d1d138e9.chunk.js",
-    "main.js.map": "/static/js/main.d1d138e9.chunk.js.map",
+    "main.css": "/static/css/main.f4643e66.chunk.css",
+    "main.js": "/static/js/main.9905d986.chunk.js",
+    "main.js.map": "/static/js/main.9905d986.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bb6eba76.js",
     "runtime-main.js.map": "/static/js/runtime-main.bb6eba76.js.map",
     "static/css/2.89b66d9e.chunk.css": "/static/css/2.89b66d9e.chunk.css",
-    "static/js/2.e3cc5eb3.chunk.js": "/static/js/2.e3cc5eb3.chunk.js",
-    "static/js/2.e3cc5eb3.chunk.js.map": "/static/js/2.e3cc5eb3.chunk.js.map",
+    "static/js/2.965fe6b2.chunk.js": "/static/js/2.965fe6b2.chunk.js",
+    "static/js/2.965fe6b2.chunk.js.map": "/static/js/2.965fe6b2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9bcda660c87822534ba527dc3e998e99.js": "/precache-manifest.9bcda660c87822534ba527dc3e998e99.js",
+    "precache-manifest.7e7d716b2b074010b84fed9abb629b1f.js": "/precache-manifest.7e7d716b2b074010b84fed9abb629b1f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89b66d9e.chunk.css.map": "/static/css/2.89b66d9e.chunk.css.map",
-    "static/css/main.7e0208bd.chunk.css.map": "/static/css/main.7e0208bd.chunk.css.map",
-    "static/js/2.e3cc5eb3.chunk.js.LICENSE.txt": "/static/js/2.e3cc5eb3.chunk.js.LICENSE.txt",
+    "static/css/main.f4643e66.chunk.css.map": "/static/css/main.f4643e66.chunk.css.map",
+    "static/js/2.965fe6b2.chunk.js.LICENSE.txt": "/static/js/2.965fe6b2.chunk.js.LICENSE.txt",
     "static/media/2016-04-10 18.16.46 (1).jpg": "/static/media/2016-04-10 18.16.46 (1).ab2f2b0e.jpg",
     "static/media/20160423_160934 (1).jpg": "/static/media/20160423_160934 (1).d4be0f3d.jpg",
     "static/media/20160424_180801 (1).jpg": "/static/media/20160424_180801 (1).96117446.jpg",
@@ -62,6 +62,7 @@
     "static/media/Sponsor Letter 2019-20.pdf": "/static/media/Sponsor Letter 2019-20.09cf79aa.pdf",
     "static/media/amazon smile instructions.jpg": "/static/media/amazon smile instructions.4f37d37f.jpg",
     "static/media/amazon smile.jpg": "/static/media/amazon smile.74e62ce7.jpg",
+    "static/media/batch_Dynamics 2020 Show Flyer.jpg": "/static/media/batch_Dynamics 2020 Show Flyer.fc183806.jpg",
     "static/media/e_30h24i_8_e61Ud018svc1i1kfq1t21vxz_6orrts.jpg": "/static/media/e_30h24i_8_e61Ud018svc1i1kfq1t21vxz_6orrts.6f30646f.jpg",
     "static/media/e_30h255_8_a61Ud018svcq7agsqlvmnql_6orrts.jpg": "/static/media/e_30h255_8_a61Ud018svcq7agsqlvmnql_6orrts.16186c3b.jpg",
     "static/media/e_30hj12_f_j77Ud018svc1azqt9i43kws4_55ceys.jpg": "/static/media/e_30hj12_f_j77Ud018svc1azqt9i43kws4_55ceys.399876a3.jpg",
@@ -104,8 +105,8 @@
   "entrypoints": [
     "static/js/runtime-main.bb6eba76.js",
     "static/css/2.89b66d9e.chunk.css",
-    "static/js/2.e3cc5eb3.chunk.js",
-    "static/css/main.7e0208bd.chunk.css",
-    "static/js/main.d1d138e9.chunk.js"
+    "static/js/2.965fe6b2.chunk.js",
+    "static/css/main.f4643e66.chunk.css",
+    "static/js/main.9905d986.chunk.js"
   ]
 }
