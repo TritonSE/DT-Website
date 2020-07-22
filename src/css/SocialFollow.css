@@ -129,10 +129,59 @@
     animation: move-text 1.75s forwards;
 }
 
+.instagram-iconImg {
+    margin-bottom: 4px;
+}
+
+.mail-iconImg {
+    margin-bottom: 4px;
+}
+
+.facebook-iconImg {
+    margin-bottom: 3px;
+    height: 30px;
+    width: 30px;
+}
+.youtube-iconImg {
+    margin-bottom: 2px;
+}
+
+.yelp-iconImg {
+    margin-bottom: 5px;
+    height: 27px;
+    width: 27px;
+}
+
 @keyframes move-text {
     0% { bottom: 0.2em; opacity: 1; }
     50% { bottom: 0.2em; }
     100% { bottom: 0; opacity: 1; }
+}
+
+@media only screen and (max-width: 1725px) {
+    .instagram-iconImg {
+        margin-top: 3px;
+    }
+
+    .mail-iconImg {
+        margin-top: 6px;
+    }
+
+    .facebook-iconImg {
+        margin-top: 3px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .youtube-iconImg {
+        margin-top: 3px;
+    }
+
+    .yelp-iconImg {
+        margin-top: 5px;
+        height: 25px;
+        width: 25px;
+    }
 }
 
  @media only screen and (max-width: 1300px){

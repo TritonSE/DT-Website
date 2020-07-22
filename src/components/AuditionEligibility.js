@@ -9,7 +9,7 @@ class AuditionEligibility extends Component {
           <h2>DPT Senior Team eligibility:</h2>
           <ul>
             <li>12+ years old.</li>
-            <a className="Teal Underline" href={require("../files/AGE_5-7_Dynamites_Audition_Information.pdf")} download="Age 5-7 DPT Audition Information">  Download Age 5-7 DPT Audition Information </a> 
+            <a className="Teal Underline" href={require("../files/AGE_12+_DPT_Audition_Information.pdf")} download="Age 12+ DPT Audition Information">  Download Age 12+ DPT Audition Information </a> 
           </ul>
         </div>
 
@@ -25,7 +25,7 @@ class AuditionEligibility extends Component {
           <h2>Dynamites Mini Team eligibility:</h2>
           <ul>
             <li>5-7 years old.</li>
-            <a className="Teal Underline" href={require("../files/AGE_12+_DPT_Audition_Information.pdf")} download="Age 12+ DPT Audition Information">  Download Age 12+ DPT Audition Information </a>
+            <a className="Teal Underline" href={require("../files/AGE_5-7_Dynamites_Audition_Information.pdf")} download="Age 5-7 DPT Audition Information">  Download Age 5-7 DPT Audition Information </a>
           </ul>
         </div>
       </div>

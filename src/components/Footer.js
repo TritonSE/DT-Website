@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SocialIcons from './SocialFollow.js';
 import '../css/Footer.css';
 import '../css/Global.css';
-import { Collapse} from 'reactstrap';
+import { Collapse } from 'reactstrap';
 
 class Footer extends Component {
 
@@ -56,7 +56,7 @@ class Footer extends Component {
                                 <a className="Highlight" href={`mailto:dynamicsperformanceteam@gmail.com`}>dynamicsperformanceteam@gmail.com</a>
                         </h1>
                         <button className="Collapse-Icon" onClick={this.toggleCollapsed} style={{display: this.state.renderCollapseIcon ? "block":"none"}}>
-						    <i className={`fas fa-2x ${this.state.isOpen ? "fa-angle-down":"fa-angle-up"}`}/>
+                            <img className="arrow-icons" src={this.state.isOpen ? require('../images/icons8-chevron-down-50.png') : require('../images/icons8-chevron-down-50-up.png')} />
 					    </button>
                     </div>
                     <Collapse isOpen={this.state.isOpen}>
