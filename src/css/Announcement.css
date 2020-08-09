@@ -1,6 +1,5 @@
 .Announcement-Container {
     text-align: center;
-    display: flex;
 }
 
 .Announcement-Text {
@@ -28,6 +27,7 @@ a:hover {
 @media only screen and (max-width: 600px) {
     .Announcement-Text {
         font-size: 4.2vw;
+        text-align: center;
     }
 
     .Announcement-Text-Padding {
