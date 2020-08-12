@@ -171,7 +171,6 @@ class Toolbar extends Component {
         
       </Navbar>
 
-      <Announcement2 /> 
       <Announcement />
     </div>
   );
