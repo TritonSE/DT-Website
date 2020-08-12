@@ -6,28 +6,18 @@ class AuditionEligibility extends Component {
     return (
       <div className="colored-bullets font Pink-Bullets">
         <div>
-          <h3>DPT Senior Team eligibility:</h3>
+          <h2>DPT Senior Team eligibility:</h2>
           <ul>
             <li>12+ years old.</li>
-            <li>One year of dance experience.</li>
-            <li>
-              3 hours minimum technique at one or more dance studios: one hour
-              of jazz, one hour of ballet, and one hour of another genre of
-              dance.
-            </li>
+            <a className="Teal Underline" href={require("../files/AGE_12+_DPT_Audition_Information.pdf")} download="Age 12+ DPT Audition Information">  Download Age 12+ DPT Audition Information </a> 
           </ul>
         </div>
 
         <div>
           <h2>Dynamos Junior Team eligibility:</h2>
           <ul>
-            <li>8-10 years old.</li>
-            <li>One year of dance experience.</li>
-            <li>
-              3 hours minimum technique at one or more dance studios: one hour
-              of jazz, one hour of ballet, and one hour of another genre of
-              dance.
-            </li>
+            <li>8-11 years old.</li>
+            <a className="Teal Underline" href={require("../files/AGE_8-11_Dynamos_Audition_Information.pdf")} download="Age 8-11 DPT Audition Information">  Download Age 8-11 DPT Audition Information </a>
           </ul>
         </div>
 
@@ -35,10 +25,7 @@ class AuditionEligibility extends Component {
           <h2>Dynamites Mini Team eligibility:</h2>
           <ul>
             <li>5-7 years old.</li>
-            <li>
-              2 hours minimum technique at one or more dance studios: one hour
-              of ballet or ballet combo and one hour of another genre of dance.
-            </li>
+            <a className="Teal Underline" href={require("../files/AGE_5-7_Dynamites_Audition_Information.pdf")} download="Age 5-7 DPT Audition Information">  Download Age 5-7 DPT Audition Information </a>
           </ul>
         </div>
       </div>

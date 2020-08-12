@@ -4,6 +4,8 @@ import {Navbar,Nav,NavDropdown} from 'react-bootstrap';
 import LogoText from './LogoText.js'
 import SocialFollow from './SocialFollow';
 import { NavLink} from 'react-router-dom';
+import Announcement from './Announcement';
+import Announcement2 from './Announcement2';
 import { LinkContainer} from 'react-router-bootstrap';
 import "../css/Toolbar.css"
 import '../css/Global.css';
@@ -13,6 +15,7 @@ import '../css/Global.css';
 
 /*this controls the URL that the support links to. Currently, it is Paypal */ 
 const url = "https://www.paypal.me/dynamicsperformance"
+const store_url = "https://dynamics-performance-team.square.site";
 
 /*This controls the default color the navbar text is*/
 const defaultColor = "black"
@@ -140,6 +143,14 @@ class Toolbar extends Component {
                     Support Us
                   </NavDropdown.Item>
                 </LinkContainer>
+                <NavDropdown.Item onClick={() => window.open(store_url, '_blank')} eventKey={3.2}
+                style={{
+                backgroundColor: "white",
+                color: defaultColor 
+                }}>
+                {/* this is the part you edit if you would like the "PayPal" text to be different (in the dropdown)*/}
+                DPT Store 
+                </NavDropdown.Item>
                 <NavDropdown.Item onClick={this.handlePaypal} eventKey={3.2}
                 style={{
                 backgroundColor: "white",
@@ -159,6 +170,8 @@ class Toolbar extends Component {
         </Navbar.Brand>
         
       </Navbar>
+
+      <Announcement />
     </div>
   );
   }

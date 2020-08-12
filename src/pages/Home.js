@@ -102,12 +102,10 @@ class Home extends React.Component {
 					<NoRightClickImg style={{height: this.state.width * 0.4, width: "100%"}} imgClassName="banner-img" src={mainBanner} disableEnlarging={true}/>
 					<div style={{display:this.state.imgViz ? "none":"flex", justifyContent:"center"}}>
 						<button className="Scroll-Button Teal-Background" onClick={this.scrollToSlideShow}>
-							<i className="fas fa-angle-double-down fa-2x"/>
+							<i style={{color: "white"}} className="fas fa-angle-double-down fa-2x"/>
 						</button>
 					</div>
-					{/* <h1 className="Flight-Animation">
-						Amrit
-					</h1> */}
+
 					<VizSensor
 						partialVisibility
 						minTopValue="35"

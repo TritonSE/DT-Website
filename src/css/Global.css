@@ -95,8 +95,27 @@ ul li {
     background-color: rgb(15, 185, 185);
 }
 
+.Underline {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1100px) {
+    h2 {
+        font-size: 1.4vw;
+    }
+
+    ul li {
+        font-size: 1.3vw;
+    }
+
+    a {
+        font-size: 1.4w;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     h1 {
+        padding-top: 12px;
         font-size: 5vh;
         font-family: 'Lato', sans-serif;
     }

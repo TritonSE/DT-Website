@@ -1,6 +1,6 @@
 .tabholder {
     font-size: 25px;
-}
+}    
 
 .photos-container {
     display: flex;
@@ -83,6 +83,7 @@
     .tabholder {
         font-size: 25px;
     }
+
 
     .subscribe-text {
         margin-top: -3%;
